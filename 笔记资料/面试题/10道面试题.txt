@@ -1,0 +1,67 @@
+﻿1、常用哪几种浏览器测试？有哪些内核？
+IE      chrome,  FireFox , Opere
+Trident  webkit  Gecko     blink
+
+2、页面导入时，使用link和@impport有什么区别？
+（1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;
+（2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;//加载的速度
+（3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题; // 兼容问题
+3、对WEB标准以及W3C的理解与认识
+标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和js脚本、结构行为表现的分离、
+文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，
+不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性;
+
+4.this对象的理解
+this总是指向函数的直接调用者（而非间接调用者）；
+如果有new关键字，this指向new出来的那个对象；
+在事件中，this指向触发这个事件的对象，特殊的是，IE中的attachEvent中的this总是指向全局对象Window；
+
+5.请描述一下 cookies，sessionStorage 和 localStorage 的区别？
+cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
+cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。
+sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
+存储大小：
+cookie数据大小不能超过4k。
+sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
+有期时间：
+localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；
+sessionStorage  数据在当前浏览器窗口关闭后自动删除。
+cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭
+
+6、px和em的区别
+px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。
+浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em
+
+
+7.简述一下你对HTML语义化的理解？
+
+用正确的标签做正确的事情。
+html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析
+
+搜索引擎优化，利于SEO;
+
+
+8.CSS优先级算法如何计算？
+
+优先级就近原则，同权重情况下样式定义最近者为准;
+
+载入样式以最后载入的定位为准;
+
+优先级为:
+
+!important >  id > class > tag
+
+important比内联优先级高(style)
+
+
+9、如何消除一个数组里面重复的元素？
+
+// 方法一： var arr1 =[1,2,2,2,3,3,3,4,5,6], arr2 = []; 
+for(var i = 0,len = arr1.length; i< len; i++)
+{ if(arr2.indexOf(arr1[i]) < 0)
+{ arr2.push(arr1[i]); } } document.write(arr2); // 1,2,3,4,5,6
+
+10.前端页面有哪三层构成，分别是什么?作用是什么?
+
+　　结构层 Html 表示层 CSS 行为层 js
+

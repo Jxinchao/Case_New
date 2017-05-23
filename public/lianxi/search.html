@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<input type="text" name="" id="sou"> 
+	<button onclick="btn()">搜索</button>
+	<div id="list">
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$.ajax({
+				type:'get',
+				url:'http://localhost:8888/mysql/list',
+				success:function(json){
+					$('#list ul').empty();
+					var li = "";
+					$.each(json,function(index,array){
+						li += '<li>'+array['uname']+'</li>';
+					})
+					$('#list ul').append(li);
+				},error:function(){
+					alert('error。。。')
+				}
+		})
+
+		function trimStr(str){return str.replace(/(^\s*)|(\s*$)/g,"");}
+		function btn(){
+	 		var a = $('#sou').val();
+	 		var b = trimStr(''+ a +'')   //去除空格
+	 		$.ajax({
+		 		type:'get',
+		 		url:'http://localhost:8888/mysql/search',
+		 		data:{
+		 			id:b
+		 		},
+	 			success:function(e){
+	 				if(e.flag == 2){
+	 					alert('数据库没有这条数据')
+	 				}else{
+	 					$('#list ul').empty();
+						var li = "";
+						for(var i =0;i<e.length;i++){
+							li += '<li>'+e[i].uname+'</li>';
+						}
+						$('#list ul').append(li);
+	 				}
+	 			},error:function(){
+	 				alert('error')
+	 			}
+	 		})
+	 	}
+	</script>
+</body>
+</html>

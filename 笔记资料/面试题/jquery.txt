@@ -1,0 +1,579 @@
+1.你为什么要使用jquery？
+
+答：因为jQuery是轻量级的框架，大小不到30kb,它有强大的选择器，出色的DOM操作的封装，有可靠的事件处理机制(jQuery在处理事件绑定的时候相当的可靠)，完善的ajax(它的ajax封装的非常的好，不需要考虑复杂浏览器的兼容性和XMLHttpRequest对象的创建和使用的问题。) 出色的浏览器的兼容性。 而且支持链式操作，隐式迭代。行为层和结构层的分离，还支持丰富的插件，jquery的文档也非常的丰富。
+-----------马果
+
+2.例如 单击超链接后会自动跳转，单击"提交"按钮后表单会提交等，有时候我想阻止这些默认的行为，该怎么办？
+
+答: 可以用 event.preventDefault()或在事件处理函数中返回false，即 return false;
+-----------马果
+
+3.  你使用jquery遇到过哪些问题，你是怎么解决的？
+
+答：例前台拿不到值，JSON 可是出现的错误(多了一个空格等)这编译是不会报错的 jquery库与其他库冲突：
+
+1>如果其他库在jquery库之前导入的话
+
+1.我们可以通过jquery.noconflict()将变量的$的控制权过度给其他库
+jQuery.noConflict();
+// 使用 jQuery
+jQuery("div p").hide();
+// 使用其他库的 $()
+$("content").style.display = 'none'
+
+2.自定义快捷键,用一个变量接住jquery.noconflict()
+例如：完全将 jQuery 移到一个新的命名空间。
+var dom = {};
+dom.query = jQuery.noConflict(true);结果:
+// 新 jQuery 的代码
+dom.query("div p").hide();
+// 另一个库 $() 的代码
+$("content").style.display = 'none';
+// 另一个版本 jQuery 的代码
+jQuery("div > p").hide();
+
+2>如果jquery库在其他库之前导入就直接使用jquery
+
+在处理一个数据问题时，发现jQuery.ajax()方法返回的值一直有问题，清除缓存后数据无误，多次测试后发现返回的值都是之前的值，并且一直未执行url(后台为JAVA，设置断点一直未进入)。在网上查找下,发现是未设置type的原因。 如果没设置jQuery.ajax的type="Post"，那么ajax就会默认type="Get"，这就会导致之前数据被缓存起来。加上type="Post"，问题解决！ 
+-----------马果
+
+4. 在ajax中data主要有几种方式？
+
+答 ： 三种，html拼接的，json数组，form表单经serialize()序列化的。
+-----------马果
+
+5 ：jQuery中的hover()和toggle()有什么区别？
+
+答 hover()和toggle()都是jQuery中两个合成事件。
+hover()方法用于模拟光标悬停事件。 toggle()方法是连续点击事件。
+-----------马果
+
+6 你知道jQuery中的事件冒泡吗，它是怎么执行的，何如来停止冒泡事件？
+
+答 : 事件冒泡是从里面的往外面开始触发。在jQuery中提供了stopPropagation()方法可以停止冒泡。-----------马果
+
+
+【7.  jquery对象和dom对象是怎样转换的？】
+
+答 ：只有jquery对象才能使用jquery定义的方法。注意dom对象和jquery对象是有区别的，调用方法时要注意操作的是dom对象还是jquery对象。
+普通的dom对象一般可以通过$()转换成jquery对象。
+如：
+$(document.getElementById("msg"))
+则为jquery对象，可以使用jquery的方法。
+
+由于jquery对象本身是一个集合。所以如果jquery对象要转换为dom对象则必须取出其中的某一项，一般可通过索引取出。
+如：
+$("#msg")[0]，$("div").eq(1)[0]，$("div").get()[1]，$("td")[5]
+这些都是dom对象，可以使用dom中的方法，但不能再使用Jquery的方法。
+
+以下几种写法都是正确的：
+$("#msg").html(); 
+$("#msg")[0].innerHTML; 
+$("#msg").eq(0)[0].innerHTML; 
+$("#msg").get(0).innerHTML;
+-----------郭晓亮
+
+8.  你是如何使用jquery中的ajax的？
+
+    答: 如果是一些常规的ajax程序的话，使用load(),$.get(),$.post(),就可以搞定了，一般使用的是$.post() 方法。如果需要设定beforeSend(提交前回调函数),error(失败后处理),success(成功后处理)及complete(请求完成后处理)回调函数等，这个时候我会使用$.ajax()
+-----------郭晓亮
+
+9.  你觉得jquery中的ajax好用吗，为什么？
+
+    答: 好用的。 因为jQuery提供了一些日常开发中夙瑶的快捷操作，例 load，ajax，get，post等等，所以使用jQuery开发ajax将变得极其简单，我们就可以集中精力在业务和用户的体验上，不需要去理会那些繁琐的XMLHttpRequest对象了。
+-----------郭晓亮
+
+【10. jquery中$.get()提交和$.post()提交有区别吗？】
+
+答:  1 $.get() 方法使用GET方法来进行异步请求的。$.post() 方法使用POST方法来进行异步请求的。
+
+    2 get请求会将参数跟在URL后进行传递，而POST请求则是作为HTTP消息的实体内容发送给Web服务器的，这种传递是对用户不可见的。
+
+    3 get方式传输的数据大小不能超过2KB 而POST要大的多
+
+    4 GET 方式请求的数据会被浏览器缓存起来，因此有安全问题。
+-----------郭晓亮
+
+【11  你觉得jquery中的选择器有什么优势？】
+
+答：简单的写法  $('ID') 来代替 document.getElementById()函数
+
+支持CSS1 到CSS3 选择器完善的处理机制(就算写错了id也不会报错)
+-----------郭晓亮
+
+12  在使用选择器的时候要注意的地方？
+
+答: 1 选择器中含有".","#","[" 等特殊字符的时候需要进行转译
+
+       2 属性选择器的引号问题
+
+       3 选择器中含有空格的注意事项
+-----------郭晓亮
+
+【13.  jquery中的load方法一般怎么用的？】
+
+答：load方法一般在 载入远程HTML 代码并插入到DOM中的时候用，通常用来从Web服务器上获取静态的数据文件。如果要传递参数的话，可以使用$.get() 或 $.post()。
+-----------张洋
+
+【14.  在jquery中你是如何去操作样式的？】
+
+答: addClass() 来追加样式 ，
+为匹配的元素加上 'selected' 类
+$("p").addClass("selected1 selected2");
+
+removeClass() 来删除样式，
+从匹配的元素中删除 'selected' 类
+$("p").removeClass("selected");
+
+toggle() 来切换样式
+对表格切换显示/隐藏
+$('td).toggle();
+-----------张洋
+
+15  简单的讲叙一下jquery是怎么处理事件的？
+
+答: 首先去装载文档，在页面加载完毕后，浏览器会通过javascript 为DOM元素添加事件。
+-----------张洋
+
+【16  jquery中的动画是怎样用的？】
+
+答:使用过。
+
+hide() 和 show() 同时修改多个样式属性。像高度，宽度，不透明度。
+ fadeIn() 和fadeOut() fadeTo() 只改变不透明度
+
+slideUp() 和 slideDown() slideToggle() 只改变高度
+
+animate() 属于自定义动画的方法.
+-----------张洋
+
+【17.  你在jquery中使用过哪些插入节点的方法，它们的区别是什么？】
+
+答:append()向所有段落中追加一些HTML标记。
+$("p").append("<b>Hello</b>");
+<p>I would like to say: <b>Hello</b></p>
+
+appendTo()把所有段落追加到ID值为foo的元素中
+$("p").appendTo("div");
+<div><p>I would like to say: </p></div>
+
+prepend()向所有段落中前置一些HTML标记代码。
+$("p").prepend("<b>Hello</b>");
+ <p><b>Hello</b>I would like to say: </p> 
+
+prependTo()把所有段落追加到ID值为foo的元素中
+$("p").prependTo("#foo");
+<div id="foo"><p>I would like to say: </p></div>
+
+after()在所有段落之后插入一些HTML标记代码
+$("p").after("<b>Hello</b>");
+<p>I would like to say: </p><b>Hello</b>
+
+insertAfter()把所有段落插入到一个元素之后。与 $("#foo").after("p")相同
+$("p").insertAfter("#foo");
+<div id="foo">Hello</div><p>I would like to say: </p>
+
+before()在所有段落之前插入一些HTML标记代码
+$("p").before("<b>Hello</b>");
+<b>Hello</b><p>I would like to say: </p>
+
+insertBefore() 把所有段落插入到一个元素之前。与 $("#foo").before("p")相同
+$("p").insertBefore("#foo");
+<p>I would like to say: </p><div id="foo">Hello</div>
+
+大致可以分为 内部追加和外部追加append() 表式向每个元素内部追加内容。appendTo()表示 讲所有的元素追加到指定的元素中。例$(A)appendTo(B) 是将A追加到B中下面的方法解释类似。
+-----------张洋
+
+18.  你使用过包裹节点的方法吗，包裹节点有方法有什么好处？
+
+答: wrapAll()用一个生成的div将所有段落包裹起来
+$("p").wrapAll("<div></div>");
+<div><p></p><p></p></div>
+
+wrap()把所有的段落用一个新创建的div包裹起来
+$("p").wrap("<div class='wrap'></div>");
+<div class='wrap'><p></p></div>
+<div class='wrap'><p></p></div>
+
+ wrapInner() 选取一个匹配的子集
+<p>Hello</p><p>cruel</p><p>World</p>
+$("p").slice(0, 1).wrapInner("<b></b>");
+<p><b>Hello</b></p>
+
+需要在文档中插入额外的结构化标记的时候可以使用这些包裹的方法应为它不会帛画原始文档的语义
+-----------张洋
+
+【20.  jquery中如何来获取或和设置属性？】
+
+jQuery中可以用attr()方法来获取和设置元素属性
+$("img").attr("src");
+
+removeAttr() 方法来删除元素属性
+<img src="test.jpg"/>
+$("img").removeAttr("src");
+<img />
+-----------张洋
+
+21.  如何来设置和获取HTML 和文本的值？
+
+答：html()方法 类似于innerHTML属性 可以用来读取或者设置某个元素中的HTML内容
+
+注意：html() 可以用于xhtml文档 不能用于xml文档text() 类似于innerText属性 可以用来读取或设置某个元素中文本内容。val() 可以用来设置和获取元素的值
+-----------张洋
+
+【22  你jquery中有哪些方法可以遍历节点？】
+
+答 ：children() 取得匹配元素的子元素集合,只考虑子元素不考虑后代元素 
+
+next() 取得匹配元素后面紧邻的同辈元素
+
+prev() 取得匹配元素前面紧邻的同辈元素
+
+siblings() 取得匹配元素前后的所有同辈元素
+
+closest() 取得最近的匹配元素
+
+find() 取得匹配元素中的元素集合 包括子代和后代
+-----------杨克会
+
+23 子元素选择器 和后代选择器元素有什么区别？
+
+答:子元素选择器是找子节点下的所有元素,后代选择器是找子节点或子节点的子节点中的元素
+-----------杨克会
+
+24 在jquery中可以替换节点吗？
+
+答：可以 在jQuery中有两者替换节点的方式 replaceWith() 和 replaceAll()例如在<p title="hao are you">hao are you</p>替换成<strong>I am fine<strong>$('p').replaceWith('<strong>I am fine</strong>'); replaceAll 与replaceWith的用法前后调换一下即可。
+-----------杨克会
+
+25. siblings() 方法 和 $('prev~div')选择器是一样的嘛？
+
+答: $('prev~div') 只能选择'#prev'元素后面的同辈<div>元素而siblings()方法与前后的文职无关，只要是同辈节点就都能匹配。
+-----------杨克会
+
+26. 有哪些查询节点的选择器？
+
+答： :first 查询第一个，:last 查询最后一个，:odd查询奇数但是索引从0开始:even查询偶数，:eq(index)查询相等的 ,:gt(index)查询大于index的 ,:lt查询小于index:header 选取所有的标题等
+-----------杨克会
+
+27. nextAll() 能 替代$('prev~siblindgs')选择器吗？
+
+答:能。 使用nextAll() 和使用$('prev~siblindgs') 是一样的
+-----------杨克会
+
+28. $(document).ready()方法和window.onload有什么区别？
+
+答: 两个方法有相似的功能，但是在实行时机方面是有区别的。 1window.onload方法是在网页中所有的元素(包括元素的所有关联文件)完全加载到浏览器后才执行的。
+
+2 $(document).ready() 方法可以在DOM载入就绪时就对其进行操纵，并调用执行绑定的函数。
+-----------范瑞雪
+
+29. jQuery是如何处理缓存的？
+
+答 ：要处理缓存就是禁用缓存.
+
+  1. 通过$.post() 方法来获取数据，那么默认就是禁用缓存的。
+
+  2. 通过$.get()方法 来获取数据，可以通过设置时间差来避免缓存。可以在URL后面加上+(+new Date)
+  例 ： $.get('ajax.xml?'+(+new Date),function () { //内容 }); 
+
+  $.get("ProvinceListByCountryIDHandler.ashx", { "cid": $drpCountry.val(), "time": new Date().getTime() }, function(data, returnStatus) {})
+
+  在$.get()的data后面加上新的随机参数，由于每次数据不一样，故请求后返回的数据不会缓存。
+  如 ：{data: mydata, stamp: Math.random() }
+
+  3. 通过$.ajax 方法来获取数据，只要设置cache:false即可。
+-----------范瑞雪
+
+30.  $("#msg").text(); 和 $("#msg").text("<b>new content</b>");有什么区别？
+
+答：1 $("#msg").text() 是 返回id为msg的元素节点的文本内容        
+
+   2 $("#msg").text("<b>new content</b>"); 是 将“<b>new content</b>” 作为普通文本串写入id为msg的元素节点内容中, 页面显示粗体的<b>new content</b>
+-----------范瑞雪
+
+31.  你知道jquery中的选择器吗，请讲一下有哪些选择器？
+
+答 ：jQuery中的选择器大致分为:基本选择器，层次选择器，过滤选择器，表单选择器
+-----------范瑞雪
+
+32. 你使用过哪些数据格式，它们各有什么特点？
+
+答: HTML格式 ,JSON格式,javascript格式,XML格式
+
+1 HTML片段提供外部数据一般来说是最简单的。
+
+2 如果数据需要重用，而且其他应用程序也可能一次受到影响，那么在性能和文件大小方面具有优势的JSON通常是不错的选择。
+
+3 而当远程应用程序未知时，XML则能够为良好的互操作性提供最可靠的保证。
+-----------范瑞雪
+
+33. jQuery 能做什么？
+
+答：1 获取页面的元素 
+
+2 修改页面的外观
+
+3 改变页面大的内容
+
+4 响应用户的页面操作
+
+5 为页面添加动态效果
+
+6 无需刷新页面，即可以从服务器获取信息
+
+7 简化常见的javascript任务
+-----------范瑞雪
+
+34.  jquery中的选择器 和 css中的选择器有区别吗？
+
+答：jQuery选择器支持CSS里的选择器，jQuery选择器可用来添加样式和添加相应的行为 CSS中的选择器是只能添加相应的样式
+-----------范瑞雪
+
+35.  一般用什么去提交数据，为什么？
+
+答:一般使用的是$.post() 方法。
+
+如果需要设定beforeSend(提交前回调函数),error(失败后处理),success(成功后处理及complete(请求完成后处理)回调函数等，这个时候我会使用$.ajax()
+-----------范瑞雪
+
+36. 你觉得beforeSend方法有什么用？
+
+答：发送请求前可以修改XMLHttpRequest对象的函数，在beforeSend中如果返回false 可以取消本次的Ajax请求。XMLHttpRequest对象是唯一的参数所以在这个方法里可以做验证
+
+在用ajax请求时，没有返回前会出现前出现一个转动的loading小图标或者“内容加载中..”，用来告知用户正在请求数据。这个就可以用beforeSend方法来实现
+function test_ajax(){
+    $.ajax(
+    {
+       type:"GET",//通常会用到两种：GET,POST。默认是：GET
+       url:"a.php",//(默认: 当前页地址) 发送请求的地址
+      dataType:"html",//预期服务器返回的数据类型。
+      beforeSend:beforeSend, //发送请求
+      success:callback, //请求成功
+      error:error,//请求出错 
+      complete:complete//请求完成
+   });
+ }
+function error(XMLHttpRequest, textStatus, errorThrown){
+   // 通常情况下textStatus和errorThown只有其中一个有值 
+  $("#showResult").append("<div>请求出错啦！</div>");
+ }
+ function beforeSend(XMLHttpRequest){
+   $("#showResult").append("<div><img src='loading.gif' /><div>");
+ }
+ function complete(XMLHttpRequest, textStatus){
+   $("#showResult").remove();
+ }
+ function callback(msg){
+   $("#showResult").append("<div>请求成功，回传数:"+msg+"<div>");
+ }
+-----------范瑞雪
+
+
+37. jQuery中有几种方法可以来设置和获取样式
+
+答 ：addClass() 方法，
+     
+     attr() 方法
+-----------范瑞雪
+
+
+
+/*******************************************************************/1510A
+--------------------------------------陈思达
+1.JQuery如何获取当前鼠标位置？
+<div id="testDiv">鼠标放在上面</div>
+<script type="text/javascript">
+	$('#testDiv').mousemove(function(e){
+		var xx = e.pageX;
+		var yy = e.pageY;
+		$(this).text(xx + '--'+yy);
+	});
+</script>
+
+2. jQuery 库中的 $() 是什么？
+$() 函数是 jQuery() 函数的别称，乍一看这很怪异，还使 jQuery 代码晦涩难懂。一旦你适应了，你会爱上它的简洁。$() 函数用于将任何对象包裹成 jQuery 对象，接着你就被允许调用定义在 jQuery 对象上的多个不同方法。你甚至可以将一个选择器字符串传入 $() 函数，它会返回一个包含所有匹配的 DOM 元素数组的 jQuery 对象。这个问题我已经见过好几次被提及，尽管它非常基础，它经常被用来区分一个开发人员是否了解 jQuery。
+
+3.如何找到所有 HTML select 标签的选中项？
+$('[name=NameOfSelectedTag] :selected')
+
+4.你是如何将一个 HTML 元素添加到 DOM 树中的？
+你可以用 jQuery 方法 appendTo() 将一个 HTML 元素添加到 DOM 树中。这是 jQuery 提供的众多操控 DOM 的方法中的一个。你可以通过 appendTo() 方法在指定的 DOM 元素末尾添加一个现存的元素或者一个新的 HTML 元素。
+
+5.$(this) 和 this 关键字在 jQuery 中有何不同？
+$(this) 返回一个 jQuery 对象，你可以对它调用多个 jQuery 方法，比如用 text() 获取文本，用val() 获取值等等。而 this 代表当前元素，它是 JavaScript 关键词中的一个，表示上下文中的当前 DOM 元素。你不能对它调用 jQuery 方法，直到它被 $() 函数包裹，例如 $(this)。
+
+---------------------------------------------------------------------陈伟
+
+1、下面哪几个不是属于jquery的事件处理? (多选) 
+A、bind(type) B、click() C、change() D、one(type) 考点：jquery的事件处理 (BC) 
+
+2、下面哪几种是jquery中表单的对象属性？（多选）  
+A、:checked B、: enabled C、:hidden D、:selected E、:file F、: disabled 考点：jquery的选择器（ABDF）  
+
+3、用jquery 来实现动态添加和删除表格行  在一个表单中，查找所有选中的input元素，可以用jquery中的____________________来实现。 考点：jquery的选择器（:not()）
+
+4、如果想要找到一个表格的指定行数的元素，用下面哪个方法可以快速找到指定元素？(单选) 
+A、text() B、get() C、eq() D、contents（） 考点：jquery的选择器 （C）
+
+5、下面哪几种是属于jquery文档处理的？ （多选） 
+A、包裹 B、替换 C、删除 D、内部和外部插入 考点：jquery的文档处理 (ABD)  
+
+
+---------------------------------------------------------------高科举
+
+1、彻底将jQuery变量还原，可以使用___________________方法实现。 考点：jquery的多库共存 ($.noConflict(extreme))
+
+2、当一个文本框中的内容被选中时，想要执行指定的方法时，可以使用下面哪个事件来实现？（单选） 
+A、click(fn) B、change(fn) C、select(fn) D、bind(fn) 考点：jquery的事件处理 (C)  
+ 
+3、如果想要给输入框添加一个输入验证，可以用下面的哪个事件实现？ (单选) A、hover(over ,out) B、keypress（fn） C、change() D、change(fn) 考点：jquery的事件处理 (D) 
+
+4、如果想要找到一个表格的指定行数的元素，用下面哪个方法可以快速找到指定元素？(单选) 
+A、text() B、get() C、eq() D、contents（） 考点：jquery的选择器 （C）
+
+5、jquery访问对象中的size()方法的返回值和jQuery对象的_______属性一样. 考点：jquery的核心函数之对象访问 （length）高科举：
+
+1、彻底将jQuery变量还原，可以使用___________________方法实现。 考点：jquery的多库共存 ($.noConflict(extreme))
+
+2、当一个文本框中的内容被选中时，想要执行指定的方法时，可以使用下面哪个事件来实现？（单选） 
+A、click(fn) B、change(fn) C、select(fn) D、bind(fn) 考点：jquery的事件处理 (C)  
+ 
+3、如果想要给输入框添加一个输入验证，可以用下面的哪个事件实现？ (单选) A、hover(over ,out) B、keypress（fn） C、change() D、change(fn) 考点：jquery的事件处理 (D) 
+
+4、如果想要找到一个表格的指定行数的元素，用下面哪个方法可以快速找到指定元素？(单选) 
+A、text() B、get() C、eq() D、contents（） 考点：jquery的选择器 （C）
+
+5、jquery访问对象中的size()方法的返回值和jQuery对象的_______属性一样. 考点：jquery的核心函数之对象访问 （length）
+
+
+
+------------------------------------------------------------李泽鑫
+
+	第一题：
+指定的为某个div内部动态添加一个div的写法，外部添加一个div的写法(包括在该节点的前面以及后面)；
+
+	第二题：
+在jquery中想要实现通过远程http get请求载入信息功能的是下面的哪一下事件？ (单选) 
+A、$.ajax() B、load(url) C、$.get(url) D、$. getScript(url) 
+考点：jquery的ajax (C)
+
+	第三题：
+如果需要匹配包含文本的元素，用下面哪种来实现？(单选)
+A、text() B、contains() C、input() D、attr(name)
+考点：jquery的选择器 （B）
+
+	第四题：
+如果想在一个指定的元素后添加内容，下面哪个是实现该功能的？（单选）  
+A、append(content) B、appendTo(content) C、insertAfter(content) D、after(content) 
+考点：jquery的文档处理 (D)
+
+	第五题：
+在一个表单中，如果想要给输入框添加一个输入验证，可以用下面的哪个事件实现？ (单选) 
+A、hover(over ,out) B、keypress（fn） C、change() D、change(fn) 
+考点：jquery的事件处理 (D)
+
+
+---------------------------------------------------------苏正华
+ 1. $(document).ready() 是个什么函数？为什么要用它？
+ ready() 函数用于在文档进入ready状态时执行代码。当DOM 完全加载（例如HTML被完全解析DOM树构建完成时），jQuery允许你执行代码。使用$(document).ready()的最大好处在于它适用于所有浏览器，jQuery帮你解决了跨浏览器的难题。
+
+
+2. jQuery 里的 each() 是什么函数？你是如何使用它的？
+each() 函数就像是 Java 里的一个 Iterator，它允许你遍历一个元素集合。你可以传一个函数给 each() 方法，被调用的 jQuery 对象会在其每个元素上执行传入的函数。举个例子，如何在 alert 框里显示所有选中项。
+     $('[name=NameOfSelectedTag] :selected').each(function(selected) {
+            alert($(selected).text());
+     });
+
+
+
+【3.$(this) 和 this 关键字在 jQuery 中有何不同？】
+
+$(this) 返回一个 jQuery 对象，你可以对它调用多个 jQuery 方法，比如用 text() 获取文本，用val() 获取值等等。而 this 代表当前元素，它是 JavaScript 关键词中的一个，表示上下文中的当前 DOM 元素。你不能对它调用 jQuery 方法，直到它被 $() 函数包裹，例如 $(this)。
+
+
+
+
+4.  jQuery.get() 和 jQuery.ajax() 方法之间的区别是什么?
+
+ajax() 方法更强大，更具可配置性, 让你可以指定等待多久，以及如何处理错误。get() 方法是一个只获取一些数据的专门化方法。 
+
+
+
+5. jQuery 中的方法链是什么？使用方法链有什么好处？
+方法链是对一个方法返回的结果调用另一个方法，这使得代码简洁明了，同时由于只对 DOM 进行了一轮查找，性能方面更加出色
+
+------------------------------------------------------------------------赵家黎
+1. body 中的 onload()函数和 jQuery 中的$(document).ready()有什么区别
+	参考答案：
+	onload（）和 document.ready（）的区别如下：
+		（1）可以在页面中使用多个 document.ready()，但只能使用一次 onload()；
+		（2）document.ready()函数在页面 DOM 元素加载完成以后就会被调用，而
+		onload()函数则要在所有的关联资源（包括图像，音频）加载完毕才会调用。
+
+2. jQuery 中有哪几种类型的选择器
+	参考答案：
+	有 3 种类型的选择器，如下：
+		基本选择器：直接根据 id，css 类名，元素名返回 dom 元素；
+		层次选择器：也叫做路径选择器，可以根据路径层次来选择相应的dom元素；
+		过滤选择器：在前面的基础上过滤相关条件，得到匹配的 dom 元素。	
+
+3. jQuery 的美元符号$有什么作用？
+	参考答案：
+		美元符号 $ 是'jQuery'的别名，它是 jQuery 选择器，查看如下代码：
+		$(document).ready(function(){});
+
+		也可以用 jQuery 来替代
+		jQuery(document).ready(function(){});
+
+【4. jQuery 中的 Delegate（）函数有什么作用？】
+	参考答案：
+	delegate()会在以下两个情况下使用到：
+		（1）当需要给父元素其下的子元素添加事件时，代码如下：
+		Html 代码
+		$("ul").delegate("li", "click", function(){
+			$(this).hide();
+		});
+		（2）当元素在当前页面中不可用时，可以使用 delegate()
+
+5. jQuery 遍历函数 包括什么，请举例
+
+	jQuery 遍历函数包括了用于筛选、查找和串联元素的方法
+	.add()	将元素添加到匹配元素的集合中。
+	.andSelf()	把堆栈中之前的元素集添加到当前集合中。
+	.children()	获得匹配元素集合中每个元素的所有子元素。
+	.closest()	从元素本身开始，逐级向上级元素匹配，并返回最先匹配的祖先元素。
+	.contents()	获得匹配元素集合中每个元素的子元素，包括文本和注释节点。
+	.each()	对 jQuery 对象进行迭代，为每个匹配元素执行函数。
+	.end()	结束当前链中最近的一次筛选操作，并将匹配元素集合返回到前一次的状态。
+	.eq()	将匹配元素集合缩减为位于指定索引的新元素。
+	.filter()	将匹配元素集合缩减为匹配选择器或匹配函数返回值的新元素。
+	.find()	获得当前匹配元素集合中每个元素的后代，由选择器进行筛选。
+	.first()	将匹配元素集合缩减为集合中的第一个元素。
+	.has()	将匹配元素集合缩减为包含特定元素的后代的集合。
+	.is()	根据选择器检查当前匹配元素集合，如果存在至少一个匹配元素，则返回 true。
+	.last()	将匹配元素集合缩减为集合中的最后一个元素。
+	.map()	把当前匹配集合中的每个元素传递给函数，产生包含返回值的新 jQuery 对象。
+	.next()	获得匹配元素集合中每个元素紧邻的同辈元素。
+	.nextAll()	获得匹配元素集合中每个元素之后的所有同辈元素，由选择器进行筛选（可选）。
+	.nextUntil()	获得每个元素之后所有的同辈元素，直到遇到匹配选择器的元素为止。
+	.not()	从匹配元素集合中删除元素。
+	.offsetParent()	获得用于定位的第一个父元素。
+	.parent()	获得当前匹配元素集合中每个元素的父元素，由选择器筛选（可选）。
+	.parents()	获得当前匹配元素集合中每个元素的祖先元素，由选择器筛选（可选）。
+	.parentsUntil()	获得当前匹配元素集合中每个元素的祖先元素，直到遇到匹配选择器的元素为止。
+	.prev()	获得匹配元素集合中每个元素紧邻的前一个同辈元素，由选择器筛选（可选）。
+	.prevAll()	获得匹配元素集合中每个元素之前的所有同辈元素，由选择器进行筛选（可选）。
+	.prevUntil()	获得每个元素之前所有的同辈元素，直到遇到匹配选择器的元素为止。
+	.siblings()	获得匹配元素集合中所有元素的同辈元素，由选择器筛选（可选）。
+	.slice()	将匹配元素集合缩减为指定范围的子集。
+
+
+
+
+
+
+
+
+
+

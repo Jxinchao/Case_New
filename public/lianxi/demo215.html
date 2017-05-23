@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title> 
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head> 
+<body>
+	hello,word!!!
+	<br><br>
+	用户名：<input type="text" id="uname" />
+	密码：<input type="text" id="pwd"/>
+	<button class="btn">点我</button>
+	<script>
+		$('.btn').click(function(){
+			$.ajax({
+				type:'post',
+				url:'http://localhost:8888/login/dl',
+				data:{
+					username:$('#uname').val(),
+					password:$('#pwd').val()
+				},
+				success:function(e){
+					if(e.flag == 1){
+						alert('success')
+					}else if(e.flag == 2){
+						alert('uname error')
+					}else if(e.flag == 3){
+						alert('pwd error')
+					}
+				},error:function(){
+					alert('error....');
+				}
+			})
+		})
+	</script>
+</body>
+</html>

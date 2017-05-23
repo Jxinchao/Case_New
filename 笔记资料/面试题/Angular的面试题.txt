@@ -1,0 +1,722 @@
+1.ng-if 跟 ng-show/hide 的区别有哪些？-1510A郭佳兴
+
+(1)第一点区别是， ng-if 在后面表达式为 true 的时候才创建这个 dom 节点， ng-show 是初始时就创建了，用 display:block 和 display:none 来控制显示和不显示。
+(2)第二点区别是， ng-if 会（隐式地）产生新作用域， ng-switch 、 ng-include 等会动态创建一块界面的也是如此。
+这样会导致，在 ng-if 中用基本变量绑定 ng-model ，并在外层 div 中把此 model 绑定给另一个显示区域，内层改变时，外层不会同步改变，因为此时已经是两个变量了。
+
+2.ng-repeat迭代数组的时候，如果数组中有相同值，会有什么问题，如何解决？-1510A郭佳兴
+
+
+会提示 Duplicates in a repeater are not allowed. 加 track by $index 可解决。当然，也可以 trace by 任何一个普通的值，只要能唯一性标识数组中的每一项即可（建立 dom 和数据之间的关联）。
+
+3.ng-click 中写的表达式，能使用 JS 原生对象上的方法吗？-1510A郭佳兴
+
+
+不止是 ng-click 中的表达式，只要是在页面中，都不能直接调用原生的 JS 方法，因为这些并不存在于与页面对应的 Controller 的 $scope 中。
+举个栗子：<p>{{parseInt(55.66)}}<p>  
+
+4.angular 的数据绑定采用什么机制？详述原理-1510A郭佳兴
+
+
+脏检查机制。//http://www.cnblogs.com/xuezhi/p/4897831.html   想了解可以看下这个网址
+
+双向数据绑定是 AngularJS 的核心机制之一。当 view 中有任何数据变化时，会更新到 model ，当 model 中数据有变化时，view 也会同步更新，显然，这需要一个监控。
+
+原理就是，Angular 在 scope 模型上设置了一个 监听队列，用来监听数据变化并更新 view 。每次绑定一个东西到 view 上时 AngularJS 就会往 $watch 队列里插入一条 $watch ，用来检测它监视的 model 里是否有变化的东西。当浏览器接收到可以被 angular context 处理的事件时， $digest 循环就会触发，遍历所有的 $watch ，最后更新 dom。 
+
+5.如果通过angular的directive规划一套全组件化体系，可能遇到哪些挑战？-1510A郭佳兴
+
+
+能想到的一点是，组件如何与外界进行数据的交互，以及如何通过简单的配置就能使用吧
+
+6.angular 的缺点有哪些？-马振超1510A
+强约束
+
+(1)但遵守 AngularJS 的约定时，生产力会很高，对 Java 程序员友好。
+不利于 SEO
+(2)因为所有内容都是动态获取并渲染生成的，搜索引擎没法爬取。
+(3)一种解决办法是，对于正常用户的访问，服务器响应 AngularJS 应用的内容；对于搜索引擎的访问，则响应专门针对 SEO 的HTML页面。
+性能问题
+
+作为 MVVM 框架，因为实现了数据的双向绑定，对于大数组、复杂对象会存在性能问题。
+//MVVM是Model-View-ViewModel的简写，MVVM（Model-View-ViewModel）框架的由来便是MVP（Model-View-Presenter）模式与WPF结合的应用方式时发展演变过来的一种新型架构框架。它立足于原有MVP框架并且把WPF的新特性糅合进去，以应对客户日益复杂的需求变化。
+
+
+7.如何看待angular2？-马振超1510A
+
+
+(1)相比 Angular1.x，Angular2的改动很大，几乎算是一个全新的框架。
+(2)基于 TypeScript（可以使用 TypeScript 进行开发），在大型项目团队协作时，强语言类型更有利。
+(3)组件化，提升开发和维护的效率。
+(4)还有 module 支持动态加载，new router，promise的原生支持等等。
+(5)迎合未来标准，吸纳其他框架的优点，值得期待，不过同时要学习的东西也更多了（ES next、TS、Rx等）。
+
+8.如何理解 angular 的 “依赖注入” -马振超1510A
+
+
+依赖注入：程序运行过程中，如需另一个对象协作(调用它的方法、访问他的属性)时，无须在代码中创建被调用者，而是依赖于外部容器的注入
+
+9.JSON 值可以是：-马振超1510A
+
+
+    数字（整数或浮点数）
+    字符串（在双引号中）
+    逻辑值（true 或 false）
+    数组（在方括号中）
+    对象（在花括号中）
+    null
+10.rootScope是啥意思-马振超1510A
+
+
+根作用域
+
+11.AngularJS的作用 –孙晶1510A
+
+使用双大括号{{}}语法进行数据绑定；
+使用DOM控制结构来实现迭代或者隐藏DOM片段；
+支持表单和表单的验证；
+能将逻辑代码关联到相关的DOM元素上；
+能将HTML分组成可重用的组件。
+
+12.写出5个AngularJS的指令。–孙晶1510A
+
+
+.ng-model ng-init  ng-repeat ng-app   ng-class  ng-bind  ng-blur  ng-click  ng-hide  ng-show
+
+13.为什么使用angularjs？–孙晶1510A
+
+
+模块化和复用需求。
+模块化：随着代码规模越来越大，切分职责是大势所趋，还有为了后期维护方便，修改一块功能不影响其他功能。
+复用，因为很多逻辑是一样的。
+
+14.AngularJS和JavaScript的不同点是什么？–孙晶1510A
+
+
+1）与 JavaScript 表达式不同，AngularJS 表达式可以写在 HTML 中。
+2）与JavaScript 表达式不同，AngularJS 表达式不支持条件判断，循环及异常。
+3）与 JavaScript 表达式不同，AngularJS 表达式支持过滤器。
+
+15.
+什么是 AngularJS？–孙晶1510A
+
+AngularJS  诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVVM、模块化、自动化双向数据绑定、语义化标签、依赖注入等
+AngularJS 使得开发现代的单一页面应用程序（SPAs：Single Page Applications）变得更加容易。
+AngularJS 把应用程序数据绑定到 HTML 元素。
+AngularJS 可以克隆和重复 HTML 元素。
+AngularJS 可以隐藏和显示 HTML 元素。
+AngularJS 可以在 HTML 元素"背后"添加代码。
+AngularJS 支持输入验证。
+
+16.
+ng-app 指令定义了什么？–郝清1510A
+
+ng-app 指令定义了 AngularJS 应用程序的 根元素。
+
+
+
+17.
+ng-init 指令定义了什么？–郝清1510A 
+ng-init 指令为 AngularJS 应用程序定义了 初始值。
+
+
+18.
+ng-model 指令定义了什么？–郝清1510A 
+ng-model 指令 绑定 HTML 元素 到应用程序数据。
+
+
+19.
+restrict 值可以是什么: –郝清1510A 
+E 作为元素名使用
+A 作为属性使用
+C 作为类名使用
+M 作为注释使用
+
+
+
+20.
+AngularJS Scope(作用域)是什么？–郝清1510A 
+Scope(作用域) 是应用在 HTML (视图) 和 JavaScript (控制器)之间的纽带。
+Scope 是一个对象，有可用的方法和属性。
+Scope 可应用在视图和控制器上。
+
+
+21. 
+向指令怎么添加过滤器？-黄磊1510A
+过滤器可以通过一个管道字符（|）和一个过滤器添加到指令中。
+
+
+22.
+什么是服务？-黄磊1510A
+ 
+在 AngularJS 中，服务是一个函数或对象，可在你的 AngularJS 应用中使用。
+
+
+23.
+为什么使用服务? -黄磊1510A
+
+$http 是 AngularJS 应用中最常用的服务。服务向服务器发送请求，应用响应服务器传送过来的数据。
+
+
+24.
+$http 服务是什么？-黄磊1510A
+$http 是 AngularJS 应用中最常用的服务。 服务向服务器发送请求，应用响应服务器传送过来的数据。
+
+
+25、AngularJs程序分为3部分：模板，表现层逻辑，数据（model）。-黄磊1510A
+
+
+
+     模板：我们用html，css写的ui视图代码，其中包含AngularJs的指令，表达式，并最终会被AngularJs编译机制编译为附加在dom树上。AngularJs的指令（directive）可以由我们自由扩展。
+
+    表现层逻辑：包括应用程序逻辑和行为。用javascript定义作为视图控制器逻辑。在AngularJs作为MVC框架，在控制器中我们无需添加对于dom级的事件监听，这些在AngularJs中已经内置了。在ui节点dom事件发生后AngularJs会自动转到scope上的某个行为（Action）逻辑。
+
+     数据：视图对象（viewobject）需要被AngularJs Scope（1.0中作为service出现）引用，可以使任何类型的javascript对象，数组，基本类型，对象。并且AngularJs会自动异步更新模型，即在ui发生改变的时他会自动刷新模型（mode），反之在模型发生改变的时候也会自动刷新ui。在这里我们不需要定义形如getter，setter的一些列方法。
+
+
+
+26、MVC核心：Model(模型)，View(UI)，Controller(控制器)-1510A李凯东
+
+    Model：数据展现的对象模型，例如一个列表页HTML对象的模型/数据库中表模型
+    View：UI，Web页面中就是HTML
+    Controller：处理/加工Model
+它们的工作模型应该是：Controller=>Model=>View
+
+
+
+27、消息推送有两种形式：a.服务端直接推送；b.客户端推送。-1510A李凯东
+
+区别在于，服务端推送是在持久化数据之后便可以直接把消息推送给相关人；
+而客户端推送是持久化数据之后，客户端根据返回值的情况，使用SignalR的JS方法调用服务端的推送功能。我使用的是服务器端直接推送数据，因为在持久化数据之后就完全可以根据业务通知相关人，如果返回到前台之后再调用服务端的推送方法只是多此一举。
+
+
+28、原理-1510A李凯东
+
+AngularJS 是通过构造函数的参数名字来推断依赖服务名称的，通过 toString() 来找到这个定义的 function 对应的字符串，然后用正则解析出其中的参数（依赖项），再去依赖映射中取到对应的依赖，实例化之后传入。
+
+
+29、表达式 {{yourModel}}是如何工作的？-1510A李凯东
+
+它依赖于 $interpolation服务，在初始化页面html后，它会找到这些表达式，并且进行标记，于是每遇见一个{{}}，则会设置一个$watch。而$interpolation会返回一个带有上下文参数的函数，最后该函数执行，则算是表达式$parse到那个作用域上。
+
+
+30、Angular中的digest周期是什么？-1510A李凯东
+
+每个digest周期中，angular总会对比scope上model的值，一般digest周期都是自动触发的，我们也可以使用$apply进行手动触发。
+
+
+31、 列出至少三种实现不同模块之间通信方式？-1510A黄磊
+
+     1、Service
+
+     2、events,指定绑定的事件
+
+     3、使用 $rootScope
+
+     4、controller之间直接使用$parent, $$childHead等
+
+     5、directive 指定属性进行数据绑定
+
+
+32、什么时候该用AngularJS-1510A黄磊
+
+
+AngularJS是一个 MV* 框架，最适于开发客户端的单页面应用。它不是个功能库，而是用来开发动态网页的框架。它专注于扩展HTML的功能，提供动态数据绑定（data binding），而且它能跟其它框架（如jQuery）合作融洽。
+
+如果你要开发的是单页应用，AngularJS就是你的上上之选。Gmail、Google Docs、Twitter和Facebook这样的应用，都很能发挥AngularJS的长处。但是像游戏开发之类对DOM进行大量操纵、又或者单纯需要 极高运行速度的应用，就不是AngularJS的用武之地了
+
+---------------------------------------------------------------------------1510B
+
+           ABOUT  BOM        ——张津硕
+1. 什么是BOM？		——张津硕					
+
+BOM是browser object model的缩写，简称浏览器对象模型
+	BOM提供了独立于内容而与浏览器窗口进行交互的对象
+	由于BOM主要用于管理窗口与窗口之间的通讯，因此其核心对象是window
+	BOM由一系列相关的对象构成，并且每个对象都提供了很多方法与属性
+	BOM缺乏标准，JavaScript语法的标准化组织是ECMA，DOM的标准化组织是W3C
+	BOM最初是Netscape浏览器标准的一部分
+
+2  BOM由那些对象构成？ ——张津硕
+答：
+1、window对象，前面也说过，它是JavaScript的最顶层对象，其它的BOM对象都是windows对象的属性；
+2、document对象表示浏览器中加载页面的文档对象；
+3、location对象包含了浏览器当前的URL信息；
+4、navigator对象包含了浏览器本身的信息；
+5、screen对象包含了客户端屏幕及渲染能力的信息；
+6、history对象包含了浏览器访问网页的历史信息。
+7、全局对象
+
+3  全局对象包括那些？    ——张津硕
+答：1.cookie （web存储分为 cookie和 localstorage / sessionstorag） 
+ 2.localstorage / sessionstorag  3.ajax 4.flie对象  5flie对象 
+
+ 
+4 .    cookie  和 .localstorage / sessionstorag  有什么区别？都是怎么运用？      ——张津硕
+ 答： 区别：1.		cookie储存空间小，不适合大量存储；
+            2.		Localstorage   数据将一直存放在手机缓存中，直到用户清理缓存    优点就是在本网站跳转，数据不会销毁
+           3.		 sessionStorage 	本页面关闭时，销毁存储的数据   
+
+cookie 的运用{
+document.cookie = "user = sdfsd,password = 1235;expires=date ";
+var a = document.cookie;
+console.log(a);
+设置cookie,cookie的值分为三个部分，
+			//		第一部分为要设置的字符串;
+			//		第二部分为cookie到期时间,过期时间仅支持格林威治时间格式，所以使用前必须通过toGMTString()方法转换时间格式
+			//		第三部分为cookie的路径
+			//		之间用";"分隔
+			// 		格式 document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/";
+			//		当超过过期时间，cookie将被删除
+}
+.localstorage / sessionstorag {
+//定义一个对象
+var a = {
+a1: 123,
+a2: 345,
+a3: 456
+}
+	a = JSON.stringify(a); //JSON对象提供的parse和stringify将其他数据类型转化成字符串 
+	localStorage.a = "dddd"; //存储一个字符串
+	localStorage.b = 55; //存储一个数字
+localStorage.c = arr; //存储一个数组
+	localStorage.d = a; //存储一个对象	
+	localStorage.f = false; //存储一个布尔值
+	//所有数据都只能被当作字符串存储，不论之前存储的是什么格式，都会被转换为字符串
+	var tex1 = localStorage.a;
+var tex2 = localStorage.b;
+	var tex3 = localStorage.c;
+var tex4 = JSON.parse(localStorage.d); //将字符串重新转换为对象 				
+	var tex5 = localStorage.f;
+
+	console.log(tex1); //显示字符串
+	console.log(tex2); //显示一个数字字符串
+console.log(tex3); //显示一个数组字符串
+	console.log(tex4.a2); //显示一个对象,因为在上面一步中，对字符串进行了格式转换
+	console.log(tex5); //显示一个布尔值字符串
+}
+5.	BOM下面的window有什么功能？
+——张津硕
+window.close(); //关闭窗口 
+ 
+window.alert("message"); //弹出一个具有OK按钮的系统消息框，显示指定的文本 
+ 
+window.confirm("Are you sure?"); //弹出一个具有OK和Cancel按钮的询问对话框，返回一个布尔值 
+ 
+window.prompt("What's your name?", "Default"); //提示用户输入信息，接受两个参数，即要显示给用户的文本和文本框中的默认值，将文本框中的值作为函数值返回 
+ 
+window.status //可以使状态栏的文本暂时改变 
+ 
+window.defaultStatus //默认的状态栏信息，可在用户离开当前页面前一直改变文本 
+ 
+window.setTimeout("alert('xxx')", 1000); //设置在指定的毫秒数后执行指定的代码，接受2个参数，要执行的代码和等待的毫秒数 
+ 
+window.clearTimeout("ID"); //取消还未执行的暂停，将暂停ID传递给它 
+ 
+window.setInterval(function, 1000); //无限次地每隔指定的时间段重复一次指定的代码，参数同setTimeout()一样 
+ 
+window.clearInterval("ID"); //取消时间间隔，将间隔ID传递给它 
+ 
+window.history.go(-1); //访问浏览器窗口的历史，负数为后退，正数为前进 
+ 
+window.history.back(); //同上 
+ 
+window.history.forward(); //同上 
+ 
+window.history.length //可以查看历史中的页面数  
+
+
+
+
+          张瑶瑶
+
+1.screen对象，Screen 对象中存放着有关显示浏览器屏幕的信息。  ——张瑶瑶
+常见的属性有：
+○1availHeight:返回显示屏幕的高度  document.write("Available Height: " + screen.availHeight);
+○2availWidth:返回显示屏幕的宽度  document.write("Available Width: " + screen.availWidth);
+○3colorDepth:返回目标设备或缓冲器上的调色板的比特深度。document.write(screen.colorDepth);
+○4height:返回屏幕区域的实际高度  document.write(screen.height);
+○5width:返回屏幕区域的实际宽度  document.write(screen.width);
+
+
+2.Navigator对象，包含的属性描述了正在使用的浏览器   ——张瑶瑶
+○1appName:返回浏览器的名称。 txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+○2appVersion:返回浏览器的平台和版本信息。  txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+○3platform:返回运行浏览器的操作系统平台。  txt+= "<p>Platform: " + navigator.platform + "</p>";
+○4appCodeName:返回浏览器的代码名。  txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+
+
+3.History对象，———张瑶瑶
+其实就是来保存浏览器历史记录信息。
+其属性有：length，返回浏览器历史列表中的 URL 数量。
+其方法有：
+○1back()加载 history 列表中的前一个 URL。 
+function goBack(){
+window.history.back()
+}
+○2forward()加载 history 列表中的下一个 URL。
+function goForward(){
+window.history.forward()
+}
+○3go()加载 history 列表中的某个具体页面。
+function goForward(){
+window.history.go()
+}
+
+
+
+4.Location对象，  ———张瑶瑶
+Location 对象是 Window 对象的一个部分，可通过 window.location 属性来访问。
+其属性：
+○1hash:设置或返回从井号 (#) 开始的 URL（锚）。  document.write(location. hash);
+○2host:设置或返回主机名和当前 URL 的端口号  document.write(location. host);
+○3hostname:设置或返回当前 URL 的主机名。  document.write(location. hostname);
+○4href:设置或返回完整的 URL。  document.write(location.href);
+○5pathname:设置或返回当前 URL 的路径部分  document.write(location.pathname);
+○6port:设置或返回当前 URL 的端口号  document.write(location. port);
+○7protocol:设置或返回当前 URL 的协议。  document.write(location. protocol);
+○8search:设置或返回从问号 (?) 开始的 URL（查询部分）。  document.write(location. Search();
+
+其方法：
+○1assign()加载新的文档。
+function newDoc(){
+window.location.assign("http://www.w3cschool.cc")
+}
+○2reload()重新加载当前文档。 
+			location.reload(forceGet) 
+○3replace()用新的文档替换当前文档。
+function replaceDoc(){ 
+    window.location.replace("http://www.runoob.com") 
+}
+
+
+5.window.setTimeout("javascript 函数",毫秒数); ——张瑶瑶
+setTimeout() 方法会返回某个值。在上面的语句中，值被储存在名为 t 的变量中。假如你希望取消这个 setTimeout()，你可以使用这个变量名来指定它。
+
+setTimeout() 的第一个参数是含有 JavaScript 语句的字符串。这个语句可能诸如 "alert('5 seconds!')"，或者对函数的调用，诸如 alertMsg()"。
+
+第二个参数指示从当前起多少毫秒后执行第一个参数。
+setTimeout(function(){alert("Hello")},3000);
+
+6.window函数，窗体控制函数(to是绝对的意思(从整体而言)，by是相对的意思(从原先的位置而言)    ——张瑶瑶
+  	○1moveBy()函数    移动
+moveBy(5，6)  窗体向右移动5像素，向下移动6像素
+x(水平的移动像素数)     y(垂直的移动像素数)
+○2moveTo()函数    移动到
+	moveTo(5，6)   移动窗体左上角到相对于屏幕左上角的(5,6)点
+    x(从屏幕左上角水平向左移动x个像素数)    y(从屏幕左上角垂直向下移动y个像素数)
+○3resizeBy()函数   调整大小(x,y不能为负)
+	resizeBy(5,6)   窗体宽度扩大5像素，高度扩大6像素
+	x( 窗体宽度调整的像素数)     y(窗体高度调整的像素数)   
+○4resizeTo()函数  调整大小到(x,y不能为负)
+resizeBy(50,60)  窗体宽度调整为50像素，高度调整为60像素
+x( 窗体宽度的像素数)     y(窗体高度的像素数)   
+7.状态栏属性   ___张瑶瑶
+	○1window.defaultStatus   属性可设置或返回窗口状态栏中的默认文本
+		window.defaultStatus="这是默认状态栏文本!!";
+○2window.status   属性可设置或返回窗口状态栏中的文本。
+		window.status="一些文本在状态栏!"; 
+1 。 如何检测用户屏蔽了弹窗 ？ 如果是浏览器本省屏蔽的弹窗那么window.open()通常会返回null,而如果是浏览器拓展屏蔽了弹窗通常window.open()将会抛出错误.所以应该使用try-catch包围.
+——沈文豪
+var blocked = false;
+try { var wroxWin = window.open(' http://www.youku.com')
+if (wroxWin === null) {
+blocked = true 
+} 
+} catch (ex) {
+blocked = true
+} if (blocked) {
+ console.log('this popup was blocked')
+}
+
+2.window函数，窗体控制函数(to是绝对的意思(从整体而言)，by是相对的意思(从原先的位置而言) ———沈文豪
+  	○1moveBy()函数    移动
+moveBy(5，6)  窗体向右移动5像素，向下移动6像素
+x(水平的移动像素数)     y(垂直的移动像素数)
+○2moveTo()函数    移动到
+	moveTo(5，6)   移动窗体左上角到相对于屏幕左上角的(5,6)点
+    x(从屏幕左上角水平向左移动x个像素数)    y(从屏幕左上角垂直向下移动y个像素数)
+○3resizeBy()函数   调整大小(x,y不能为负)
+	resizeBy(5,6)   窗体宽度扩大5像素，高度扩大6像素
+	x( 窗体宽度调整的像素数)     y(窗体高度调整的像素数)   
+○4resizeTo()函数  调整大小到(x,y不能为负)
+resizeBy(50,60)  窗体宽度调整为50像素，高度调整为60像素
+x( 窗体宽度的像素数)     y(窗体高度的像素数)   
+3.状态栏属性   ————沈文豪
+	○1window.defaultStatus   属性可设置或返回窗口状态栏中的默认文本
+		window.defaultStatus="这是默认状态栏文本!!";
+○2window.status   属性可设置或返回窗口状态栏中的文本。
+		window.status="一些文本在状态栏!"; 
+ 
+
+程国金
+1.bom的对象构成
+	1、window对象，前面也说过，它是JavaScript的最顶层对象，其它的BOM对象都是windows对象的属性；
+	2、document对象表示浏览器中加载页面的文档对象；
+	3、location对象包含了浏览器当前的URL信息；
+	4、navigator对象包含了浏览器本身的信息；
+	5、screen对象包含了客户端屏幕及渲染能力的信息；
+	6、history对象包含了浏览器访问网页的历史信息。
+
+2. bom和dom的区别   ————程国金
+
+	BOM是浏览器对象模型，用来获取或设置浏览器的属性、行为，例如：新建窗口、获取屏幕分辨率、浏览器版本号等。
+	DOM是文档对象模型，用来获取或设置文档中标签的属性，例如获取或者设置input表单的value值。
+
+
+3. window对象中常用的方法（）  ————程国金
+
+
+	alert(text) 创建一个警告对话框，显示一条信息
+	blur() 将焦点从窗口移除    ————程国金
+
+		当元素失去焦点是发生blur事件
+例：$("input").blur(function(){
+$(this).css("background-color","#ffffff");
+});
+	clearInterval(interval) 清除之前设置的定时器间隔    ————程国金
+
+例：<script>
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer()
+{
+    var d=new Date();
+    var t=d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML=t;
+}
+function myStopFunction()
+{
+    clearInterval (myVar);
+}
+</script>
+	clearTimeOut(timer) 清除之前设置的超时    ————程国金
+
+var myVar;
+function myFunction()
+{
+    myVar=setTimeout(function(){alert("Hello")},3000);
+}
+
+function myStopFunction()
+{
+clearTimeOut (myVar);
+}
+	confirm() 创建一个需要用户确认的对话框    ————程国金
+
+var r= confirm ("Press a button");
+if (r==true)
+ {
+     x="You pressed OK!";
+ }
+else
+ {
+     x="You pressed Cancel!";
+ }
+	focus() 将焦点移至窗口   ————程国金
+
+当元素失去焦点是发生focus事件
+例：$("input").focus(function(){
+$(this).css("background-color","#cccccc");
+});
+	prompt(text,defaultInput) 创建一个对话框要求用户输入信息     ————程国金
+
+		当提示框出现后，用户需要输入某个值，然后点击确认或取消按钮才能继续操纵。
+如果用户点击确认，那么返回值为输入的值。如果用户点击取消，那么返回值为 null。
+例：
+		var person=prompt("Please enter your name","Harry Potter");
+		if(person!=null && person!=""){
+			x="Hello " + person + "! How are you today?";
+		}
+	
+4. 什么是BOM 浏览器对象模型？  ————程国金
+
+提供了独立于内容而与浏览器窗口进行交互的对象。描述了与浏览器进行交互的方法和接口，可以对浏览器窗口进行访问和操作，譬如可以弹出新的窗口，改变状态栏中的文本，对Cookie的支持，IE还扩展了BOM，加入了ActiveXObject类，可以通过js脚本实例化ActiveX对象等等）
+5.BOM部分主要是针对浏览器的内容，最常用的是什么对象？     ————程国金
+
+window对象和location对象
+  屠甜甜
+1.   BOM中window的尺寸?
+	有三种办法能够确定浏览器窗口的尺寸（浏览器的视口，不包括工具栏和滚动条）
+对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：
+window.innerHeight - 浏览器窗口的内部高度 
+window.innerWidth - 浏览器窗口的内部宽度 
+对于 Internet Explorer 8、7、6、5：
+		document.documentElement.clientHeight
+		document.documentElement.clientwidth
+	或者
+		document.body.clientHeight
+document.body.clientwidth
+	实例：
+var w=window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+alert(w);
+var h=window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+alert(H);
+
+2、列举浏览器对象模型BOM里常用的至少4个对象，并列举window对象的常用方法至少5个?   ——屠甜甜
+
+对象：window   document   location   screen  history  navigator
+方法：alert()  confirm()  prompt()  open()  close()
+什么是 Cookies？				1510A   屠甜甜
+Cookies 是存储在客户端计算机上的文本文件，并保留了各种跟踪信息
+例子：
+设置cookie,cookie的值分为三个部分，
+					第一部分为要设置的字符串;
+					第二部分为cookie到期时间,过期时间仅支持格林威治时间格式，所以使用前必须通过toGMTString()方法转换时间格式
+					第三部分为cookie的路径之间用";"分隔
+				格式 document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/";
+				当超过过期时间，cookie将被删除
+			var d = new Date();
+d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000)); 
+设置过期时间 = 当前时间的毫秒数 + 30天以后的毫秒数
+			var expires = "expires=" + d.toGMTString();		
+			document.cookie = "user = angel;" + expires;
+设置cookie存储的值，并设置过期时间		
+			var coo = document.cookie;		获取cookie	
+			console.log(d); 			未被转换的时间
+			console.log(d.toGMTString()); 	转换后的时间
+			console.log(coo);				显示cookie
+4  .javascript BOM是什么及BOM和DOM的区别？  ——屠甜甜
+BOM是浏览器对象模型，DOM是文档对象模型，前者是对浏览器本身进行操作，而后者是对浏览器（可看成容器）内的内容进行操作。
+5   Window 对象表示一个浏览器窗口或一个框架。常见方法有什么 ?    ——屠甜甜
+(1)窗口的打开与关闭：
+window.open(URL,name,features,replace),四个都为可选参数
+URL：新窗口中显示的文档的 URL
+name：声明了新窗口的名称
+	例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function checKmin(){
+					document.write(myWindow.name)
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="What’s the name of 'myWindow'" onclick="checkWin()" />
+</body>
+</html>
+
+features：声明了新窗口要显示的标准浏览器的特征
+
+replace：布尔值，true - URL 替换浏览历史中的当前条目。 false - URL 在浏览历史中创建新的条目。
+ （2） window.close()关闭当前窗口
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function closeWin(){
+					myWindow.close();
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="Close 'myWindow'" onclick="closeWin()" />
+</body>
+</html>
+沈文豪
+（1）改变窗口的位置和大小：
+moveTo(x,y) 方法可把窗口的左上角移动到一个指定的坐标。
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function Movewin(){
+					myWindow.moveTo(50,50)
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="Move 'myWindow'" onclick=" Movewin ()" />
+</body>
+</html>
+
+moveBy(x,y) 方法可相对窗口的当前坐标把它移动指定的像素。
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function Movewin(){
+					myWindow.moveBy(50,50)
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="Move 'myWindow'" onclick=" Movewin ()" />
+</body>
+</html>
+
+	
+resizeTo(width,height) 方法用于把窗口大小调整为指定的宽度和高度。
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function  resizeWindow(){
+					window.resizeTo(600,200)
+}
+
+</script>
+</head>
+<body>
+<input type="button" value="Resize 'myWindow'" onclick=" resizeWindow ()" />
+</body>
+</html>
+
+resizeBy(x,y) 方法用于根据指定的像素来调整窗口的大小。
+ 例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function  resizeWindow(){
+					window.resizeBy(-100,-100)
+}
+
+</script>
+</head>
+<body>
+<input type="button" value="Resize 'myWindow'" onclick=" resizeWindow ()" />
+</body>
+</html>
+
+(3)状态栏，通过设置window对象的status属性和defaultStatus属性来改变状态栏显示的基本信息。
+如： window.defaultStatus = "php点点通";
+ 
+(4)定时设定,定时器可以在特定的时间内执行特定的函数
+setTimeout(epress,time) 方法用于在指定的毫秒数后调用函数或计算表达式。
+clearTimeout(timeID)停止已经启动的定时器
+
+setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+clearInterval()停止使用setInterval() 方法
+
+(5)Navigator对象，包含的属性描述了正在使用的浏览器
+ 
+(6)History对象，其实就是来保存浏览器历史记录信息。
+ 
+(7)Location对象，Location 对象是 Window 对象的一个部分，可通过 window.location 属性来访问。
+
+
+
+
+

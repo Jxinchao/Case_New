@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html  ng-app="my">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<style type="text/css" media="screen">
+		li{
+			list-style:none;
+		}
+	</style>
+</head>
+<body>
+	<div ng-controller="a">
+		<ul>
+			<li ng-repeat="b in data | orderBy:aa:bb">
+				{{b.date +'......'+ b.age + '......' +b.name + '.......' + b.pic + '.......'+b.place + '....'+b.press}}
+			</li>
+		</ul>
+		<button ng-click="aa='age'">点击排序</button>
+	</div>
+	<script type="text/javascript">
+	 angular.module("my",[]).controller("a",["$scope","$http",function($scope,$http){
+			$scope.cc="a";
+			$scope.bb=false;
+			$http({
+                 url:"http://localhost:8888/user/list",
+                 method:"get"
+			})
+			.then(function(e){
+               	$scope.data=e.data.data;
+			},function(){
+                alert("error")
+			})
+		}])
+
+	</script>
+</body>
+</html>

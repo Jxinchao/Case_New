@@ -1,0 +1,106 @@
+let  -  变量允许重新赋值，不允许重复声明，可以防止变量泄露
+
+const -  常量  变量不允许重复声明，也不允许重复赋值  
+
+
+
+
+字符串的方法：
+
+charCodeAt   //获取编码
+
+String.fromCharCode(编码)  //解析编码
+
+\u4e00 - \u9fa5  判断中文的编码
+
+ for(let i=0x4e00;i<0x9fa5;i++){
+}
+
+document.onkeydown = function(e){
+	e.keycode
+}
+
+repeat 　接受1个参数，参数就是重复几次字符串
+
+includes  有点像indexOf【告诉你第几个】  会返回一个布尔值true false 
+let a ='332334df'  a.includes   两个参数，一个是查找什么 二个是从哪里开始查找
+
+window.navigator.userAgent   检测浏览器
+
+startsWith  起始位置  开始如果是你要的参数就是true 反之为false 
+参数两个：参数一就是开始的东西 参数二从哪开始
+
+endsWith  结束位置  参数一是字符串的东西，参数二是从第几位结束
+
+
+es6的字符串  变成了``  
+
+
+2.1字符串 模板
+
+${}
+
+2.2数组方法 find 
+
+[1,2,3,4,5,6,7].find(function(x,y){ // 参数一：循环出来 数组内容，参数二：循环出来 数组下标，参数三：数组所有内容
+   console.log(x,y)
+})
+
+x(函数名) = x（形参） => x（函数体） 
+
+x = (x,y) => {
+  console.log(x,y)
+}
+x``;
+
+延展参数： 如果我传了参数那么 就执行我的参数 如果我没传参数 那么参数就为我延展的值
+
+延展参数 可以延展任何类型 array string number json 
+
+扩展运算符 函数中的参数用...x
+
+代表 实参为数组 进来的 X变量 
+
+在数组中可以起到合并数组的作用
+
+生成器函数   可以做很多事情
+
+function* 函数名(){}
+
+//执行的时候  函数名.next()
+
+function* show(){
+	yield function(){
+		alert(1)
+	}
+}
+var k = show()
+
+k.next().value()
+k.nexr().value()
+
+yield  有点类似于return
+
+{}  可以有一个set 和 get 方法   方法后 放名字  
+
+如果执行 这个名字 不赋值的情况下 会走get    一旦赋值就是走set   set最高支持一个参数
+
+
+
+{
+
+	alert(1);  //块级作用域
+}
+
+
+变量泄露
+
+for(var i = 0 ;i <10 ;i++){
+}
+
+console.log(i) //可以获取到i
+
+for(let i = 0;i<10;i++){
+
+}
+console.log(i) //获取不到   

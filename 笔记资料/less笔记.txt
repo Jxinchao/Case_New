@@ -1,0 +1,36 @@
+安装grunt    npm install grunt --save-dev
+安装less       npm install grunt-contrib-less --save-dev
+安装watch   npm install grunt-contrib-watch --save-dev
+在gruntfile.js中
+	grunt.initConfig({
+   		 less: {
+      		  compile: {
+         		   files: {
+         		       'css/style.css': 'css/style.less'
+        		    }
+      		  }
+   		 },
+   		 watch: {
+      		  scripts: {
+          		  files: ['css/style.less'],
+           		 tasks: ['less']
+    		    }
+ 		   }
+		});
+之后：
+grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
+    if (target === 'dist') {
+      return grunt.task.run(['build', 'connect:dist:keepalive']);
+    }
+
+    grunt.task.run([
+      'clean:server',
+      'wiredep',
+      'concurrent:server',
+      'postcss:server',
+      'connect:livereload',
+      'less',//加入less，注意顺序
+      'watch'
+    ]);
+  });
+之后grunt serve，就ok啦，哈哈哈~~~

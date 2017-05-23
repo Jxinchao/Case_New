@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/base64.js"></script>
+</head>
+<body>
+	用户名：<input type="text" name="" id="uname" />
+	密码：<input type="password" id="pwd"/>
+	<button>注册</button>
+	<script type="text/javascript">
+		var base = new Base64();
+		$('button').click(function(){
+			$.ajax({
+		        type:'post',
+		        url:'http://192.168.1.106:8005/mysql/register',
+		        // data:{uname:$('#uname').val(),pwd:$('#pwd').val(),eml:$('#eml').val()},
+		        data:{username:$('#uname').val(),password:$('#pwd').val(),email:$('#eml').val()},
+		        success:function(e){
+		            console.log(e)
+		            if(e.flag == 1){
+		                alert('注册成功')
+		            }else if(e.flag == 2){
+		                alert('用户名已存在')
+		            }else{
+		                alert('未知错误')
+		            }
+		        },error:function(){
+		            aler('error')
+		        }
+		    })
+			// $.ajax({
+			// 	type:'post',
+			// 	url:'http://localhost:8888/mysql/login',
+			// 	data:{
+			// 		uname:base.encode($('#uname').val()),
+			// 		pwd:base.encode($('#pwd').val())
+			// 	},
+			// 	// url:'http://192.168.1.121:8005/tb/list',
+			// 	success:function(e){
+			// 		console.log(e)
+			// 		if(e.flag == 1){
+			// 			alert('注册成功')
+			// 		}
+			// 		// console.log(e[0].uname)
+			// 		// $('div').text(e[0].uname)
+			// 	},error:function(){
+			// 		alert(1)
+			// 	}
+			// })
+		})
+	</script>
+</body>
+</html>

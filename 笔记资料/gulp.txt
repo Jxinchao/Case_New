@@ -1,0 +1,26 @@
+gulp   https://www.npmjs.com/package/gulp
+
+运行速度更快，guipfile.js 内容更简洁
+	执行 npm init   创建package.json
+		↓
+	全局安装  npm install -g gulp
+		↓
+	npm install gulp --save-dev
+		↓
+	npm i --save-dev gulp
+		↓
+	
+		↓
+	创建gulpfile.js
+		↓
+	ES6新语法
+	var gulp = require('gulp');
+	var cssmin = require('gulp-cssmin')
+	var rename = require('gilp-rename')
+	gulp.task('coco', function() {
+  		
+	});
+
+
+yo 
+	yo→ganerator→gulp-angular→

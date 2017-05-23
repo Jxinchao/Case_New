@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			body,html{
+				height:100%;
+			}
+			/*------------banner--------------*/
+			.banner {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.banner .swiper-container1{
+				width: 100%;
+				height: 100%;
+				position:relative;
+			}
+			.banner .swiper-slide::before{
+				content: "";
+				width: 100%;
+				height: 100%;
+				background: url(img/pattern_overlay.png);
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+			.banner .swiper-slide {
+			    background-position: center;
+			    background-size: cover;
+			}
+			
+			.banner ul {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				color: #fff;
+				background: #000;
+			}
+			.banner span {
+				position: absolute;
+				top: 50%;
+				margin-top: -50px;
+				cursor: pointer;
+				opacity: 0.7;
+				z-index: 3;
+				display: none;
+			}
+			.banner .prev,.banner .prev:hover,.banner .next,.banner .next:hover{
+				width: 37px;
+				height: 70px;
+			}
+			.banner .prev {
+				left: 5%;	
+				background: url(img/large_left.png) no-repeat 0 0;
+			}
+			.banner .prev:hover {	
+				background: url(img/large_left.png) no-repeat 0 -70px;
+			}
+			.banner .next {
+				right: 5%;	
+				background: url(img/large_right.png) no-repeat 0 0;
+			}
+			.banner .next:hover {	
+				background: url(img/large_right.png) no-repeat 0 -70px;
+			}
+			.banner ul li {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+			.banner ul li:first-of-type {
+				background: url(img/banner3.jpg) no-repeat center top;
+				background-size: cover;
+			}
+			.banner ul li:nth-of-type(2) {
+				background: url(img/banner4.jpg) no-repeat center top;
+				background-size: cover;
+			}
+			.banner ul li:nth-of-type(3) {
+				background: url(img/banner3.jpg) no-repeat center top;
+				background-size: cover;
+			}
+			.banner ul li:last-of-type {
+				background: url(img/banner4.jpg) no-repeat center top;
+				background-size: cover;
+			}
+			.banner ul li::before {
+				content: "";
+				width: 100%;
+				height: 100%;
+				background: url(img/pattern_overlay.png);
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.banner dl {
+				width: 820px;
+				height: 262px;
+				position: absolute;
+				left: 50%;
+				margin-left: -407px;
+				top: 50%;
+				margin-top: -130px;
+				text-align: center;
+			}
+			.banner dt {
+				line-height: 75px;
+				font-size: 7.2rem;
+				color: #fff;
+				text-align: center;
+				font-weight: 700;
+				font-family: 'open_sansbold';
+				font-size:90px;
+			}
+			.banner .line {
+				font-size: 2.5rem;
+				line-height: 82px;
+				color: #fff;
+				position: absolute;
+				left: -200%;
+				top: 100px;
+				opacity: 1;
+				-webkit-transition: all 0.1s;
+				-moz-transition: all 0.1s;
+				-ms-transition: all 0.1s;
+				-o-transition: all 0.1s;
+			}
+			.banner .line i {
+				position: absolute;
+				width: 25%;
+				height: 2px;
+				background: #fff;
+				margin-top: 32px;
+			}
+			.banner .line i.left {
+				left: 5%;
+			}
+			.banner .line i.right {
+				right: 5%;
+			}
+			.banner .line p {
+				float: left;
+				width: 280px;
+				margin: 0 270px;
+				padding-top: 20px;
+				font-family: 'open_sanslight';
+				line-height: 30px;
+				height: 62px;
+				text-transform: uppercase;
+				font-size:24px;
+			}
+			.move .line {
+				animation: moveFont 6s !important;
+				-moz-animation: moveFont 6s !important;
+				-webkit-animation: moveFont 6s !important;
+				-ms-animation: moveFont 6s !important;
+				-o-animation: moveFont 6s !important;
+			}
+			@-moz-keyframes moveFont {
+				0% {opacity: 0;left: 100%;}
+				20% {opacity: 0;left: 100%;}
+				30% {opacity: 1;left: 0;}
+				90% {opacity: 1;left: 0;}
+				100% {opacity: 0;left: -100%;}
+			}
+			@-webkit-keyframes moveFont {
+				0% {opacity: 0;left: 100%;}
+				20% {opacity: 0;left: 100%;}
+				30% {opacity: 1;left: 0;}
+				90% {opacity: 1;left: 0;}
+				100% {opacity: 0;left: -100%;}
+			}
+			@-o-keyframes moveFont {
+				0% {opacity: 0;left: 100%;}
+				20% {opacity: 0;left: 100%;}
+				30% {opacity: 1;left: 0;}
+				90% {opacity: 1;left: 0;}
+				100% {opacity: 0;left: -100%;}
+			}
+			@-ms-keyframes moveFont {
+				0% {opacity: 0;left: 100%;}
+				20% {opacity: 0;left: 100%;}
+				30% {opacity: 1;left: 0;}
+				90% {opacity: 1;left: 0;}
+				100% {opacity: 0;left: -100%;}
+			}
+			@keyframes moveFont {
+				0% {opacity: 0;left: 100%;}
+				20% {opacity: 0;left: 100%;}
+				30% {opacity: 1;left: 0;}
+				90% {opacity: 1;left: 0;}
+				100% {opacity: 0;left: -100%;}
+			}
+			.banner dd a {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 108px;
+				height: 50px;
+				margin-left: -55px;
+				border: 1px solid #fff;
+				background: transparent;
+				color: #fff;
+				display: block;
+				line-height: 50px;
+				font-size: 1.2rem;
+				opacity: 1;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+			.banner dd a:hover {
+				background: #046eb8;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="banner item" id="index">
+			<ul>
+				<li style="display: block;" class="move">
+					<dl>
+						<dt>GMI</dt>
+						<dd class="line"> <i class="left"></i>
+							<p>一站式金融在线交易服务</p> <i class="right"></i>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>GMI</dt>
+						<dd class="line">
+							<i class="left"></i>
+							<p>高效稳定的外汇交易平台</p>
+							<i class="right"></i>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>GMI</dt>
+						<dd class="line">
+							<i class="left"></i>
+							<p>全自动化的ECN撮合交易</p>
+							<i class="right"></i>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>GMI</dt>
+						<dd class="line">
+							<i class="left"></i>
+							<p>极具竞争力的低浮动点差</p>
+							<i class="right"></i>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<span class="prev"></span>
+			<span class="next"></span>
+		</div>
+
+	</body>
+
+	<script src="js/jquery.min.js"></script>
+	<!--<script src="js/swiper.js"></script>-->
+	<script>
+		//banner图片切换
+	function banner() {
+		var index = 0;
+		var nextIndex;
+		var timmer = null;
+		var len = $(".banner ul li").length;
+
+		function autoPlay() {
+			timmer = setInterval(slider, 7000)
+		}
+
+		function slider() {
+			if(index == len) {
+				index = 0
+			}
+			nextIndex = index + 1;
+			if(index == len - 1) {
+				nextIndex = 0;
+			}
+			$(".banner ul li").eq(index).fadeOut(1000).removeClass("move");
+			$(".banner ul li").eq(nextIndex).fadeIn(1000).addClass("move");
+			index++;
+		}
+		$(".banner").hover(function() {
+			$(".banner span").fadeIn(300);
+		}, function() {
+			$(".banner span").fadeOut(300);
+		});
+		$(".banner .prev").click(function() {
+			if(index == 0) {
+				nextIndex = len - 1;
+			}
+			if(index == -1) {
+				index = len - 1;
+			}
+			nextIndex = index - 1;
+			$(".banner ul li").eq(index).fadeOut(1000).removeClass("move");
+			$(".banner ul li").eq(nextIndex).fadeIn(1000).addClass("move");
+			index--;
+			clearInterval(timmer);
+			autoPlay();
+		})
+		$(".banner .next").click(function() {
+			slider();
+			clearInterval(timmer);
+			autoPlay();
+		})
+		autoPlay();
+	};
+	banner();
+	//轮播图	
+
+//	var swiper = new Swiper('.swiper-container', {
+//		pagination: '.swiper-pagination',
+//		paginationClickable: true,
+//		effect: 'fade',
+//		spaceBetween: 30,
+//		autoplay: 5000,
+//		autoplayDisableOnInteraction: false //用户操作swiper之后，是否禁止autoplay。默认为true：停止。     
+//	});
+
+	</script>
+</html>

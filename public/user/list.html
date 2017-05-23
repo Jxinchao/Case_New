@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        th {
+            text-indent: 60px;
+        }
+        
+        td,
+        th {
+            text-indent: 30px;
+        }
+        
+        #pagecount {
+            width: 1200px;
+            height: 30px;
+            margin: 0 auto;
+            background: #F2F2F2;
+            padding-left: 400px;
+        }
+        
+        #pagecount span {
+            display: block;
+            float: left;
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" style="padding:0.5em 0em 2em;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><h1>List</h1><br><span>Traveling</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+                    <li><a href="login.html"><span data-hover="Home">Home</span></a></li>
+                    <li><a href="chart.html"><span data-hover="chart">chart</span></a></li>
+                    <!-- <li><a href="detail.html"><span data-hover="detail">detail</span></a></li> -->
+                    <li><a href="list.html"><span data-hover="list">list</span></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- /container-fluid -->
+    </nav>
+    <div style="width:1200px;margin:30px auto;">
+        <div class="col-lg-12">
+            <div class="main-box clearfix">
+                <header class="main-box-header clearfix">
+                    <h2 class="pull-left">Chain List</h2>
+                    <div class="filter-block pull-right">
+                        <div class="form-group pull-left">
+                            <input type="text" class="form-control" id="search" placeholder="Search...">
+                            <i class="fa fa-search search-icon"></i>
+                        </div>
+                        <a class="btn btn-primary pull-right" href="append.html">
+                            <i class="fa fa-eye fa-lg"></i>添加
+                        </a>
+                         <a class="btn btn-primary pull-right" onclick="btn()">
+                            <i class="fa fa-eye fa-lg"></i>搜索
+                        </a>
+                    </div>
+
+
+                </header>
+                <div class="main-box-body clearfix">
+                    <div class="table-responsive clearfix">
+                        <table class="table table-hover" style="background: #F2F2F2;">
+                            <thead>
+                                <tr>
+                                    <th><span>日期</span></th>
+                                    <th><span>面试人</span></th>
+                                    <th><span>面试公司</span></th>
+                                    <th><span>详情</span></th>
+                                    <th><span>修改</span></th>
+                                    <th><span>删除</span></th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div id="pagecount">
+
+    </div>
+    <script type="text/javascript">
+        if (sessionStorage.sor) {
+            var curPage = 1; //当前页面
+            var total, pageSize, totalPage;
+
+            function getData(page) {
+                $.ajax({
+                    type: 'get',
+                    url: 'http://localhost:8888/item/page',
+                    data: {
+                        pageNum: page
+                    },
+                    success: function (e) {
+                        $('tbody').empty();
+                        total = e.total; //总计数
+                        pageSize = e.pageSize; //每页显示条数
+                        curPage = page; //当前页
+                        totalPage = e.totalPage; //总页数;
+                        var html = ""
+                        for (var i = 0; i < e.list.length; i++) {
+                            html += '<tr><td>' + e.list[i].data + '</td><td>' + e.list[i].name + '</td><td>' + e.list[i].company + '</td><td><a href="javascript:;" class="detail" detail="' + e.list[i].id + '">详情</a></td><td><a href="javascript:;">修改</a></td><td><a href="javascript:;" class="span" del="' + e.list[i].id + '">删除</a></td><td></td></tr>';
+                        }
+                        $('tbody').append(html);
+
+                        //点击到详情页
+                        $('.detail').bind('click', function () {
+                            var detail = $(this).attr('detail');
+                            localStorage.bb = detail;
+                            window.location.href = "detail.html"
+                        })
+                        //点击删除
+                        $('.span').bind('click', function () {
+                            var cc = $(this).attr('del');
+                            $(this).parent().parent().remove();
+                            // $('tr').get(0).removeChild(this.parentNode)
+                            $.ajax({
+                                type: 'get',
+                                url: 'http://localhost:8888/item/del',
+                                data: {
+                                    id: cc
+                                },
+                                success: function (e) {
+                                    if (e.flag == 1) {
+                                        alert('del success');
+                                    } else {
+                                        alert('del error')
+                                    }
+                                },
+                                error: function () {
+                                    alert('error......')
+                                }
+                            })
+                        })
+                    },
+                    complete: function () {
+                        getPageBar();
+                    },
+                    error: function () {
+                        alert('error。。。')
+                    }
+                })
+            }
+
+
+            //获取分页条 
+            function getPageBar() {
+                //页码大于最大页数
+                if (curPage > totalPage) curPage = totalPage;
+                //页码小于1
+                if (curPage < 1) curPage = 1;
+                pageStr = '<span>共' + total + '条</span><span style="width: 100px;">当前' + curPage + '页/共' + totalPage + '条</span>';
+                //如果是第一页
+                if (curPage == 1) {
+                    pageStr += "<span>首页</span><span>上一页</span>";
+                } else {
+                    pageStr += "<span><a href='javascript:void(0)' onclick='fn(1)'>首页</a></span><span><a href='javascript:void(0)' onclick='fn(" + (curPage - 1) + ")'>上一页</a></span>";
+                }
+
+                //如果是最后页
+                if (curPage >= totalPage) {
+                    pageStr += "<span>下一页</span><span>尾页</span>";
+                } else {
+                    pageStr += "<span><a href='javascript:void(0)' onclick='fn(" + (parseInt(curPage) + 1) + ")'>下一页</a></span><span><a href='javascript:void(0)' onclick='fn(" + totalPage + ")'>尾页</a></span>";
+                }
+
+                $("#pagecount").html(pageStr);
+            }
+
+            $(function () {
+                getData(1);
+            });
+
+            function fn(page) {
+                if (page) {
+                    getData(page);
+                }
+            }
+
+
+        } else {
+            alert('请先登录')
+            window.location.href = 'login.html'
+        }
+
+
+
+        //去除空格
+        function trimStr(str){return str.replace(/(^\s*)|(\s*$)/g,"");}
+
+        //点击搜索
+        function btn(){
+	 		var a = $('#search').val();
+	 		var b = trimStr(''+ a +'');
+	 		console.log(b)
+	 		$.ajax({
+		 		type:'get',
+		 		url:'http://localhost:8888/item/search',
+		 		data:{
+		 			u:b
+		 		},
+	 			success:function(e){
+	 				//alert(2)
+	 				$('tbody').empty();
+	 				var html = '';
+						html = '<tr><td>' + e.data + '</td><td>' + e.name + '</td><td>' + e.company + '</td><td><a href="javascript:;" class="detail" detail="' + e.id + '">详情</a></td><td><a href="javascript:;">修改</a></td><td><a href="javascript:;" class="span" del="' + e.id + '">删除</a></td><td></td></tr>';
+					$('tbody').append(html)
+	 			},error:function(){
+	 				alert('error....')
+	 			}
+	 		})
+	 	}
+
+    </script>
+
+</body>
+
+</html>

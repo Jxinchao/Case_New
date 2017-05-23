@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<div id="span"></div>
+	
+	<script type="text/javascript">
+		var str = window.location.search.substring(4);
+		$.ajax({
+			type:'get',
+			url:'http://localhost:8888/item/detail',
+			data:{
+				detailsID:localStorage.bb
+			},
+			success:function(e){
+				$('#span').append('<p>'+e.id+'----'+e.name+'----'+e.tel+'------'+e.company+'----'+e.jibie+'</p>')
+				///console.log(e)
+			},error:function(){
+				alert('error')
+			}
+		})
+
+	</script>
+</body>
+</html>

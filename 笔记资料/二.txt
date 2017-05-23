@@ -1,0 +1,361 @@
+课程阶段：实训二
+	
+课程内容：项目、能力（自学能力、表达沟通能力）
+
+
+1、结课项目（以小组为单位交项目）
+2、录屏
+3、月总结
+4、项目组长评分
+5、个人任务总结
+
+
+jqueryfuns  找个人网站
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+上线：
+	
+搜索：远程桌面连接
+
+	IP：47.92.37.168
+	用户名：administrator
+	密码：BeiCai2016
+
+
+
+服务器：
+
+	主动模式：
+	被动模式：用软件上传
+
+
+
+FIleZilla:
+
+	主机：47.92.37.168
+	用户名：beicai2016
+	密码：2016beicai
+
+
+在 远程站点   右键创建目录并进入       成功以后  在本地站点 找到文件 直接拖入进去(也可以本地直接找到然后拖入)
+
+
+
+与域名怎么挂钩：
+
+	第一个： A  隐形ＵＲＬ　　
+	第二个： www 
+	第三个默认的：
+	第四个：http://www.beicaiinfo.com:8000
+
+i-m5eajyjlht1r95sii01p
+网页登录密码 954143
+
+公网IP： 118.190.90.166
+内网IP： 10.30.190.223
+
+用户名：administrator
+登录密码：142303xc@
+
+显性 URL 转发：
+
+例如： http://b.com/ 指向 http://a.com/example/ （任意目录）；当在浏览器地址栏中敲入 http://b.com/ 后回车，IE 浏览器的地址栏里显示的地址会由原来您敲入的 http://b.com/ 自动变为显示真正的目标地址 http://a.com/example/ ；
+
+隐性URL 转发：
+
+例如：http://b.com/ 指向 http://a.com/example/ （任意目录）；当在浏览器地址栏中敲入 http://b.com/ 后回车，IE 浏览器的地址栏里显示的地址保持不变，仍是 http://b.com/ ，但实际访问到的是 http://a.com/xxx/ 的内容。
+
+
+
+
+mstsc   远程桌面   
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+考勤    签到   迟到   请假同意不  
+
+
+
+
+ 
+	
+	1、项目完成、质量、完成时间    
+
+		超出了要求，非常好 
+
+	2、个人能力、个人技术
+
+	3、团队配合
+
+	4、个人主动性、软实力(表达能力)
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node 的插件   
+
+	fs   //  写头像更新的插件        
+	
+	formidable
+
+	'express-session':'latest'  //后台登录加密
+session
+
+只需要在APP.js里面引入一次
+
+在app.use 路径上面输入设置
+
+	// 使用靠就这个组件
+app.use(session({
+  secret:'12345',
+  name:'test',   //这里的name值为cookie的name
+  resave:false,
+  saveUninitialized:true
+}))
+
+
+就可以在router里面的js使用了   用法和localSroage差不多
+
+
+// 重定向
+res.redirect('/reg10.html');  //重定向
+
+// 清除session
+
+req.session.destroy();   销毁   使用的时候还的在发一遍ajax
+
+
+mysqladmin flush-hosts -h 127.0.0.1 -uroot -p  //数据库访问不到就执行这句话
+
+物理返回键
+
+
+
+
+
+
+数据库：
+	1.连接  
+
+	跨越  访问浏览器的时候跨越：端口号不同 域名不同 协议不同 
+
+	查询数据库：
+		
+	全部查询：select * from user(标明) 
+		
+	where 后面都是条件
+数据库
+常见数据库：mysql,db2,oracle,mongdb
+注意：库名不要相同
+创建数据库：鼠标右键localhost_3306，创建数据库→名字，编码utf-8，最后一个选第一个
+创建表：类型   varchar字符串     int数字
+init 最大位数11位
+******查询******
+准确查询：①select * from user where uid = 3 or username = 'coco'  //and都满足  or满足一条就好
+	  ②select * from user where uid > 1 and uid <3
+	  ③select * uid from user between 1 and 3（在什么范围内）
+*：所有
+模糊查询：①select username,password from user
+	  ②select username from user where username like '%co%'
+	  ③select * from user where username like '%co%'
+	  ④select * from user where uname like '%d%' or pwd like '%a%'   多条数据查询
+
+排序查询：①select * from user order by uid    //要把他放在最后写  因为他是全部循环完才出结果的
+	  ②select * from user order by uid desc（desc降序）
+	  ③select * from user order by uid desc,username
+限制显示条数：①select * from user limit 0,1（从第几条开始，查几条(个数)  两个参数 m,n 从0开始）
+	      ②select * from user order by uid desc limit 2,2（排序查询，排序可以反转顺序）
+条数查询：select count(*) from user where id and uanme   //查的是数据条数  不是数据
+
+空的怎么查：select * from user where uid is null
+
+
+******插入数据******
+insert into user (username,pwd,tel,address) values ('lily','123123','12345123451','Ameracan')
+多条创建：insert into user(uname,pwd) values('dd','dsd');
+	  insert into user(uname,pwd) values('ee','dererd');
+	  insert into user(uname,pwd) values('dgg','derd');
+	  insert into user(uname,pwd) values('we','der');
+
+******修改数据******
+修改单个：update user set username = 'momo' where uid = 2（切记一定要有where 否则所以数据都将被修改）
+修改多个：[SQL] update user set username = 'momo2' , pwd = '666666' where uid = 2（用，号隔开）
+
+******删除******
+删除单个：delete from user where uid = 1
+删除多个：delete from user where uid = 5 or uid = 3（and为同时满足条件，or为只要满足就删除）
+
+
+
+
+
+base SET  加密
+
+var b = new Base64();  
+var str = b.encode("admin:admin");   //加密 
+   alert("base64 encode:" + str);  
+//解密
+ str = b.decode(str);  
+alert("base64 decode:" + str); 
+
+
+员工管理系统：
+
+	图标、年龄、月份离职率、人员异动&员工请休假，申请/审批困难
+
+
+	个人信息：姓名、年龄、性别、电话、身份证号、住址、家庭联系人、入职时间、离职时间、个人图片、职位 工号、部门
+
+
+
+多条数据复制  	1、右键创建mysql文件  打开复制   2、去另一个库里面查询运行  3、刷新就有啦
+
+
+
+
+    npm install mysql   //安装mysql依赖包
+
+
+    直连
+    io  输入输出数据库 比较耗时间的
+	
+
+
+    选择：select * from table1 where 范围
+　　插入：insert into table1(field1,field2) values(value1,value2)
+　　删除：delete from table1 where 范围
+　　更新：update table1 set field1=value1 where 范围
+　　查找：select * from table1 where field1 like ’%value1%’ ---like的语法很精妙，查资料!
+　　排序：select * from table1 order by field1,field2 [desc]
+　　总数：select count * as totalcount from table1
+　　求和：select sum(field1) as sumvalue from table1
+　　平均：select avg(field1) as avgvalue from table1
+　　最大：select max(field1) as maxvalue from table1
+　　最小：select min(field1) as minvalue from table1
+
+
+
+
+
+
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var denglu = require('./routes/denglu');
+var routes = require('./routes/index');
+var users = require('./routes/users');
+var page = require('./routes/page');
+var login = require('./routes/jsdemo215');
+var item =require('./routes/demo1602');
+var regis =require('./routes/regist1603');
+var list = require('./routes/liusm');
+var page=require('./routes/wangaimin/zhen');
+var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/shopping',denglu);
+app.use('/', routes);
+app.use('/text', users);
+app.use('/login',login);
+app.use('/user',users);
+app.use('/item',item);
+app.use('/regist',regis);
+app.use('/list',list);
+app.use('/page',page);
+
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
+});
+app.all('*', function(req, res, next) {
+  //当你使用XMLHttpRequest发送请求时，浏览器发现该请求不符合同源策略，会给该请求加一个请求头：Origin，后台进行一系列处理，如果确定接受请求则在返回结果中加入一个响应头：Access-Control-Allow-Origin;浏览器判断该相应头中是否包含Origin的值，如果有则浏览器会处理响应，我们就可以拿到响应数据，如果不包含浏览器直接驳回，这时我们无法拿到响应数据。
+  //如果我们把Access-Control-Allow-Origin去掉，浏览器会驳回响应，我们也就拿不到数据。
+  res.header("Access-Control-Allow-Origin", "*");
+
+  //自定义请求头
+  //OPTIONS请求头部中会包含以下头部：Origin、Access-Control-Request-Method、Access-Control-Request-Headers，发送这个请求后，服务器可以设置如下头部与浏览器沟通来判断是否允许这个请求。 即：Access-Control-Allow-Origin、Access-Control-Allow-Method、Access-Control-Allow-Headers
+  //把Content-Type去掉，你会发现OPTIONS请求失败。
+  res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, thorization, Accept,X-Requested-With");
+  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+
+
+  res.header("X-Powered-By",' 3.2.1')
+  if(req.method=="OPTIONS"){/*让options请求快速返回*/
+    res.send(200)
+  }else{
+    next()
+  };
+});
+res.header("Access-Control-Allow-Origin", "*");
+app.listen('8005',function(){
+  console.log('server start....');  
+})
+module.exports = app;
+
+
+
+
+
+
+
+少逻辑  多展现  
+
+表：登录 注册  抄作
+
+ 员工表
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rem    用图片的总宽除以16     量出来px除以 40 

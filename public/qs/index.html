@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<style type="text/css">
+		li{
+			list-style: none;line-height:30px;clear:both;
+		}
+		span{
+			display:block;float:left;margin-left:40px;
+		}
+	</style>
+</head>
+<body> 
+	<div id="main" style="width:800px;height:450px;margin:40px auto;"></div>
+	
+	<div style="width:800px;height:450px;margin:0 auto;">
+		<h1>List</h1>
+		<span>月份</span><span>购物类别</span><span>购物金额</span>
+		<ul></ul>
+	</div>
+	
+	<script>
+		show();
+		function show(){
+	        var arr = [];
+	        var arr1 = []
+	        $.ajax({
+	            type:'get',
+	            url:'http://localhost:8999/spending/list',
+	            success:function(e){
+	            	console.log(e)
+	            	var html ='';
+	                for(var i = 0;i<e[0].spending.length;i++){
+	                   arr.push(e[0].spending[i].time);
+	                   arr1.push(e[0].spending[i].count);
+	                   html += '<li>'+e[0].spending[i].time+'-------'+e[0].spending[i].category+'----------'+e[0].spending[i].count+'</li>'
+	                }
+	                $('ul').append(html)
+	                chart.setOption(option);
+	            },
+	            error:function(){
+	                alert('error....')
+	            }
+	        })      
+	        var chart = echarts.init(document.getElementById('main'));//初始化数据	
+	        var option = {
+	                    title: {
+	                        text: '购物统计柱状图'
+	                    },
+	                    tooltip: {
+	                        trigger:'axis',  //悬停有线
+	                        //formatter:'he:{b}:{c}岁'  //移入加入提示
+	                    },   //鼠标提示信息 悬停信息
+	                    legend: {
+	                        data: []
+	                    },
+	                    xAxis: {                        //X轴坐标轴
+	                        name: 'X轴 姓名',                 //坐标轴的名称
+	                        nameLocation: 'middle',     //坐标轴名称的位置 / end  /start
+	                        nameTextStyle: {            //--样式
+	                            color: 'pink',    //底部字体的颜色
+	                            fontSize: 24    //底部字体的大小
+	                        },
+	                        position: 'bottom',         //可以改变他在上在下
+	                        data: arr
+
+	                    },
+	                    yAxis: {},                      //Y轴坐标轴 同上
+	                    series: [{                      //这就是那个柱子         这个就是重点  别的都是装饰
+	                        name: '购物金额',                 //上面那个标识  标识红色的柱子代表什么数据
+	                        type: 'bar',
+	                        data: arr1 //这就是柱子那个数据
+	                    }],
+	                    color: ["lime"]
+	            };
+                // 使用刚指定的配置项和数据显示图表。
+        }
+
+
+
+	</script>
+</body>
+</html>

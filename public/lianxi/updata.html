@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	用户名：<input type="text" name="" id="uname">
+	<button>修改</button>
+	<script type="text/javascript">
+		$.ajax({
+			type:'get',
+			url:'http://localhost:8888/mysql/detail',
+			data:{
+				id:localStorage.cc
+			},
+			success:function(e){
+				console.log(e)
+				$('#uname').val(e[0].uname);
+			},error:function(){
+				alert('error')
+			}
+		})
+
+
+		$('button').click(function(){
+			var user=$("#uname").val();
+			$.ajax({
+				url:"http://localhost:8888/mysql/updata",
+				type:"get",
+				data:{
+					id:localStorage.cc,
+					uname:user,
+				},
+				success:function(e){
+					if(e.flag==1){
+						alert("修改成功")
+						// location.href = "newsajax1.html?="+e.id;
+					}
+					else{
+						alert("修改失败")
+					}
+				},
+				error:function(){
+					alert("数据请求失败！！！")
+				}
+			});
+		})
+	</script>
+</body>
+</html>

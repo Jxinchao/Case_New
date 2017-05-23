@@ -1,0 +1,163 @@
+什么是webpack
+---------------------
+webpack是一个压缩工具包
+它可以把前台文件css,less，图片打包压缩成一个js文件，提高浏览器的运行速度
+----------------------------------
+# 查看 webpack 版本信息
+$ npm info webpack
+
+# 安装指定版本的 webpack
+$ npm install webpack@1.12.x --save-dev
+
+-----------------------------------
+安装webpack的方法:
+进入你创建的项目盘d:
+npm install   -g  webpack 在npm全局的仓库里安装webpack
+cd  nodedemo进入项目一直到你创建项目的文件夹里面 
+npm init
+-------------------------可以看到package.json
+----------------------------------
+创建依赖项
+npm install --save-dev webpack
+-----------------------------------
+public>index.html
+app>work.js和main.js
+main.js入口文件相当于引用html  中的css,js文件
+work.js 工作的
+main.js写require(".work.js");
+work.js写document.write('你是不傻')
+index.html写<script  src="./webpack.js"></script>
+--------------------------------
+黑窗口进入文件夹
+webpack   app/main.js空格public/webpack.js
+   已有文件                          生成文件
+
+-------------------------------------------------------------------
+简单版本
+webpack.config.js
+module.exports={
+   // _dirname是nodejs的一个全局变量，它指向的是项目的根目录
+   //入口文件的位置
+   entry:__dirname+'app/main.js',两个下划线
+   output:{
+   	//打包后的文件放置的位置
+   	   path:__dirname+'public',两个下划线
+   	   //打包后我们的文件夹名字
+   	   filename:'webpack.js'
+   }
+}
+删除原来的webpack.js
+----------------------------
+黑色窗口webpack你的出不来因为不是全局的
+解决方法：
+找到package.json
+scripts 下添加“start":"webpack"相当于一个变量
+黑窗口输入文件夹下npm  start  nodejs自带的
+如果是“rd":"webpack"
+黑窗口输入文件夹下npm  run rd
+----------------------------------------
+参数的设置:
+loaders 需要单独安装，在webpakc.config.js下创建的modules的关键字下配置 包括以下几项:
+test:一个匹配loaders所处理的文件的扩展名的正则表达式（必须)
+loaders:loader的名称（必须）
+include/exclude:手动添加必须处理的文件（文件夹）或屏蔽不需要处理的
+文件（文件夹）（可选）；
+query：为loaders  提供额外的设置选项(可选)
+---------------------------------------
+安装json   loaders方法
+进入项目npm install -save-dev  json-loader
+在webpack.config.js  下创建
+module:{
+      loaders:[
+           {
+               test:/\.json$/,
+               loader:"json"
+           }
+    ]
+}
+在项目下创建json文件 config.json;
+在work.js 中 写
+var  config=require("./config.json")
+document.write(config.text)
+再运行npm run hd
+看看app>webpack.js 下面的字改了没
+-----------------------------------------------
+安装style css配置项命令
+npm install --save-dev style-loader css-loader;
+在app 文件夹下创建index.css 写样式
+在main.js 引入require('./index.css');
+在webpack.config.js添加
+module:{
+      loaders:[
+           {
+               test:/\.json$/,
+               loader:"json"
+           },
+           {
+           	  test:/\.css$/,
+           	  loader:"style!css"
+           }
+    ]
+
+
+-----------------------------------------------------------
+
+
+   }
+黑窗口执行npm start
+(注意：各种各种浏览器兼容)写
+npm install --save-dev postcss-loader autoprefixer各种浏览器兼容自带插件
+module:{
+      loaders:[
+           {
+               test:/\.json$/,
+               loader:"json"
+           },
+           {
+           	  test:/\.css$/,
+           	  loader:"style!css！postcss"
+           }
+    ]
+ },
+postcss:[
+        require('autoprefixer');
+]
+index.css写
+body{
+background:red;
+display:flex;
+}
+npm start
+-----------------------
+再看 index.html审查元素
+-------------------------------------------------
+es6转成es5专用Bobel安装与配置
+npm install --save-dev babel-core babel-loader babel-preset-es2015
+module:{
+      loaders:[
+           {
+               test:/\.json$/,
+               loader:"json"
+           },
+           {
+           	  test:/\.css$/,
+           	  loader:"style!css！postcss"
+           },
+           {
+           	  test:/\.js$/,
+           	  loader:"babel",
+                 exclude:/node_modules/,
+                 query:{
+                    presets:['es2015']
+                 }
+           }
+    ]
+ },
+postcss:[
+        require('autoprefixer');
+]
+---------------------------------
+work.js写es6语法
+var sum=(a,b)=>a+b;alert(sum(1,3))
+黑窗口 npm start
+----------------------------

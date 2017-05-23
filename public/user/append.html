@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+    	#box{
+    		width: 1200px;
+    		height: 500px;margin:50px auto;
+    		border:1px solid #71c6c1;
+    		border-radius:10px;
+    	}
+    </style>
+</head>
+<body>
+	 <nav class="navbar navbar-default" style="padding:0.5em 0em 2em;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><h1>List</h1><br><span>Traveling</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+                    <li><a href="login.html"><span data-hover="Home">Home</span></a></li>
+                    <li><a href="chart.html"><span data-hover="chart">chart</span></a></li>
+                    <!-- <li><a href="detail.html"><span data-hover="detail">detail</span></a></li> -->
+                    <li><a href="list.html"><span data-hover="list">list</span></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- /container-fluid -->
+    </nav>
+
+    <div id="box">
+    	<div class="banner-forms" style="margin:20px auto;float:none;width:50%;">
+            <div class="form-bottom">
+                <input type="text" id="id" placeholder="ID" class="form-username form-control"><br>
+                <input type="text" id="name" placeholder="name" class="form-username form-control">
+                <br>
+                <input type="text" id="tel" placeholder="年龄" class="form-username form-control"><br> 
+                <input type="text" id="company" placeholder="单位" class="form-username form-control"><br>
+                <input type="text" id="jibie" placeholder="级别" class="form-username form-control"><br>
+                <input type="text" id="data" placeholder="日期" class="form-username form-control"><br>
+                <input type="text" id="information" placeholder="简介" class="form-username form-control"><br>
+                <button type="submit" id="button" class="btn btn-info mrgn-can">确认添加</button>
+                <!-- <button style="color:#999;" type="submit" class="btn"></button> -->
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+    	$('#button').click(function(){
+    		$.ajax({
+    			type:'get',
+    			url:'http://localhost:8888/item/append',
+    			data:{
+    				id:$('#id').val(),
+    				name:$('#name').val(),
+    				tel:$('#tel').val(),
+    				company:$('#company').val(),
+    				jibie:$('#jibie').val(),
+    				data:$('#data').val(),
+    				information:$('#information').val()
+    			},success:function(e){
+    				if(e.flag == 1){
+    					alert('添加成功');
+    				}else if(e.flag == 2){
+    					alert('ID以重复')
+    				}else{
+    					alert('添加失败')
+    				}
+    				window.location.href = 'list.html';
+    			},
+    			error:function(){
+    				alert('error.....')
+    			}
+    		})
+    	})
+    </script>
+</body>
+</html>

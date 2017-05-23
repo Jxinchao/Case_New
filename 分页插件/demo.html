@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .scrollNews {
+                width: 100%;
+                height: 20px;
+                overflow: hidden;
+                background: #FFFFFF;
+                border: 0px solid #AAAAAA;
+            }
+            .scrollNews ul {
+                padding: 2px 5px 5px 25px;
+            }
+            .scrollNews ul li {
+                height: 20px;
+                list-style-type: none;
+                font-size: small;
+            }
+            a {
+                text-decoration: none;
+            }
+        </style>
+       <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<div class="scrollNews">
+　　<img width="20" height="15" src="img/laba.png" align="left">
+        <ul>
+            <li><a class="tooltip" title="查询模块菜单名称更新公告：从2015-02-09开始,查询模块菜单使用新名称,具体请参考下方【查询模块新旧名称对照表】.">
+            　　查询模块菜单名称更新公告：从2015-02-09开始,查询模块菜单使用新名称,具体请参考下方【查询模块新旧名称对照表】.</a>
+            </li>
+            <li><a class="tooltip" title="查询模块菜单名称更新公告：从2015-02-09开始,查询模块菜单使用新名称,具体请参考下方【查询模块新旧名称对照表】.">
+            　　查询模块菜单名称更新公告：从2015-02-09开始,查询模块菜单使用新名称,具体请参考下方【查询模块新旧名称对照表】.</a>
+            </li>
+         </ul>
+    </div>
+	
+	<p style="font-family:'Facile Sans Regular';font-size:30px;">www</p>
+
+
+	<script type="text/javascript">
+	$(function () {
+        var settime;
+        $(".scrollNews").hover(function () {
+            clearInterval(settime);
+        }, function () {
+            settime = setInterval(function () {
+                var $first = $(".scrollNews ul:first");     //选取div下的第一个ul 而不是li；
+                var height = $first.find("li:first").height();      //获取第一个li的高度，为ul向上移动做准备；
+                $first.animate({ "marginTop": -height + "px" }, 600, function () {
+                    $first.css({ marginTop: 0 }).find("li:first").appendTo($first); //设置上边距为零，为了下一次移动做准备
+                });
+            }, 3000);
+        }).trigger("mouseleave");       //trigger()方法的作用是触发被选元素的制定事件类型
+    });
+	</script>
+</body>
+</html>

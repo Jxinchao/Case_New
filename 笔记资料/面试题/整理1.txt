@@ -1,0 +1,123 @@
+1:link和@import的区别
+本质上，这两种方式都是为了加载CSS文件，但还是存在着细微的差别。
+　　1. 老祖宗的差别。link属于XHTML标签，而@import完全是CSS提供的一种方式。 link标签除了可以加载CSS外，还可以做很多其它的事情，比如定义RSS，定义rel连接属性等，@import就只能加载CSS了。
+　　2. 加载顺序的差别。当一个页面被加载的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS会等到页面全部被下载完再被加载。所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。
+　　3. 兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。
+　　4. 使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。
+
+
+
+2:html5有哪些新特性，移除了那些元素.
+HTML5已形成了最终的标准，概括来讲，它主要是关于图像，位置，存储，多任务等功能的增加。
+新增的元素有绘画 canvas ，用于媒介回放的 video 和 audio 元素，本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失，而sessionStorage的数据在浏览器关闭后自动删除，此外，还新增了以下的几大类元素。
+内容元素，article、footer、header、nav、section。
+表单控件，calendar、date、time、email、url、search。
+控件元素，webworker, websockt, Geolocation。
+移出的元素有下列这些：
+显现层元素：basefont，big，center，font, s，strike，tt，u。
+性能较差元素：frame，frameset，noframes。     
+2(1)如何处理HTML5新标签的浏览器兼容问题？如何区分HTML和HTML5？
+处理兼容问题有两种方式：
+1.IE8/IE7/IE6支持通过document.方法产生的标签，利用这一特性让这些浏览器支持HTML5新标签。
+2.使用是html5shim框架 
+另外，DOCTYPE声明的方式是区分HTML和HTML5标志的一个重要因素，此外，还可以根据新增的结构、功能元素来加以区分。
+　1、在文档类型声明上
+　　HTML声明：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+　　<html xmlns="http://www.w3.org/1999/xhtml">
+　　HTML5声明：<!doctype html>
+　　上面的两种声明,HTML5声明简洁方便人们的记忆，HTML声明太长了并且很难记住这段代码。
+　　2、在结构语义上
+　　HTML:没有体现结构语义化的标签，通常都是这样来命名的<div id="header"></div>，这样表示网站的头部。
+　　HTML5:在语义上却有很大的优势，提供了一些新的HTML5标签比如: article、footer、header、nav、x，这些通俗易懂。
+
+3>什么是盒子模型？
+
+在网页中，一个元素占有空间的大小由几个部分构成，其中包括元素的内容（content），元素的内边距（padding），元素的边框（border），元素的外边距（margin）四个部分。这四个部分占有的空间中，有的部分可以显示相应的内容，而有的部分只用来分隔相邻的区域或区域。4个部分一起构成了css中元素的盒模型。
+4>行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+
+行内元素：a、b、span、img、input、strong、select、label、em、button、textarea
+块级元素：div、ul、li、dl、dt、dd、p、h1-h6、blockquote
+空元素：即系没有内容的HTML元素，例如：br、meta、hr、link、input、img
+
+5>简述同步和异步的区别
+
+同步是阻塞模式，异步是非阻塞模式。
+同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去；
+异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。
+
+
+
+
+6>html和html5的区别
+html5是html的升级版，他俩主要的区别是文档类型声明上，html5更加方便。直接用doctype html
+而且它相对html来讲增加了结构语义化，同时也提供了很多新标签比如《foonter header nav section,也删除了一些标签，如《b><center big 
+
+
+
+
+7.W3C标准万维网联盟标准。　　万维网联盟（外语缩写：W3C）标准不是某一个标准，而是一系列标准的集合。网页主要由三部分组成：结构（Structure）、表现（Presentation）和行为（Behavior）。　　对应的标准也分三方面：结构化标准语言主要包括XHTML和XML，表现标准语言主要包括CSS，行为标准主要包括对象模型（如W3C DOM）、ECMAScript等。
+这些标准大部分由W3C起草和发布，也有一些是其他标准组织制订的标准，比如ECMA（European Computer Manufacturers Association）的ECMAScript标准。网页通过W3C标准的步骤：　　1、图片的alt="" 属性必须每张图片都加上，而且对齐属性用CSS来定义。不加不能通过XHTML 1.0的验证。　
+　2、每个文档必须加上DTD声明。　　a) !DOCTYPE html PUBLIC "-//W3C//DTDXHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">　　去掉后能通过验证，但有警告：No DOCTYPE found! Checking with default XHTML 1.0 Transitional Document Type.　
+　3、RSS的XML通过时其中的域名地址必须与检测的地址一致，否则会报错。
+　　4、标签的链接属性加上JAVASCRIPT事件时必须为#空链,不能为javascript:;或javascript:void(null);　　5、同一个页面当中，同名的ID会产生冲突。所以以ID定义样式的必须改成类引用。　　<div id="a1">111</div>　　<div id="a1">222</div>　　如果不用W3C来检测的话，在CSS设计里是允许这样做的。　　那是程序的角度不能相同，CSS上是可以相同的!　　之前就是相同的产生问题，后面就改成类引用了!　
+　6、不可省略双引号或单引号。　　a) 这个是指属性，标准是双引号~　　单引号也能通过验证。　
+　7、标签之间不可错位嵌套。　　<div class="CaseDetaListSS">原文链接：<a href='/html/cases/cases_61.html'>官方网站</div></a>　　这是不允许的。　　
+8、所有的标签都使用小写。　　
+9、FLASH的标签代码中不能含有,必须采用其它的方法实现。　
+　10、所有的标签中含有的属性必须有值(官方的说法)。　
+　11、标签必须配对完成,单标签必须以/关闭　
+　12、JS和CSS外部引入文件必须加上类型定义。　　13、所有的样式全部写在外部文件。用类名定义。在使用的地方引用。　
+　14、页面上的一些特殊字符必须用HTML代码来标识.如“&”写成“&“
+
+7》
+Swiper常用于移动端网站的内容触摸滑动
+
+Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。
+
+Swiper能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果。
+Swiper开源、免费、稳定、使用简单、功能强大，是架构移动终端网站的重要选择
+AngularJS一款MVC框架    (model)－视图(view)－控制器(controller)
+
+ps是图片照片处理软件修正美化图像，   AI是矢量图形编辑器
+
+
+
+BootStrap：他是简洁、直观、强悍、移动设备优先的前端开发框架是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。
+
+
+
+
+React 是一个用于构建用户界面的 JAVASCRIPT 库。
+React主要用于构建UI，很多人认为 React 是 MVC 中的 V（视图）。
+React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。
+React 拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。
+1.声明式设计 ?React采用声明范式，可以轻松描述应用。
+2.高效 ?React通过对DOM的模拟，最大限度地减少与DOM的交互。
+3.灵活 ?React可以与已知的库或框架很好地配合。
+4.JSX ? JSX 是 JavaScript 语法的扩展。React 开发不一定使用 JSX ，但我们建议使用它。
+5.组件 ? 通过 React 构建组件，使得代码更加容易得到复用，能够很好的应用在大项目的开发中。
+6.单向响应的数据流 ? React 实现了单向响应的数据流，从而减少了重复代码，这也是它为什么比传统数据绑定更简单。
+
+
+
+
+VueJs将页面与数据逻辑分离的模式
+
+
+
+
+
+ionic是一个轻量的手机UI库，具有速度快，界面现代化、美观等特点。为了解决其他一些UI库在手机上运行缓慢的问题，它直接放弃了IOS6和Android4.1以下的版本支持，来获取更好的使用体验。
+
+
+
+
+
+
+1.ionic 基于Angular语法，简单易学。
+2.ionic 是一个轻量级框架。
+3.ionic 完美的融合下一代移动框架，支持 Angularjs 的特性， MVC ，代码易维护。
+4.ionic 提供了漂亮的设计，通过 SASS 构建应用程序，它提供了很多 UI 组件来帮助开发者开发强大的应用。
+5.ionic 专注原生，让你看不出混合应用和原生的区别
+6.ionic 提供了强大的命令行工具。
+7.ionic 性能优越，运行速度快。

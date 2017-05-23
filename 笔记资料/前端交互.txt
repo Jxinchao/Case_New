@@ -1,0 +1,7611 @@
+﻿---------------------    【需要学的东西】   ------------------------
+百度云 管理中心 https://console.bce.baidu.com/?_=1487916013505#/index/overview
+
+王卓服务器用户名：beicai123!
+
+王卓服务器密码：866891
+
+press
+
+FTP  服务器
+
+<html lang="en"></html>  //这里en在谷歌浏览器里面会默认是英文自动翻译为中文  改为zh是中文   或者可以不写 
+
+
+
+http://www.superslide2.com/demo.html#content    superslide 效果网页
+
+自我介绍   名字 籍贯 形容自己 方位 
+  
+只要有互联网的地方  就需要前端工程师，如果没有前端。就实现不了你看见的每一个功能，设计师设计再漂亮没有前端工程师就没有办法呈现。让不懂技术的人，感受到不懂技术的科技，无关高端大气上档次
+
+	
+	技能：学到了什么？   所学的是否够了？  个人兴趣安好学到了什么技能？ 
+
+	禀赋： 是不是有很好的综合能力？ 是不是一个自动自觉的人？那些其他的禀赋可以让公司收益？
+
+	敬业精神是必备的职业道德
+
+	性格与素养与企业风格契合
+
+	自我介绍 有什么优势？ 
+
+		合格自我介绍：	1.简洁介绍我自己
+						2.用最简洁的语言描述你从前的实践经历和学业情况，即教育背景、工作经历
+						3.兴趣爱好、性格特点、主要优点三选一
+						4.谈谈你最大的弱点
+							我的弱点是（）
+							我做了哪些补救措施
+							成效如何
+
+						我们不该做的：
+							无关内容。。。长篇大论。。。是非颠倒。。。过分坦诚
+
+		我想找一份什么样的工作？为什么？要通过怎样的方式去获得？
+
+	查看公司信息   规模  公司是干啥的  工资  交通方便  五险一金  大公司
+
+	大公司入职的方向：毕业证原件 身份证原件 户口簿原件  背景调查
+
+	好职业的标准：
+		钱（工资、福利、奖金、隐性收入）
+		美誉度
+		可持续性（上班时间）996  966 是否可以接受
+		权利和影响力
+		技术含量
+		晋升机会
+
+    8K 以上 首先确保生活的保障 ，有提升空间，因为学无止境，不能一直在底层，要往高处爬。有学习空间，对技术的提升，对自己对公司都是非常好的。
+
+	针对自己技术，去甄选公司，不海投简历。把握好面试的机会，记录好面试的步骤，累积好面试经验
+
+		钱多，事少，工作
+
+		为什么给你这么多工资？
+
+
+http://www.bitbug.net/    //icon 在线制作
+
+W3C标准是一些列标准的集合！在各个企业的基础上做一定的整合，形成一套标准集，便于推广和使用！根据网页主要由三部分组成：结构（Structure）、表现（Presentation）和行为（Behavior）。对应的标准也分三方面：结构化标准语言主要包括XHTML和XML，表现标准语言主要包括CSS，行为标准主要包括对象模型（如W3C DOM）、ECMAScript等。在具体的XHTML标准（如属性值加引号，不允许单标记，大小写等等比较多）！语法上比，我们目前使用的html标记较为严格！更为具体的信息楼上可以参见百度百科，XHTML等相关术语！也可参见，W3C发布的使用文档！
+	
+1、跨域
+2、ajax
+3、http
+4、安全
+5、css基础
+6、js基础
+
+{time:'2-23',count:'80'},
+{time:'2-34',count:'90'}
+
+汇智网
+
+http://www.hubwiz.com
+
+
+要求  页面20-40 相同布局算一个
+		
+	  效果为5类以上
+
+	  能作为面试时候的项目
+	  
+	  http://www.smartisan.com  //锤子官网
+
+	  http://www.bankcomm.com //交通银行
+
+	  http://tnc.org.cn/#Foot  //大自然保护协会 
+
+	  http://www.mnlsbj.com/   //蒙娜丽莎
+
+	  http://360.bj.iswarov.cn  //三亚婚纱
+
+	  http://www.lafite.com/zh/  //拉菲红酒
+
+	  http://www.rolex.com/zh-hans?cmpid=360-brandzone-logo   //劳力士
+
+	  https://www.omegawatches.cn/cn/   //欧米茄腕表
+
+	  http://www.darryring.com/    //钻戒
+
+	  http://demo1.zyunt.com/Bs/Member/LoginDemo  //智云通
+	  //钻石小鸟
+
+crm  项目开发
+
+https://github.com/ //GitHub
+	uName:
+		->  Jxc
+	password：
+		->  142303xc
+
+java 对应用的jsonp，不一定前后端交互就都是用ajax；
+
+http://www.cnblogs.com/armyfai/p/3985660.html   //svn
+
+
+H5前端需要做的就是 
+		
+		---> 布局   ----> 效果   ----> 交互
+
+电脑所有软件都在控制面板的 程序里面的卸载程序 所有软件可以在里面找
+
+	webpack  //新浪
+  	grunt
+  	glup  //打包
+  	nodejs
+  	php
+  	bootstrop
+  	less
+  	angularjs == jquery
+  	zepto  (手机端框架) 
+  	jquerymobile
+  	git == svn  //代码提交工具
+  	bootstrap
+  	React Native  
+  	echarts  //图标地图 图标插件
+  	Navicat  数据库
+  	Echarts
+	分页插件
+	分享插件
+	swiper  触屏滑动 移动端框架
+	cuplayer.com   专做 视频官网插件
+
+	webpack
+	sea.js
+	require.js
+	vue
+	react
+	ember
+	zepto
+	ionic
+	echarts
+	highcharts
+	charts
+	d3
+	backbone.js
+	easyui
+	
+	ext.js
+	ExtJS
+	RequireJS
+	seajs
+	Grunt
+	yeoman
+	bower
+	jquery mobile
+	KnockoutJS
+	backbone
+	react
+	webpack
+	ember
+	svn
+	git
+	es6
+
+	cycle.js   图片转换插件
+
+	Grunt
+	yeoman
+	bower
+
+
+
+初级前端：
+	初级的水平就是，你能独立负责一个前端项目的开发，从切图到数据交互！不管是用jq，还是react+webpack或，是backbone+require。
+
+
+中级前端：
+	中级就是你能迅速用你的leader新推的技术架构弄到项目实际开发中来！
+
+高级前端：
+	高级就是协同架构师讨论架构可行性，能主动去了解各厂用的技术架构，并作出对你的团队合适的选型！！
+
+
+学习网站 ：
+	->	慕课  
+	->	极客学院 
+	->	菜鸟教程 
+	->	腾讯课堂 
+	->	百度传课   
+	->	animate.css 框架 
+	->	站酷UI
+	->	腾讯课堂
+
+编译网站
+	http://www.bitbug.net/     iCO在线转换
+
+查看端口号：
+	
+	1.首先点击开始菜单选择运行，接着在运行对话框中输入“cmd”，回车打开命令提示符窗口，然后在窗口中输入【netstat  -ano】，按下回车，之后就会显示所有的端口占用情况。
+
+	2.如果你要查询指定的端口占用的话，可以在窗口中继续输入【netstat -aon|findstr "提示的端口"】，这里的提示的端口假设为80，那么就输入命令为【netstat  -aon|findstr "80"】，回车之后就可以看见列表中的PID，然后根据PID在电脑的任务管理器中查看对应的占用程序，然后将其关闭即可。
+
+	3.然后根据查询的PID找到对应的进程，我么可以看到占有80这个程序的进程ID：5264，继续输入命令【tasklist|findstr "5264"】，5264就是进程ID，现在知道是哪个进程占用的我们就可以采取相应措施进行解决了。
+~~~~~~~~~~~~~~~~~~~~~  结束  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~   服务器  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+服务器    阿里云购买
+
+beicai123!
+
+866891
+
+npm install -g qzyserver   cd 到任意目录 运行 qzyserver 即可   我的静态服务器
+
+
+
+FTP   搭建 服务器
+
+
+数据库
+	
+	数据结构来组织、存储和管理数据的仓库
+
+	navicat   
+
+	1、在localhost  右键 创建数据库
+
+	2、在创建好的数据库的表里面 
+
+		创建表
+
+		一个表里面一般只有一个主键 唯一性
+
+		int  ID
+
+		date  时间
+
+		varchar  字符串  后面选择空值不能为空值
+
+		代码创建
+
+		CREATE TABLE `user2` (
+		  `id` int(11) NOT NULL auto_increment COMMENT '用户ID',
+		  `uname` varchar(500) NOT NULL  COMMENT '用户名',
+		  `pwd` varchar(0) default NULL COMMENT '密码',
+		  PRIMARY KEY  (`id`)
+		) ENGINE=MyISAM DEFAULT CHARSET=utf8
+
+
+		连接数据库 
+
+			数据库的账号 密码  端口号  数据库的名字   数据库的表名   数据库操作语言sql语句
+
+
+·································································
+
+~~~~~~~~~~~~~~~~~~~~~   Vue ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Chrome对ES6的支持只有65%，其他更不用说
+ES6只针对vue.js、react或angular而言是一种高度结构化的语法
+解法：
+	用Babel转换器，使其适应大部分浏览器   ES6转换ES5
+	http://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&targets=&browsers=&builtIns=false&code=%20const%20A%20%3D%20'static%20A'%3B%20%20%0D%0A%09%09%20console.log(A)%0D%0A%0D%0A%09%09%20let%20b%20%3D%20'B'%0D%0A%09%09%20console.log(b)
+
+	运行机制：
+		从index.html 是一个模板 到 main.js   到  加载主件app.Vue
+
+		Vue.js 特点 
+
+			1.虚拟dom  react
+
+			2.数据驱动，数据绑定渲染
+
+			3.组件化、模块化、ES6语法
+
+		build  
+
+··························································
+~~~~~~~~~~~~~~~~~~~~~   公司流程开始   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+项目开发流程：猪八戒网	财富网
+		
+		--->   销售部接收   客户需求
+
+		--->   产品部 
+
+				产品经理  isshow
+					--->  原型图   --->  给设计  高保真 PSD图	UI  用户体验 		
+
+				前端开发
+					--->  用户上网网页   --->  后台	
+		
+		技术部
+			前端   技术问题沟通 美观沟通  切图自己切 
+
+			后台   交互数据  node php java c++ .net csp
+
+			测试   找bug 找茬
+
+			运维   维护 服务器  服务器配置 环境  运维人员  修电脑的
+
+			安卓工程师  安卓系统  开发客户端APP 的
+
+			iOS开发     iOS系统
+
+			诺基亚 windows
+
+		CTO 技术执行官
+				文思海辉  软通动力  国内有名的外包公司  微盟 
+			
+			项目经理  负责招标 预支 预算 
+
+			项目组长  人员分配 使用技术
+					  架构师   整个项目的搭架
+
+	人数  28   人力成本 200百万    接收项目   网站项目【几千块钱，几万块钱】  APP【20万左右】
+		  技术  10
+		  		设计 2
+		  		前端 4   原薪资10k
+		  		后台 2
+		  		测试 1
+		  		运营 1
+
+~~~~~~~~~~~~~~~~~~~~~   公司流程结束   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~       ionic      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	手机端的
+	
+	http://www.runoob.com/ionic/ionic-gesture-event.html
+	菜鸟教程
+
+	什么是ionic?
+	---------------------------------------------------
+	ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。 可以帮助您使用 Web 技术，比如 HTML、CSS 和 Javascript 构建接近原生体验的移动应用程序。
+	ionic 主要关注外观和体验，以及和你的应用程序的 UI 交互，特别适合用于基于 Hybird 模式的 HTML5 移动应用程序开发。
+	ionic是一个轻量的手机UI库，具有速度快，界面现代化、美观等特点。为了解决其他一些UI库在手机上运行缓慢的问题，它直接放弃了IOS6和Android4.1以下的版本支持，来获取更好的使用体验。
+	-------------------------------------------------------------------
+	ionic 特点
+	1.ionic 基于Angular语法，简单易学。
+	2.ionic 是一个轻量级框架。
+	3.ionic 完美的融合下一代移动框架，支持 Angularjs 的特性， MVC ，代码易维护。
+	4.ionic 提供了漂亮的设计，通过 SASS 构建应用程序，它提供了很多 UI 组件来帮助开发者开发强大的应用。
+	5.ionic 专注原生，让你看不出混合应用和原生的区别
+	6.ionic 提供了强大的命令行工具。
+	7.ionic 性能优越，运行速度快。
+
+
+
+	环境搭建：
+		如何搭建IonIC 环境以及创建ionic的应用
+
+		npm install -g cordova ionic   安装IonIC和cordov
+
+		查看是否安装成功
+
+		cordova -v 
+		ionic -v
+------------------------------------------------------------------------
+汇智网
+
+http://www.hubwiz.com/class/578dfbc816d03a7123dd6335
+~~~~~~~~~~~~~~~~~~~~~     ionic结束    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~  Git开始 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+作用：
+	1.上传文件  代码备份   
+	2.协同开发，代码共享
+	3.版本更新
+
+本地版本号管理
+	
+
+集中化的版本控制系统
+	如果中心系统发生故障，整个运营将会崩溃
+
+Git是分布式版本控制系统
+	每个人都是拷贝的，任何一个人的丢了其他人也还会存在
+
+1、创建版本库  每天提交
+	
+	--->    cd f:  //进入磁盘
+
+	--->	mkdir cc //创建文件夹
+
+	--->	pwd   查看所在目录  锁定文件夹
+
+	--->    git init  //初始化版本库    只需要写一次
+
+	        ->  隐藏文件 版本管理 更新版本 
+	        -> 手动创建文件
+
+	--->    git add gitdem.txt  //添加到暂存区 没有提示说明成功  每次都需要打一遍  修改以后提交需要再次输入一次
+
+	--->    git commit -m '第一次提交'   //确认提交   引号里面为自己的注释  修改以后提交需要再次输入一次
+
+	--->    cat gitdem.txt     //查看提交文件的内容
+
+	--->    git status //显示目前版本库的状态  显示红色的为正常(修改过的) 显示为红色的就是没有提交
+
+	--->    git diff   //查看修改了什么内容
+
+	--->    git log   //查看修改记录
+
+	--->    git config --global user.name '自己的名字'  //  全局名称   给自己的git起名字
+		git config --global user.email '自己的邮箱'   // 自己的邮箱
+
+	--->    git reset --hard HEAD^  //版本回退   回退到上一个版本  回退到第几次就加几个^^^
+
+			git reset --hard HEAD~100  //回退到100次
+	
+	--->	cd .. 返回上一级目录   
+
+	--->    git add .  所有文件上传
+
+
+	再次创建文件  查看目录
+	Administrator@USER-20160130AX MINGW64 /f
+	$ mkdir gitdemo
+
+	Administrator@USER-20160130AX MINGW64 /f
+	$ cd gitdemo
+
+	Administrator@USER-20160130AX MINGW64 /f/gitdemo
+	$ pwd
+	/f/gitdemo
+
+	Administrator@USER-20160130AX MINGW64 /f/gitdemo
+	$
+
+~~~~~~~~~~~~~~~~~~~~~~~~~  Git结束 ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~ 	nodeJS开始     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+npm介绍
+
+说明：npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等）
+使用npm安装插件：命令提示符执行npm install <name> [-g] [--save-dev] 
+<name>：node插件名称。 
+例：npm install gulp-less --save-dev
+-g：全局安装。 
+将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量； 非全局安装：将会安装在当前定位目录； 全局安装可以通过命令行在任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，通过require()调用；
+
+--save：将保存配置信息至package.json（package.json是nodejs项目配置文件）；
+
+-dev：保存至package.json的devDependencies节点，不指定-dev将保存至dependencies节点；
+
+为什么要保存至package.json？因为node插件包相对来说非常庞大，所以不加入版本管理，将配置信息写入package.json并将其加入版本管理，其他开发者对应下载即可（命令提示符执行npm install，则会根据package.json下载所有需要的包）。
+3.使用npm卸载插件：npm uninstall <name> [-g] [--save-dev] 
+PS：不要直接删除本地插件包 
+4.使用npm更新插件：npm update <name> [-g] [--save-dev] 
+5.更新全部插件：npm update [--save-dev] 
+6.查看npm帮助：npm help 
+7.查看当前目录已安装插件：npm list
+
+PS：npm安装插件过程：从http://registry.npmjs.org下载对应的插件包（该网站服务器位于国外，所以经常下载缓慢或出现异常），解决办法往下看↓↓↓↓↓↓。
+选装cnpm
+
+
+说明：因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，如果npm的服务器在中国就好了，所以我们乐于分享的淘宝团队干了这事。来自官网：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。”
+官方网址：http://npm.taobao.org
+安装：命令提示符执行npm install cnpm -g --registry=https://registry.npm.taobao.org
+注意：安装完后最好查看其版本号cnpm -v或关闭命令提示符重新打开，安装完直接使用有可能会出现错误 
+注：cnpm跟npm用法完全一致，只是在执行命令时将npm改为cnpm。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+前端：网站 APP 数据交互  用户管理
+
+后端：node PHP Java 
+
+IP:127.0.0.1
+
+
+
+
+
+
+后台运行时在服务器，前台运行在浏览器中；
+
+一门后台平台，不是语言；能写后台，内建服务器；
+ 
+Chrome goole 的V8引擎
+
+Node Pageaged Modules
+
+	npm(包管理工具) 输入需要安装的文件或者库 就可以下载下来了
+
+	npm help    指令帮助
+
+	启动node  node.exe 文件名
+
+	在浏览器中输入http://localhost:8888   访问本地路径  8888 监听端口号
+
+	var http = require('http');  //引入http
+	
+	//createServer   创建服务器
+
+	http.createServer(function(req,res){  //req请求参数  res响应参数
+
+		res.writeHead(200);
+
+		res.end('miss.....');   //end 结束 在浏览器中查看
+
+	}).listen(8888);
+
+	console.log('Server running  at http://')  //在服务器中查看
+
+	
+
+Express 
+	Web 应用：是一个基于 Node.js 平台的极简、灵活的 web 
+		应用开发框架，它提供一系列强大的特性，帮助你创建各种 Web 和移动设备应用。
+	
+	API： 丰富的 HTTP 快捷方法和任意排列组合的 Connect 中间件，让你创建健壮、友好的 API 变得既快速又简单。
+
+	性能：Express 不对 Node.js 已有的特性进行二次抽象，我们只是在它之上扩展了 Web 应用所需的基本功能。
+
+	node npm 都会安装到node node_modules 里面
+
+	npm install express -g  //安装express框架  -g 全局安装
+
+	npm install express-generator -g  //安装express命令行
+
+	express -V  //低于4.13版本号用这个
+
+	express --version  //高于4.13.1 版本号用这个  现在的是4.14.1
+
+	mkdir 文件名  //创建文件夹
+	express 文件名   //创建项目
+
+	npm install   //安装依赖包 node_modules  因为是内置的，所有不需要有后面的内容
+
+	npm start //启动项目 
+
+	修改端口号：app.js  加入
+
+	app.listen('8888',function(){
+		console.log('server start...')
+	})
+
+	ctrl+c 两次 停止项目 
+
+
+
+	routes  后台文件 js
+	views   默认HTML模板 z这样式前后台不分离的在public里面是需要ajax，实现前后端分离
+
+
+
+
+
+	var express = require('express');   //引入模块
+	var index = require('./routes/index');  //引入文件
+
+	var app = express();  //声明 express模块  
+
+	app.use  中间件 
+	./routes/index      //自己理解
+
+
+	module.exports = router;   固定的模式  最后必须加入  不然http 请求不到数据
+
+
+	固定格式写法 
+	var express = require('express'); //引入模块
+	var router = express.Router();   //获取对象
+ 
+	router.get('/login',function(req,res){  //1 请求参数 2.响应回调函数  这里的login为后台ajax路径的第二个参数。
+		console.log('hello,world')
+	})
+	module.exports = router;  //输出对象
+
+
+
+//获取列表    请求参数     routes里面的就是 
+var express = require('express');
+var router = express.Router();
+
+
+router.get('/list',function(requset,response){
+
+  console.log('item list....')
+
+  var teg = requset.param('teg');    //获取请求参数
+
+  var id = requset.param('id');     //获取请求参数
+
+  console.log('teg:'+teg+'id：'+id)
+  response.send([
+    {uname:'1',name:'Jane',tel:'18235873838',company:'Jane的公司',jibie:'CEO'},
+    {uname:'2',name:'Lik',tel:'13994807577',company:'Lik的公司',jibie:'HR'},
+    {uname:'3',name:'Jinc',tel:'13453801120',company:'Jinc的公司',jibie:'CEO'},
+    {uname:'4',name:'Hwh',tel:'18675013231',company:'Hwh的公司',jibie:'HR'},
+    {uname:'5',name:'KK',tel:'47585854949',company:'KK的公司',jibie:'CEO'},
+    {uname:'6',name:'kime',tel:'13822228888',company:'Kime的公司',jibie:'CEO'},
+    {uname:'7',name:'Fei',tel:'13024585858',company:'Fei的公司',jibie:'CEO'},
+    {uname:'8',name:'Feel',tel:'18283338383',company:'Feel的公司',jibie:'CEO'},
+    {uname:'9',name:'Tired',tel:'13433338888',company:'Tired的公司',jibie:'CEO'}
+  ])
+
+})
+
+
+module.exports = router;
+
+HTML文件
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <script src="js/jquery-2.1.4.min.js"></script>
+      </head>
+      <body>
+        
+        <ul>
+          
+        </ul>
+
+        <script type="text/javascript">
+          $.ajax({
+            type:'get',
+            url:'http://localhost:8888/item/list?teg=1&id=1',    //请求参数  也可以使用data来传递
+            // data:{
+            //  teg:1
+            // },
+            success:function(e){
+              console.log(e)
+              for(var i = 0;i<e.length;i++){
+                $('ul').append('<li>'+e[i].uname+'....'+e[i].name+'.....'+e[i].tel+'...'+e[i].company+'...'+e[i].jibie+'</li>')
+              }
+            },
+            error:function(){
+              alert('error.....')
+            }
+          })
+        </script>
+      </body>
+      </html>
+
+node.js配置路由三种方法：
+1. req.body['id'];           // 接收post方法传递的id参数
+// a.html
+$.ajax({
+  type: 'post',
+  url: 'http://localhost:8005/custom/del',
+  data: {id: 1},
+  success: function(e){
+    console.log(e);
+  }
+});
+// custom.js
+router.post('/del', function(req, res){
+  var id = req.body['id'];        // 1
+  res.send({flag: 1});
+});
+
+2. req.params.id          // 接收get方法传递的参数
+// b.js
+$.ajax({
+  type: 'get',
+  url: 'http://localhost:8005/custom/del/1',  
+  success: function(e){
+    console.log(e);
+  }
+});
+// custom.js
+router.get('/del/:id', function(req, res){
+  var id = req.params.id;        // 1
+  res.send({flag: 1});
+});
+
+3. req.query.id              // 接收get方法传递的参数
+// c.js
+$.ajax({
+  type: 'get',
+  url: 'http://localhost:8005/custom/del?id=1',  
+  success: function(e){
+    console.log(e);
+  }
+});
+// custom.js
+router.get('/del', function(req, res){
+  var id = req.query.id;        // 1
+  res.send({flag: 1});
+});
+
+
+
+
+
+
+
+
+
+数据报错显示意义
+
+	1xx(临时响应)
+  表示临时响应并需要请求者继续执行操作的状态码。
+  100(继续)请求者应当继续提出请求。服务器返回此代码表示已收到请求的第一部分，正在等待其余部分。
+  101(切换协议)请求者已要求服务器切换协议，服务器已确认并准备切换。
+  2xx (成功)
+  表示成功处理了请求的状态码。
+  200(成功)服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。如果是对您的 robots.txt 文件显示此状态码，则表示 Googlebot 已成功检索到该文件。
+  201(已创建)请求成功并且服务器创建了新的资源。
+  202(已接受)服务器已接受请求，但尚未处理。
+  203(非授权信息)服务器已成功处理了请求，但返回的信息可能来自另一来源。
+  204(无内容)服务器成功处理了请求，但没有返回任何内容。
+  205(重置内容)服务器成功处理了请求，但没有返回任何内容。与 204 响应不同，此响应要求请求者重置文档视图(例如，清除表单内容以输入新内容)。
+  206(部分内容)服务器成功处理了部分 GET 请求。
+  3xx (重定向)
+  要完成请求，需要进一步操作。通常，这些状态码用来重定向。Google 建议您在每次请求中使用重定向不要超过 5 次。您可以使用网站管理员工具查看一下 Googlebot 在抓取重定向网页时是否遇到问题。诊断下的网络抓取页列出了由于重定向错误导致 Googlebot 无法抓取的网址。
+  300(多种选择)针对请求，服务器可执行多种操作。服务器可根据请求者 (user agent) 选择一项操作，或提供操作列表供请求者选择。
+  301(永久移动)请求的网页已永久移动到新位置。服务器返回此响应(对 GET 或 HEAD 请求的响应)时，会自动将请求者转到新位置。您应使用此代码告诉 Googlebot 某个网页或网站已永久移动到新位置。
+  302(临时移动)服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置来响应以后的请求。此代码与响应 GET 和 HEAD 请求的 301 代码类似，会自动将请求者转到不同的位置，但您不应使用此代码来告诉 Googlebot 某个网页或网站已经移动，因为 Googlebot 会继续抓取原有位置并编制索引。
+  303(查看其他位置)请求者应当对不同的位置使用单独的 GET 请求来检索响应时，服务器返回此代码。对于除 HEAD 之外的所有请求，服务器会自动转到其他位置。
+  304(缓冲)自从上次请求后，请求的网页未修改过。服务器返回此响应时，不会返回网页内容。
+  如果网页自请求者上次请求后再也没有更改过，您应将服务器配置为返回此响应(称为 If-Modified-Since HTTP 标头)。服务器可以告诉搜索引擎的蜘蛛/机器人 自从上次抓取后网页没有变更，进而节省带宽和开销。
+  .
+  305(使用代理)请求者只能使用代理访问请求的网页。如果服务器返回此响应，还表示请求者应使用代理。
+  307(临时重定向)服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置来响应以后的请求。此代码与响应 GET 和 HEAD 请求的 301 代码类似，会自动将请求者转到不同的位置，但您不应使用此代码来告诉 Googlebot 某个页面或网站已经移动，因为 Googlebot 会继续抓取原有位置并编制索引。
+  4xx(请求错误)
+  这些状态码表示请求可能出错，妨碍了服务器的处理。
+  400(错误请求)服务器不理解请求的语法。
+  401(未授权)请求要求身份验证。对于登录后请求的网页，服务器可能返回此响应。
+  403(禁止)服务器拒绝请求。如果您在 Googlebot 尝试抓取您网站上的有效网页时看到此状态码(您可以在 Google 网站管理员工具诊断下的网络抓取页面上看到此信息)，可能是您的服务器或主机拒绝了 Googlebot 访问。
+  404(未找到)服务器找不到请求的网页。例如，对于服务器上不存在的网页经常会返回此代码。
+  如果您的网站上没有 robots.txt 文件，而您在 Google 网站管理员工具"诊断"标签的 robots.txt 页上看到此状态码，则这是正确的状态码。但是，如果您有 robots.txt 文件而又看到此状态码，则说明您的 robots.txt 文件可能命名错误或位于错误的位置(该文件应当位于顶级域，名为 robots.txt)。
+  如果对于 Googlebot 抓取的网址看到此状态码(在"诊断"标签的 HTTP 错误页面上)，则表示 Googlebot 跟随的可能是另一个页面的无效链接(是旧链接或输入有误的链接)。
+  405(方法禁用)禁用请求中指定的方法。
+  406(不接受)无法使用请求的内容特性响应请求的网页。
+  407(需要代理授权)此状态码与 401(未授权)类似，但指定请求者应当授权使用代理。如果服务器返回此响应，还表示请求者应当使用代理。
+  408(请求超时)服务器等候请求时发生超时。
+  409(冲突)服务器在完成请求时发生冲突。服务器必须在响应中包含有关冲突的信息。服务器在响应与前一个请求相冲突的 PUT 请求时可能会返回此代码，以及两个请求的差异列表。
+  410(已删除)如果请求的资源已永久删除，服务器就会返回此响应。该代码与 404(未找到)代码类似，但在资源以前存在而现在不存在的情况下，有时会用来替代 404 代码。如果资源已永久移动，您应使用 301 指定资源的新位置。
+  411(需要有效长度)服务器不接受不含有效内容长度标头字段的请求。
+  412(未满足前提条件)服务器未满足请求者在请求中设置的其中一个前提条件。
+  413(请求实体过大)服务器无法处理请求，因为请求实体过大，超出服务器的处理能力。
+  414(请求的 URI 过长)请求的 URI(通常为网址)过长，服务器无法处理。
+  415(不支持的媒体类型)请求的格式不受请求页面的支持。
+  416(请求范围不符合要求)如果页面无法提供请求的范围，则服务器会返回此状态码。
+  417(未满足期望值)服务器未满足"期望"请求标头字段的要求。
+  5xx(服务器错误)
+  这些状态码表示服务器在处理请求时发生内部错误。这些错误可能是服务器本身的错误，而不是请求出错。
+  500(服务器内部错误)服务器遇到错误，无法完成请求。
+  501(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码。
+  502(错误网关)服务器作为网关或代理，从上游服务器收到无效响应。
+  503(服务不可用)服务器目前无法使用(由于超载或停机维护)。通常，这只是暂时状态。
+  504(网关超时)服务器作为网关或代理，但是没有及时从上游服务器收到请求。
+  505(HTTP 版本不受支持)服务器不支持请求中所用的 HTTP 协议版本。
+~~~~~~~~~~~~~~~~~~~~~   nodeJS结束 	   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+·························  面试复习	····························
+	
+	数据类型
+
+	字符串方法
+
+	arguments求和
+
+	数组排序
+
+	数组截取 
+
+
+····································································
+
+~~~~~~~~~~~~~~~~~~~~~     bootstrap开始    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BootStrap是什么
+
+BootStrap是基于HTML、CSS和JavaScript的框架，使你只需要写简单的代码就可以很快的搭建一个还不错的前端界面，它是后端程序员的福音，使他们只需要专注业务逻辑，而无须浪费太多的精力在界面设计上。
+
+跨平台  跨浏览器的界面  有响应式布局   
+
+用于各个平台设备
+
+全响应
+
+它可以开发全响应式网页——不论你使用手机、平板电脑、普通个人电脑浏览网站内容，所有的元素都可以很优雅的呈现，减轻了因为兼容性而带来的工作量。
+
+版本
+
+它的最新版本是4.0，国内目前用的较多的是3.x,本教程也基于BootStrap3.x版本。
+
+二次开发
+
+你可以使用默认的BootStrap样式、组件和插件，你也可以对其进行二次开发，甚至你还可以基于BootStrap环境使用自己开发的组件。
+
+
+bootStrap 基于jquery的  所以使用前必须先引入Jquery
+
+
+
+整体架构
+一般而言首页设计几乎等同与整个网站设计，那么首页中到底应该放些什么内容才好呢？这要看网站有哪些主要的元素。本教程里要设计的网站首页是一个多用户博客类的网站首页，在该网站中用户可以发表博客，也可以推荐图书给其他用户。所以，首页中的板块包括这些应该是恰当的：
+
+整站导航条
+
+文章（博客）展示板块
+
+图书展示板块
+
+用户（会员）展示板块
+
+脚注——footer部分
+
+其中导航条和脚注是整个网站中都要用到的，具体实现时可以放在布局模板中。
+
+
+1.导航条
+
+这里要用到固定在网页头部的导航条（navbar-fixed-top）,并在其中整合用户登录模块，代码如下
+
+2.文章板块需要用到的BootStrap元素
+
+	1.轮换图片插件（caoursel)——解决了展示图片时图片变形的问题。
+
+	2.标签页插件（tabs）——对插件的样式进行了美化，并增加了自动切换功能。
+
+	3.信息按钮（btn-info）组件——用它列出文章分类信息。
+
+3.图书板块需要用到的元素
+
+	1.自己开发的Jquery Tab插件
+
+	2.缩略图(thumbnail)组件
+
+	3.分类标签(仿豆瓣)
+
+4.用户板块用到的BootStrap元素
+
+	1.BootStrap原生tab
+
+	2.圆形图片（image_circle）
+
+
+
+~~~~~~~~~~~~~~~~~~~~~     bootstrap结束    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+--------------------   【自学笔记】  ---------------------------------
+
+	获取年月日时分秒
+	var oDate = new Date(); //实例一个时间对象；
+	oDate.getFullYear();   //获取系统的年；
+	oDate.getMonth()+1;   //获取系统月份，由于月份是从0开始计算，所以要加1
+	oDate.getDate(); // 获取系统日，
+	oDate.getHours(); //获取系统时，
+	oDate.getMinutes(); //分
+	oDate.getSeconds(); //秒
+
+
+	window.location 对象所包含的属性
+				
+			---->		属性		描述
+						hash		从井号 (#) 开始的 URL（锚）
+						host		主机名和当前 URL 的端口号
+						hostname	当前 URL 的主机名
+						href		完整的 URL
+						pathname	当前 URL 的路径部分
+						port		当前 URL 的端口号
+						protocol	当前 URL 的协议
+						search		从问号 (?) 开始的 URL（查询部分）
+
+			---->		reload() 方法，该方法强迫浏览器刷新当前页面。 
+						语法： location.reload([bForceGet]) 
+						参数： bForceGet， 可选参数， 默认为 false，从客户端缓存里取当前页。true, 则以 GET 方式，从服务端取最新的页面, 相当于客户端点击 F5("刷新") 
+
+	取消事件冒泡的两种写法
+
+			---->			e.stopPropagation()
+			---->			e.cancelBubble = true
+
+	window.open(页面地址)    可以打开一个新页面
+
+	window.close() 			 可以关闭当前的页面
+	
+	location.href  			页面跳转
+	location.reload() 		刷新页面 
+
+	history.back() 			返回上一级
+	history.forward() 		回到下一级
+
+	运算符
+	= 赋予 
+	== 等于 只会返回 true 和 false 隐式转换
+	=== 全等 数据格式都一样
+
+	显式类型转换（强制类型转换）：
+	Number()
+	parseInt()`
+	parseFloat()                                              
+
+	隐式类型转换：
+		+							200 + '3'		变成字符串
+		- * / %						'200' - 3     变成数字
+		++ --						变成数字
+		> < 						字符串数字的比较[会发生转换]、字符串字符串的比较[比较的是字符编码]
+		!	取反					a
+		==
+
+	alert( a );			// NaN 
+
+	// NaN：not a number 不是个 数字 的 数字类型
+
+	// alert( typeof (a) );			// number
+
+	// 一旦写程序中出现：NaN  肯定进行了非法的运算操作
+
+	isNaN  是不是一个什么数据
+	NaN    Not is Number    
+
+	alert(isNaN(NaN))		//true
+	alert(typeof isNaN)   //function
+	alert(typeof NaN)    //number*/
+
+
+	white-space:nowrap;强制文字不换行
+	单词较长超出盒子的宽度时让它折行的方法。（）word-wrap	
+	overflow:hidden;隐藏多余的
+	text-overflow:ellipsis;显示省略符号
+
+
+
+	js加载的时候需要1ms    setTimeout设置为0 的时候加载不出来
+
+	变量指向的js 里面的东西 执行的时候覆盖
+
+	面向对象
+	实例化以后为对象  new show()  为实例化
+
+	引用  面向对象  指向的东西 
+
+	json 里面的this 全部指向的是自己 json 本身
+
+	json 使用call 的时候有一个双向循环 最大支持63353
+
+	字符串的比较 是第一位数字
+
+	取模的时候 乘除 算法和乘除优先级是一样的
+
+	=的时候 只能是变量  变了的时候会报错
+
+
+	while与do while的不同，while是先判断后执行，而do while是先执行后判断
+
+	do{}while(1);  死循环
+
+
+	正则表达式的() [] {}有不同的意思。
+	() 是为了提取匹配的字符串。表达式中有几个()就有几个相应的匹配字符串。
+	(\s*)表示连续空格的字符串。
+	[]是定义匹配的字符范围。比如 [a-zA-Z0-9] 表示相应位置的字符要匹配英文字符和数字。[\s*]表示空格或者*号。
+	{}一般用来表示匹配的长度，比如 \s{3} 表示匹配三个空格，\s[1,3]表示匹配一到三个空格。
+	(0-9) 匹配 '0-9′ 本身。 [0-9]* 匹配数字（注意后面有 *，可以为空）[0-9]+ 匹配数字（注意后面有 +，不可以为空）{1-9} 写法错误。
+	[0-9]{0,9} 表示长度为 0 到 9 的数字字符串。
+
+	网络地址
+	cmd 
+		-ipconfig
+
+	javascript:void(0);  阻止页面跳转
+
+	1、get和post的区别
+1>get请求将参数放到请求地址url的后面
+2>post请求时将参数放到http请求空白行的后面，也就是请求的参数在空白行后面
+3>get请求时参数大小有限制
+4>post请求时参数大小无限制
+5>post比get更加的安全
+6>通过比较，post请求时，随了参数格式不同之外，post还比get请求多了一个content-type的
+请求头，它的值是application/x-www-form-urlencoded,表示本次提交的数据是字符数据，同时
+post还可以提交二进制数据，如：在form表单里加一个属性enctype="multipart/form-data"就可以，这种
+格式可以同时支持字符数据和二进制数据的传输。
+7>post服务器更数据时，没有缓存的问题，不会有缓存
+注：AJAX发送请求其实就是模拟http请求
+   AJAX对象的POST请求也要加上content-type的请求头
+
+
+0：表示对象己经建立，但未初始化，就是没有调用open()方法
+1：表示对象己经初始化，但未发送，也就是己经调用open()方法，但是没有调用send()发送方法
+2：表示已经调用send()方法进行请求，也就是向服务器发送请求，发送数据
+3：表示服务器正在接收数据（接收到一部分），也可以说正在接收响应
+4：接收数据完成
+
+
+HTML DOM save() 方法
+	save() 方法保存当前图像状态的一份拷贝。
+	save() 方法把当前状态的一份拷贝压入到一个保存图像状态的栈中。这就允许您临时地改变图像状态，然后，通过调用 restore() 来恢复以前的值。
+
+
+get 参数传值 格式     	获取值	index.html?id=‘+e[i].id+’
+
+form 表单是前后端页面不分离下需要写的 
+	 前后端页面分离的时候就不需要form
+
+complete:function(e){
+
+	e.responseText    //返回字符串   
+
+	eval()  自动计算   
+
+	eval("('+zhuanghuanduix+')")
+
+}  交互成功以后   请求完成后调用的回调函数
+
+success:function(){
+
+} 请求成功后调用的回调函数
+
+beforeSend:function(){}  //发送请求前可修改
+
+
+
+-----------------------     【JavaScript笔记】  -----------------------------
+[注意]：
+	1.行内元素 受空格影响;
+	2.input 里面获取出来的value通通都为字符串;
+	3.document.title; //网页的title;                        
+	4.网页中logo用<h1>标签包起来 利于搜索引擎优化；
+	5.层级关系  浮动>定位>普通;
+	6.is not defined : 未定义;
+	6.超出隐藏 overflow:hidden
+	7.按钮只能按一次的属性；this.disabled=true/false;
+	8.opacity:0.5 半透明0-1;  兼容高级浏览器
+	9.cursor:pointer 给div加a标签移入的效果 变小手;
+	10.行变块：display:inline-bolock;
+	11. prev 上一个；  next 下一个
+	12.bFalg = false;  //标识；逼格高而已 — —！；
+	13.docuemnt是最顶层的父级节点
+	14.用children是只获取他子集第一层
+	15.<select> 标签 和 checkbox 标签 都不能用 css 修改样式；
+	16.<input type="text" placeholder="" /> 文本框文字变灰
+--------------------------------------------------------------- 
+【选择器的优先级问题】
+	div:  //组合选择器； 优先级大于一个class选择器；
+	class选择器 优先级 大于标签选择器；
+	两个class选择器 优先级 大于一个class选择器；
+---------------------------------------------------------------
+
+【定位】
+	position
+	相对定位：relative
+	绝对定位：absolute
+	固定定位：fixed
+	定位 position；absolute； 可以使行内元素改变成块状元素 就不用加display：block；了
+
+	层级关系  浮动>定位>普通;
+-------------------------------------------------------------------------
+【复选框】
+	checkbox 复选框
+	checked 选中状态
+--------------------------------------------------------------------------
+【阴影】
+	box-shadow:值1 值2 值3 值4;
+	左右，上下，模糊度，大小,颜色；
+--------------------------------------------------------------
+	border-radius //不兼容底浏览器
+	opacity(0-1)//兼容高级浏览器
+	placeholder
+	<input type="text" placeholder="请输入" />
+	filter:alpha(opacity:0-100)
+----------------------------------------------------------------------------
+【盒子水平居中】
+	position:absolute; 
+	top:50%; 
+	left:50%; 
+	margin-left:width/2;
+	margin-top:height/2;
+--------------------------------------------------------------------------
+【前缀】
+	o  object	对象=元素=标签
+	a  array	数组，组
+	n  number	数字  
+	i  integer	整数
+	f  float	小数
+	b  boolean	布尔值
+	s  string	字符串
+	fn function	函数
+-----------------------------------------------------------------------------
+【提示框】
+	alert(); 消息对话框； //弹出内容/undefined;
+  	prompt(); 提示对话框；  //弹出输入内容； 
+  	confirm(); 确认/取消对话框；  //返回 boolean :true && false
+  		例如：
+		  	var bCon = confirm();
+			if(bCon){
+				alert(1); //点击正确弹出1
+			}else{
+				alert(2); //点击取消弹出2
+			}
+-----------------------------------------------------------------------------
+【6种数据类型】
+	1、number 数字
+	2、object 对象
+		数组
+		null
+		json
+		window
+	3、string 字符串
+	4、boolean 布尔值
+		true false
+	5、function 函数
+	6、undefined 未定义
+	
+	检测数据类型 typeof();
+------------------------------------------------------------------------
+【undefinedd 出现的5种情况】
+	1、未定义变量
+	2、变量未赋值
+	3、函数未传参 
+	4、函数没有返回值
+	5、只有return 没有值
+-------------------------------------------------------------------------
+【作为判断条件为false的6种情况】
+	1、false
+	2、空字符串
+	3、0
+	4、null 空对象
+	5、NaN
+	6、undefined
+-------------------------------------------------------------------
+【NaN】			
+	属于number类型;
+	当它用来作为判断条件的时候  相当于false
+	两个NaN比较   它们两个永远不相等
+	判断是不是NaN   ---    用isNaN来判断
+-----------------------------------------------------------------
+【鼠标事件】
+	点击事件：onclick
+	移入：onmouseover
+	移出：onmouseout
+	移动：onmousemove  
+	滚动滑轮：onmousewheel
+	摁下：onmousedown
+	弹起：onmouseup
+	右键：oncontextmenu 
+	双击: ondblclick
+-------------------------------------------------------------
+【js顺序】
+	先获取---加事件---操作
+-------------------------------------------------------------
+【获取元素】
+	1、document.getElementById('id名字'); 父级不可以修改
+	2、document.getElementsByTagName('标签名'); 父级可以修改
+	3、document.getElementsByClassName("class名字"); 父级可以修改  不兼容IE8以下
+	4、document.getElementsByName('name名字'); 父级可以修改
+	注意：
+			父级可以修改
+			不能直接对一组元素操作
+			一组元素有length属性
+			下标都是从0开始的的；
+-------------------------------------------------------------
+【下拉菜单】
+	getElementsByName('city');
+	<select name="city">
+		<option>北京</option>
+		<option>上海</option>
+		<option>广州</option>
+		<option>杭州</option>
+		<option>杭州</option>
+	</select>
+-------------------------------------------------------------
+	onchange	//触发时机 是里面的东西发生了改变触发的
+		改变
+
+	oSel.selectedIndex		//获取当前的option的索引值
+		获取索引值
+
+	oSel.options[index].value	//每一option选项当中的value
+		获取value值
+		
+	oSel.options.length  		61
+		获取长度
+		
+	oSel.options.remove(0);
+		删除
+	例如：
+		var length = oSel.length;  //这样去删除
+		for(var i=0;i<length;i++){
+			oSel.options.remove(0);
+			//alert(oSel.length);
+		}
+---------------------------------------------------------------
+	oSel.onchange = function(){
+
+	};
+
+	oSel.selectedIndex;  //获取 select 的索引值 ;
+
+	var index = oSel.selectedIndex;
+	oSel.options[index].text;  //获取option里的文本；
+	oSel.options[index].value; //获取opiton里的value;
+	oSel.options.length;   //options 是一组；
+
+	var oNew = new Option();
+	oNew.value = '新的value值';
+	oNew.text = '相当于innerHTML';
+	oSel.options.add(oNew);  //添加一个option；
+	oSel.options.remove(n);  //删除第n个option；
+
+
+	例2：话费效果：
+       var oSel = document.getElementById('sel');
+       var oSpan = document.getElementById('span');
+       var arr = ['9.9','19.9','29.8','39.5','49'];
+       oSel.onchange = function(){
+           var index = oSel.selectedIndex;
+           oSpan.innerHTML = arr[index] + '元';
+       }
+--------------------------------------------------------------
+
+【声明变量】
+	声明变量的‘关键字’：var
+	var 变量名字 = 值
+	注意：
+		变量区分大小写；
+		变量名规则：以字母_$开头，
+		不能以数字，系统保留字，中文开头。
+		如果前后变量名一样，后面的会覆盖掉前面的变量
+		遵循驼峰命名法：
+			例如：
+				oBtn   marginLeft 
+-------------------------------------------------------------
+【单引号和双引号的区别】
+	单引号不能套用单引号
+	双引号不能套用双引号
+	双引号可以套用单引号
+	单引号可以套用双引号
+--------------------------------------------------------------
+【当遇到一下情况】
+	margin-left 		marginLeft 
+	margin-right		marginRight
+	backgroun-image		backgrounImage	
+	font-size			fontSize
+	text-align			textAlign
+	line-height			lineHeight
+	text-decoration		textDecoration
+	中间的横杠用后面的首字母大写代替
+--------------------------------------------------------------
+1.行内事件的时候必须是id名字
+2.行内事件加事件的时候 .  代表什么"的"
+----------------------------------------------------------------
+【js注释】
+	//单行注释
+	/*
+		多行注释
+	*/
+	作用/好处：
+		1、方便自己修改代码
+		2、不要删除感觉错误的代码
+---------------------------------------------------------------------
+
+【window.onload】
+	window.onload = function () {
+		//当所有HTML、css...加载完毕以后的时候触发
+	};
+---------------------------------------------------------------------	
+【.与[]的区别】
+	在js中.代表‘的’的意思
+	.后面不可以跟变量
+	[]可以代替. 
+	.不可以代替[]
+--------------------------------------------------------------
+【for循环】
+	for(var i=0;i<5;i++){
+		alert(i);
+	};
+	执行顺序：初始值——判断条件——执行输入——自增
+	（然后继续判断-比较输入，直到不满足条件停止）
+	for循环里面第一层i=i；第二层i!=i
+	
+(for循环用于知道长度的情况下  while循环用于不知道长度的情况下)
+---------------------------------------------------------------
+【while循环】
+	初始值
+	while(条件){
+		循环体
+	};
+-------------------------------------------------------------
+【continue】  
+	跳出此次循环 但 不中断循环
+	例：
+		for(var i=0; i<5; i++){
+			if(i==3){
+				continue;
+			}
+			alert(i);     //弹出 0 1 2 4；
+		}
+----------------------------------------------------------------
+【break】  
+	跳出此次循环 并 结束循环；
+	例：
+		for(var i=0; i<5; i++){
+			if(i==3){
+				break;
+			}
+			alert(i);  //弹出 0 1 2；
+		}
+-------------------------------------------------------------		
+【return】
+	返回值
+	return 可以让for循环停止；
+	return 后面的代码不执行；！！
+	return 可以返回任何东西；
+	只返回  但是不 输出；
+	返回的内容尽量统一；比如都是 string；|| number；
+	function re(a,b){
+		return a+b;
+	}
+	re(1,2);	//返回 1+2； 但是不输出；
+	alert(re(1,2)); //弹出 3；
+---------------------------------------------------------------
+【if】		
+	if 缩写 去掉大括号  分号结束！ 但是中间没有分号;
+
+		if(条件){
+			alert();	//满足条件就输出
+		}
+		
+		if(条件){
+			条件为真的代码段
+		}else{
+			条件为假的代码段
+		}
+		
+		if(){
+			
+		}else if{
+							//else if 可以写多个
+		}else if{
+		
+		}else{
+		
+		}
+-------------------------------------------------------------
+【switch】
+	swith(变量/条件){
+		case1:
+             alert()
+		     break;
+		
+		case2:
+             alert()
+		     break;
+		
+		case3:
+             alert()
+		     break;
+
+		dafault;
+		
+	};
+-----------------------------------------------------------------
+【函数】
+	什么是函数？
+		答：函数由事件驱动或者当它被调用时执行，可重复使用的代码块
+	语录：函数就是一条狗，那里叫那里走！
+	【获取函数不固定参数】
+		arguments.length
+	声明函数关键字：function
+		例：function 函数名(形参){
+				函数体
+			};
+			函数名(实参); //调用函数
+	1、普通函数
+		function 函数名() {};
+		触发时机:当出现函数名的时候触发
+	2、事件函数
+		obtn.onclick = function () {}; 
+		触发时机:当触发事件的时候触发
+		事件触发函数：oBtn.onclick = 函数名; // 注意 ！ 函数名后面没有括号；
+	3、匿名函数
+		function () {};
+
+	【函数名与变量同名】	
+		变量覆盖函数
+
+	【函数名没有括号】
+		如果不加括号()  就相当等于这个函数体
+		函数不见()不执行
+--------------------------------------------------------------------------------
+【数组】
+	数组  array
+	定义
+		var arr = [值1,值2,值3,值4,...];  ([]里可以输入任何类型的值)
+		var arr = new array[];
+	调用
+		.length  它是从0开始的  
+		最后一个元素也是.length-1 
+		数组名 '下标' 
+--------------------------------------------------------------------------------
+【类型转换】
+	[parseFloat]  字母在前就是NaN，数字在前是数字（有小数）;
+		可以使字符串类型转化为数字类型
+		例：		
+			var a = 12.5;     -----    12.5
+			var b = 12;       -----    12
+			var c = '12.5';   -----    12.5
+		    var d = 'abc12';  -----    NaN
+			var e = '12abc';  -----    12‘
+
+	[parseInt]	 字母在前就是NaN，数字在前是数字（取整数）;
+		可以使字符串类型转化为数字类型    数字类型而且为整数
+		例：	
+			var a = 12.5;     -----    12
+			var b = 12;       -----    12
+			var c = '12.5';   -----    12
+			var d = 'abc12';  -----    NaN
+			var e = '12.5abc';  -----    12
+
+	[Number]  只要有字母就是NaN;				
+		可以使字符串类型转化为数字类型   
+		例：	
+			var a = 12.5;     -----    12.5
+			var b = 12;       -----    12
+			var c = '12.5';   -----    12.5
+		    var d = 'abc12';  -----    NaN
+			var e = '12.5abc';  -----    NaN	
+------------------------------------------------------------------------
+【隐式类型转换】
+	var a = 12;
+	var b = '23';
+	if(a>b){               	//内置把 '23'转换为 23；
+		alert(1):
+	}else{
+		alert(2);
+	}			
+-----------------------------------------------------------------------			
+【innerHTML】
+	html怎么写  在innerHTML里就怎么写；
+	覆盖写入；下面的会覆盖上面的;
+	\ 转义字符 ：把有意义的东西给转换成没意义的字符
+	例：
+		oBox.innerHTML="<p>这是一个p</p>";
+------------------------------------------------------------------------	
+【自定义属性】
+	一般用 index :索引；
+	行间加自定义属性 无效 ；ie8 - 可以
+	只能在js 里加；
+	一般用 data-index 作为前缀标识,防止重命名;
+	在行间进行自定义属性的时候，高级浏览器弹出undefined
+-----------------------------------------------------------------------
+【三位运算符】
+	条件? true ：false;
+----------------------------------------------------------------------
+【获取非行间样式】
+	obox.currentStyle.width //只兼容IE 
+		IE浏览器获取不到符合样式
+			eg：background border
+
+	getComputedStyle(obox,false).wdith //只兼容高级浏览器
+
+	封装：(兼容所有)
+	function getstyle(obj,sName) {
+		if(obj.currenStyle){
+			return obj.currentStyle[sName];
+		}else{
+			return getComputedStyle(obj,false)[sName];
+		};
+	};
+------------------------------------------------------------------
+【局部变量】
+	1.函数体内声明的变量；
+	2.局部变量可以 在 局部 覆盖 全局变量；！
+	3.局部变量只能在 局部 生效！
+	4.局部可以使用全局变量；
+	5.全局不可以使用局部变量；
+
+【局部函数】
+	性质同上↑；（局部变量）
+	
+【全局变量】
+	1.作用域：整个script 标签内都能用；
+	2.变量跟函数的区别： 函数只要声明了在哪都能使用；而变量只能在声明后（下面）使用；
+	3、局部的可以使用全局的
+	4、在函数外面定义的
+
+【变量与函数的区别】
+	函数只要声明了在那里都能使用
+	变量只能在声明后（下面）使用
+
+【当局部赋值没有加 var 时  可覆盖全局 的变量的值】
+	例如：
+		var a=1;
+		function show(){
+			a=2;
+			alert(a);
+		}
+		show();
+		alert(a);
+-----------------------------------------------------------------------------
+【操作属性】
+	【获取行间属性】
+		obj.getAttribute('属性名字'); //可获取自定义属性和已有属性
+	【设置(新建)行间属性】
+		obj.setAttribute('
+	注意：
+		在行间进行自定义属性的时候 高级浏览器弹出undefined,
+		目前是IE8以下,可以获取到自定义行间属性
+		直接写在行间的 高级浏览器获取不到
+--------------------------------------------------------------------
+【运算符】
+	【赋值运算符】
+	   	-   +=  -=  *=   /=  %= i++ i--
+	   	i++;  先赋值后运算
+		i+=1; 先运算 后赋值
+
+	【比较运算符】
+	   >   <   >=   <=  ==   ===
+
+		=     赋值
+
+		==    只判断数值不判断类型
+
+		===	  要求类型&&数值完全相等
+
+		||    或者  一个为真就为真，只有同时为假（false）才为假
+
+		&&    并且	两个为真才是真, 一个为假就是假
+
+		！	  非  否定 取反
+
+	[优先级问题]
+		注意：先算括号里，在算*/+-
+-----------------------------------------------------------------------
+【封闭空间】
+	(function(index){
+		
+	})(i);
+----------------------------------------------------------------------
+【闭包】
+	子函数可以用父函数的变量
+	函数嵌套函数为闭包
+---------------------------------------------------------------------
+【this】
+	this 套一层会失效； 
+	可以给this 赋值 到 变量； 
+		例：
+			 _this / that = this;
+-----------------------------------------------------------------------
+【定时器】
+	定时器 秒数 30 ~是最完美的~
+
+	开之前先清空以前的
+		var timer = null;
+
+	[周期性]
+		setInterval(fn(),ms);   //开始
+		clearInterval('定时器名字');  //停止 清空 放在定时器里面
+
+	[一次性]
+		setTimeout(fn(),ms); //开始
+		clearTimeout('定时器名字')  //停止 清空 放在定时器里面
+	
+	[定时器触发函数]	
+		setTimeout(函数名,ms); // 注意 ！函数名后面没有括号；
+
+	注意：
+		遇到清空定时器 后面的代码得执行完；
+-----------------------------------------------------------------------
+【随机数】
+	Math.random();	//随机出现 0-1 之间的数字；
+
+	function rnd(n,m){
+		return parseInt(Math.random()*(m-n)+n);
+	}
+	rnd(); // 随机出现 n-m 之间的数字 
+-------------------------------------------------------------------------
+【逗号表达式】  
+	有括号的弹出后面的  相反 没有括号的弹出前面的
+	var a;
+	a = 2,3;
+	alert(a);   2  // 第一个；
+
+	var a = (2,3);
+	alert(a);   3  //第二个；
+-------------------------------------------------------------------	
+【补零】
+	function toDub(n) {
+		return n<10? '0'+n :　ｎ+'';
+	};
+-------------------------------------------------------------------
+【获取焦点】
+	onfocus
+【失去焦点】
+	onblur
+---------------------------------------------------------------
+【日期对象】
+	[unix 时间戳]
+		从1970年1月1日 开始到现在经过的秒数(单位：毫秒)不考虑闰年
+	
+	文字时钟：.
+	window.onload = function () {
+		wzsz();
+		//定时器
+		timer = setInterval(wzsz,1000);
+		//文字时钟
+		function wzsz() {
+			var oDate = new Date; //创建一个日期对象函数
+			var n = oDate.getFullYear(); //年
+			var y = oDate.getMonth()+1; //月 获取的是0-11 所以要+1；
+			var r = oDate.getDate(); //日
+			var s = oDate.getHours(); //时
+			var f = oDate.getMinutes(); //分
+			var m = oDate.getSeconds() //秒
+			var week = oDate.getDay(); //获取星期；
+			var c = oDate.getTime(); //时间戳；
+			var str = n+'年'+toDub(y)+'月'+toDub(r)+'日'+toDub(s)+'时'+toDub(f)+'分'+toDub(m)+'秒';
+			document.body.innerHTML = str;
+			//补零
+			function toDub(n) {
+				return n<10? '0'+n : ''+n;
+			};
+		};
+	};
+--------------------------------------------------------------------------------------	
+【倒计时】
+	var oNow = new Date(); //现在的时间
+	var oFuture = new  Date(); //建立一个未来的时间
+	oFuture.setMonth(9,1);   //一月一日 （0-11月）;
+	oFuture.setHours(0,0,0,0);  // 零时零分零秒零毫秒；
+
+	var total = oFuture.getTime()-oNow.getTime();  //时间差值(毫秒);
+	total = parseInt(total/1000);  //毫秒换算成秒；
+	
+	//得到天数；
+	var date = parseInt(total/86400);  
+	//得到小时；
+	total %= 86400; 
+	var h = parseInt(total/3600);  	
+	//得到分钟；
+	total %= 3600;
+	var m = parseInt(total/60);  	
+	//得到秒；
+	total %=60;
+	var s = parseInt(total);  
+	
+	var timing = '距离十月一放假还剩'+date+'天'+h+'小时'+m+'分钟'+s+'秒';  // 得到具体时间 几天几小时几分钟几秒；
+
+	alert(timing);
+------------------------------------------------------------------------------------
+【清空数组】		
+	[第一种方法]
+		var arr = [1,2,3,4,5,6,7,8,9];
+		arr.length = 0;
+		alert(arr);
+	[第二种方法]
+		var arr = [1,2,3,4,5,6,7,8,9];
+		while(arr.length>0){
+			arr.splice(0,length);
+			//arr.pop();
+			//arr.shift();
+		}
+		alert(arr);
+	[清空数组里的偶数]
+	    var arr = [1,2,3,4,5,6,7,8,9];
+	    for(var i=0;i<arr.length;i++){
+           if(arr[i]%2 == 0){
+              arr.splice(i,1);
+              i--;
+           }
+	    }
+	    alert(arr);
+-----------------------------------------------------------------------------------
+【数组操作】
+	arr.eval()；执行符合js语法的字符串//用在交互（转杰森格式）；
+
+	arr.join() 数组变成字符串	
+		1、不保持状态
+		2、想用这个改变过后的值，重新赋值一个新的变量
+		3、起到分割的作用
+			例如：
+				var arr = [1,2,3];
+				arr.json(-);
+				alert(arr);	//1-2-3
+
+	arr.push()	添加  后面
+
+	arr.unshift()   添加  前面
+
+	arr.pop()	删除   后面	返回一个将要删除的元素
+
+	arr.shift() 	删除前面
+
+	arr.reverse()	翻转数组
+
+	arr.concat()	拼接两个数组 
+		            1、不保持状态；；，
+
+	arr.splice()	删除
+		删除
+			arr.splice(开始下标，个数)
+		插入
+			arr.splice(开始下标，0，内容......)
+		替换	
+			arr.splice(开始下标，个数，内容....)
+	arr.sort()排序				
+		默认，排字符串	
+		sort //排序
+		alert(arr.sort(function(a,b){
+			return b-a; // b-a 降序  // a-b  升序
+		}));
+----------------------------------------------------------------------------------
+【字符串操作】
+	str.charAt(0); 按字符串索引查找； 兼容所有；
+	str[]; 兼容ie7以下；
+	str.indexOf();  从前查找； 找到的话返回当前索引值 找不到的话返回-1
+	str.lastIndexOf();  从后查找；
+	str.toUpperCase();  大写；
+	str.toLowerCase();  小写；
+
+	str.substring(0); 从开始下标，截取到最后；（包含开始下标）；
+	str.substring(1,3); 从开始下标，截取到结束下标；(不包含结束下标);
+
+	str.split(); 把字符串变成 数组；  //一次性，不保存状态，得重新赋值变量；
+------------------------------------------------------------------------------------	
+【判断浏览器数据类型及版本】
+	　发音:辣舞给der 油r A真特
+	window.navigator.userAgent
+
+	例如：
+		//判断浏览器数据类型
+		var str = window.navigator.userAgent;
+
+		//转化小写
+		var text = str.toLowerCase();
+
+		if(text.indexOf('chrome') != -1) {      //-1没有的意思
+			alert('谷歌');
+		}else if(text.indexOf('firefox') != -1) {
+			alert('火狐');
+		}else if(text.indexOf('trident') != -1) {
+			alert('IE');
+		};
+-------------------------------------------------------------------------------------
+【json】
+	严格样式用双引号
+	格式：var json = {"title":"标题","dsc":"描述","detail":"详情"};
+
+	弹出json: alert(JSON.stringify(json));
+	
+	【判断json在不在json中】
+		for(name in json){
+			alert('在');  //判断name在不在json中，在的话弹出1；
+		};
+
+	【json排序】
+		var arr = [
+			{'name':'衣服1','num':'3'},
+			{'name':'衣服2','num':'13'},
+			{'name':'衣服3','num':'23'},
+			{'name':'衣服4','num':'33'},
+			{'name':'衣服5','num':'12'},
+		];
+		arr.sort(function(a,b){
+			return a.num - b.num;
+		});
+		alert(JSON.stringify(arr));
+
+	【后台给的json】
+		var str = "({'name':'小三','age':'20','sex':'boy','hobby':'挖煤'})";
+		var json = eval( '(' + str + ')' );    //后台给的json有时候没有加（）， 输出的时候给它前后拼接（）
+		alert(JSON(stringify(json)));
+-------------------------------------------------------------------------------
+【css方法】
+	1、传两个参数
+		对象
+		字符串
+		
+		对象
+		json
+
+	2、传三个参数
+		对象
+		字符串
+		字符串(value)
+例如：
+	var obox = document.getElementById('box');
+	
+	//获取非行间样式
+	function getstyle(obj,sty) {
+		return obj.currentStyle? obj.currnetStyle[sty] : getComputedStyle(obj,false)[sty];
+	};
+
+	//封装css方法
+	function css(obj){
+		if(arguments.length == 2){
+			if(typeof(arguments[1]) == 'string'){
+				//var sty = arguments[1];
+				return getstyle(obj,sty);
+			}else{
+				var json = arguments[1];
+				for(name in json){
+					obj.style[name] = json[name];
+				};
+			};
+		}else{
+			//var sty = arguments[1];
+			//var val = arguments[2];
+			obj.style[sty] = val;
+		}
+	}; 
+	
+	css(obox,{
+		'width':'800px',
+		'height':'800px',
+		'background':'red',
+		'lineHeight':'800px',
+		'textAlign':'center',
+		'fontSize':'80px'
+	});
+-------------------------------------------------------------------------
+【数学方法】
+	Math.random(); //0-1的随机小数
+
+	Math.PI()	//圆周率 3.1415926 - 3.1415927之间
+
+	Math.ceil()	//向上取整
+
+	Math.floor()	//向下取整
+
+	Math.round()	//四舍五入
+
+	Math.max()	//求最大值
+
+	Math.min()	//求最小值
+	
+	Math.sqrt()	//开平方
+
+	Math.pow()	//次方
+
+	Math.abs()	//绝对值
+-----------------------------------------------------------------------------
+【逗号表达式】
+	var a= 2,3;  
+	alert(a);   2  // 第一个；
+
+	var a = (2,3);
+	alert(a);   3  //第二个；
+
+	var a = (0,3);
+	alert(a);		//  3
+	有括号的弹逗号后的
+	没括号的弹逗号前的
+
+	var a=1,b=2,c=3;
+	alert(a+':'+b+':'+c);
+-------------------------------------------------------------------------------
+【赋值表达式】
+	var a = b = 1;  // a=1; b=1;  /但其中 b 是全局变量； a 是局部变量；
+	var a = 1,b = 2;  //a b 都是局部变量；
+------------------------------------------------------------------------------
+【预解析】
+	函数可以预解析； 而 变量不可以预解析；
+		例如：
+			alert(a);  // udefined;
+			var a = 18;
+
+			show(); //18
+			function (){
+				alert(a = 18);
+			};
+
+	预解析范围在当前 <script> 标签内；
+
+	alert(a);j  
+	var a = 1;   //undefined;  预解析 相当于 var a; 变量未赋值；
+
+	1、	alert(a);
+		var a = 18; // 弹出  undefined
+
+	2、	alert(typeof(a));	//undefined   变量未定义
+
+	3、	var a;
+		alert(a);	//undefined    变量未赋值
+
+		变量未定义，变量没有预解析
+		
+	变量调用只能在声明之后
+	预解析只发生在一个script中
+------------------------------------------------------------------------------
+【异常抛出】
+	用在：
+		线上 bug
+		着急 不报错；
+		优点:
+			屏蔽错误，能执行后面代码
+		缺点:
+			速度慢
+			不报错
+	例如：
+		try{
+	  		alert(a);
+		}catch(e){	   		//e = error; 错误;
+			alert(e);    //a is not defined; 错误原因；
+			alert(12);
+		}; 
+ --------------------------------------------------------------------------------
+冒泡排序   // 
+	var arr = [12,3,45,67,8,90,987,65,43,2];
+	for(var i=0; i<arr.length; i++){
+		for(var j=i+1; j<arr.length; j++){
+			if(arr[i] > arr[j]){
+				var tmp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = tmp;
+			}
+		}
+	}
+	alert(arr);
+--------------------------------------------------------------
+排序  // 
+	var arr = [45,6,49,45,612,316,6,461,3,9,56,3,55];
+
+	function ff(arr,star) {
+		var nMin = 999;
+		var nMinIndex = -1;
+		for(var i=star;i<arr.length;i++){
+			if(arr[i]<nMin){
+				nMin = arr[i];
+				nMinIndex = i;
+			};
+		};  
+		return nMinIndex;
+	};
+
+	for(var i=0;i<arr.length;i++){
+		var index = ff(arr,i);
+		var tmp = arr[i];
+		arr[i] = arr[index];
+		arr[index] = tmp;
+	};
+
+	alert(arr)
+--------------------------------------------------------------
+
+
+【得到焦点】
+	oBtn.onfocus = function(){};
+
+【失去焦点】
+	oBtn.onblur = function(){};
+
+【强行获取焦点】
+	fcous
+----------------------------------------------------------------------------
+ 【DOM】
+	获取
+		父级
+			children   第一层子级			//children;    //object;
+											//var aLi = document.getElementById('ul').children;
+			parentNode 父级 （节点 DOM树） 
+
+		第一个
+			firstElementChild
+			firstChild.
+
+		最后一个
+			lastElementChild
+			lastChild
+
+		上一个
+			previousElementSibling
+			previousSibling
+
+		下一个
+			nextElementSibling
+			nextSibling
+
+	创建
+		document.createElement(标签名)
+
+		必须是  document
+			getElementById
+			createElement
+
+	插入
+		父级.appendChild(子级对象);	追加
+		父级.insertBefore(插入，谁);	在...之前插入
+		
+
+	删除
+		父级.removeChild(子级);
+		注意:只能是第一层父级，有权限删除
+
+【DOM 下的操作函数】
+	把汉字转成编码
+		str.charCodeAt([下标]);
+
+	把编码转成为汉字
+		String.fromCharCode(编码);
+
+		a = 97
+		A = 65
+		
+		A - Z = 65 - 90
+		a - z = 97 - 122
+
+	中文的取值范围
+		19968 - 40869  数字   
+		for(var i=19968;i<=40869;i++){
+            alert(String.fromCharCode(i));  //中国汉字
+		}
+		0X4E00 0X9FA5  十六进制前面需要加0x前缀
+		
+	微软雅黑
+		'\u5FAE\u8F6F\u96C5\u9ED1'
+
+	一个汉字占字节
+		UTF-8   3
+		GB2312  2		
+			1TB=1024GB
+
+	强制获取焦点
+		focus
+			1GB=1024MB
+			1MB=1024KB
+--------------------------------------------------------------------------
+【offset】
+   offsetWidth/offsetHeight  获取自身元素的宽度/高度   与margin无关
+   与padding有关   包括border  没有px
+
+   offsetLeft/offsetTop 获取元素定位父级的距离  -left/-top 如果说他没有定位则是body
+
+   offsetparent   获取定位父级的元素  不加定位找body
+   parentNode  仅仅是获取html结构的父级
+
+   display:none  获取不到任何offset的东西
+--------------------------------------------------------------------------
+【可视区宽高】
+		document.documentElement.clientWidth    不能改变父级	没有兼容性
+		document.documentElement.clientHeight	不能改变父级	没有兼容性
+--------------------------------------------------------------------------
+【window 事件】	
+		window.onload		//页面加载完毕的时候触发
+		window.onscroll		//出现滚动的时候触发
+		1、区别
+				1）scrollTo()是一步到位；
+				2）scrollBy()是逐步累加。
+		window.onresize		//可视区发生改变的时候触发
+
+--------------------------------------------------------------------------
+【滚动距离】
+	window.onscrol //出现滚动条并且发生滚动的时候  
+		document.body.scrollTop			//只兼容google浏览器
+		document.documentElement.scrollTop   //不兼容谷歌
+		ent.scrollTop		//兼容IE和firefox浏览器
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;		//兼容所有
+		oDiv.innerHTML = scrollTop;
+--------------------------------------------------------------------------
+
+【事件对象】
+	获取坐标
+	
+	鼠标跟随
+	1、
+	
+	2、如果加大高度/加大宽度
+	
+	3、固定定位
+	
+	4、鼠标居中
+	
+	5、上 下 左 右
+	
+	6、优化
+	
+	【事件】
+		整个页面加事件 -> document
+
+	【事件对象】
+		事件相关东西，都保存在事件对象中     event 事件
+		event 不兼容FF
+		ev    不兼容IE低版本
+		var ev=ev||event
+	【鼠标坐标】
+		clientX		返回当事件被触发时，鼠标指针的水平坐标。	
+		clientY		返回当事件被触发时，鼠标指针的垂直坐标。
+		注意：可视区为参照物计算
+		解决：fixed 或者 +scrollLeft/scrollTop
+
+	【事件冒泡】
+		操作子级，能触发父级的事件;
+		注意：
+			1. 子级有没有事件，都会冒泡
+			2. 冒泡与位置无关
+
+		取消冒泡
+			子级
+			oEvent.cancelBubble=true;
+
+	【阻止默认事件】
+		return false;
+			不选中文字 -> onmousedown return false
+			右键       -> oncontextmenu return false
+			不能输入   -> onkeydown  return false
+
+	【键盘事件】
+		oEvent.keyCode    //返回键盘对应数字
+			32  空格
+			13  回车
+			8   退格
+			48  0
+			57  9
+			37 左
+			38 上
+			39 右
+			40 下
+		oEvent.ctrlKey  
+		oEvent.shiftKey
+		oEvent.altKey
+
+	【新事件】
+		oncontextmenu 右键
+		onmousemove   移动
+		onkeydown     按下去（先）
+		onkeyup       抬起
+
+	【oEvent】
+		oEvent.clientX / clientY
+		oEvent.cancelBubble=true;
+		oEvent.keyCode
+		oEvent.ctrlKey / altKey / shiftKey
+
+	【注意】
+		if  条件会同时发生
+		if  else if 条件不能同时发生
+
+		定时器
+			开之前，最好先关
+				不要频繁开关定时器——卡
+
+		调用频繁的事件，事件中最好不要放太复杂代码
+--------------------------------------------------------------
+整理单词
+	事件对象
+		ev
+		event
+	坐标
+		clientX
+		clientY
+	冒泡
+
+	取消冒泡
+		子级
+		oEvent.cancelBubble=true;
+
+	默认事件
+		return false *
+
+	新事件
+		onmousemove
+		onkeydown
+		onkeyup
+		oncontextmenu
+
+	键盘
+		oEvent.keyCode
+			xxxx
+		oEvent.ctrlKey ....
+
+单词
+	事件绑定
+		addEventListener 不兼容底版本浏览器  只兼容高版本浏览器
+		attachEvent('onclick')  //只兼容ie  取消事件冒泡
+	解除事件绑定
+		removeEventListener //解除绑定 高版本兼容
+		detachEvent  //兼容IE8-
+
+		oEvent.preventDefault()
+
+	事件委托
+		oEvent.srcElement 
+		oEvent.target
+
+	out 与 over 问题
+		oEvent.fromElement
+		oEvent.toElement
+
+	滚轮
+		onmousewheel
+		DOMMouseScroll
+----------------------------------------------------
+兼容谷歌和IE
+document.onmousewheel = function (ev){
+	var oEvent = ev || event;
+	oEvent.wheelDelta   //下  负  上  正
+}
+
+
+兼容火狐
+document.addEventListener('DOMMouseScroll' , function (ev){},false);
+oEvent.detail
+
+
+事件绑定
+attachEvent 只兼容IE
+
+obtn.addEventListener('click',function () {
+		alert(111);
+	},false); 只兼容谷歌
+
+
+function addWheel(obj, fn)
+	{
+		// 加事件	判断火非火狐
+		if (window.navigator.userAgent.toLowerCase().indexOf('firefox') != -1)
+		{	//判断是火狐
+			// DOMMouseScroll
+			obj.addEventListener('DOMMouseScroll', _wheel, false);
+		}
+		else
+		{	//判断非火狐
+			// onmousewheel IE chrome
+			obj.onmousewheel=_wheel;
+		}
+		
+		// 统一 down
+		function _wheel(ev)
+		{
+			var oEvent=ev || event;
+			
+			if (oEvent.wheelDelta)
+			{	//统一IE谷歌的down
+				var down=oEvent.wheelDelta>0 ? false : true;
+			}
+			else
+			{	//统一火狐
+				var down=oEvent.detail>0 ? true : false;
+			}
+			
+			// 事件触发调用，down统一了
+			fn(down);
+		}
+	}
+
+【滚轮事件监测】	
+    滚轮事件：   ..\..\笔记\JavaScript\4.Event\滚轮.html
+（1）	IE 和 chrome：onmousewheel     事件属性 detail
+（2）	Firefox 中用 DOMMouseScroll     事件属性wheelDelta
+ev.detail>0   等同于 ev.wheelDelta<0
+滚轮事件的兼容：
+形式一
+绑定滚轮事件：这里对mousewheel做了判断,注册时统一使用mousewheel 
+function addEvent(obj,type,fn) {
+	var isFirefox = typeof document.body.style.MozUserSelect != 'undefined';
+	if(obj.addEventListener) {  //给火狐绑定滚轮事件                     			
+	      obj.addEventListener(isFirefox ? 'DOMMouseScroll' :type, fn, false);
+	} else { //给IE的浏览器绑定事件
+	      obj.attachEvent('on'+type, fn);
+	}
+	return fn;                             //调用fn函数，如果不调用，fn函数默认是不执行的
+}
+	
+移除滚轮事件,这里对mousewheel做了兼容,移除时统一使用mousewheel 
+function delEvent(obj, type, fn) {
+	var isFirefox = typeof document.body.style.MozUserSelect != 'undefined';
+	if(obj.removeEventListener){
+	   	obj.removeEventListener(isFirefox ? 'DOMMouseScroll' :type, fn, false);
+	}else{
+	   	obj.detachEvent('on' + type, fn);
+	}
+}
+function fn(e) {
+		e = e || event;
+		var a = e.wheelDelta ? e.wheelDelta / 120 : -(e.detail % 3 == 0 ? e.detail / 3 : e.detail);
+	}
+形式二
+var obj= 获取元素；
+if(obj.addEventListener) {
+	var isFirefox = typeof document.body.style.MozUserSelect != 'undefined';
+	if(isFirefox) { obj.addEventListener("DOMMouseScroll", tijiao, false);} 
+else {obj.addEventListener("mousewheel", tijiao, false); }
+} else {obj.attachEvent("onmousewheel", tijiao, false);}
+function tijiao(e) {
+        var e=e||window.event
+		e.preventDefault();
+		var isFirefox = typeof document.body.style.MozUserSelect != 'undefined';
+		if(e.wheelDelta) { var a = e.wheelDelta / 120;} 
+else {
+			if(e.detail % 3 == 0) { var a = -(e.detail / 3)  } 
+else {  var a = -e.detail  }
+		}
+        //这里可以使用滚轮的值a 来做效果了
+}
+
+	</body>
+</html>
+--------------------------------------------------------------------
+【正则】
+正则：正则表达式  规则表达式
+	描述了一件事规则
+
+	跟字符串打交道
+
+var reg=new RegExp(字符串规则，字符串选项);
+
+选项：
+i	ignore	 忽略大小写
+g	global	 全局
+
+var reg=/规则/选项;
+
+str.search(规则);   和indexOf一模一样
+str.match(规则);    匹配结果
+
+转义：  \
+
+\d	digital  数字 \D
+
+量词：
++	若干 一次或者多次
+--------------------------------------------------------------------
+过滤敏感词：替换
+
+	str.replace(要，谁)
+	str.replace(正则,谁);
+
+或：
+	js-> ||
+	正则 -> |
+替换成等量*？
+	
+	str.replace(正则,function(s){
+		s
+	});
+-------------------------------------------------------------
+
+修饰：
+行首(开头)	^
+行尾(结尾)	$
+
+选项(模式)：
+i	忽略大小写
+g   全局
+m	mutil-line   多行模式
+
+/a/
+
+/a/gim
+/a/mgi
+/a/img   √
+
+
+^ 如果不配合m来用，整个字符串开头
+^ 配合m来用，自动识别字符串换行(换段)
+-----------------------------------------------------------
+方括号:  []
+1. [abc]	任意一个	/a|b|c/
+	/abc/
+	/[abc]/
+
+	/[a|b|c]/  a或者 | 或者b 或者 c
+	/[a,b,c]/
+2. [0-9]      区间    
+	/[1-7]/
+	/[a-z]/
+	/[a-z0-9]/
+	/[a-zA-Z]/
+
+	/[1-38]/   1-3 或者 8
+
+	/[09-]/   
+
+3. [^abc]      排除
+	
+	/^a/  -> 以字母a开头的东西
+	/[^a]/  -> 排除字母a
+	/[^0-9]/
+	/^[a-z]/  -> 以小写字母开头
+	/^[^a-z]/ -> 以非小写字母开头
+
+/[a-z0-9-]/
+
+
+/\d/  /[0-9]/
+/\d/
+/\d\d/
+/\d/ 
+量词：规定了几个
+{n}	正好几个	/\d{2}/
+		/\d{475}/
+		/\d{2}|\d{3}/
+{n,m}   最少n个，最多m个
+		/\d{1,2}/
+		/\d{2,500}/
+		/\d{0,1}/  -> 可有可无
+{n,}    最少n个，最多不限
+		/\d{2,}/
+		/\d{1,}/   若干
+		/\d{0,}/  
+
+?	{0,1}   可有可无
+	/\d{0,1}/
+	/\d?/
++	{1,}    若干
+	/\d{1,}/
+	/\d+/
+*	{0,}	可以没有，有了也不限
+	/\d{0,}/
+	/\d*/
+
+* 量词，默认只管前面一位
+
+
+/ab+/   abbbbb	√
+/(ab)+/	ababab     分组
+
+----/[a+]+/
+
+转义： \
+\d	ditital	   数字		[0-9]
+\w	word	   单词	   	[a-zA-Z0-9_]
+\s	space	   空白
+
+\D	非数字	[^0-9]
+\W	非单词	[^a-zA-Z0-9_]
+\S	非空白
+
+.	任意东西
+
+\.	点本身
+\\	斜杠本身
+--------------------------------------------------------------
+校验匹配:
+	
+邮箱：
+abc@abc.com
+abc@abc.com.cn
+
+
+用户名@一串字母或者数字.一串字母
+
+用户名:
+	\w+
+	@
+	[a-z0-9-]+
+	(\.[a-z]{2,8}){1,2}
+
+www.baidu.info
+
+\w+@[a-z0-9-]+(\.[a-z]{2,8}){1,2}  .com.cn
+	
+reg.test(str)  校验， 字符串有一部分符合要求，返回true，否则false
+	
+	 ^  $ 配合
+
+校验 QQ 号
+	数字：
+	[1-9]\d{4,10}
+	[1-9][0-9]{4,10}
+
+QQ邮箱：
+	\w+@qq\.com
+	[1-9]\d{4,10}@qq\.com
+---------------------------------------------------------------
+座机：
+010-88976543
+
+区号：
+	0[1-9]\d\d?
+	(0[1-9]\d{1,2}-)?
+号码：
+	[2-8]\d{6,7}
+	
+(0[1-9]\d{1,2}-)?[2-8]\d{6,7}
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+【eval()】
+
+json字符串转对象""
+原因在于：eval本身的问题。 由于json是以”{}”的方式来开始以及结束的，在JS中，它会被当成一个语句块来处理，所以必须强制性的将它转换成一种表达式。
+
+加上圆括号的目的是迫使eval函数在处理JavaScript代码的时候强制将括号内的表达式（expression）转化为对象，而不是作为语句
+（statement）来执行。举一个例子，例如对象字面量{}，如若不加外层的括号，那么eval会将大括号识别为JavaScript代码块的开始和
+结束标记，那么{}将会被认为是执行了一句空语句。所以下面两个执行结果是不同的：
+		alert(eval("{}")); //return undefined
+		alert(eval("({})"));  //return object[Object]
+
+		var josnobj = eval("("+jsonstr+")"); || eval("var jsonobj =" + jsonstr)
+
+
+complete:function(e){
+			var json = e.responseText;
+			var j = eval("("+json+")")
+			for(var i =0;i<j.length;i++){
+				$('button').click(function(){
+					var index = $(this).parent().parent().index()
+					$.ajax({
+						type:'get',
+						url:'http://192.168.43.252:8888/zhuce/del?id='+j[index].id,
+						success:function(e){
+							if(e.flag == 1){
+								alert('删除成功')
+								location.href = "newsajax1.html";
+							}else if(e == '删除失败'){
+								alert('删除失败')
+							}
+						},error:function(){
+							alert(error)
+						}
+					})
+				})
+			}
+		}
+
+
+
+
+HTTP: Status 200 – 服务器成功返回网页
+HTTP: Status 404 – 请求的网页不存在
+HTTP: Status 503 – 服务不可用
+
+HTTP: Status 1xx  (临时响应)
+->表示临时响应并需要请求者继续执行操作的状态代码。
+
+详细代码及说明:
+HTTP: Status 100 (继续)
+-> 请求者应当继续提出请求。 服务器返回此代码表示已收到请求的第一部分，正在等待其余部分。
+HTTP: Status 101 (切换协议)
+-> 请求者已要求服务器切换协议，服务器已确认并准备切换。
+
+HTTP Status 2xx  (成功)
+->表示成功处理了请求的状态代码;
+
+详细代码及说明:
+
+HTTP Status 200 (成功)
+-> 服务器已成功处理了请求。 通常，这表示服务器提供了请求的网页。
+HTTP Status 201 (已创建)
+-> 请求成功并且服务器创建了新的资源。
+HTTP Status 202 (已接受)
+-> 服务器已接受请求，但尚未处理。
+HTTP Status 203 (非授权信息)
+-> 服务器已成功处理了请求，但返回的信息可能来自另一来源。
+HTTP Status 204 (无内容)
+-> 服务器成功处理了请求，但没有返回任何内容。
+HTTP Status 205 (重置内容)
+-> 服务器成功处理了请求，但没有返回任何内容。
+HTTP Status 206 (部分内容)
+-> 服务器成功处理了部分 GET 请求。
+
+HTTP Status 4xx (请求错误)
+->这些状态代码表示请求可能出错，妨碍了服务器的处理。
+
+详细代码说明:
+HTTP Status 400 （错误请求） 
+->服务器不理解请求的语法。
+HTTP Status 401 （未授权） 
+->请求要求身份验证。 对于需要登录的网页，服务器可能返回此响应。
+HTTP Status 403 （禁止）
+-> 服务器拒绝请求。
+HTTP Status 404 （未找到） 
+->服务器找不到请求的网页。
+HTTP Status 405 （方法禁用） 
+->禁用请求中指定的方法。
+HTTP Status 406 （不接受） 
+->无法使用请求的内容特性响应请求的网页。
+HTTP Status 407 （需要代理授权） 
+->此状态代码与 401（未授权）类似，但指定请求者应当授权使用代理。
+HTTP Status 408 （请求超时） 
+->服务器等候请求时发生超时。
+HTTP Status 409 （冲突） 
+->服务器在完成请求时发生冲突。 服务器必须在响应中包含有关冲突的信息。
+HTTP Status 410 （已删除）
+-> 如果请求的资源已永久删除，服务器就会返回此响应。
+HTTP Status 411 （需要有效长度） 
+->服务器不接受不含有效内容长度标头字段的请求。
+HTTP Status 412 （未满足前提条件） 
+->服务器未满足请求者在请求中设置的其中一个前提条件。
+HTTP Status 413 （请求实体过大） 
+->服务器无法处理请求，因为请求实体过大，超出服务器的处理能力。
+HTTP Status 414 （请求的 URI 过长） 请求的 URI（通常为网址）过长，服务器无法处理。
+HTTP Status 415 （不支持的媒体类型） 
+->请求的格式不受请求页面的支持。
+HTTP Status 416 （请求范围不符合要求） 
+->如果页面无法提供请求的范围，则服务器会返回此状态代码。
+HTTP Status 417 （未满足期望值） 
+->服务器未满足”期望”请求标头字段的要求。
+
+说明
+HTTP Status 5xx （服务器错误）
+->这些状态代码表示服务器在尝试处理请求时发生内部错误。 这些错误可能是服务器本身的错误，而不是请求出错。
+
+代码详细及说明:
+HTTP Status 500 （服务器内部错误） 
+->服务器遇到错误，无法完成请求。
+HTTP Status 501 （尚未实施） 
+->服务器不具备完成请求的功能。 例如，服务器无法识别请求方法时可能会返回此代码。
+HTTP Status 502 （错误网关） 
+->服务器作为网关或代理，从上游服务器收到无效响应。
+HTTP Status 503 （服务不可用）
+-> 服务器目前无法使用（由于超载或停机维护）。 通常，这只是暂时状态。
+HTTP Status 504 （网关超时） 
+->服务器作为网关或代理，但是没有及时从上游服务器收到请求。
+HTTP Status 505 （HTTP 版本不受支持）
+-> 服务器不支持请求中所用的 HTTP 协议版本。
+
+
+
+
+
+
+
+
+-------------------------   【H5移动端笔记】   -----------------------------
+
+学习网站 ：慕课  极客学院 菜鸟教程 腾讯课堂 百度传课   animate.css  框架 
+
+站酷UI
+
+腾讯课堂
+移动端只支持MP4格式的
+
+js小数点计算有时候会出现 计算bug  1.1-2.2   计算机计算只看十六位
+
+webGL  实现3D效果
+
+-webkit-  苹果谷歌合作成果
+
+UC浏览器相当于IE6!!!
+
+IE用微软
+
+前端移动端一般使用Chrome
+
+【移动开发】
+	320-767 之间的都为移动端
+	1.手机
+	2.pad 	最低768-
+
+active 不支持动画过渡
+
+div高度设置100%，的时候，找父级的高度；
+
+
+【11.7号复习css样式4】
+leo 李游 82217548
+微信  13439331259
+
+
+移动端高级
+
+每天三样宝
+
+	1.课件 2.笔记 3.录屏	
+
+块状元素  
+不是100%
+它是以矩形的形式独占一行 ，
+支持宽高等等一样。
+
+行内元素
+它的大小会随着内容的多少变大变小,
+不支持宽高。
+
+
+W3C手册
+http://w3schools.bootcss.com/default.html
+
+js - 过两遍
+编译型错误  只要有了 js 就不执行了
+
+
+报错 
+	
+编译型错误 
+
+	写法错误
+
+
+	预解析：
+它只看 var 
+js过第一遍的时候 会把所有的var 的变量提到最上面 
+		不赋值
+
+作用域
+任何函数 和 script 标签都是一个作用域 只要是有作用域 都会单独来一遍 
+	预解析
+
+top = window 最大对象
+	      
+parent = window
+
+
+引用 
+	面向对象
+只要是对象就会有引用
+	
+1.对象有引用
+
+	2.对象都有私有属性
+
+不想引用直接赋值
+
+
+移动
+ 
+	1.手机 o
+ 
+	2.pad x
+
+
+pad最低 768
+手机最低 
+320 - 767 
+
+
+	移动端的浏览器
+ie 火狐 chrome／safari  
+op - 印度
+内核 -webkit-
+360 - 2个内核
+
+-webkit- 苹果和谷歌
+safari - 安卓浏览器
+mobile ->微信浏览器 - qq浏览器 - 微博浏览器 
+-webkit-内核
+	
+
+	uc -> ie6
+
+
+
+	chrome - pc
+	
+	网站分数测评
+	
+
+http://html5test.com/
+
+	
+
+transform
+  
+		-scale(x,y)  缩放 
+	 
+		-scaleX()\scaleY() 几倍
+  
+		-skew(x,y)  扭曲、倾斜
+     
+		-skewX()\skewY() deg
+
+		-translate(x,y,z) 平移
+     
+			-translateX()
+     
+			-translateY()
+
+		-translateZ() -> 父级必须是3d空间
+        
+	transform-style:preserve-3d
+  如果单位是% 就是找自己的宽高
+
+		-rotate  旋转
+			rotateX/rotateY  沿着x 沿着y
+
+		perspective() 透视 景深
+		transform  执行顺序 从后往前
+  
+		
+	transition:0s all ease 1s;过渡
+ 
+ 		transition-property:all;
+  
+		transition-duration:1s;
+  
+		transition-timing-function:曲线
+  
+		transition-delay : 延迟时间
+
+  
+		transform-origin 原点
+    px % left/top/center/bottom/right
+
+  
+	
+	background-color
+  
+		1.#
+  
+		2.rgb
+  
+		3.rgba
+  
+		4.red
+  
+		5.hsl
+  
+		6.hsla
+  
+		7.-webkit-linear-gradient(方向，颜色+比例，无限)  线性渐变 
+
+		8.-webkit-radial--gradient(圆点位置，颜色 比例，...)   颈项渐变
+
+【11.8】
+	
+	1.前缀
+		火狐 -moz-
+		ie   -ms-
+		chrome/safari  -webkit-
+		o    -o-
+
+	2.查看浏览器版本信息
+		navigator             //浏览器信息
+		navigator.userAgent   //用户浏览器的信息
+
+	3.移动端
+		有些样式 必须要加 -webkit-
+		列如：
+			-webkit-transition 
+			后面再加 transition
+	
+	4.阴影
+		box-shadow：            //最多接收11个参数
+			1> 外阴影 outside X  
+			2> Y
+			3> 模糊度 blur
+			4> 阴影轮廓 size 大小
+			5> 颜色
+			6> 内阴影 inset
+			7> 内阴影 X
+			8> 内阴影 Y
+			9> 内阴影 blur
+			10> 内阴影 size
+			11> 内阴影 颜色
+
+	5.0.22222.toFixed(保留的小数后几位的个数)   得出的结果为字符串  如需计算转换为数字
+
+	6.文字阴影
+		text-shadow:     //最多四个值 多了没作用
+			1> X  
+			2> Y
+			3> 模糊度 blur
+			4> 颜色
+
+	7. js 了解好作用域 
+			ID 东西不用获取，是可以直接拿变量来换取
+
+	8.变量命名 
+		leo = {};   //对象
+		leo.m = 0;
+		(function(){})()  //封闭空间
+		自己名字为前缀
+		JinXinChao   驼峰命名法
+
+	9.addEventListener   事件监听(可以把事件叠加)
+		(-----  添加 ----Event 事件 ----Listener 事件监听人 ---)
+
+		监听对象.addEventListener('事件不加on',function(){},false)
+		false 事件句柄在冒泡阶段执行   会继承父级事件
+		true  事件句柄在捕获阶段执行
+
+		兼容问题 
+		IE window.attachEvent('事件',fn);    同属事件监听
+
+		解除绑定事件
+		removeEventListener(事件,可以添加函数名)
+
+	10.try 异步处理
+		----try 尝试处理  ----
+		try{}catch(e){}   //e 错误点
+
+	11.in window   判断这个东西有没有在   
+
+		如果在 返回true   反之 false  
+
+	12.transitionEnd    //过渡结束完毕的时候执行事件
+
+		写在事件监听内  有时候不好用  加兼容 webkitTransitionEnd
+
+	13.面向对象最后return  为链式事件
+
+	14.for(可以写任何效果;判断条件；每次都会执行){
+		//执行顺序
+	}
+		var i = 0;
+		for(;i<10;){
+			i++
+		}
+
+		for(){}   只要有一个条件为false的时候 事件就不执行了  结束
+
+	15. + - * / %
+
+		%  alert(2%3) //余数为2
+
+		字符串 +  遇到先算乘除 最后再+  字符串在前为拼接
+
+		var a = 0;
+			a++  //0
+			++a //2
+
+		<<  >> 几次幂
+		0 1 2 4 8 16 32 64 
+		<< 从左向右
+		>> 从右向左
+
+		| 管道符  相当于计算机二进制 所有1加起来个数
+
+		& 按得    获取的共有的数字   也是二进制的
+
+	16.audio  音频
+
+
+
+	17.video  视频播放器   HTMl里面的新标签
+		
+		autoplay   自动播放
+		controls   控件(每个浏览器不一样)
+		loop       循环播放
+
+		标签 source  根源  没有闭合  
+			 <source src="1.mp4">    只支持mp4
+
+
+		标签里面可以写文字
+
+		video.play()   开始播放
+		video.pause()  暂停播放
+
+		timeupdate  视频播放会触发事件
+		currentTime  视频播放进度的时间 
+		duration     视频总长度
+
+		volume    音量  0-1 之间的
+
+		webkitEnterFullscreen()    老版本全屏
+		webkitRequestFullscreen()  新版本全屏
+ 
+		ended 视频结束触发事件
+
+
+
+	18.js  innerHTML 有空格误区
+
+
+
+【11.9】
+
+	1.Math.random()    0-1之间的小数(理论上不会出现0跟1)   
+
+	2.var arr = [undeifind,undeified]  在数组里面弹不出来  值出一个，
+
+	3.对象不等于对象  var a = [1,2,3],b = [1,2,3]  为false
+
+	4.createElement  创建元素   后面插入 appendChild() 
+								前面插入 insertBefore(生成元素，插入谁的前面)
+
+【11.10】
+	三目运算符 也称三元运算符
+
+	运算先算 双等==
+
+	-webkit-cplip-path:polygon(px,%,x,y);   剪切  起点从左上角开始   剪切
+
+	 伪类  :before 之前插入  必须加content:'';   加入hover写在前面    ：hover：before
+			行内元素 加入宽高 需要撑开
+
+	 伪类  :after   用法跟:before一样
+
+	 伪类  input:focus{}  获取焦点
+
+	 	   input 输入bug 需要用padding去挤
+
+	getComputedStyle(获取元素,false)['width']   //获取非行间样式 非IE
+			getComputedStyle(获取元素,':before伪类')['width']
+
+	currentStyle    IE  获取非行间样式
+
+	<input type="text" placeholder="e2e" />  placeholder="e2e" 默认字 不兼容IE8以下
+
+	outline  input的默认轮廓  
+
+	function show(){
+		alert(1)
+	};
+	alert(show)  //函数体 全部弹出来  加()为执行这个函数
+ 	
+ 	offsetTop 的距离是找他的父级
+
+ 	【文件API】
+
+ 	localStorage.setItem  本地临时储存   所有页面都存储 同着    存储时间很长一直到用户主动清除缓冲
+
+ 	sessionStorage.setItem  页面关闭以后就没有数据了    最多存储5000kb
+
+ 	margin 上 右 下 左
+
+ 	constructor    查看原型；
+ 	setItem  官方写法  localStorage.setItem('abc',10)
+ 	getItem	 官方写法  localStorage.getItem('abc')
+
+ 	localStorage.clear()  清除缓存  
+
+
+
+ 	json 键 key 值 value  一对的
+ 	json正确写法加双引号  不加的话 字符串转json的时候会报错
+
+ 	取键的时候，键为0 的时候 加中括号取值
+
+ 	JSON.stringify()  把json转字符串
+ 	JSON.parse()      把字符串转为json
+
+
+ 	【11.11】
+
+ 	div 设置宽高100%的时候  没有清屏margin padding 的时候 不为全屏
+
+ 	<button></button> 块状
+
+ 	input 			text 输出值都为字符串
+ 	input password 		密码
+ 	input radio 		单选    lable for= 'bo'
+ 	input checkbox 		复选框
+ 		  <p><input type="checkbox" id="chexk"><label for="chexk">十天内免登陆</label></p>
+ 	input submit   		提交表单  外面包form
+ 	input number        数字输入      官方解释 输出 类型为数字  电脑为字符串  手机端为数字
+ 	input image 	   	图片域    <input type="image" src="">
+ 	input tel 			电话 		没啥区别
+
+ 	----------------   兼容不太好的  -------------------------
+ 	input email 		邮箱       不支持safari.ie  配合submit form 结合使用
+ 	input file          文件上传
+ 	input color 		颜色        兼容最好的为谷歌 opera  
+ 	input range         拖动条
+ 	input date 			日期
+ 	input month         年月     
+ 	input week  		周/星期
+ 	input datetime 		日期(输入)
+ 	input url			网址输入     与submit 配合使用
+
+ 	------------------  :checked ---------------------
+ 	被选中的时候    可以用来做轮播
+ 	
+
+ 	<form method='get' ></form>
+
+ 	onfocus  获取焦点
+ 	onblur   失去焦点
+ 	onchange 内容发生改变 并且失去焦点的时候会触发
+ 	oninput  内容发生改变的时候就会触发 不支持IE8以下
+
+
+ 	css3 的input 不支持ＩＥ６
+
+ 	【11.14】
+
+ 	1>.
+ 	arguments  不固定参数；  相当于数组，但它本身并不是一个数组；
+
+ 		function show(a,b,c){
+ 			arguments[0] = 3;   //arguments[3]
+ 			alert(a)
+ 		}
+ 		show(1,2); //3
+
+ 	2>.
+ 	var show = function show2(){
+ 		alert(1)
+ 	}
+ 	alert(show.name)   //show2;
+
+ 	show2()   //会报错执行不了    var 高于一切  show();
+
+ 	3>.
+ 	js 基于浏览器脚本
+
+ 	4>.
+ 	css3 选择器
+
+ 	:root     根选择器  选择html标签(只能选择html，不加任何东西)   iE8 以下不支持
+ 		:root{
+ 			background:red；
+ 		}
+
+ 	::selection   选中  改变选择到字的(::双冒号)   ::-moz-selection    兼容火狐  iE8 以下不支持
+ 		span::selection{
+ 			background:yellow;
+ 		}
+ 	
+ 	>  		      子级选择器   第一场子级选择器
+ 	~ 		      同级下面所有元素的选择
+ 	+ 		 	  兄弟选择器 下面第一个元素 有加上 没有反之
+ 	[foo]         属性选择器
+ 	[foo^='arrt'] 属性选择器最前面的值
+ 	[foo$='trra'] 属性选择器最后面的值
+ 	[foo*='arrt'] 属性选择器里面只要有值(arrt)的值 就能找到
+ 	[foo=arrt]    属性选择器必须全部等于===
+ 	:disabled     选中禁用元素
+ 	:nth-child()  同级元素选择器  从1开始
+ 		odd  奇数
+ 		even 偶数
+ 		n 算数  2n-1 奇数
+ 				2n+1 偶数
+ 	:last-child    绝对最后一个
+ 	:last-of-type 相对最后一个
+ 	:first-child   绝对第一个
+ 	:first-of-type 相对第一个
+ 	:only-child	  只有一个(两个找不到)
+ 	:nth-last-of-type  从后面向前选
+ 	:nth-last-child(n),从后向前选择第n个元素	例:div p:nth-last-child(2){....}
+
+ 	css4选择器 :not   除了 只有选中不给样式  其他都给 (不加引号)
+ 		div:not(.ss){
+ 			bakground:red;
+ 		}
+
+
+
+ 	帧  最开始是被flash 使用
+ 	hd  -> 高清		720p	16照片
+ 		   超清		1080p   30照片
+
+ 	setInterval(function(){},16)     16相当于高清      30 相当于超清
+
+ 	setTimeout(function(){alert(2)},0)alert(1)    		只要是定时器都会放到最后执行
+
+ 	【11.15】
+
+ 	alert(-0 == 0)  //true
+ 	alert(object.is(-0,0))   //false
+
+ 	var a = function(){  //递归函数   最高限制635300
+		alert(a());
+	}
+	a()   //啥都不弹
+
+	var c = alert;
+		c(1)  //1   相当于把alert()赋值给c c直接调用
+
+	var b = setInterval; 
+		b(function(){c(1)},2000)   //每隔两秒执行一次弹出1  跟alert同理
+
+	apply call冒充 bind绑定
+
+	apply(this,[1])  //两个参数
+
+	alert.call(window,function(){
+		alert.apply(window,[1])
+	})  //结果为1    写法不一样 结果原理都一样
+
+	alert.bind(window,function(){
+		alert.apply(window,[1])
+	})();  //结果为1
+
+
+	js选择器
+	//name 的选择 [a]  <div name="a"></div>
+	prtor  原型链
+
+	document.getElementById()  //id选择器
+	document.getElementsByTagName() //标签选择器
+	document.getElementsClassName() //类选择器
+	document.getElementsByName()    //name选择器
+	document.children; 				//子级选择器
+	document.childrenNodes[0] //子级选择器  文本节点  注释也都可以选择到
+	document.querySelector (css3选择器) 选择方法跟css3 选择器差不多  只会找到符合条件的第一个就结束了 没有下标
+	document.querySelectorAll (css3选择器)[0]    会找到所有的选择 可以使用下标
+
+
+	classList   className的升级版  不兼容iE8 以下
+	div.classList.toggle('.m') //切换   //有的添加 没得删除
+	add -> 添加
+	remove ->删除
+	contains  -> 判定classList 有true 没有 false;
+	cssText  -> css升级版 跟style.width  一样的  会把之前的css的样式都过滤删掉   写后面就好了
+	with(s.style){   //
+		width = '500px';
+	}
+
+	for(var i in json){
+		//i 为键 json[i]为值
+	}
+	所有.都可以代替[]  所有[]都可以代替.
+
+	return false 取消默认事件
+	e.preventDefault()   取消默认事件   IE8以下  不支持
+
+	nodeJs   前端语言 能干后台  不基于js  不是js文件  需要安装环境
+
+	node -v  查看版本号
+
+	http     协议
+	http://  http网站环境
+
+	require 获取协议
+	createServer 搭建服务器环境
+	listen  监听接口
+
+	> 运行完毕   没有> 服务器一直在监听没有运行完毕
+
+	localhost:8921
+
+	requset         请求
+	response 		返回
+	response.end()  请求完毕
+
+
+	nodejs.org/en/download/  下载环境  英文版
+	nodejs.cn/en/download/  下载环境  文中版
+
+	requi
+	后台 php java .net
+
+	NodeJS ->
+	交互 html form -> submit method = get/post
+	【后台获取数据 最牛的为websoket】
+	js  -> ajax - new XMLHttprequest get/post   需要用服务器搭建
+
+	JSON对象提供的parse和stringify将其他数据类型转化成字符串 ->		 需要用服务器搭建   可以跨域
+		
+
+	websoket ->  不需要用服务器搭建
+
+	callback  ->  回调
+
+
+
+	【11.16】
+
+	setInterval(function(){},100)  //只要打开其他浏览器，他就出现bug时间会发生改变，1000毫秒为正好的
+
+	touch事件
+
+	meta 告诉浏览器信息的  
+	width=device-width 设备宽度
+	initial-scale=1.0  初始 倍数1.0倍
+	user-scalable=0    不允许用户缩放
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="vie"/>
+
+	onclick 鼠标事假 在ios上会 出现0.5s的延迟
+
+	touchstart   手指按下   touch 触碰 start 开始
+	touchmove 	 手指移动   手指按下才能移动
+	touchend     手指离开   没有touches事件
+
+	移动端不需要做兼容 e 直接就可以用
+
+	touchstart 里面的 event 为 手指事件
+
+	e.touches[0].clientX/Y X轴/Y轴  判断几个手指
+	targetTouches  跟手指一样的事件
+
+
+	API 接口
+		1.打开百度地图API
+		2.进入首页
+		3.首页进入我要认证 认证完毕
+		4.打开开发
+		5.web开发 JavaScriptAPI
+		6.申请密钥
+		7.开放平台 找地图展示  
+		8.定位的 上网查找经纬度就可以找到自己坐标 
+
+	经度为X轴 纬度为Y轴
+	IDE 编辑器
+
+	window.open()  //打开一个页面
+
+	animation    只有动画时长跟延迟时间有顺序
+		animation-name : 动画名称
+		animation-duration: 设置动画时长
+		animation-timing-function: 运动曲线
+		animation-delay    运动延迟时间
+		animation-iteration-count： 循环次数  infinite： 无限循环
+		animation-direction: 
+		animation-fill-mode：
+		animation-play-state:
+
+	animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+			【取值】
+			1.<' animation-name '>： 检索或设置对象所应用的动画名称 
+				方法：取名称
+			2.<' animation-duration '>： 检索或设置对象动画的持续时间 
+				方法：设置时间
+			3.<' animation-timing-function '>： 检索或设置对象动画的过渡类型	
+				方法：
+				linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0) 
+				ease： 平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0) 
+				ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0) 
+				ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0) 
+				ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) 
+				step-start： 等同于 steps(1, start) 
+				step-end： 等同于 steps(1, end) 
+				steps(<integer>[, [ start | end ] ]?)： 接受两个参数的步进函数。第一个参数必须为正整数，指定函数的步数。第二个参数取值可以是start或end，指定每一步的值发生变化的时间点。第二个参数是可选的，默认值为end。 
+				cubic-bezier(<number>, <number>, <number>, <number>)： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内 	
+			4.<' animation-delay '>： 检索或设置对象动画延迟的时间 
+				方法：设置延迟时间
+			5.<' animation-iteration-count '>： 检索或设置对象动画的循环次数 
+				方法：infinite： 无限循环 
+					<number>： 指定对象动画的具体循环次数 (数字)
+			6.<' animation-direction '>： 检索或设置对象动画在循环中是否反向运动 
+				方法：normal： 正常方向 
+					reverse： 反方向运行 
+					alternate： 动画先正常运行再反方向运行，并持续交替运行 
+					alternate-reverse： 动画先反运行再正方向运行，并持续交替运行 
+			7.<' animation-fill-mode '>： 检索或设置对象动画时间之外的状态 
+				方法：none： 默认值。不设置对象动画之外的状态 
+					forwards： 设置对象状态为动画结束时的状态 
+					backwards： 设置对象状态为动画开始时的状态 
+					both： 设置对象状态为动画结束或开始的状态 
+			8.<' animation-play-state '>： 检索或设置对象动画的状态。w3c正考虑是否将该属性移除，因为动画的状态可以通过其它的方式实现，比如重设样式 
+				方法： running： 运动 
+					 paused： 暂停 
+			@keyframes 规则，您能够创建动画。
+
+
+	【11.17】
+
+	var a = 10;
+			a=12.5;
+			this.a = 15;
+			top.a = 20;
+			alert((this.a+top.a)/a)  //2  各种覆盖 完了之后a 都指向window 最后a为20；
+
+	var a = 10;
+	function a(){alert(a)}
+	a();   //会报错  声明的a为 var a = function(){}  这时候a为一个数字  数字没有方法(a())
+
+	typeof  不会报错的
+
+	alert((typeof(typeof(1)) //会出现字符串  因为第一次转数字 第二次检测的时候自动给加上‘’ 所以最后出来是字符串
+	typeof数据类型 Symbol object(obj,null,[],{}) undefined number function string boolean
+
+
+	列表布局  -webkit- 内核
+	px
+		利用div的特性布局     不设置宽 只设置高就可以出来了  加入marigin padding
+
+		块状元素  独占一行 可以设宽高 
+
+	meta缩放原理布局
+	px
+		利用缩放
+		用js去设置他的缩放
+
+	rem -  根据 根元素 - 相对单位
+		   只看html 的font-size   html默认字体为16px
+		   1rem = 1*font-size
+		   2rem = 2*16 = 32px;
+
+		   font-size 在谷歌open最小的字体为12px  其他浏览器没关系 
+
+		   16-20 只是320 这个平台上 要px 最准的
+
+		   32-10 相对准的   位置是相对一样的 但是像素是不一样的
+
+	移动端布局用px  都除以二
+
+	【弹性布局 - 流动式布局】
+	display:flex;
+
+	display:-webkit-box;		
+	-webikt-box-orient:horizontal;   //横着摆满   orient方向
+	-webikt-box-orient:vertical;   //竖着摆满   orient方向
+	-webki-box-flex:1;
+
+	-webkit-box-align:center;  水平居中
+	-webkit-box-pack:center;
+
+	PS：这个盒子只支持块状元素
+
+	子级如果分份 就用-webkit-box-flex:几份；
+	flex先算一下 一共有多少 再用父级的总宽除以分数   再用每个元素占的几份*一份的宽度 就是最后的宽度；
+	减去所有的margin-right margin-left/padding-left/right
+
+	float:left;    弹性盒子布局和浮动布局有冲突  建议不一起用  非要用的话  加一个定位
+
+	如果下面的元素有宽度，那么就先用父级总宽度 - 下面的元素的宽度   在除以份数 
+
+	盒子模型 - margin padding width height border content 都会影响盒子大小
+
+	【11.18】
+
+	移动端网页100左右kb
+
+	function show(){
+		return show;
+	}
+	alert(show())  //函数体
+
+	function show(){
+		return new show();
+	}
+	alert(show())  //报错
+
+	alert -> window
+
+	in widow 属于包含的意思  包含以后判断他有没有
+
+	(function(){})()  //匿名函数   常用  好处变量名不会冲突
+
+	~function(){}()   //匿名函数
+
+	!function(){}()   //匿名函数
+
+	for(var i =0;i<10;i++){
+		//为了防止变量溢出  最后都会把i清空  i=null;	
+	}
+
+	var a = 0;
+	var b = a;
+	var c = b;
+	a.b = a;
+	b.a = c;   //最后都都会弹出undefined   因为字面量没有对象;
+
+	calc css计算  支持+-*/ 不支持取模 %   计算的时候加空格   */乘除后面不加像素
+
+	point pt单位 现在基本被舍弃 像素有小数点 不特别准确
+
+	vw/vh   IE8以下不支持
+		v -> view    ->  视图层
+		w -> width
+
+		1vw -1% 视图层的width
+
+	em 	   相对父元素 	倍数
+
+	1turn  -> 圈    直接用样式不起作用  加伪类
+
+	响应式布局
+
+			-> 叫做媒体查询
+				@media screen and (min-width:300px)
+
+				screen -> 屏幕
+
+				all    -> 所有设备
+
+			-> 判断横竖屏
+				横屏
+				@media screen and (orientation : landscape){
+					body{
+						background:red;
+					}
+				}
+
+				竖屏
+				@media screen and (orientation : portrait){
+					body{
+						background:red;
+					}
+				}
+		@import '文件名'   //引入文件  可以引用js文件 但是不执行   只有css好使
+
+
+	1. meta 
+	2. rem
+	3. -webkit-box
+	4. calc
+	5. media
+	6. vw/vh
+
+	【11.21】
+
+	拖放
+		drag
+
+		ondragener     拖放进入 事件
+		ondragleave    拖放出去 事件
+		ondrop		   落下 松手 事件  				有默认事件
+		ondragover     拖进去一直会触发的			有默认事件
+
+
+	mouse e  MouseEvent     //事件对象
+	touch e  touchEvent
+	drag  e  touchEvent
+	progress e ProgressEvent //进度对象
+
+	e.dataTransfer.files[0]  数据传送  你放进去的文件 
+		他有 size 大小
+			 name 名字
+			 type 类型
+
+	var file = new FileReader();  读取文件的一个对象
+	file.readAsBinaryString(oFile);  //用几进制解码的方法  翻译
+
+	file.onprogress = function(e){  //进度
+		console.log(e.loaded) //读取进度     字节
+		console.log(e.total)  // 总字节 总大小
+	}  
+
+	移动端布局尽量不使用top left  使用transform - 方法
+
+
+	target  事件委托
+
+	e.preventDefault()   //取消默认事件  跟return false一样
+	不一样的是returnfalse后面的不会执行  
+	这个会执行
+
+	【11.22】
+
+	~-1   //0    把能解析的变为-1  不能解析的为0  --的正
+
+	canvas
+
+		canvas 是一个位图  
+
+		svg    是一个矢量图
+
+		canvas是一个默认透明元素  默认宽高 w300 h150
+
+		写样式写到style里面会把写的东西拉升   下行内不会
+
+		高级浏览器支持 IE9包含IE9支持
+
+		声明canvas.getContext('2d');  声明一个2d画布
+
+		写路径 canvas.beginPath()  开始画
+			   canvas.storkeStyle = 'red'; //画笔颜色
+			   canvas.moveTo() //起始位置 X Y
+			   canvas.lineTo()  //画显示的
+			   canvas.lineWidth = 10; //画笔粗细
+			   canvas.fillStyle = 'red'  //填充颜色
+			   canvas.fill();  填充完毕颜色
+			   canvas.stroke(); //结束了
+
+			   canvas.rect()  //方形  X Y width height 四个参数
+			   canvas.arc()   //弧形  画圆  X Y R
+			   		0*Math.PI/180    false 为反方向 true 为正方向
+
+			   clearRect();  清空矩形
+
+		var img = new Image();   //<img>
+
+		img.src = '';
+		img.onload = function(){  //读取图片
+			alert(1)
+		}
+		img.onerror = function(){  //读取失败
+			alert(2)
+		}
+
+		drawImage(img,lx,ly,w,h,dx,dy,dw,dh)   //l 原图 d 画的
+
+
+	  div 的操作就是DOM 操作
+
+	  【11.23】
+	  	var a = 2;
+	  	function show(){
+	  		alert(1);
+	  		return 10;
+	  		var a = 1;
+	  	}
+	  	show()  //undefind
+
+	  	js执行两次  第一次的时候把a提出来  
+
+	  	js  事件只执行一个
+
+	  	var 与 不 var 是有区别的
+
+	  	var a  = 10;
+	  		b = 20;    只有var 有预解析  只要不赋值都是undefined  全局的是放上面的时候 会报错；
+
+	 【11.24】
+	 getComputedStyle(div,null)[position]   //获取非行间样式
+	 getAttribute('x')     //获取自定义属性
+	 setAttribute(x,100)   //设置自定义属性
+
+	 width:  //默认宽度的为屏幕可视区的宽
+
+	 position:absolute,relative,fixed,static,inherit,initial;
+
+	 SVG 
+	 	- 不可以放不属于他的标签 列如 div
+	 	- 矢量图   是DOM 元素 暂用空间   canvas不是元素不暂用空间
+
+	 	- 默认宽300 高 150  颜色为透明色	且不会受到放大影响
+
+
+	 	<svg></svg>  本身里面的东西都为元素
+
+	 			线 stroke : 笔的颜色
+	 			线 stroke-width: 笔的粗细
+	 			   fill-opacity 透明
+	 			line   线    x1,y1,x2,y2
+	 			rect   矩形  xy
+	 			circle 圆     cx cy r
+
+	 	下拉加载
+	 		- scrollTop max 到达最大
+
+	 【11.25】
+
+	 	【zepto.js、jquery、mootloss...】     事件驱动的框架
+	 	【angular.js/vue/backbone】   数据驱动  MVC框架
+
+	 	原生js本身就是 事件驱动
+
+	 	先是框架再是插件
+
+	 	zepto zTouch 事件
+	 		tap 点击
+	 		sewipe 滑动方向
+
+
+	 	移动端  iOS 安卓 Windows 
+	 	zepto兼容windows
+	 	微软 Windows 不支持   支持的MSPointerDownS   拿事件监听来写
+
+	 	jquery  使用定时器 
+	 	zepto   使用transition
+
+	 	定时器从第三个数开始就变为参数
+
+	【11.28】
+
+		document.write()  //还可以输出标签
+
+	 less   一个css框架 
+	 		有先后顺序 先写link 在加载 script
+
+	 	@  声明变量
+
+
+	 		http下面  为服务器环境
+	 		localhost  为本地服务器环境
+	 		fill     本地静态页面  
+
+	promise Es6 是一个对象
+
+	windows  -> wamp     
+	mac      -> mamp -> m av   
+
+	debugger;  找错误的debugger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~  【知识点总结开始】      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+【H5触屏方法】
+touchstart：触摸开始的时候触发
+
+touchmove：手指在屏幕上滑动的时候触发
+
+touchend：触摸结束的时候触发
+
+而每个触摸事件都包括了三个触摸列表，每个列表里包含了对应的一系列触摸点（用来实现多点触控）：
+
+touches：当前位于屏幕上的所有手指的列表。
+
+targetTouches：位于当前DOM元素上手指的列表。
+
+changedTouches：涉及当前事件手指的列表。
+
+每个触摸点由包含了如下触摸信息（常用）：
+
+identifier：一个数值，唯一标识触摸会话（touch session）中的当前手指。一般为从0开始的流水号（android4.1，uc）
+
+target：DOM元素，是动作所针对的目标。
+
+pageX/pageX/clientX/clientY/screenX/screenY：一个数值，动作在屏幕上发生的位置（page包含滚动距离,client不包含滚动距离，screen则以屏幕为基准）。　
+
+radiusX/radiusY/rotationAngle：画出大约相当于手指形状的椭圆形，分别为椭圆形的两个半径和旋转角度。初步测试浏览器不支持，好在功能不常用，欢迎大家反馈。
+
+
+
+var obj = document.getElementByIdx_x('id');
+obj.addEventListener('touchmove', function(event) {
+     // 如果这个元素的位置内只有一个手指的话
+    if (event.targetTouches.length == 1) {
+　　　　 event.preventDefault();// 阻止浏览器默认事件，重要 
+        var touch = event.targetTouches[0];
+        // 把元素放在手指所在的位置
+        obj.style.left = touch.pageX-50 + 'px';
+        obj.style.top = touch.pageY-50 + 'px';
+        }
+}, false);
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script>
+			console.log(document.cookie)
+		</script>
+		
+		<!--	--------------------  正则  ---------------------
+			var a = /[描述符]{限定符}/修饰符(igm)
+					  |   |		|
+					  			[次数，？*，1,2]
+					  				{1,5}最低1次，最高五次
+					  				{1，}最低1次，最高无限
+					  				{，5}最低0次 最高五次
+				 [转义][(匹配单词)]
+			【\S\w\d】        【(com|cn|net)】
+
+			----------------------  面向对象   ---------------------------
+			
+			对象 1.方法 (函数)2.属性(值this)
+	
+			所有函数都为构造函数
+			addEventListener 绑定事件
+			
+			对象与函数区别  
+				面向对象有方法，代码复用
+				函数代码量大
+				
+			()()  匿名函数    自我执行，只执行一次
+			
+			---------------------   rem   --------------------
+			rem  解决手机端问题的
+			
+			绝对单位
+				px  pt
+			相对单位     
+				rem  相对于根元素    HTML
+				em 	   相对父元素 	倍数
+				% 	   相对父元素 
+				
+			谷歌默认为12px
+			
+				vw    设置100vw 相当于满屏   1vw = 1% = 3.2px 
+				
+				换算公式 1.100vw(为屏幕百分之一) = 320px(屏幕宽度)/100  = 3.2px
+					  2.10px / 3.2 = 3.125vw
+					  
+					 用量的像素 除以10 		  
+			----------------   cookie  ---------------------------
+			HBuilder 自带服务器属性  其他编辑器不可以直接打不开
+			cookie的路径设置在其他地方访问不到自己页面的内容
+			document.cookie为文档属性
+			
+			1.设置  document.cookie
+				cookie为三部分组成
+					1.存储数据(用户名密码)
+						user = 'abc' & pwd='1234'
+					2.过期时间(网站存储)
+						1>获取当前时间
+							var d = new Date();
+						2>设置时间
+							d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000)); //设置过期时间
+													30天   24小时  60分
+						3>转换30天以后的日期
+							var expires = "expires=" + toGMTstring();
+								toGMTString()转变后的时间
+								Sun, 16 Oct 2016 01:30:38 GMT
+							
+							//路径地址cookie document.cookie ="user = 'abc' & pwd ='123';expires = 2016-11-09 9:12:00;/user "
+					3.路径(浏览路径)
+						路径写法
+						path=  //不支持中文
+						document.cookie = "user = angular;" + oE +";path=/1";
+						//后面路径写哪里哪里的路径就可以获取到这个用户名跟密码就可以连接
+						
+						案列：
+							var oD = new Date();
+							oD.setTime(oD.getTime() + (7 * 24 * 60 * 60 * 1000))
+							var oE = "expires=" + oD.toGMTString();
+							document.cookie = "user = angular;" + oE +";/1/练习";
+							var coo = document.cookie;
+							console.log(coo)
+						
+			2.读取  var a = document.cookie
+			
+			
+			----------------  web存储   -----------------------
+			localStorage  数据将一直存放在手机缓存中，直到用户清理缓存
+			
+				不论存放什么最后都会转换字符串
+				
+				a = JSON.stringify(a); //JSON对象提供的parse和stringify将其他数据类型转化成字符串 
+				var tex4 = JSON.parse(localStorage.d); //将字符串重新转换为对象 	
+				
+				与cookie不同的是不能设置过期时间，不能编写路径
+				案例：
+				localStorage.user = 'aaaa';
+				localStorage.pass = '13234';
+				
+				//在同一目录下打开先缓冲，在同一目录下的其他HTML中打开
+				console.log(localStorage.user)
+				console.log(localStorage.pass)
+				
+				
+			-------------    离线存储              ---------------------------
+			判断浏览器支持不支持离线存储
+			if(window.applicationCache)
+			{
+				alert('支持')
+			}else{
+				alert('不支持')
+	
+			}
+			
+			
+			-------------    less    ---------------------------
+			用来写css less关键 
+						1.变量
+						变量允许我们单独定义一系列通用的样式，然后在需要的时候去调用。所以在做全局样式调整的时候我们可能只需要修改几行代码就可以了。
+						存储东西 直接运用
+						@变量名:值
+						2.嵌套
+						我们可以在一个选择器中嵌套另一个选择器来实现继承，这样很大程度减少了代码量，并且代码看起来更加的清晰。
+						层级关系
+						   	父元素 -> 子元素 ->孙子辈的
+						3.混合
+						混合可以将一个定义好的class A轻松的引入到另一个class B中，从而简单实现class B继承class A中的所有属性。我们还可以带参数地调用，就像使用函数一样。
+						4.计算
+						运算提供了加，减，乘，除操作；我们可以做属性值和颜色的运算，这样就可以实现属性值之间的复杂关系。LESS中的函数一一映射了JavaScript代码，如果你愿意的话可以操作属性值
+						空格间隔(元素符号例   + )
+						5.引用
+						引入你的 .less 样式文件的时候要设置 rel 属性值为 “stylesheet/less”:
+						<link rel="stylesheet/less" type="text/css" href="styles.less">
+						然后点击页面顶部download按钮下载 less.js, 在<head> 中引入:
+						<script src="less.js" type="text/javascript"></script>
+						注意你的less样式文件一定要在引入less.js前先引入。
+						一个文件可以引用其他less文件
+						@import url("var.less");
+						@import url("reset.less");
+						@import url("tools.less");	   		
+				案例：
+				1.@f1:12px;
+				@c2:yellow;				
+				2.
+				.btn(@a;@b;@c){
+				    color:@a;
+				    font-size:@b;
+				    width:@c;
+				}
+				.one{ //嵌套 ，层级关系，减少class
+				    width:150px;
+				    height:200px;
+				    background: red;
+				    > div :nth-child(1){
+				        float:left;
+				        width:50%;
+				        .btn(green;32px;100px;);
+				        h1{
+				            font-size: @f1 + 2px;
+				        }
+				        ul{
+				            width:90%;
+				            height:300px;
+				            overflow:hidden;
+				            display:flex;
+				            flex-wrap:wrap;
+				            justify-content: space-around;
+				            li{
+				                width:30%;
+				            }        
+				        }
+				    }   
+				}
+
+						   
+			---------------  meta  -----------------------------	
+			 字符编码  
+			header 作用1 	引用css 	样式
+				         作用2 	引用js	脚本
+				         作用3 	title  	设置标题
+				         作用4 	meta  	设置关键字，字符编码
+				         1.手机端   进行满屏，不允许出现滚动条
+				       	 2.忽略页面中的数字识别为电话，忽略email识别                
+			
+			手指在滑动整个屏幕时，会影响浏览器的行为，比如滚动和缩放。所以在调用touch事件时，要注意禁止缩放和滚动。
+
+			1.禁止缩放
+
+			通过meta元标签来设置。
+
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no">
+			加上这句代码后，我们编写的页面将不会随着用的手势而放大缩小。
+		       	 
+			 设置手机端全屏显示，不允许出现滚动条  
+			<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+			 忽略页面中的数字识别为电话，忽略email识别 
+			<meta name="format-detection" content="telphone=no, email=no" />
+			设置关键字 
+			<meta name="keywords" content="H5|财经学院|前端技术学习" />
+	"		 引入图标文件  
+			<link rel="stylesheet" type="text/css" href="../../css/svg/font.css"/>	
+			引入样式文件 
+			<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+		<meta name="name" content="string">
+二、参数解析：
+1）name项：常用的选项有Keywords(关键字) ，description(网站内容描述)，author(作者)，robots(机器人向导)等。
+2）http-equiv项：可用于代替name项，常用的选项有Expires(期限)，Pragma(cache模式)，Refresh(刷新)，Set-Cookie(cookie设定)，Window-target(显示窗口的设定)，content-Type(显示字符集的设定)等。
+3）content项：根据name项或http-equiv项的定义来决定此项填写什么样的字符串。
+1、告诉浏览器网页所识别的文件类型及语言类型，比如说，我们要让浏览器识别HTM/HTML类型的简体中文网面，我们可以这样写：
+< Meta http-equiv="Content-Type" content="text/html; charset=gb2312" >
+2、让一些搜索引擎搜索到你的网页，代码可以这样写：
+< Meta Name=" Keywords" Content="网页关键字" >
+< Meta Name=" description" Content="网页描述文字" >
+要达到自动搜索引擎真正能方便地搜索到你的网页还得注意以下几点：
+A、既要定义meta标记项，又要将首页正文的前200个字符定义成反映主页主题的文字。因为有些导航台在标引meta项中的关键词的同时，还要标引正文中的前200个字符。如：altavista。所以，有些人在注册完导航台后去检查注册结果时，发现导航台中的描述并不是你所希望的，而是诸如版权说明之类的文字。产生这一现象的原因就是没有注意到这一点。
+B、将定义关键词的meta标记项放在定义描述的meta项之前。如：
+<meta type="keywords" content=".......,...,...">
+<meta type="description" content="...,....,...">
+C、将最重要的关键词放在最前面，让相关的关键词相邻。全小写与首字母大写并存，因为有的导航台在标引时对字符的大小写是敏感的。包括标点符号不要超过250个单词
+D、首页最好不用frame结构，因为frame将屏幕划分成多个窗口后，导航台不能智能地选择正确的窗口中的主页去标引。
+3、让一个页面过上一定的时间，自动转到另一个页面或者站点去，如：
+< Meta HTTP-EQUIV="refresh" content="6; url=http://hi.baidu.com/tesalo/" >
+content中的6表示时间，单位为秒，url=后面是你要转向的网址，若是与你当前网页在同一目录下，可以直接写上文件名，如：
+< Meta HTTP-EQUIV="refresh" content="6; url=page1.htm" >
+4、让网页每隔一段时间刷新一次，若要10秒刷新一次，代码这样写：
+<meta http-equiv="refresh" content="10">
+5、通过Meta可以让你进入页面时产生一些特殊效果，具体应用如下：
+< meta http-equiv="Page-Enter" content= "revealTrans(Duration=5.0,Transition=n)" > 其中，n的取值范围为0-23，具体的意义如下：
+0 矩形缩小 1 矩形扩大 2 圆形缩小
+3 圆形扩大 4 下到上 5 上到下
+6 左到右 7 右到左 8 竖百叶窗
+9 横百叶窗 10 错位横百叶窗 11 错位竖百叶窗
+12 点 13 左右到中间 14 中间到左右
+15 中间到上下 16 上下到中间 17 右下到左上
+18 右上到左下 19 左上到右下 20 左下到右上
+21 横条 22 竖条 23 以上 24种随机选择一种
+
+6、标注作者：
+<meta name="author" content="二度空间">
+7、控制页面缓冲，如不要页面缓冲的代码这样写：
+<meta http-equiv="Cache-Control" CONTENT="no-cache"
+
+
+
+
+
+
+
+
+
+
+		
+		tab键
+		标签快捷方法
+		div.box>div>from#one>input*2+button
+		
+		<input type="text" placeholder="用户名" />
+		placeholder 提示
+		
+		
+		------------   background-size  -------------------
+		
+		background-size:cover;
+		30px  50px  像素第一个值为宽度   像素第二个为高度   设置第一个第二个不设置为auto
+		30%   50% 	同上 以父元素的百分比来设置背景图像的宽度和高度。
+		cover  把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。背景图像的某些部分也许无法显示在背景定位区域中。
+		contain  把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。
+		 
+		------------    filter   -------------------------
+		
+		grayscale 灰度               值为0-1之间的小数 		灰度   -webkit-filter:grayscale(0.5) 
+		sepia 褐色　　　　　　   值为0-1之间的小数		褐色   -webkit-filter:sepia(0.9)
+		saturate 饱和度　　　　 值为num 				饱和度   -webkit-filter:saturate(7.9）
+		hue-rotate 色相旋转　　值为angle  			色相旋转　-webkit-filter:hue-rotate(260deg)　
+		invert 反色　　　　　　  值为0-1之间的小数 		反色   -webkit-filter:invert(0.9)
+		opacity 透明度　　　　　值为0-1之间的小数              支持iE低版本的
+		brightness 亮度　　　　 值为0-1之间的小数		亮度  -webkit-filter:brightness(0.5)
+		contrast 对比度　　　　 值为num 				对比度   -webkit-filter:contrast(2.6)
+		blur 模糊　　　　　　     值为length 			模糊   -webkit-filter:blur(3px) 
+		drop-shadow 阴影 							阴影  -webkit-filter:drop-shadow(10px 10px 10px #000)
+		
+
+		-webkit-filter:blur(30px);模糊
+		opacity(元素透明度):				0.5 		元素的透明度为50%，取值( 0 — 1 )	
+		fliter:alpha(opacity:50)
+		 
+		 
+		100vh 满屏
+		--------------------------  display  --------------------------------
+		display(元素样式): 	inline			将元素设置为行内元素，没有宽高，背景颜色与边框需要依靠内容撑开	
+							block			将元素设置为块级元素，该元素会另起一行
+							inline-block	将元素设置为行内块元素，该元素被当成文本处理，但可以设置宽高
+							flex			将元素设置为弹性盒子
+		 
+		--------------------------  弹性盒子   -----------------------------------	
+			父级元素	
+			display:flex;
+			flex-direction(子元素排列方向):		row 			横向从左到右排列（左对齐），默认的排列方式。
+											row-reverse  	反转横向排列（右对齐，从后往前排，最后一项排在最前面。
+											column 			纵向排列。
+											column-reverse 	反转纵向排列，从后往前排，最后一项排在最上面。
+											    
+			flex-wrap(子元素超出宽度换行):		nowrap 默认值。规定灵活的项目不拆行或不拆列。 
+											wrap 规定灵活的项目在必要的时候拆行或拆列。 
+											wrap-reverse 规定灵活的项目在必要的时候拆行或拆列，但是以相反的顺序。 
+
+			justify-content(横向元素的间隔分配):	flex-start 默认值。项目位于容器的开头。 
+											flex-end 项目位于容器的结尾。 
+											center 项目位于容器的中心。 
+											space-between 项目位于各行之间留有空白的容器内。 
+											space-around 项目位于各行之前、之间、之后都留有空白的容器内。
+												 
+			align-items(子元素对齐方式)			stretch 默认值。项目被拉伸以适应容器。 
+											center 项目位于容器的中心。
+											flex-start 项目位于容器的开头。 
+											flex-end 项目位于容器的结尾。 
+											baseline 项目位于容器的基线上。
+																					
+			flex-flow(): 					wrap 规定灵活的项目在必要的时候拆行或拆列。 
+											wrap-reverse 规定灵活的项目在必要的时候拆行或拆列，但是以相反的顺序。 
+				
+			子级元素	
+			flex:							1 设置元素所占比例			
+			order:							3 设置元素排列顺序，必须所有元素都设置顺序才起作用
+									
+			align-self(元素对齐方式)			stretch 默认值。项目被拉伸以适应容器。 
+											center 项目位于容器的中心。
+											flex-start 项目位于容器的开头。 
+											flex-end 项目位于容器的结尾。 
+											baseline 项目位于容器的基线上。’
+											
+		 父元素必须设置弹性盒子    子元素才可以使用
+		 display:flex;
+		 弹性盒子  用途 	1.解决一排问题	横向 flex:1;  百分比比例
+		 			flex-direction:column;   纵向			
+		 			
+		 			设置多行的时候不能设置flex属性
+		 				使用这个的时候需要设置他的子元素宽度
+		 				设置flex-wrap:wrap;
+		 				justify-content:space-around;  处理间距
+		 
+		 
+		----------------  box-sizing 盒子状态   ----------------------
+		Firefox 支持替代的 -moz-box-sizing 属性。
+		Safari 支持替代的 -webkit-box-sizing 属性。
+		border-sizing:content-box;宽度和高度分别应用到元素的内容框。在宽度和高度之外绘制元素的内边距和边框。
+		border-sizing:border-box; 为元素设定的宽度和高度决定了元素的边框盒。就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度
+			border-sizing:inherit 规定应从父元素继承 box-sizing 属性的值。 
+			
+		  缩小盒子     盒子外边距不增加，
+		 不加这个的话 加border或margin的话宽度是增加在外面反之加在里面
+		
+		----------------   伪元素         -------------------
+		伪元素
+		before  属性必须加content:"";  没有东西也得写，在元素前面加入东西
+		
+		after   after 在元素内容之后插入图像。 
+				
+		
+		宿主:单独存在的主体{id class 元素  属性}-----衍生{子元素选择器，同辈选择器}
+		
+		寄生:不能单独存在{
+					伪类:代表一种状态比如hover(链接，表单，集合)，
+						:hover,选择鼠标在链接上面时				例:a:link{...}
+						:active,选择活动链接					例:a:active{...}
+						:visited,选择所有访问过的链接				例:a:visited{...}
+						:link,选择所有未访问链接					例:a:link{...}
+						:empty,选择每个没有任何子级的p元素			例:p:empty{...}
+						:target,目标伪类，href属性和ID配合			例:p:target {...}
+						
+						:focus,选择具有焦点的输入元素				例:input:focus{...}					
+						:valid,用于匹配输入值为合法的元素			例:input:valid{...}
+						:invalid,用于匹配输入值为非法的元素			例:input:invalid{...}
+						:enabled,选择每一个已启用的输入元素			例:input:enabled{...}
+						:disabled,选择每一个禁用的输入元素			例:input:disabled{...}
+						:out-of-range,值在指定区间之外的input元素	例:input:out-of-range{...}
+						:in-range,匹配值在指定区间之内的input元素	例:input:in-range{...}
+	
+						//以下伪类兼容性不好，且用处不大
+						::selection,被用户选中或处于高亮状态的部分	例: ::selection{...}					
+						:read-write,用于匹配可读及可写的元素		例:input:read-write{...}
+						:
+					伪元素(选中第一行的，before，after)
+					 	:first-letter,选择第一个字符				例:p:first-letter{...}
+						:first-line,选择第一行 					          例:p:first-line{...}
+						:after,向元素之前插入内容					例:div:after{...}
+						:before,向元素之后插入内容
+					 }		
+		
+		&&:before{}  代表这个元素的父级
+		-------------------   css 分类     ------------------------
+			两部分1.宿主   寄生
+		
+		<!--
+			---------------   动画         ----------------------------
+			animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+			【取值】
+			1.<' animation-name '>： 检索或设置对象所应用的动画名称 
+				方法：取名称
+			2.<' animation-duration '>： 检索或设置对象动画的持续时间 
+				方法：设置时间
+			3.<' animation-timing-function '>： 检索或设置对象动画的过渡类型	
+				方法：
+				linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0) 
+				ease： 平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0) 
+				ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0) 
+				ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0) 
+				ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) 
+				step-start： 等同于 steps(1, start) 
+				step-end： 等同于 steps(1, end) 
+				steps(<integer>[, [ start | end ] ]?)： 接受两个参数的步进函数。第一个参数必须为正整数，指定函数的步数。第二个参数取值可以是start或end，指定每一步的值发生变化的时间点。第二个参数是可选的，默认值为end。 
+				cubic-bezier(<number>, <number>, <number>, <number>)： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内 	
+			4.<' animation-delay '>： 检索或设置对象动画延迟的时间 
+				方法：设置延迟时间
+			5.<' animation-iteration-count '>： 检索或设置对象动画的循环次数 
+				方法：infinite： 无限循环 
+					<number>： 指定对象动画的具体循环次数 (数字)
+			6.<' animation-direction '>： 检索或设置对象动画在循环中是否反向运动 
+				方法：normal： 正常方向 
+					reverse： 反方向运行 
+					alternate： 动画先正常运行再反方向运行，并持续交替运行 
+					alternate-reverse： 动画先反运行再正方向运行，并持续交替运行 
+			7.<' animation-fill-mode '>： 检索或设置对象动画时间之外的状态 
+				方法：none： 默认值。不设置对象动画之外的状态 
+					forwards： 设置对象状态为动画结束时的状态 
+					backwards： 设置对象状态为动画开始时的状态 
+					both： 设置对象状态为动画结束或开始的状态 
+			8.<' animation-play-state '>： 检索或设置对象动画的状态。w3c正考虑是否将该属性移除，因为动画的状态可以通过其它的方式实现，比如重设样式 
+				方法： running： 运动 
+					 paused： 暂停 
+			@keyframes 规则，您能够创建动画。
+			
+			------------   transform   -----------------------------
+			none： 无转换 2D Transform Functions：
+			matrix(px)： 以一个含六值的(a,b,c,d,e,f)变换矩阵的形式指定一个2D变换，相当于直接应用一个[a,b,c,d,e,f]变换矩阵 
+			translate(px)： 指定对象的2D translation（2D平移）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0 
+			translatex(px)： 指定对象X轴（水平方向）的平移 
+			translatey(px)： 指定对象Y轴（垂直方向）的平移 
+			rotate(deg)： 指定对象的2D rotation（2D旋转），需先有 <' transform-origin '> 属性的定义 
+			scale(.9)： 指定对象的2D scale（2D缩放）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认取第一个参数的值 
+			scalex(.9)： 指定对象X轴的（水平方向）缩放 
+			scaley(.9)： 指定对象Y轴的（垂直方向）缩放 
+			skew(deg)： 指定对象skew transformation（斜切扭曲）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0 
+			skewx(deg)： 指定对象X轴的（水平方向）扭曲 
+			skewy(deg)： 指定对象Y轴的（垂直方向）扭曲 3D Transform Functions：
+			matrix3d(px)： 以一个4x4矩阵的形式指定一个3D变换 
+			translate3d(px)： 指定对象的3D位移。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略 
+			translatez(px)： 指定对象Z轴的平移 
+			rotate3d(deg)： 指定对象的3D旋转角度，其中前3个参数分别表示旋转的方向x,y,z，第4个参数表示旋转的角度，参数不允许省略 
+			rotatex(deg)： 指定对象在x轴上的旋转角度 
+			rotatey(deg)： 指定对象在y轴上的旋转角度 
+			rotatez(deg)： 指定对象在z轴上的旋转角度 
+			scale3d(.8)： 指定对象的3D缩放。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略 
+			scalez(.8)： 指定对象的z轴缩放 
+			perspective(px)： 指定透视距离 ，指定透视间距
+			
+			transform-origin  设置旋转元素的基点位置
+				<percentage>： 用百分比指定坐标值。可以为负值。 
+				<length>： 用长度值指定坐标值。可以为负值。 
+				left： 指定原点的横坐标为left 
+				center①： 指定原点的横坐标为center 
+				right： 指定原点的横坐标为right 
+				top： 指定原点的纵坐标为top 
+				center②： 指定原点的纵坐标为center 
+				bottom： 指定原点的纵坐标为bottom 
+			
+			transform-style  对一个元素设置了transform-style的值为flat,则该元素的所有子元素都将被平展到该元素的2D平面中进行呈现
+				flat： 指定子元素位于此元素所在平面内 
+				preserve-3d： 指定子元素定位在三维空间内  
+				
+			transition(过渡使效果看着不那么生硬) 		transition: all .5s ease-in .1s;
+			<' transition-property '>： 检索或设置对象中的参与过渡的属性 
+					方法：
+					none： 不指定过渡的css属性 
+					all： 所有可以进行过渡的css属性 
+					<IDENT>： 指定要进行过渡的css属性 
+			<' transition-duration '>： 检索或设置对象过渡的持续时间
+				方法： 指定对象过渡的持续时间 
+			<' transition-timing-function '>： 检索或设置对象中过渡的动画类型 
+				方法：
+				linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0) 
+				ease： 平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0) 
+				ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0) 
+				ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0) 
+				ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) 
+				step-start： 等同于 steps(1, start) 
+				step-end： 等同于 steps(1, end) 
+				steps(<integer>[, [ start | end ] ]?)： 接受两个参数的步进函数。第一个参数必须为正整数，指定函数的步数。第二个参数取值可以是start或end，指定每一步的值发生变化的时间点。第二个参数是可选的，默认值为end。 
+				cubic-bezier(<number>, <number>, <number>, <number>)： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内 
+			<' transition-delay '>： 检索或设置对象延迟过渡的时间 
+				方法：
+				延迟时间
+				
+			---------------   倒影    ----------------------
+			background:-webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5)),url(b1.png);
+			---------------   渐变    -----------------------
+			background:-webkit-linear-gradient(#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			兼容：
+			background:-moz-linear-gradient(#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			background:-webkit-linear-gradient(#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			background:-o-linear-gradient(#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			background:-ms-linear-gradient(#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			background:-MS-linear-gradient(#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			background:linear-gradient(#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			倾斜度：
+			background:-webkit-linear-gradient(-45deg,#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			百分比：
+			background:-webkit-linear-gradient(yellow 20%,red 30%,green 50%)
+			方向：
+			background:-webkit-linear-gradient(left,#ff1e00,#f6ff00,#30ff00,#00ffea,#001eff,#ff00e4,#ff0000);
+			----------------   阴影   -----------------------
+			none： 无阴影 
+			<length>①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值 
+			<length>②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值 
+			<length>③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值 
+			<length>④： 如果提供了第4个长度值则用来设置对象的阴影外延值。可以为负值 
+			<color>： 设置对象的阴影的颜色。 
+			inset： 设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影
+			
+			---------------   文字阴影    -----------------------
+			text-shadow：none | <shadow> [ , <shadow> ]*
+			none： 无阴影 
+			<length>①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值 
+			<length>②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值 
+			<length>③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值 
+			<color>： 设置对象的阴影的颜色
+			
+			<a href="javascript:alert(1);"></a>  阻止默认动作    里面可以加alert（1）
+			 
+			display:inline;
+			内联元素   不能设置宽高  可以设置padding上下左右都可以设置  margin只可以设置左右，背景可设置  不独占一行
+			display:inline-block
+			可以把行内元素设置为行块元素，可以设置宽高。不独占一行。当做文本来处理
+			
+		 querySelectorAll   获取数组  有length
+		 querySelector      获取的是元素  没有length    IE7 不兼容
+		 
+		 cssText  js css样式写法
+		 
+		 classList   iD名不需要获取直接写入
+		 
+		 
+		 ----------------------------------   3D    -----------------------------------------
+		 X轴为横向 
+		 Y轴为宗祥
+		 Z轴为面向自己的那一面
+		 
+		 角度为有一面为负      偏移都为正
+		 角度为面面为正          偏移为负
+		 
+		 
+		---------------------------------  音频-视频  ---------------------------------------
+		audio 音频                   video 视频
+		
+		音频视频分为两部分 	1.静态部分
+						2.JS   对应控制条部分
+		
+		第一条 ogg  
+		    MP3
+		<audio src=""></audio>   一条播放源
+		<audio>     			 兼容  两条播放源
+			<source></source> 源
+		</audio>
+			
+		音频-视频的方法
+		load() 			重新加载音频/视频元素。
+		play() 			开始播放音频/视频。
+		pause() 		暂停当前播放的音频/视频。
+		
+		
+		属性保存的是值
+		
+		音频-视频的属性
+		src 			设置或返回音频/视频元素的当前来源。
+		currentSrc 		返回当前音频/视频的 URL。
+		loop 			设置或返回音频/视频是否应在结束时重新播放
+		音频-视频时间
+		preload 		设置或返回音频/视频是否应该在页面加载后进行加载。
+		autoplay 		设置或返回是否在加载完成后随即播放音频/视频。
+		设置默认播放状态
+		defaultMuted 			设置或返回音频/视频默认是否静音。
+		defaultPlaybackRate 	设置或返回音频/视频的默认播放速度。
+		//声音
+		muted 			设置或返回音频/视频是否静音。
+		volume 			设置或返回音频/视频的音量。	
+		//进度条
+		duration 		返回当前音频/视频的长度（以秒计）。
+		currentTime 	设置或返回音频/视频中的当前播放位置（以秒计）。
+		playbackRate 	设置或返回音频/视频播放的速度。
+		//状态
+		ended 			返回音频/视频的播放是否已结束。
+		paused 			设置或返回音频/视频是否暂停。
+		played 			返回表示音频/视频已播放部分的 TimeRanges 对象。
+		buffered 		返回表示音频/视频已缓冲部分的 TimeRanges 对象。
+		
+		
+		音频视频-事件句柄 
+		canplay 			当浏览器可以开始播放音频/视频时触发。 
+		emptied 			当目前的播放列表为空时触发。 
+		ended 				当目前的播放列表已结束时触发。 
+		error 				当在音频/视频加载期间发生错误时触发。 
+		loadeddata 			当浏览器已加载音频/视频的当前帧时触发。
+		pause 				当音频/视频已暂停时触发。 
+		play 				当音频/视频已开始或不再暂停时触发。 
+		playing 			当音频/视频在因缓冲而暂停或停止后已就绪时触发。 
+		ratechange 			当音频/视频的播放速度已更改时触发。 
+		seeked 				当用户已移动/跳跃到音频/视频中的新位置时触发。 
+		seeking 			当用户开始移动/跳跃到音频/视频中的新位置时触发。 
+		stalled 			当浏览器尝试获取媒体数据，但数据不可用时触发。  
+		timeupdate 			当目前的播放位置已更改时触发。 
+		volumechange 		当音量已更改时触发。 
+		waiting 			当视频由于需要缓冲下一帧而停止时触发。 
+		
+		<audio controls loop autoplay>
+			<source src="2.mp4" type="audio/mpeg"></source>
+			<source src="2.ogg" typt="audio/ogg"></source>
+		</audio>    
+				
+		controls 是否显示控制条条
+		loop     循环播放
+		muted    静音
+		autoplay 页面打开的时候就开始播放
+		
+		<video width="800" height="500" controls loop muted autoplay>
+			<source src="1.mp4" type="video/mp4"></source>
+			<source src="1.ogv" type="video/ogg"></source>
+			<source src="1.webm" type="video/webm"></source>
+		</video>
+		
+		
+		
+		查询媒体状态
+<audio>和<video>元素有一些只读属性，描述媒体以及播放器当前的状态：
+paused=true：播放器暂停
+seeking=true：播放器正在跳到一个新的播放点
+ended=true：播放器播放完媒体并且停下来，如果loop属性值为true，那么ended属性值永远不为“true”。）
+duration:属性指定了媒体的时长，单位是秒。如果在元数据未载入前查询该属性，它会返回NaN。对于像Internet广播这样有无限时长的流媒体而言，该属性会返回Infinity.
+initialTime:指定了媒体的开始时间，单位也是秒。对于固定时长 的媒体的剪辑而言，该属性值通常为0。而对于流媒体而言，该属性表示已经缓存的数据最早时间以及能够回退到的最早时间。设置currentTime属性时，不能小于initialTime的值。
+played：返回已经播放的时间段
+buffered:返回当前已经缓冲的时间段
+seekable：返回当前播放器需要跳到的时间段。
+可以用以上三个属性来实现一个进度条，以上三个属性都有一个length以及start()和end()方法，前者表示当前的一个时间段，后者分别返回当前时间段的起始时间点和结束时间点（单位秒）。
+
+
+
+		-----------------  文件API   -------------------
+		1.找到文件对象
+		2.new 声明
+		3.a.readAstext 用这个方法吧 东西装进去
+		4.a.onload = 
+		
+		
+		第一步：获取file对象
+			var obj1 = document.getElementById("file");
+			file = obj1.files;
+			file1 = file[0]
+			//files是一个数组，FileReader()只能操作单一的文件对象，所以需要files[i]来使用			
+			
+		第二步:创建文件转换对象
+		var read = new FileReader()
+		
+		第三部:使用文件转换对象的方法转换文件
+		read.readAsText(flie1)
+		
+		第四部:加载处理
+		read.onload = function(){
+			var 返回值 = this.result
+			.....
+		}
+		
+		
+		//文件转换对象的的方法和属性
+		
+			//方法
+			readAsBinaryString(flie)     //二进制
+			readAsDataURL(flie)     //转换URL
+			readAsText(flie)       //转换文本
+			
+			//事件
+			onloadstart = function(){ this.result }     
+			onprogress = function(){ this.result }
+			onabort  = function(){ this.result }
+			onload = function(){ this.result } 
+			onerror = function(){ this.result }
+			onloadend = function(){ this.result }
+			
+			//返回值,用在事件内部
+			this.result
+		-----------------  表单/语义化标签  ----------------
+~~~~~~~~~~~~~~~~~~~~~~~~  【知识点总结结束】      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		
+
+~~~~~~~~~~~~~~~~~~~~~~~~  【JS知识点总结开始】  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2、js是一门什么样的语言及特点？
+js是一种基于对象和事件驱动的并具有相对安全性的客户端脚本语言。也是一种广泛用于web客户端开发的脚本语言，常用来给html网页添加动态功能，如响应用户的各种操作。
+主要的目的是为了解决服务器端语言遗留的速度问题，为客户提供更流畅的浏览效果。
+（详细拓展：http://www.360doc.com/content/14/0317/11/10186276_361233415.shtml）
+
+3、js的数据类型？
+基本数据类型：String、boolean、Number、undefined、null
+引用数据类型：Object、Array、Date、RegExp、Function
+
+拓展：如何判断数组数据类型？
+1）通过专有方法判断如：push(),pop();        //可自己给变量定义该方法，有时失效
+2） obj instanceof Array 返回值判断；        
+3）es5和jquery都有方法Array.isArray()。
+4）toString.call(param) 判断；返回格式 [object Undefined]                5、obj.constructor === Function 返回值判断
+
+4、获取所有的checkbox？
+var domlist = document.getElementsByTagName("input");
+var checkboxlist = [];
+var len = domlist.length;
+
+for (var i = 0; i < len; i++) {
+   if(domlist[i].type == "checkbox"){
+     checkboxlist.push(domlist[i])
+   }
+}
+//各大主流浏览器中，for与while在平时使用中效率上for循环效率略优。
+
+5、绑定事件的方式？
+1）直接在dom里绑定：<div onclick="test()"></div>
+2）在js中通过onclick绑定：xxx.onclick=test;
+3）通过事件绑定：dom.addEventListener("click",test,boolean)
+
+(拓展：js事件流模型？)
+“事件冒泡”：事件由最具体的元素接收，然后逐级向上传播；
+“事件捕捉”：事件由最不具体的节点先接收，然后逐级向下，一直到最具体元素；
+“dom事件流”：三个阶段：事件捕捉，目标阶段，事件冒泡；
+（附：事件流详解）
+ie事件流：冒泡型事件：button->div->body
+netscape事件流：捕获型事件：body->div->button
+dom事件模型：body->div->button->button->div->body;
+dom事件流同时支持两种事件模型：但是捕获事件先发生，从document对象开始，也在document对象结束
+ie9以下不支持addEventListener/removeEventListener,采用attachEvent/detachEvent
+(无关东东css：<!--[if lt IE 9]><![endif]-->)
+（附：阻止事件传播）
+w3c中，使用stopPropagation()方法阻止冒泡;阻止默认事件：preventDefault()；
+ie中，cancelBubble = true阻止事件冒泡；阻止默认事件：window.event.returnValue = false;
+
+6.什么是Ajax和JSON，它们的优缺点？
+Ajax（Asynchronous Javascript And XML/异步的javascript和xml）。
+
+优点：
+可以使得页面不重载全部内容的情况下加载局部内容，降低数据传输量。
+避免用户不断刷新或者跳转页面，提高用户体验。
+
+缺点：
+对搜索引擎不友好。
+要实现ajax下的前后退功能成本较大
+可能造成请求数的增加
+跨域问题限制
+
+JSON：json是一种轻量级的数据交换格式，ECMA（欧洲计算机制造商协会）的一个子集；
+
+优点：轻量级，占用带宽小、易于人的阅读和编写，便于机器（js）解析，支持复合数据类型（数组，对象，字符串，数字），能直接为服务器端代码使用，大大简化了服务器端和客户端的代码开发量。
+
+缺点：相对xml通用性较差，数据可描述性较差；
+
+（拓展：json与xml的区别？）
+xml定义：可拓展标记语言，用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的语言。xml是SGML（标准通用标记语言）的子集，非常适合web传输。
+xml提供统一的方法来描述和交换独立于应用程序或供应商的结构化数据。
+
+xml优点：
+1）格式统一，符合标准；
+2）容易与其他系统进行交互，数据共享比较方便
+
+缺点：
+1）xml文件格式文件庞大，格式复杂，传输占用更多带宽
+2）服务器和客户端都需要花费大量代码来解析xml，服务器和客户端代码变得异常复杂和不容易维护。
+3）客户端不同浏览器之间解析xml的方式不一致，需要重复编写很多代码。
+4）服务器端和客户端解析xml花费更多资源和时间
+
+与json的优缺点比较？
+1）可读性、可拓展性都很出色，但是xml的编码难度更高。
+2）json的解码难度几乎为0，而xml得考虑子父节点；
+3）xml的通用性更广，json则广泛应用于前端。
+4）json相对xml，数据体积更小；与js交互更方便；
+5）json对数据的描述性比xml较差；
+6）json的无论是传播还是解析速度远远快于xml；
+
+7、什么情况会出现undefined？
+当只声明变量，并未赋值初始化的时候这个变量的值就是undefined；
+
+(拓展：解释原因？)
+var a=null;
+console.log(typeof a);        // object
+null是一个只有一个值的数据类型，这个值就是null。表示一个空指针对象。所以typeof返回object；
+
+8、双等号的类型转换？
+var undefined;
+undefined == null; // true
+1 == true;  // true
+2 == true;  // false
+0 == false; // true
+0 == '';   // true
+NaN == NaN; // false
+[] == false; // true
+[] == ![];  // true
+
+// alert(!![])        //true
+// alert(![])        //false
+// alert([] == 0)        //true
+// alert(false == 0)        //true
+
+分析：undefined与null相等 但不全等（===）
+当为number与string时，会将string转换为number；
+number和boolean时，会将boolean转换为number
+number或string与Object，会将Object转换成number或string
+
+（附：js中的数据类型转换？）
+函数转换：parseInt()、parseFloat()、toString()
+强类型转换：Boolean()、Number()、String()
+弱类型转换：“==”、“-”、“+”、if（）
+
+（拓展：for循环中的效率问题？）
+1.for(var i=0;i<arr.length;i++)
+
+2.for(var i in arr)
+
+3.for(var i=0,len=arr.length;i<len;i++)
+
+第三种效率更高！
+在大数据下：
+第三种方式比第一种执行速度快3~4倍；
+至于第三种比第三种快100多倍开外（详细数据：http://www.111cn.net/wy/js-ajax/39368.htm）
+
+9、基础算法？已知：var str="get-element-by-id",写一个函数转化成驼峰形式（你懂得）？
+
+function Naizi(str){
+  var arr = str.split("-");
+  var target = "";
+  for(var i=0,len=arr.length;i<len;i++){
+    target+=arr[i].substr(0,1).toUpperCase()+arr[i].substr(1);
+  }
+  return target;
+}
+
+10、基础API？
+数组：
+var numberArray = [3,6,2,4,1,5];
+倒序：numberArray.reverse();
+降序：numberArray.sort(function(a-b){return b-a})
+a.concat(b,c,d)
+日期：
+输出YYYY-MM-DD
+
+function getYMD(){
+  var date = new Date();
+  var y = date.getFullYear();
+  var m = date.getMonth()+1;
+  var d = date.getDate();
+  function getDouble(str){
+    var str; 
+    if(str < 10){
+      return str = "0"+str;
+    }else{
+      return str = str;
+    }
+  }
+  return y +"-"+getDouble(m)+"-"+getDouble(d);
+}
+
+（值得一提：date.getDay() 返回星期0~6  星期日~星期六）
+
+11、正则？
+var str = ”<tr><td>{$id}</td><td>{$name}</td></tr>”的{$id}替换成10，{$name}替换成Tony 
+var target = str.replace(/{\$id}/,"10").replace(/{\$name}/,"Tony");
+
+(拓展:tirm方法实现)
+
+var str = "     sdasad    ";
+function trim(str){
+  return str.replace(/(^\s*)|(\s*$)/g,"");
+}
+
+(拓展：转义字符方法实现)
+
+function escapeHTML(str){
+  return str.replace(/[<>"&]/g,function(match,key){
+  switch(match){
+    case '<':
+    return '\<';
+    break;
+    case '>':
+    return '\>';
+    break;
+    case '"':
+    return '\"';
+    break;
+    case '&':
+    return '\&';
+    break;
+  }
+  })
+}
+
+（拓展：正则构造函数var reg=new RegExp("xxx")与正则字面量形式var reg=//有什么不同？匹配邮箱？）
+
+使用RegExp()构造函数的时候，不仅需要转义引号（“\”），并且还需要双反斜杠\\表示一个\。使用正则字面量形式效率更高；
+
+邮箱匹配：
+var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-]{2,3})$/;
+
+12、短路表达式 || &&？
+foo = foo || bar；
+如果foo 为真 foo = foo； 否则 foo = bar；
+|| 第一个为真则返回第一个，否则返回第二个；
+&& 第一个为假则返回第一个，否则返回第二个；
+作用：精简代码，不过可读性较低；
+
+13、随机取10个10-100数？
+function getNumArr(n){
+  var arr = [];
+  for(var i = 0;i <n;i++){
+    arr.push(parseInt(Math.random()*90+10))
+  }
+  return arr;
+}
+
+14、dom增删查改？
+增：
+document.createElement(tag);
+document.createTextNode();
+document.createDocumentFragment() 
+dom.appendChild(sondom);
+dom.insertBefore(newdom,targetdom);
+删：
+document.removeChild();
+改：
+document.replaceChild();
+查：
+getElementById()
+getElementsByTagName()
+getElementsByName();
+
+15、字符串操作？
+
+var str = 'http://item.taobao.com/item.html?a=1&b=2&c=&d=xxx&e';
+//将GET参数按照键值对的形式输出json
+function getGEt(str){
+var dataStr = str.split("?")[1];
+var result = {};
+if(dataStr.indexOf("&") > 0){
+var bigArr = dataStr.split("&");
+for(var i = 0,len = bigArr.length;i<len;i++){
+var smallArr = bigArr[i].split("=");
+result[smallArr[0]] = smallArr[1];
+}
+}else{
+var arr = dataStr.split("=");
+result[arr[0]] = arr[1];
+}
+return result;
+}
+
+16、闭包的使用？
+
+for(var i = 0,len=domlist.length;i<len;i++){
+  domlist[i].onclick = function(){
+    console.log(i);
+  }
+}
+
+都输出domlist.length；
+
+onclick 是一个异步函数；当onclick执行的时候i此时变成了domlist.length；
+解决：（闭包）
+
+for(var i=0,len=domlist.length;i<len;i++){
+  domlist[i].onclick = (function(a){
+    return function(){
+      console.log(a)
+    }
+  })(i);
+}
+//也可以设置私有属性；
+
+17、js中callee和caller？
+	caller是返回一个对函数的引用，该函数调用了当前函数；
+	callee是返回正在被执行的function函数，也就是所指定的对象的正文；
+（注：callee是arguments的属性，只有当函数被调用的时候才会生成arguments，未调用时为null，所以调用callee将会报错）
+
+var result=[];
+function fn(n){ //典型的斐波那契数列
+if(n==1){
+return 1;
+}else if(n==2){
+return 1;
+}else{
+if(result[n]){
+return result[n];
+}else{
+//argument.callee()表示fn()
+result[n]=arguments.callee(n-1)+arguments.callee(n-2);
+return result[n];
+}
+}
+}
+
+18、实现函数clone，包括Number、String、Object、Array、Boolean?
+
+function clone(param){
+var result;
+switch(typeof param){
+case "object":
+if(param instanceof Array){
+result = [];
+for(var i=0,len=param.length;i<len;i++){
+result.push(param[i]);
+}
+return result;
+} else if(param instanceof Object){
+result = {};
+for(var key in param){
+result[key] = param[key];
+}
+return result;
+}else{
+return result = param;
+}
+break;
+default:
+return result = param;
+break;
+}
+}
+
+19.老掉牙的数组去重？
+
+var arr = [123,"1",123,12,312,3,123,"123",1,23,123,12,312,3,123,123,123,123,12]        function gotU(arr){
+var result = [];
+var json = {};
+for(var i = 0,len=arr.length;i<len;i++){
+var temp = arr[i];
+var type = typeof temp;
+if(!json[temp]){
+json[temp] = [type];
+result.push(temp);
+}else{
+if(json[temp].indexOf(type) < 0){
+json[temp].push(type);
+result.push(temp);
+}
+}
+}
+return result;
+}
+
+20.提取对象属性与方法？
+粗壮的旺财是一条可爱的小狗(Dog)，它的叫声很好听(wow)，每次看到主人的时候就会乖乖叫一声(yelp)。
+
+function Dog(){
+this.name = "粗壮的旺财";
+this.type = "cute";
+this.animalkind = "dog";
+}
+Dog.prototype={
+sound:function(){
+alert("wow SB");
+},
+seeMaster:function(){
+this.sound();
+},
+seeMasterBeingB:function(){
+var bitches = 50;
+for(var i=0;i<bitches;i++){
+this.seeMaster();
+}
+}
+}
+
+小猪和粗壮的旺财一样，原来也是一条可爱的小狗，可是突然有一天疯了(MadDog)，一看到人就会每隔半秒叫一声(wow)地不停叫唤(yelp)。
+
+function MadDog(){
+this.name = "小猪";
+}
+MadDog.prototype = new Dog();
+MadDog.prototype.foundSomeoneIsAGay=function(){
+var self = this;
+this.timer = setInterval(function(){
+self.seeMaster();
+},500)
+} 
+
+21、编写一个js，输入指定类型选择器返回匹配的dom节点（id,class,tag），考虑浏览器兼容性和性能；
+
+function select(str){
+if(str){
+var doms;
+var result = [];
+var first = str.charAt(0);
+var other = str.substr(1);
+if(first == "#"){
+doms = document.getElementById(other);
+result.push(doms);
+return result;
+}else if(first == "."){
+if(document.getElementsByClassName){
+doms = document.getElementsByClassName(other);
+return getArr(doms);
+}else{
+doms = document.getElementsByTagName("*");
+for(var i = 0,len = doms.length;i<len;i++){
+if(hasClass(doms[i],other)){
+result.push(doms[i])
+}
+}
+return result;
+}
+}else{
+doms = document.getElementsByTagName(str);
+return getArr(doms);
+}
+}
+}
+function getArr(param){
+var result = null;
+try{
+result = Array.prototype.slice.call(param,0) //非ie
+}catch(e){
+result = [];
+for(var i=0,len=param.length;i<len;i++){
+result.push(param[i]);
+}
+}
+return result;
+}
+function hasClass(dom,classname){
+var clas = dom.className;
+var arr = [];
+if(dom && clas){
+arr = clas.split(" ");
+for (var i = 0,len = arr.length; i < len; i++) {
+if(arr[i] == classname) return true;
+}
+return false;
+}
+return false;
+}
+
+22、评价代码，给出意见。
+
+if(window.addEventListener){
+var addListener = function(el,type,listener,useCapture){
+el.addEventListener(type,listener,useCapture);
+};
+}else if(document.all){
+addListener = function(el,type,listener){
+el.attachEvent("on"+type,function(){
+listener.apply(el);
+});
+} 
+}
+
+不应在if和else语句中声明addListener函数，应该先声明；
+不需使用window.addEventListener或document.all来进行检测浏览器，应该使用能力检测；
+由于attachEvent在IE中有this指向问题，所以调用它时需要处理一下
+改进：
+
+function addEvent(elem,type,handler){
+if(elem.addEventListener){
+elem.addEventListener(type,handler,false);
+}else if(elem.attachEvent){
+elem.attachEvent("on"+type,handler);
+}else{
+elem["on"+type] = handler;
+}
+}
+
+(拓展：阻止默认事件与冒泡事件)
+
+function preventEvent(e){
+var e = e || window.event;
+e.preventEvent || e.returnValue = false;
+e.stopPropagation || e.cancelBubble =  true;
+}
+
+
+23、String对象添加方法，例:addSpace("hello world") // -> 'h e l l o w o r l d';
+
+String.prototype.addSpace = function() {
+if(this.length>0){
+var arr = this.split("");
+var tempArr = [];
+var target;
+for(var i=0,len=arr.length;i<len;i++){
+if(arr[i] != " "){
+tempArr.push(arr[i]);
+}
+}
+return target = tempArr.join(" ");
+}
+return this;
+};
+
+(附：函数声明与函数表达式的区别？)
+在js中，解析器在向执行环境中加载数据时，对函数声明和函数表达式并非一视同仁的，
+解析器会率先读取函数声明，并使其在执行任何代码之前可用（也就是函数声明提升），
+至于函数表达式要等到解析器执行到它所在的代码，才会真正解析执行。（只有变量名称提升）
+
+24、定义一个方法代理console.log。
+
+function log(){
+console.log.apply(null,arguments);
+}
+
+(拓展：apply与call的区别？)
+apply与call的作用相同，即调用一个对象的一个方法，改变该方法的this的指针。
+在第二个参数：apply传入的是一个参数数组，而call传入的是离散型参数。
+
+25、在js中什么是伪数组？如何转化成真数组？
+伪数组：无法直接调用数组的方法，但是仍含有length属性。
+getElementsByTagName/getElementsByClassName/childNodes/arguments 都是伪数组;
+通过使用Array.prototype.slice.call(fakeArray)将伪数组转化为真数组；
+
+（拓展：给log添加前缀？）
+
+function log(){
+var args = Array.prototype.slice.call(arguments);
+args.unshift("aa");
+console.log.apply(null,args);
+}
+
+26、作用域与this？
+
+var User = {
+count:1,
+getCount:function(){
+return this.count;
+}
+}
+console.log(User.getCount())  //1
+var fn = User.getCount;
+console.log(fn());        //undefined
+
+为什么？
+fn是在window的上下文中被执行的，所以会访问不到count属性。也就是说this指向的是window.
+最好的方法还是使用混合对象：构造函数+原型对象构建
+
+function User(){
+this.count = 1;
+}
+User.prototype={
+getCount:function(){
+return this.count;
+}
+}
+var fn = new User();
+console.log(fn.getCount());
+
+27、原生js的window.onload与jQuery的$(document).ready(function(){})有什么不同？如何用原生js实现ready方法？
+
+window.onload方法必须等到页面内包括图片的所有元素加载完毕后才能执行。
+$(document).ready()是DOM结构绘制完毕后就执行，不必等到加载完毕。
+
+原生实现：
+
+function ready(fn){
+var d = document;        //提高性能
+if(d.addEventListener){
+d.addEventListener("DOMContentLoaded",function(){
+//注销事件，避免反复触发
+d.removeEventListener("DOMContentLoaded",arguments.callee,false);
+fn();
+},false)
+}else if(d.attachEvent){        //ie9以下
+d.attachEvent("onreadystatechange",function(){
+d.detachEvent("onreadystatechange",arguments.callee);
+fn();
+})
+}
+}
+
+28、原生js对某个节点实行拖拽？（思路）
+1）给需要拖拽的节点绑定mousedown,mousemove,mouseup事件；
+2）mousedown事件触发后，开始拖拽
+3）mousemove时,通过e.clientX和clientY获取拖拽位置，实时更新位置;
+4）mouseup时，拖拽结束。
+5）注意浏览器边界情况。
+		function drop(id){
+		var dom = document.getElementById(id);
+		var w =  dom.clientWidth;
+		var h =  dom.clientHeight;
+		dom.addEventListener("mousedown",function(e){
+		var flag=true;
+		var e = e || window.event;
+		var d = document.documentElement;
+		var docW = d.clientWidth;
+		var docH = d.clientHeight;
+		var dx = e.clientX-this.offsetLeft;
+		var dy = e.clientY-this.offsetTop;
+		this.addEventListener("mousemove",function(e){
+		var e = e || window.event;
+		var left = e.clientX-dx;
+		var top = e.clientY-dy;
+		if(flag){
+		if(left<=0){
+		left = 0;
+		}else if(left >=  docW- w){
+		left = docW - w;
+		}
+		if(top <= 0 ){
+		top = 0;
+		}else if(top >= docH - h){
+		top = docH - h;
+		}
+		this.style.left = left+"px";
+		this.style.top = top+"px";        
+		}
+		})
+		this.addEventListener("mouseup",function(){
+		flag = false;
+		})
+		})
+		}
+
+29、下列函数的作用？空白区域填写？
+
+(function(window) {
+function fn(str) {
+this.str = str;
+}
+
+fn.prototype.format = function() {
+var arg = ______;
+return this.str.replace(_____, function(a, b) {
+return arg[b] || "";
+});
+}
+window.fn = fn;
+})(window);
+(function() {
+var t = new fn('<p><a href="{0}">{1}</a><span>{2}</span></p>');
+console.log(t.format('http://www.alibaba.com', 'Alibaba', 'Welcome'));
+})();
+
+//使用format方法将函数参数替换掉{0}这样的内容，返回一个格式化的结果；
+//1.arguments                2./{(\d+)}/g
+
+30.使用js面向对象介绍自己。
+使用json或对象都很不错。
+
+31.原生js实现Ajax的原理。
+Ajax(Asynchronous JavaScript and XML)表示异步的js与xml。有别于传统web的同步开发方式。
+原理：通过XMLHttpRequest对象向服务器发送异步请求，从服务器获得数据，然后使用js操作DOM更新数据。
+该对象是ajax的核心机制，他是在IE5中首先引入的，是一种支持异步请求的技术。
+通过ajax可以及时的向服务器提出请求和处理响应，而不阻塞用户，达到无刷新更新部分页面的效果。
+XMLHttpRequest这个对象的属性有：
+onreadystatechange 每次状态改变所触发事件的事件处理程序；
+responseText 从服务器进程返回数据的字符串形式；
+responseXML 从服务器进程返回的DOM兼容的文档数据对象；
+status 从服务器返回的数字代码，常见的200（客户端请求成功，已就绪）和404（请求资源不存在）
+statusText 伴随状态码的字符串信息 （eg：200 OK）
+readyState 对象状态值
+0（未初始化状态）对象已建立或已被abort()方法重置，尚未调用open方法。
+1（初始化状态）open()方法已经调用，但是send()方法为调用。请求还没有被发送。
+2（发送数据）send()方法法以调用,HTTP请求已发送到Web服务器。未接收到响应。
+3（数据传送中）所有响应头部都已经接收到。响应体开始接受但未完成。
+4（完成加载）HTTP响应已经完全接收。
+
+【拓展：封装ajax？】
+	ajax({
+	url: "./TestXHR.aspx",       //请求地址
+	type: "POST",                            //请求方式
+	data: { name: "super", age: 20 },    //请求参数
+	dataType: "json",
+	success: function (response, xml) {
+	// 此处放成功后执行的代码
+	},
+	error: function (status) {
+	// 此处放失败后执行的代码
+	}
+	});
+
+	function ajax(options) {
+	options = options || {};
+	options.type = (options.type || "GET").toUpperCase();
+	options.dataType = options.dataType || "json";
+	var params = formatParams(options.data);
+	var xhr;
+
+	//创建 - 第一步
+	if (window.XMLHttpRequest) {
+	xhr = new XMLHttpRequest();
+	} else if(window.ActiveObject) {         //IE6及以下
+	xhr = new ActiveXObject('Microsoft.XMLHTTP');
+	}
+
+	//连接 和 发送 - 第二步
+	if (options.type == "GET") {
+	xhr.open("GET", options.url + "?" + params, true);
+	xhr.send(null);
+	} else if (options.type == "POST") {
+	xhr.open("POST", options.url, true);
+	//设置表单提交时的内容类型
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send(params);
+	}
+
+	//接收 - 第三步
+	xhr.onreadystatechange = function () {
+	if (xhr.readyState == 4) {
+	var status = xhr.status;
+	if (status >= 200 && status < 300 || status == 304) {
+	options.success && options.success(xhr.responseText, xhr.responseXML);
+	} else {
+	options.error && options.error(status);
+	}
+	}
+	}
+	}
+
+	//格式化参数
+	function formatParams(data) {
+	var arr = [];
+	for (var name in data) {
+	arr.push(encodeURIComponent(name) + "=" + encodeURIComponent(data[name]));
+	}
+	arr.push(("v=" + Math.random()).replace("."));
+	return arr.join("&");
+	}
+
+【拓展：什么是jsonp和pjax？】
+Jsonp:(JSON with Padding/json的补充)是一种跨域的请求方式。
+	原理：利用script标签可以跨域请求的特点，由其src属性发送请求到服务器，服务器返回js代码(类似于callback(data)，其中data就是传回的数据，通过网页端js函数callback引用)这种方式和通过script标签引用外部文件的原理是一样的。
+
+Jsonp由两部分组成：回调函数和数据，
+	回调函数一般是由网页端控制，将回调函数名作为参数发往服务器端，服务器端把该函数和数据拼成字符串返回。
+pjax：pjax是一种基于ajax+history.pushState的新技术，该技术可以无刷新改变页面的内容，并且可以改变页面的URL。
+(关键点：可以实现ajax无法实现的后退功能)pajax是ajax+pushState的封装，同时支持本地存储、动画等多种功能。目前支持jquery、qwrap、kissy等多种版本。
+）
+~~~~~~~~~~~~~~~~~~~~~~~~  【JS知识点总结结束】      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~  【angular笔记】   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									
+							运气也是实力的一部分
+              
+封装的思想是，整个功能在一个对象主体里面，调用不关心具体实现，只需要传指定参数，获取指定结果
+
+所以，如果封装原生js的话，你得设定一些可能参数值，预计一些回调方法，然后根据这些，写封装的实体
+
+http://www.cnblogs.com/haogj/p/5050199.html
+-----------------------------------------------------------------
+1.为什么使用angular？
+	模块化和复用
+		模块化：随着代码规模越来越大，切分职责是大势所趋，还有为了后期维护方便，修改一块功能不影响其他功能。
+		复用：因为很多逻辑是一样的。
+
+2.ng-bind是执行什么样的指令？
+		ng-bind是绑定指令，告诉angularjs使用给定的变量或表达式的值来替换HTML元素的内容。如果给定的变量或表达式修改了。指定替换的HTML元素也会修改
+
+3.angularjs表达式可以包含：字母、操作符、变量
+
+4.link方法包含几个参数
+    一共有四个	 常用传入的参数为三个。原始值为scope（作用域）、element（元素）、attres（属性）。可以随意改名但是顺序不可变。
+
+5.angularjs中用控制器时有两个参数，分别是并且其中那个参数的参数是不能变的？
+	第一个参数是控制器的名字。第二个是函数，其中函数中的参数$scope是不变的
+
+6.angularjs过滤器怎么用？
+	使用一个管道字符‘|’添加到表达式和指令中
+
+7.angularjs中 translude 属性可以使自定义标签中里面的内容不被替换
+
+8.angular 和 JavaScript的不同点是什么？
+	1> 与JavaScript表达式不同，angular表达式可以写在HTML中
+	2> 与JavaScript表达式不同。angularjs表达式不支持条件判断，循环及异常。
+	3> 与JavaScript表达式不同，angular表达式支持过滤器
+
+9.什么是angular指令？
+	以ng作为前缀的HTML属性
+-----------------------------------------------------------------
+	angular 是美国研发的
+
+	1.<html ng-app>  根作用域   angular 看见ng-app才执行的
+			
+	根作用于 $rootScope
+
+	2.{{}}    angular表达式
+
+	3.ng-app  angular作用域 为一个作用域 写在哪里就在那个域起作用   一个页面可以使用一次  初始化angular数据
+
+	4.ng-model  代表的是input的value的值 绑定值 获取的是input的value的值   绑定数据 只能在input框里面使用
+
+	5.ng-init="变量值='初始值'"   设定初始值 初始化数据
+
+	6.ng-repeat   循环数组    会重复指令一个html元素    新建作用域作用域  为循环的每个标签增加作用域
+
+	对象数组：json  [{},{}]
+	字符串数组：['a','b']
+	<div ng-init="names=[{'aa':'hh'},{'bb':'hh'},{'cc':'hh'}]">
+		<ul>
+			<li ng-repeat='t in names'>
+				{{t}}
+			</li>
+		</ul>
+	</div>  数组里面的每一项对象{}全部循环出来
+			inneit
+	<div ng-init="names=[
+					{'name':'hh','age':1},
+					{'name':'hh','age':2},
+					{'name':'hh','age':3}]">
+		<ul>
+			<li ng-repeat='t in names'>
+				{{t.name+','+t.age}}
+			</li>
+		</ul>
+	</div>
+
+	{{t.name}}  表达式 获取出对象数组里面每一项的name
+
+	7.ng-bind  取值的指定  与{{}}取值一样   区别？？
+
+	8.以上都是内置指令，angular也可以自己指定指令
+-----------------------------------------------------------------
+【事件：】
+	ng-click     点击
+	ng-focus	 获取焦点
+	ng-blur		 失去焦点
+	ng-mouseover 鼠标移入
+	ng-mouseout
+	ng-mouseenter
+	ng-mouseleave
+	ng-keyup
+	ng-keydown
+	ng-mousedown
+	ng-mouseup
+	事件发生的时候与原生js不会冲突，不会覆盖原生js，都会同时执行
+
+	ng-show    	显示的时候为true  隐藏的时候为false
+				<input type="checkbox" ng-model="a" />
+				{{a}}  页面打印出选中的状态
+				<p ng-show="a">111</p>
+				<p ng-show="a">222</p>
+				设置一个变量，让他随着变化
+
+	ng-hide		显示的时候为false  隐藏的时候为true    案例同ng-show
+
+	ng-if		
+				移出
+				显示的时候为true  隐藏的时候为false
+				与ng-hide、ng-show区别
+				ng-if会移除dom,生成dom,而ng-show只是改变其display属性
+				指令用于在表达式为false的时候移出html元素
+
+	ng-checked	
+
+【mv*：】
+	 mvc 起源1979 mvc是一种模式  
+	M-model数据模型层 
+	C-controller业务逻辑和控制逻辑  
+	V-view视图层。负责展示
+	好处：职责清晰，代码模块化
+
+【模块化：】
+	模块-module
+	var app = angular.module('my',[]);
+			创建模块  'my' ng-app='my' 的入口 
+			[] 		   为程序使用  易拉模块 空数组
+
+	app.controller('',function($scope){
+		$scope.fn=function(){}
+	})    
+			第一个为函数名    ng-controller="b"  为ng-controller做调用使用
+
+			第二个为函数      作为一些程序来使用
+
+			传参$scope不能改变			  为事件调用时使用 ng-click="fn()"
+
+			$scope 来调用控制器  相当于作用域 控制范围  保存angular model 模块的数据  数据模型对象
+
+			controller是可以多个使用的   作用域里面也可以有var使用，但是不建议使用var   作为逻辑使用 
+
+
+【双向数据绑定：】
+		
+		是根据 ng-model 来取值的   与表达式{{}}无关
+		ng-controller      控制器
+
+		<div ng-controller="a">
+		<input type="text" ng-model="con">
+		<button ng-click="fn()">ok</button>
+		{{con}}
+		</div>
+		<script type="text/javascript">
+			var app = angular.module('my',[]);
+			app.controller('a',function($scope){
+				$scope.con = '超超';
+				$scope.fn = function(){
+				alert($scope.con)
+				}
+			})
+		</script>
+
+	$index+1    与数字有关 1,2,3,4,5,6,7,8 index
+-----------------------------------------------------------------
+
+ng-checked    true 为选中  false 为不选    为input的checkbox radio
+-----------------------------------------------------------------
+【ajax】
+
+本地连接get不开服务器的时候只能在火狐使用，其他浏览器不具备识别本地文件
+
+angular路由
+	
+		-> then(function(e){},function(){})
+				两个函数 返回时整个数据 返回时整个数据所有内容
+				有一个默认的data
+				
+		-> success 返回的是成功后解析数据后的json数据
+
+		-> $state.go('状态名',uname:{$scope.uname})
+			两个值，后面传值直接带入登录页的用户名
+
+		-> $stateParams //传值接收值
+
+		-> ng-model 与 value 是不可以同时使用的
+			传值的时候直接ng-model
+
+		-> 删除页面的时候用window.location.reload()刷新页面,还可以使用ajax再次调用一次数据
+
+	AngulaeJS  $http  服务  也是一个函数 里面只有一个对象{} 
+			   $http  是一个依赖注入
+			   method  数据传入方式 get 
+	success 交互 成功  返回值交互成功
+		success(function(e){
+			alert("成功") //连接成功  交互成功
+			if(e.flag == 1){
+			alert("成功") //用户登录成功
+			}
+		}).error(function(){
+			alert("交互失败")  //交互失败
+		})
+	error   数据失败返回值
+	
+
+	对象 弹出来的永远是object   字符串 弹出来的是值
+
+	后台  任何后台语言都能交互 列如PHP Java node 他们都是后台环境
+	
+	1.系统键+r
+	2.cmd 
+	3.node -v
+	4.npm -v
+
+	f:  调入磁盘
+	cd express_demo  进入项目目录
+	F:express_demo
+
+	npm start    启动服务器 项目	出现122444说明启动成功
+
+	ctrl+c  两次重新启动服务器
+
+	http://localhost:8005/index.html
+
+	作业：url：http://localhost:8005/denglu/login
+		  数据格式：json
+		  {'name':'a','age':'1'}
+	public 创建文件写在public文件下
+
+	var app = angular.module('my',[]);
+	app.controller('a',function($scope,$http){
+		$http({
+			method:'get',
+			url:'b.json'
+		}).success(function(e){
+			$scope.name = e;
+		}).error(function(){
+			alert('error')
+		})
+	})
+-----------------------------------------------------------------
+写接口的时候需要思考的
+
+	1.请求地址URL
+
+	2.返回数据格式与含义
+
+	{flag} 1-成功 2密码错误 3用户名错误 4用户名密码都错误
+	
+	3.用户名：username
+	
+	4.密码：pwd
+	
+	<div ng-controller="a">
+		用户名：<input type="text" ng-model="n" /><br/><br/>
+		密码：<input type="password" ng-model="pwd" /><br/>
+		<button ng-click="fn(n,pwd)">登录</button>
+	</div>
+	<script type="text/javascript"> 
+	 	var app = angular.module('my',[]);
+	 	app.controller('a',function($scope,$http){
+	 		$scope.fn = function(aa,bb){
+
+	 		//alert(aa+'......'+bb)    绑定input的值
+
+	 			$http({
+	 				method:'post',
+	 				url:'http://localhost:8005/denglu/denglu',
+	 				data:{uname:aa,pwd:bb}   //给后台返回数据
+	 			}).success(function(e){
+	 				//alert(e.flag)  测试交互成功没有
+	 				if(e.flag == 1){
+	 					alert("登录成功")
+	 				}else if(e.flag == 2){
+	 					alert("密码错误")
+	 				}else if(e.flag == 3){
+	 					alert("用户名错误")
+	 				}else if(e.flag == 4){
+	 					alert("密码与用户名错误")
+	 				}
+	 			}).error(function(){
+	 				alert("error")
+	 			})
+	 		}
+	 	})
+	</script>
+-----------------------------------------------------------------
+写项目需求
+			1.需求
+			2.设计
+			3.布局
+			4.与后台对接
+
+
+ajax  叫开发文档
+		登录功能 angular
+		url:http://locallhost:8005/denglu/d2
+		请求数据
+		用户名：username
+		密码：paasword
+		返回参数 【flag==1】
+
+-----------------------------------------------------------------
+【过滤器】
+	控制器 controller
+
+	过滤器 filter 
+
+	filter 以HTML形式使用过滤器
+
+	filter过滤器内置有9种 也可以自定义
+
+	1.currency  叫krc 转换货币
+
+	{{100 | currency:'￥'}}   :'￥'  做了一个参数  参数为字符串
+	
+	2.uppercase  大写转换   {{'how are you' | uppercase}}   结果HOW ARE YOU
+	3.lowercase  小写转换	  {{'FINE THANK YOU' | lowercase}}  结果fine thank you 	
+
+	4.limitTo    截取数组或字符串  只能从第一个字母开始截取
+			   截取数组的时候截取的是对象{{}} 
+			   列如：
+				<p>{{ arr | limitTo:2 }}</p>
+			   结果：
+			   [{"uname":"chaochao","age":11},{"uname111":"chaochao1","age":11}]
+	5.filter   filter的filter 匹配字符或者字符串   过滤的是value值上面 与k值无关 
+
+	6.orderBy
+	<li ng-repeat="a in name | orderBy:'pwd':true ">
+		{{a.name+'----'+a.age+'----'+a.pwd}}
+	</li> true为降序  false为升序
+	$scope.aa == true ? $scope.aa=false : $scope.aa = true;
+	//=!在后面非   在前面是不等于
+	//$scope.aa =! $scope.aa;
+	
+-----------------------------------------------------------------
+【表单验证】
+require 必填项  确保字段是必须的，字段表决为无效。知道填写
+
+ng-requtred   与require不同，这标志字段也是必须的，ng-required指令允许我们基于控制器布尔条件标记输入字段为必需
+
+ng-disabled 失去焦点 ng-disabled="a.$invalid" 值为true 禁用 false 为取消禁用
+ng-minlength="6"  用户名最小长度
+ng-maxlength="6"  用户名最大长度
+ng-pattern='/[a-zA-Z]/'  匹配正则 为本输入有效性可以针对指定的正则表达式模式进行检查
+
+type="email" 为本输入内置电子邮件验证
+type="number" 带有数量验证的文本输入
+type="date" 如浏览器支持，显示一个HTML日起选择器。否则默认为一个文本输入 ng-model
+type="url" 带有输入验证的URL内容
+
+	案例 input值禁用
+	<form name="a" novalidate>   //novalidate  禁用浏览器自带H5属性
+		<input type="text" ng-model="username" required ng-minlength="6"/>  
+		//不写ng-model  input的value值会不起作用 
+		<span ng-hide="username">请输入用户名：</span>
+		<input type="text" ng-model="pwd" required/>
+		<input type="submit" value="提交" ng-disabled="a.$invalid" ng-click="fn()" />
+	</form>
+-----------------------------------------------------------------
+
+【自定义指令-标签】
+directive  	 函数  来添加自定义指令
+template   	 模板
+templateUrl  模板路径
+replace	  	 模板替换方式		 true  为替换  默认值为false为插入
+transclude	  保留原始位置    默认值为false   设置为true  给位置告诉在哪里   原始值保存再哪里
+restrict:''    调用指令方式  默认方式为 EA
+		E:标签调用   A:属性调用   C:类名调用   M:注释、两边必须有空格
+		E		自定义标签  <hello></hello>
+		A 		属性	<div hello></div>
+		C   	类名	<div class="hello"></div>
+		M 		注释    <!-- directive:hello -->   配合replace使用 为true    注释加空格   
+		replace   false 标签还在在标签基础上添加插入标签   true  标签被替换
+				 
+
+
+【dom】
+	link:function(){}   固定格式
+scope:false; 默认值false   默认值为false 从父作用域继承   作用域     
+scope:{}     隔离作用域   会创建一个新的作用域  他的作用域就是他自己本身
+scope:true   创建自己的作用域，继承父对象的作用域
+			 可以接受父对象的值，不能向父对象传值
+		link:function(scope,element,attrs){  //参数可以改变
+			scope.nn = 'ss';
+			scope.fn = function(){
+				alert('ddd');
+			}
+		}
+参数
+1》scope    作用域      
+2》element 	所有的模板都是元素	元素
+3》attrs		属性集合
+
+
+element.bind('click')     绑定事件名 
+------------------------------------------------------------------
+【路由】层级级关系路由
+（‘app',[]）   []   依赖模块 ui.router  
+config   函数
+$stateProvider   状态提供
+$urlRouterProvider    路由路径提供
+state   状态
+ui-view   指定位置指令
+controller 可以放在模板、body、主页、还可以放在$stateProvider
+
+$rootScope 不存储数据  需要使用的时候可以在获取一次http
+
+
+$stateParams  是一个对象，代表所有参数集合   
+	app.controller('con',function($scope,$stateParams){
+			alert($stateParams.abc+'>>>>>>>>>>>')
+		})
+
+传参的时候 state写法
+		.state('index.h.yy',{
+				url:'/yy?abc',
+				templateUrl:'yy.html',
+				controller:'con'
+		})
+		controller 与 路由有关系的   找不到值的时候考虑controller与路由的执行先后顺序
+
+		<a href="#" ng-repeat="key in cc" ui-sref="index.h.yy({abc:})">
+		{{$index}}.................{{key.name}}
+		</a>
+------------------------------------------------------------------
+【路由2】组装方式关系
+	views 建指  多个模块出现
+	$state.go()    登录的时候跳转   括号里面写状态吗
+	$state.go('状态吗',{传参的参数值}) //状态名的时候的写形参
+	$state.go('index',{abc:0})  //index为状态名   {abc:0} url:'/index?abc',
+
+	$state.go('index',{abc:0,id:'name'})       //多个参数之间传递 
+	url:'/index?abc&id',   
+
+	<div ui-sref="index1({id:0,abc:'ddd'})">详情页</div>  ui-sref的多个参数之间传递
+
+	历史记录，返回上一步 window.history.back(); 返回上一步
+	历史记录，前进一步   window.history.forword()  前进一步
+------------------------------------------------------------------
+【服务】
+	服务是一个函数或对象
+
+	内置服务 	$timeout  两个函数  一个执行方法  一个时间单位为毫秒
+				$interval 周期性
+	toLocaleTimeString() 方法可根据本地时间把 Date 对象的时间部分转换为字符串,并返回结果。
+
+	$location.absUrl()  获取url 完整的url路径
+	$scope.url = $location.absUrl();    获取url 完整的url路径
+	服务器完整地址  http://localhost:8005/dl-4.html 
+	本地完整地址    file:///F:/angular/absUrl.html 
+
+	$scope.url = $location.url();  
+	file:///F:/angular/%E5%BE%AE%E5%BE%AE%E4%B8%80%E7%AC%91-2/index.html#/header/index 
+	获取的是#后面的内容 /header/index/yy?abc=0
+	
+	
+
+	【自定义服务器】
+
+	好处是代码复用率
+
+	service 并不直接用于页面        
+<!doctype html>
+<html lang="en" ng-app="my">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="app">
+		{{aa}}
+		<div>{{uname}}</div>
+	</div>
+	<script type="text/javascript">
+		var app = angular.module('my',[]);
+		app.service('ser',function(){
+			this.name = '超超'
+			this.fn = function(n){
+				return n.toString(16)
+			}
+		})
+		app.controller('app',function($scope,ser){
+			$scope.aa = ser.fn(255);
+			$scope.uname = ser.name;
+		})
+	</script>
+</body>
+</html>
+------------------------------------------------------------------
+【a标签】
+每点击一次刷新一次
+---------------------------------------------------------------------
+【复习】
+	angular的特点        
+		1.依赖注入
+		2.双向数据绑定
+		3.MVC
+		4.模块化
+		5.指令
+
+
+
+内置指令 ng-model           双向数据绑定
+		 ng-repeat
+		 ng-app             初始化angular
+		 ng-controller		作用域  调用angular
+		 ng-click
+		 ng-show
+		 ng-hide
+		 ng-if
+		 ng-init
+
+使用的是 AngularJS v1.4.6 版本
+
+自定义指令    app.directive('hello',function(){
+	return {
+		template:'<p></p>',   //模板
+		replace:true,      //替换标签
+		restrict:'AECM',   //E元素  C类标签  A属性 M注释E		
+		transclude:true,	  保留原始位置应该为true 标签应该写ng-transclude    默认值为false   设置为true  给位置告诉在哪里   原始值保存再哪里
+<!-- 自定义标签  <hello></hello>
+A 		属性	<div hello></div>
+C   	类名	<div class="hello"></div>
+M 		注释    directive:hello -->
+		templateUrl:'aa.html',  //模板路径
+		link:function(scope,element,attrs){
+			
+		}
+	}
+})
+
+
+过滤器  指令 filter 	
+
+		
+	内置过滤器
+	1.currency  叫krc 转换货币
+	{{100 | currency:'￥'}}   :'￥'  做了一个参数  参数为字符串
+	2.uppercase  大写转换   {{'how are you' | uppercase}}   结果HOW ARE YOU
+	3.lowercase  小写转换	  {{'FINE THANK YOU' | lowercase}}  结果fine thank you 	
+	4.limitTo    截取数组或字符串  只能从第一个字母开始截取
+			   截取数组的时候截取的是对象{{}} 
+			   列如：
+				<p>{{ arr | limitTo:2 }}</p>
+			   结果：
+			   [{"uname":"chaochao","age":11},{"uname111":"chaochao1","age":11}]
+	5.filter   filter的filter 匹配字符或者字符串   过滤的是value值上面 与k值无关 
+				{{name | filter:'A'}}
+	6.orderBy   排序    升序false  降序为true   默认为false
+
+	
+	自定义过滤器
+
+	使用的时候
+	{{name | my:'A'}}
+	app.filter('my',function(){
+		return function(x){
+			.......
+			return
+		}
+	})
+
+
+表单验证
+
+	<form name="a" novalidate>   //novalidate  禁用浏览器自带H5属性
+		<input type="text" ng-model="username" required ng-minlength="6"/>  
+		//不写ng-model  input的value值会不起作用 
+		<span ng-hide="username">请输入用户名：</span>
+		<input type="text" ng-model="pwd" required/>
+		<input type="submit" value="提交" ng-disabled="a.$invalid" ng-click="fn()" />
+	</form>   
+
+	ng-minlength="6"  用户名最小长度
+	ng-maxlength="6"  用户名最大长度
+	ng-pattern='/[a-zA-Z]/'
+
+
+get   post  
+
+		<div ng-controller="a">
+		用户名：<input type="text" ng-model="n" /><br/><br/>
+		密码：<input type="password" ng-model="pwd" /><br/>
+		<button ng-click="fn(n,pwd)">登录</button>
+	</div>
+	<script type="text/javascript"> 
+	 	var app = angular.module('my',[]);
+	 	app.controller('a',function($scope,$http){
+	 		$scope.fn = function(aa,bb){
+	 			$http({
+	 				method:'post',
+	 				url:'http://localhost:8005/denglu/denglu',
+	 				data:{uname:aa,pwd:bb}   //给后台返回数据
+	 			}).success(function(e){
+	 				//alert(e.flag)  测试交互成功没有
+	 				if(e.flag == 1){
+	 					alert("登录成功")
+	 				}else if(e.flag == 2){
+	 					alert("密码错误")
+	 				}else if(e.flag == 3){
+	 					alert("用户名错误")
+	 				}else if(e.flag == 4){
+	 					alert("密码与用户名错误")
+	 				}
+	 			}).error(function(){
+	 				alert("error")
+	 			})
+	 		}
+	 	})
+	</script>
+
+
+路由 
+	<div ui-view></div>
+
+	var app = angular.module('a',['ui.router'])
+
+	app.config(function($stateProvider,$urlRouterProvider){
+		$stateProvider.state('index',{
+			url:'/index',
+			templateUrl:'aa.index'
+		}).state('index.main',{
+			url:'/main',
+			templateUrl:'bb.index'
+		}).state('index1',{
+			url:'/index1?abc&id',
+			views:{
+			'':{templateUrl:'datail.html'},
+			'a@index1':{templateUrl:'a.html'},
+			'b@index1':{templateUrl:'b.html'}
+			}
+		})
+
+	r	$urlRouterProvider('','index')
+	})
+
+	<div ui-view="a"></div>
+	<div ui-view="a"></div>
+服务
+	内置服务 	$timeout  两个函数  一个执行方法  一个时间单位为毫秒
+				$interval 周期性
+	toLocaleTimeString() 方法可根据本地时间把 Date 对象的时间部分转换为字符串,并返回结果。
+
+	$location.absUrl()  获取url 完整的url路径
+	$scope.url = $location.absUrl();    获取url 完整的url路径
+	服务器完整地址  http://localhost:8005/dl-4.html 
+	本地完整地址    file:///F:/angular/absUrl.html 
+
+	$scope.url = $location.url();  
+	file:///F:/angular/%E5%BE%AE%E5%BE%AE%E4%B8%80%E7%AC%91-2/index.html#/header/index 
+	获取的是#后面的内容 /header/index/yy?abc=0
+
+	
+	<!doctype html>
+<html lang="en" ng-app="my">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="app">
+		{{aa}}
+		<div>{{uname}}</div>
+	</div>
+	<script type="text/javascript">
+		var app = angular.module('my',[]);
+		app.service('ser',function(){
+			this.name = '超超'
+			this.fn = function(n){
+				return n.toString(16)
+			}
+		})
+		app.controller('app',function($scope,ser){
+			$scope.aa = ser.fn(255);
+			$scope.uname = ser.name;
+		})
+	</script>
+</body>
+</html>
+<!doctype html>
+<html ng-app="a">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义指令</title>
+	<script src='js/angular.min.js'></script>
+<style>
+*{
+	margin: 0;
+	padding:0;
+}
+</style>
+</head>
+<body>
+<hello>E:标签调用</hello>	                
+<div class="hello">C:类名调用</div>
+<div hello>A:属性调用</div>
+<!-- directive:hello -->      
+<script>
+var my=angular.module("a",[]);
+my.directive("hello",function(){
+	return {
+		//默认为EA  标签调用和属性调用
+		restrict:"EACM",     //E:标签调用   A:属性调用   C:类名调用   M:注释、两边必须有空格
+		template:"<p>hello,angular!</p>",   //模板 会替换原有元素
+		replace:true            //true时模板会替换标签  false时不替换标签、替换里面的内容
+	}
+})
+</script>
+</body>
+</html>
+-----------------------------------------------------------------
+【后台数据端口】
+	地址为 8888的去app.js最下面修改修改
+	然后加入需要增加的
+		列如：
+		app.use('/zhuce',zhuce)  
+		var zhuce = require('./routes/zhuce');
+
+	然后在routes里面创建需要的 js  
+
+	根据先前有的写上自己所需的语言
+
+----------------------------------------------------------------
+【AngularJS的Filter用法详解】
+时间 2015-05-20 14:18:00  博客园_无上@诀
+原文  http://www.cnblogs.com/wushangjue/p/4516107.html
+主题 AngularJS
+上一篇讲了自定义Directive， 本篇是要讲到AngularJS的Filter。
+
+Filter简介
+
+Filter是用来格式化数据用的。
+
+Filter的基本原型（ '|' 类似于Linux中的管道模式）：
+
+{{ expression | filter }}
+Filter可以被链式使用（即连续使用多个filter）：
+
+{{ expression | filter1 | filter2 | ... }}
+Filter也可以指定多个参数：
+
+{{ expression | filter:argument1:argument2:... }}
+AngularJS内建的Filter
+
+AngularJS内建了一些常用的Filter，我们一一来看一下。
+
+currencyFilter（currency）：
+
+用途：格式化货币
+
+方法原型：
+
+function(amount, currencySymbol, fractionSize)
+用法：
+
+1 {{ 12 | currency}}  <!--将12格式化为货币，默认单位符号为 '$', 小数默认2位-->
+2 
+3 {{ 12.45 | currency:'￥'}} <!--将12.45格式化为货币，使用自定义单位符号为 '￥', 小数默认2位-->
+4 
+5 {{ 12.45 | currency:'CHY￥':1}} <!--将12.45格式化为货币，使用自定义单位符号为 'CHY￥', 小数指定1位, 会执行四舍五入操作 -->
+6 
+7 {{ 12.55 | currency:undefined:0}} <!--将12.55格式化为货币， 不改变单位符号， 小数部分将四舍五入 -->
+dateFilter（date）：
+
+用途：格式化日期
+
+方法原型：
+
+function(date, format, timezone)
+用法：
+
+<!--使用ISO标准日期格式 -->
+{{ '2015-05-20T03:56:16.887Z' | date:"MM/dd/yyyy @ h:mma"}}
+
+<!--使用13位（单位：毫秒）时间戳 -->
+{{ 1432075948123 | date:"MM/dd/yyyy @ h:mma"}}
+
+<!--指定timezone为UTC -->
+{{ 1432075948123 | date:"MM/dd/yyyy @ h:mma":"UTC"}}
+filterFilter（filter）：
+
+用途：过滤数组
+
+方法原型：
+
+function(array, expression, comparator)
+用法1（参数expression使用String）：
+
+1 <div ng-init="myArr = [{name:'Tom', age:20}, {name:'Tom Senior', age:50}, {name:'May', age:21}, {name:'Jack', age:20}, {name:'Alice', age:22}]">
+2     <!-- 参数expression使用String，将全文搜索关键字 'a' -->
+3     <div ng-repeat="u in myArr | filter:'a' ">
+4         <p>Name:{{u.name}}</p>
+5         <p>Age:{{u.age}}</p>
+6         <br />
+7     </div>
+8 </div>
+用法2（参数expression使用function）：
+
+ 1 // 先在Controller中定义function: myFilter
+ 2 $scope.myFilter = function (item) {
+ 3     return item.age === 20;
+ 4 };
+ 5 
+ 6 <div ng-repeat="u in myArr | filter:myFilter ">
+ 7     <p>Name:{{u.name}}</p>
+ 8     <p>Age:{{u.age}}</p>
+ 9     <br />
+10 </div>
+用法3（参数expression使用object）：
+
+1 <div ng-init="myArr = [{name:'Tom', age:20}, {name:'Tom Senior', age:50}, {name:'May', age:21}, {name:'Jack', age:20}, {name:'Alice', age:22}]">
+2     <div ng-repeat="u in myArr | filter:{age: 21} ">
+3         <p>Name:{{u.name}}</p>
+4         <p>Age:{{u.age}}</p>
+5         <br />
+6     </div>
+7 </div>
+用法4（指定comparator为true或false）：
+
+ 1 <div ng-init="myArr = [{name:'Tom', age:20}, {name:'Tom Senior', age:50}, {name:'May', age:21}, {name:'Jack', age:20}, {name:'Alice', age:22}]">
+ 2     Name:<input ng-model="yourName" />
+ 3     <!-- 指定comparator为false或者undefined，即为默认值可不传，将以大小写不敏感的方式匹配任意内容 -->
+ 4     <!-- 可以试试把下面代码的comparator为true，true即大小写及内容均需完全匹配 -->
+ 5     <div ng-repeat="u in myArr | filter:{name:yourName}:false ">
+ 6         <p>Name:{{u.name}}</p>
+ 7         <p>Age:{{u.age}}</p>
+ 8         <br />
+ 9     </div>
+10 </div>
+用法5（指定comparator为function）：
+
+ 1 // 先在Controller中定义function:myComparator, 此function将能匹配大小写不敏感的内容，但与comparator为false的情况不同的是，comparator必须匹配全文
+ 2 $scope.myComparator = function (expected, actual) {
+ 3     return angular.equals(expected.toLowerCase(), actual.toLowerCase());
+ 4 }
+ 5 
+ 6 <div ng-init="myArr = [{name:'Tom', age:20}, {name:'Tom Senior', age:50}, {name:'May', age:21}, {name:'Jack', age:20}, {name:'Alice', age:22}]">
+ 7     Name:<input ng-model="yourName" />
+ 8     <div ng-repeat="u in myArr | filter:{name:yourName}:myComparator ">
+ 9         <p>Name:{{u.name}}</p>
+10         <p>Age:{{u.age}}</p>
+11         <br />
+12     </div>
+13 </div>
+jsonFilter（json）：
+
+方法原型：
+
+function(object, spacing)
+用法（将对象格式化成标准的JSON格式）：
+
+{{ {name:'Jack', age: 21} | json}}
+limitToFilter（limitTo）：
+
+方法原型：
+
+function(input, limit)
+用法（选取前N个记录）：
+
+1 <div ng-init="myArr = [{name:'Tom', age:20}, {name:'Tom Senior', age:50}, {name:'May', age:21}, {name:'Jack', age:20}, {name:'Alice', age:22}]">
+2     <div ng-repeat="u in myArr | limitTo:2">
+3         <p>Name:{{u.name}}
+4         <p>Age:{{u.age}}
+5     </div>
+6 </div>
+lowercaseFilter（lowercase）/uppercaseFilter（uppercase）：
+
+方法原型：
+
+function(string)
+用法：
+
+China has joined the {{ "wto" | uppercase }}.
+We all need {{ "MONEY" | lowercase }}.
+numberFilter（number）:
+
+方法原型：
+
+function(number, fractionSize)
+用法：
+
+{{ "3456789" | number}}
+<br />
+{{ true | number}}
+<br />
+{{ 12345678 | number:1}}
+orderByFilter（orderBy）：
+
+方法原型：
+
+function(array, sortPredicate, reverseOrder)
+用法：
+
+ 1 <div ng-init="myArr = [{name:'Tom', age:20, deposit: 300}, {name:'Tom', age:22, deposit: 200}, {name:'Tom Senior', age:50, deposit: 200}, {name:'May', age:21, deposit: 300}, {name:'Jack', age:20, deposit:100}, {name:'Alice', age:22, deposit: 150}]">
+ 2     <!--deposit前面的'-'表示deposit这列倒叙排序，默认为顺序排序
+ 3     参数reverseOrder：true表示结果集倒叙显示-->
+ 4     <div ng-repeat="u in myArr | orderBy:['name','-deposit']:true">
+ 5         <p>Name:{{u.name}}</p>
+ 6         <p>Deposit:{{u.deposit}}</p>
+ 7         <p>Age:{{u.age}}</p>
+ 8         <br />
+ 9     </div>
+10 </div>
+自定义Filter
+
+和Directive一样，如果内建的Filter不能满足你的需求，你当然可以定义一个专属于你自己的Filter。我们来做一个自己的Filter：capitalize_as_you_want，该Filter会使你输入的字符串中的首字母、指定index位置字母以及指定的字母全部大写。
+
+方法原型：
+
+function (input, capitalize_index, specified_char)
+完整的示例代码：
+<!DOCTYPE>
+<html>
+ <head>
+     <script src="/Scripts/angular.js"></script>
+     <script type="text/javascript">
+          (function () {
+             var app = angular.module('ngCustomFilterTest', []);
+             app.filter('capitalize_as_you_want', function () {
+                 return function (input, capitalize_index, specified_char) {
+                    input = input || '';
+                     var output = '';
+ 
+                     var customCapIndex = capitalize_index || -1
+ 
+                     var specifiedChar = specified_char || '';
+ 
+                     for (var i = 0; i < input.length; i++) {
+                         // 首字母肯定是大写的， 指定的index的字母也大写
+                         if (i === 0 || i === customCapIndex) {
+                           output += input[i].toUpperCase();
+                        }
+                         else {
+                             // 指定的字母也大写
+                             if (specified_char != '' && input[i] === specified_char) {
+                                 output += input[i].toUpperCase();
+                             }
+                             else {
+                                 output += input[i];
+                             }
+                         }
+                     }
+
+                     return output;
+                 };
+             });
+ 
+         })();
+     </script>
+ </head>
+ <body ng-app="ngCustomFilterTest">
+     <input ng-model="yourinput" type="text">
+     <br />
+    Result: {{ yourinput | capitalize_as_you_want:3:'b' }}
+ </body>
+ </html>
+
+-----------------------------------------------------------------
+</body>
+</html>
+
+angular class 操作
+ng-class用法：设置元素的class名。
+方法一：
+my.controller("con",function($scope){    //不推荐使用
+  $scope.classesName="red";                //class名即为red;
+});
+<div class="{{classesName}}"></div>    
+方法二：
+my.controller("con",function($scope){
+  $scope.isRed=true;                             //true时class名为red; false时class名为blue。 true和false可以换成其他的东西。 
+});
+<div ng-class="{true:'red',false:'blue'}[isRed]"></div>
+方法三：
+my.controller("con",funtion($scope){
+  $scope.isRed=true;                           //true时添加class red，false时不添加。    可以添加多个class名。
+  $scope.isGreen=true;                       //true时添加class green, false时不添加。
+});
+<div ng-class="{'red':isRed,'green':isGreen}"></div>
+
+【angular Dom操作】
+ AngularJS操作DOM——angular.element
+addClass()-为每个匹配的元素添加指定的样式类名
+after()-在匹配元素集合中的每个元素后面插入参数所指定的内容，作为其兄弟节点
+append()-在每个匹配元素里面的末尾处插入参数内容
+attr() - 获取匹配的元素集合中的第一个元素的属性的值
+bind() - 为一个元素绑定一个事件处理程序
+children() - 获得匹配元素集合中每个元素的子元素，选择器选择性筛选
+clone()-创建一个匹配的元素集合的深度拷贝副本
+contents()-获得匹配元素集合中每个元素的子元素，包括文字和注释节点
+css() - 获取匹配元素集合中的第一个元素的样式属性的值
+data()-在匹配元素上存储任意相关数据
+detach()-从DOM中去掉所有匹配的元素
+empty()-从DOM中移除集合中匹配元素的所有子节点
+eq()-减少匹配元素的集合为指定的索引的哪一个元素
+find() - 通过一个选择器，jQuery对象，或元素过滤，得到当前匹配的元素集合中每个元素的后代
+hasClass()-确定任何一个匹配元素是否有被分配给定的（样式）类
+html()-获取集合中第一个匹配元素的HTML内容
+next() - 取得匹配的元素集合中每一个元素紧邻的后面同辈元素的元素集合。如果提供一个选择器，那么只有紧跟着的兄弟元素满足选择器时，才会返回此元素
+on() - 在选定的元素上绑定一个或多个事件处理函数
+off() - 移除一个事件处理函数
+one() - 为元素的事件添加处理函数。处理函数在每个元素上每种事件类型最多执行一次
+parent() - 取得匹配元素集合中，每个元素的父元素，可以提供一个可选的选择器
+prepend()-将参数内容插入到每个匹配元素的前面（元素内部）
+prop()-获取匹配的元素集中第一个元素的属性（property）值
+ready()-当DOM准备就绪时，指定一个函数来执行
+remove()-将匹配元素集合从DOM中删除。（同时移除元素上的事件及 jQuery 数据。）
+removeAttr()-为匹配的元素集合中的每个元素中移除一个属性（attribute）
+removeClass()-移除集合中每个匹配元素上一个，多个或全部样式
+removeData()-在元素上移除绑定的数据
+replaceWith()-用提供的内容替换集合中所有匹配的元素并且返回被删除元素的集合
+text()-得到匹配元素集合中每个元素的合并文本，包括他们的后代
+toggleClass()-在匹配的元素集合中的每个元素上添加或删除一个或多个样式类,取决于这个样式类是否存在或值切换属性。即：如果存在（不存在）就删除（添加）一个类
+triggerHandler() -为一个事件执行附加到元素的所有处理程序
+unbind() - 从元素上删除一个以前附加事件处理程序
+val()-获取匹配的元素集合中第一个元素的当前值
+wrap()-在每个匹配的元素外层包上一个html元素
+~~~~~~~~~~~~~~~~~~~~~~~~  【angular笔记结束】   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~   【小明jQuery笔记开始】   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+课件密码15201504091
+jQuery起源于JavaScript，JavaScript是由网景公司开发，JavaScript和jQuery相比，jQuery更简洁，语言更灵活，功能更强大。
+jQuery是一个优秀的JavaScript框架，集JavaScript、css、DOM、Ajax功能于一体
+【JavaScript与jQuery对比】		
+1.jQuery是一个js库扩展，代码少，功能强大，简化代码量，功能,提高工作效率
+2.原则：一行中不能出现同时出现两种代码
+3.缺点：慢（架构大）  兼容差
+4.jQuery要用更少代码，漂亮完成更多功能
+	PS:  jq与js代码可以共存，但在一个表达式中不能混写，JavaScript中的原生对象可以调用原生的方法/属性
+-------------------------------------------------------------------------------------------------------------------
+【jQuery设计思想】
+1、选择网页元素的方法
+	-模拟css选择元素
+	-独有表达式选择
+	-多种筛选方法
+2、jQuery写法
+	-方法函数化
+	-链式操作
+	-取值赋值合体
+3、jquer的方法函数化
+	-window.onload= function(){}           -$(function(){})			-$(document).ready(function(){})
+	-innerHTML = 123   					   -html(123)
+	-onclick = function(){}                - click(function(){})
+4、$是函数 ！等同于"jQuery"
+	-$能接收的参数
+	-函数（$是函数的前缀）
+	-字符串
+	  -#    ID
+	  -.    class
+	  -标签名   tagTame
+	  -*     所有元素
+	-对象
+5、jQuery工作原理
+	依靠筛选匹配页面预算对象，并电泳它提供的功能函数来完成我们所需工作。他的编写和JavaScript很不一样。
+-------------------------------------------------------------------------------------------------------------------
+【利用“$”创建DOM元素】
+	-$(document.body).append("放假了")
+-------------------------------------------------------------------------------------------------------------------
+【选择器与事件】
+1、JS对象在JQ中的引用方法：使用$选取
+	-$(this)
+	-$(document)
+	-$(body)
+	-$(window)
+	-var oDiv; $(oDiv)
+2、常用选择器
+	-element：根据给定的元素名匹配所有元素
+	例：$("div")
+	-id：根据给定的ID匹配一个元素
+	例：$("#w")
+	-class：根据给定的类匹配元素
+	例：$(".myclass")
+	PS：		一个用一搜索类。一个元素可以有多个类，只要有一个符合就能被匹配到。
+3、$是函数 ！等同于"jQuery"
+	-$能接收的参数
+	-函数（$是函数的前缀）
+	-字符串
+	  -#    ID   id选择器
+	  -.    class   类选择器，返回数组
+	  -标签名   tagTame  标签选择器，返回数组
+	  -*     所有元素       选择文档中的所有元素
+	-对象
+4、选择器父、子选择器方法
+	-$("E,F")		选择所有E元素和所有F元素（并集）
+	-$("E F")		选择E元素内部的索引F元素（子孙节点）
+	-$("E>F")		选择父元素是E的索引F元素（子节点）
+-------------------------------------------------------------------------------------------------------------------
+			4.defer="defer" 文档加载完毕执行 高逼格  script标签中加入
+			5.复选框 下拉列表 文本框     单选框  全选框 
+			6.[]  中括号  属性选择器
+			总结第一小节课：  1>可以用css选择器
+				  			2>val()  === value
+				  			3>text() === 文本
+				  			4>a[1] //下标  innerHTML
+			7.可以修改css样式	可以写多个样式
+			8.$(function(){})  	相当于js中的window.onload   jQuery中可以执行多次，js中只能使用一次
+			9.click  不加on  鼠标点击
+			20.var c = $('#color').val()    直接赋值拿出来用
+			21.innerHTML    html()    获取选择器里的标签    添加标签  设置或返回匹配的元素集合中的 HTML 内容。
+			22.font color=""	有改变的属性   其他标签没有
+			22.$('.div').text()	获取纯文本，也可添加文本
+			23.hover   鼠标经过
+			24.$('ul').children  ul的子节点
+			25.链式操作
+			26.$ 函数！等同于jQuery 能接收前缀	获取元素的名
+			27.$.   可以调用很多方法
+			28.jQuery 创建DOM的方法   append()   
+				var n = $('<p>哈哈</p>');
+				$(document.body).append(n);
+			29.show  显示    hide  隐藏    （加时间）可以变运动;
+			30.var oDiv; $(oDiv);  选择器
+			31.  逗号	$('E,F')  选择所有E元素和所有F元素（并集）	，
+			32.  空格  包含
+			33.  >子节点
+			34. +兄弟	他的下一级    列  p+p 
+			35. -非兄弟
+			36.^= id 以谁开头
+			37.【'id'='1'】  匹配属性值包含某个字符
+			38.【'id$='1''】  匹配属性值结尾的值
+			39.~ 兄弟级的
+				$("E:first")  第一个
+				$("E:last")	  最后一个
+				$("E:first-child")	所有第一个里面的第一个
+				$("E:odd")   奇数 从零开始
+				$("E:even")	 偶数
+				$("p:nth-child(2)")  子节点第二个   选择属于其父元素的第二个子元素的每个 <p> 元素。
+			总结第三小节课：
+					1.层级选择器
+					2.普通选择器
+					3.位置选择器
+			40.  eq() 从第0 个开始  等于
+			41.  gt() 大于
+			42.  lt() 小于
+			43.  $('E:nth-child(2n+1)')   基数为1  与n前面的基数相加
+			44.  find()    查找  
+			45.  parents()  所有父级  祖先
+			46.  parent()   只找一个父级  
+			47.  parentsUntil   元素之间的父元素
+			48.  siblings()  同胞     不包含自己本身   包括前后的的同级元素
+			49.  next()   下一个   这个方法只返回一个元素
+			50.  prev()   上一个  包含本身        高本版可以使用    版本低的不好使用1.0
+			51.  nextAll()  选择后面所有同级的同胞
+			52.  nextUntil()  返回之间的同级
+			53.  css({可以放多组css})   缺点提示性差
+			54.  css().css()         链式写法
+			56.  表单选择器   input 匹配所有input、textarea、select、和button表单元素
+			57.  ：text 匹配所有的单行文本框
+			58.  ：password 匹配所有密码框
+			59.  ：radio  匹配所有单选按钮
+			60.  ：checkbox  匹配所有复选框
+			61.   post  安全性高  用户不可见   数据量大   加密  
+				  get   数据量小   传输快    不安全   用户可见
+				  method属性：提交表单的方式
+				  Get：以明文形式，通过URL传参方式提交。安全性差，只能传输字符串，信息量小。
+				  Post：以数据包方式提交，URL地址不显示参数，安全性高，可以提交大文件（二进制文件、视频、音频），信息量大。
+			62.   表单提交的方法  1.post 2.get
+			63.   按钮有四个  1.button 2.图片 3.submit 4.reset
+			64.   能提交表单的按钮有2个  1.submit 2.image
+			65.   1）简要说明  
+       				with 语句可以方便地用来引用某个特定对象中已有的属性，但是不能用来给对象添加属性。要给对象创建新的属性，必须明确地引用该对象。  
+				  2）语法格式  
+					with(object instance)  
+					{  
+       					 //代码块  
+					}  	
+       				有时候，我在一个程序代码中，多次需要使用某对象的属性或方法，照以前的写法，都是通过:对象.属性或者对象.方法这样的方式来分别获得该对象的属性和方法，着实有点麻烦，学习了with语句后，可以通过类似如下的方式来实现：  
+					with(objInstance)  
+					{  
+     					  var str = 属性1;  
+					.....  
+					} 去除了多次写对象名的麻烦。  
+
+				3）举例  
+<!-- <script language="javascript">  
+ 
+function Lakers() {  
+       this.name = "kobe bryant";  
+       this.age = "28";  
+       this.gender = "boy";  
+}  
+var people=new Lakers();  
+with(people)  
+{  
+       var str = "姓名: " + name + "<br>";  
+       str += "年龄：" + age + "<br>";  
+       str += "性别：" + gender;  
+       document.write(str);  
+}  
+//-->  
+			66.表单验证不能为空
+	function vali(field, alerttxt) {
+				with(field) {
+					if (value == null || value == "") {
+							alert(alerttxt);
+							return false
+					} else {
+							return true
+					}
+				}
+			}
+			67.document.forms[0].children[0].value    表单获取方法
+			   document.forms[0][0];   
+			   document.forms[0].name.value 
+			68. <input type="hidden" />   隐藏域
+			69. filter  过滤
+			70. [class*=name]  属性选择器
+-----------------------------------------------------------------------------------------------------
+【jquery选择器】
+* $("*") 所有元素 
+#id $("#lastname") id="lastname" 的元素 
+.class $(".intro") 所有 class="intro" 的元素 
+.element $("p") 所有 <p> 元素 
+.class.class $(".intro.demo") 所有 class="intro" 且 class="demo" 的元素      
+:first $("p:first") 第一个 <p> 元素 
+:last $("p:last") 最后一个 <p> 元素 
+:even $("tr:even") 所有偶数 <tr> 元素 
+:odd $("tr:odd") 所有奇数 <tr> 元素      
+:eq(index) $("ul li:eq(3)") 列表中的第四个元素（index 从 0 开始） 
+:gt(no) $("ul li:gt(3)") 列出 index 大于 3 的元素 
+:lt(no) $("ul li:lt(3)") 列出 index 小于 3 的元素 
+:not(selector) $("input:not(:empty)") 所有不为空的 input 元素      表达式
+:header $(":header") 所有标题元素 <h1> - <h6> 
+:animated   所有动画元素      
+:contains(text) $(":contains('W3School')") 包含指定字符串的所有元素 
+:empty $(":empty") 无子（元素）节点的所有元素 
+:hidden $("p:hidden") 所有隐藏的 <p> 元素 
+:visible $("table:visible") 所有可见的表格      
+s1,s2,s3 $("th,td,.intro") 所有带有匹配选择的元素      
+[attribute] $("[href]") 所有带有 href 属性的元素 
+[attribute=value] $("[href='#']") 所有 href 属性的值等于 "#" 的元素 
+[attribute!=value] $("[href!='#']") 所有 href 属性的值不等于 "#" 的元素 
+[attribute$=value] $("[href$='.jpg']") 所有 href 属性的值包含以 ".jpg" 结尾的元素      
+:input $(":input") 所有 <input> 元素 
+:text $(":text") 所有 type="text" 的 <input> 元素 
+:password $(":password") 所有 type="password" 的 <input> 元素 
+:radio $(":radio") 所有 type="radio" 的 <input> 元素 
+:checkbox $(":checkbox") 所有 type="checkbox" 的 <input> 元素 
+:submit $(":submit") 所有 type="submit" 的 <input> 元素 
+:reset $(":reset") 所有 type="reset" 的 <input> 元素 
+:button $(":button") 所有 type="button" 的 <input> 元素 
+:image $(":image") 所有 type="image" 的 <input> 元素 
+:file $(":file") 所有 type="file" 的 <input> 元素      
+:enabled $(":enabled") 所有激活的 input 元素 
+:disabled $(":disabled") 所有禁用的 input 元素 
+:selected $(":selected") 所有被选取的 input 元素 
+:checked $(":checked") 所有被选中的 input 元素 
+-----------------------------------------------------------------------------------------------------
+【jQuery事件】
+bind() 向匹配元素附加一个或更多事件处理器      绑定多个事件     为每个匹配元素的特定时间帮点时间处理函数
+       例：$("p").bind("click",function(){alert($(this).text())})
+      PS：可以同时绑定多个事件
+blur() 触发、或将函数绑定到指定元素的 blur 事件 
+change() 触发、或将函数绑定到指定元素的 change 事件 
+click() 触发、或将函数绑定到指定元素的 click 事件 
+dblclick() 触发、或将函数绑定到指定元素的 double click 事件 
+delegate() 向匹配元素的当前或未来的子元素附加一个或多个事件处理器 
+die() 移除所有通过 live() 函数添加的事件处理程序。 
+error() 触发、或将函数绑定到指定元素的 error 事件 
+event.isDefaultPrevented() 返回 event 对象上是否调用了 event.preventDefault()。 
+event.pageX 相对于文档左边缘的鼠标位置。 
+event.pageY 相对于文档上边缘的鼠标位置。 
+event.preventDefault() 阻止事件的默认动作。 
+event.result 包含由被指定事件触发的事件处理器返回的最后一个值。 
+event.target 触发该事件的 DOM 元素。 
+event.timeStamp 该属性返回从 1970 年 1 月 1 日到事件发生时的毫秒数。 
+event.type 描述事件的类型。 
+event.which 指示按了哪个键或按钮。 
+focus() 触发、或将函数绑定到指定元素的 focus 事件 
+keydown() 触发、或将函数绑定到指定元素的 key down 事件 
+keypress() 触发、或将函数绑定到指定元素的 key press 事件 
+keyup() 触发、或将函数绑定到指定元素的 key up 事件 
+live() 为当前或未来的匹配元素添加一个或多个事件处理器 
+load() 触发、或将函数绑定到指定元素的 load 事件 
+mousedown() 触发、或将函数绑定到指定元素的 mouse down 事件 
+mouseenter() 触发、或将函数绑定到指定元素的 mouse enter 事件 
+mouseleave() 触发、或将函数绑定到指定元素的 mouse leave 事件 
+mousemove() 触发、或将函数绑定到指定元素的 mouse move 事件 
+mouseout() 触发、或将函数绑定到指定元素的 mouse out 事件 
+mouseover() 触发、或将函数绑定到指定元素的 mouse over 事件 
+mouseup() 触发、或将函数绑定到指定元素的 mouse up 事件 
+one() 向匹配元素添加事件处理器。每个元素只能触发一次该处理器。 
+ready() 文档就绪事件（当 HTML 文档就绪可用时） 
+resize() 触发、或将函数绑定到指定元素的 resize 事件 
+scroll() 触发、或将函数绑定到指定元素的 scroll 事件 
+select() 触发、或将函数绑定到指定元素的 select 事件 
+submit() 触发、或将函数绑定到指定元素的 submit 事件 
+toggle() 绑定两个或多个事件处理器函数，当发生轮流的 click 事件时执行。 切换事件
+trigger() 所有匹配元素的指定事件 
+triggerHandler() 第一个被匹配元素的指定事件 
+unbind() 从匹配元素移除一个被添加的事件处理器 
+undelegate() 从匹配元素移除一个被添加的事件处理器，现在或将来 
+unload() 触发、或将函数绑定到指定元素的 unload 事件 
+-----------------------------------------------------------------------------------------------------
+【jQuery效果函数】
+animate() 对被选元素应用“自定义”的动画 
+clearQueue() 对被选元素移除所有排队的函数（仍未运行的） 
+delay() 对被选元素的所有排队函数（仍未运行）设置延迟 
+dequeue() 运行被选元素的下一个排队函数 
+fadeIn() 逐渐改变被选元素的不透明度，从隐藏到可见 
+fadeOut() 逐渐改变被选元素的不透明度，从可见到隐藏 
+fadeTo() 把被选元素逐渐改变至给定的不透明度 
+hide() 隐藏被选的元素 
+queue() 显示被选元素的排队函数 
+show() 显示被选的元素 
+slideDown() 通过调整高度来滑动显示被选元素 
+slideToggle() 对被选元素进行滑动隐藏和滑动显示的切换 
+slideUp() 通过调整高度来滑动隐藏被选元素 
+stop() 停止在被选元素上运行动画 
+toggle() 对被选元素进行隐藏和显示的切换 
+-----------------------------------------------------------------------------------------------------
+【jQuery文档操作方法】
+addClass() 向匹配的元素添加指定的类名。 
+after() 在匹配的元素之后插入内容。 
+append() 向匹配元素集合中的每个元素结尾插入由参数指定的内容。 
+appendTo() 向目标结尾插入匹配元素集合中的每个元素。 
+attr() 设置或返回匹配元素的属性和值。 
+	$('').attr //属性 一个获取 两个是设置
+	$(this).attr('title',$(this).index()+1)
+before() 在每个匹配的元素之前插入内容。 
+clone() 创建匹配元素集合的副本。 
+detach() 从 DOM 中移除匹配元素集合。 
+empty() 删除匹配的元素集合中所有的子节点。 
+hasClass() 检查匹配的元素是否拥有指定的类。 
+html() 设置或返回匹配的元素集合中的 HTML 内容。 
+insertAfter() 把匹配的元素插入到另一个指定的元素集合的后面。 
+insertBefore() 把匹配的元素插入到另一个指定的元素集合的前面。 
+prepend() 向匹配元素集合中的每个元素开头插入由参数指定的内容。 
+prependTo() 向目标开头插入匹配元素集合中的每个元素。 
+remove() 移除所有匹配的元素。 
+removeAttr() 从所有匹配的元素中移除指定的属性。 
+removeClass() 从所有匹配的元素中删除全部或者指定的类。 
+replaceAll() 用匹配的元素替换所有匹配到的元素。 
+replaceWith() 用新内容替换匹配的元素。 
+text() 设置或返回匹配元素的内容。 
+toggleClass() 从匹配的元素中添加或删除一个类。 
+unwrap() 移除并替换指定元素的父元素。 
+val() 设置或返回匹配元素的值。 
+wrap() 把匹配的元素用指定的内容或元素包裹起来。 
+wrapAll() 把所有匹配的元素用指定的内容或元素包裹起来。 
+wrapinner() 将每一个匹配的元素的子内容用指定的内容或元素包裹起来。 
+-----------------------------------------------------------------------------------------------------
+【jQuery属性操作方法】
+addClass() 向匹配的元素添加指定的类名。 
+attr() 设置或返回匹配元素的属性和值。 
+hasClass() 检查匹配的元素是否拥有指定的类。 
+html() 设置或返回匹配的元素集合中的 HTML 内容。 
+removeAttr() 从所有匹配的元素中移除指定的属性。 
+removeClass() 从所有匹配的元素中删除全部或者指定的类。 
+toggleClass() 从匹配的元素中添加或删除一个类。 
+val() 设置或返回匹配元素的值。 
+-----------------------------------------------------------------------------------------------------
+【jQuery css操作函数】
+css() 设置或返回匹配元素的样式属性。 
+height() 设置或返回匹配元素的高度。 
+offset() 返回第一个匹配元素相对于文档的位置。 
+offsetParent() 返回最近的定位祖先元素。 
+position() 返回第一个匹配元素相对于父元素的位置。 
+scrollLeft() 设置或返回匹配元素相对滚动条左侧的偏移。 
+scrollTop() 设置或返回匹配元素相对滚动条顶部的偏移。 
+width() 设置或返回匹配元素的宽度。 
+-----------------------------------------------------------------------------------------------------
+【jQuery ajax操作函数】
+jQuery.ajax() 执行异步 HTTP (Ajax) 请求。 
+.ajaxComplete() 当 Ajax 请求完成时注册要调用的处理程序。这是一个 Ajax 事件。 
+.ajaxError() 当 Ajax 请求完成且出现错误时注册要调用的处理程序。这是一个 Ajax 事件。 
+.ajaxSend() 在 Ajax 请求发送之前显示一条消息。 
+jQuery.ajaxSetup() 设置将来的 Ajax 请求的默认值。 
+.ajaxStart() 当首个 Ajax 请求完成开始时注册要调用的处理程序。这是一个 Ajax 事件。 
+.ajaxStop() 当所有 Ajax 请求完成时注册要调用的处理程序。这是一个 Ajax 事件。 
+.ajaxSuccess() 当 Ajax 请求成功完成时显示一条消息。 
+jQuery.get() 使用 HTTP GET 请求从服务器加载数据。 
+jQuery.getJSON() 使用 HTTP GET 请求从服务器加载 JSON 编码数据。 
+jQuery.getScript() 使用 HTTP GET 请求从服务器加载 JavaScript 文件，然后执行该文件。 
+.load() 从服务器加载数据，然后把返回到 HTML 放入匹配元素。 
+jQuery.param() 创建数组或对象的序列化表示，适合在 URL 查询字符串或 Ajax 请求中使用。 
+jQuery.post() 使用 HTTP POST 请求从服务器加载数据。 
+.serialize() 将表单内容序列化为字符串。 
+.serializeArray() 序列化表单元素，返回 JSON 数据结构数据。 
+	
+	jquery中$.get()提交和$.post()提交有区别吗？
+	
+	--->		1、 $.get() 方法使用GET方法来进行异步请求的。$.post() 方法使用POST方法来进行异步请求的。
+	--->		2、get请求会将参数跟在URL后进行传递，而POST请求则是作为HTTP消息的实体内容发送给Web服务器的，这种传递是对用户不可见的。
+	--->		3、get方式传输的数据大小不能超过2KB 而POST要大的多
+	--->		4、get方式请求的数据会被浏览器缓存起来，因此有安全问题。
+
+
+-----------------------------------------------------------------------------------------------------
+【jQuery遍历函数】
+.add() 将元素添加到匹配元素的集合中。 
+.andSelf() 把堆栈中之前的元素集添加到当前集合中。 
+.children() 获得匹配元素集合中每个元素的所有子元素。 
+.closest() 从元素本身开始，逐级向上级元素匹配，并返回最先匹配的祖先元素。 
+.contents() 获得匹配元素集合中每个元素的子元素，包括文本和注释节点。 
+.each() 对 jQuery 对象进行迭代，为每个匹配元素执行函数。 
+.end() 结束当前链中最近的一次筛选操作，并将匹配元素集合返回到前一次的状态。 
+.eq() 将匹配元素集合缩减为位于指定索引的新元素。 
+.filter() 将匹配元素集合缩减为匹配选择器或匹配函数返回值的新元素。 
+.find() 获得当前匹配元素集合中每个元素的后代，由选择器进行筛选。 
+.first() 将匹配元素集合缩减为集合中的第一个元素。 
+.has() 将匹配元素集合缩减为包含特定元素的后代的集合。 
+.is() 根据选择器检查当前匹配元素集合，如果存在至少一个匹配元素，则返回 true。   返回布尔值
+.last() 将匹配元素集合缩减为集合中的最后一个元素。 
+.map() 把当前匹配集合中的每个元素传递给函数，产生包含返回值的新 jQuery 对象。 
+.next() 获得匹配元素集合中每个元素紧邻的同辈元素。 
+.nextAll() 获得匹配元素集合中每个元素之后的所有同辈元素，由选择器进行筛选（可选）。 
+.nextUntil() 获得每个元素之后所有的同辈元素，直到遇到匹配选择器的元素为止。 
+.not() 从匹配元素集合中删除元素。 
+.offsetParent() 获得用于定位的第一个父元素。 
+.parent() 获得当前匹配元素集合中每个元素的父元素，由选择器筛选（可选）。 
+.parents() 获得当前匹配元素集合中每个元素的祖先元素，由选择器筛选（可选）。 
+.parentsUntil() 获得当前匹配元素集合中每个元素的祖先元素，直到遇到匹配选择器的元素为止。 
+.prev() 获得匹配元素集合中每个元素紧邻的前一个同辈元素，由选择器筛选（可选）。 
+.prevAll() 获得匹配元素集合中每个元素之前的所有同辈元素，由选择器进行筛选（可选）。 
+.prevUntil() 获得每个元素之前所有的同辈元素，直到遇到匹配选择器的元素为止。 
+.siblings() 获得匹配元素集合中所有元素的同辈元素，由选择器筛选（可选）。 
+.slice() 将匹配元素集合缩减为指定范围的子集。  不包括本身   截取    第一个起始位置 第二个表示位置之间
+.splice()    包括本身  删除  插入 替换
+arr.splice()	删除
+		删除
+			arr.splice(开始下标，个数)
+		插入
+			arr.splice(开始下标，0，内容......)
+		替换	
+			arr.splice(开始下标，个数，内容....)
+-----------------------------------------------------------------------------------------------------
+【css 选择器】
+.class .intro 选择 class="intro" 的所有元素。 1 
+#id #firstname 选择 id="firstname" 的所有元素。 1 
+* * 选择所有元素。 2 
+element p 选择所有 <p> 元素。 1 
+element,element div,p 选择所有 <div> 元素和所有 <p> 元素。 1 
+element element div p 选择 <div> 元素内部的所有 <p> 元素。 1 
+element>element div>p 选择父元素为 <div> 元素的所有 <p> 元素。 2 
+element+element div+p 选择紧接在 <div> 元素之后的所有 <p> 元素。 2 
+[attribute] [target] 选择带有 target 属性所有元素。 2 
+[attribute=value] [target=_blank] 选择 target="_blank" 的所有元素。 2 
+[attribute~=value] [title~=flower] 选择 title 属性包含单词 "flower" 的所有元素。 2 
+[attribute|=value] [lang|=en] 选择 lang 属性值以 "en" 开头的所有元素。 2 
+:link a:link 选择所有未被访问的链接。 1 
+:visited a:visited 选择所有已被访问的链接。 1 
+:active a:active 选择活动链接。 1 
+:hover a:hover 选择鼠标指针位于其上的链接。 1 
+:focus input:focus 选择获得焦点的 input 元素。 2 
+:first-letter p:first-letter 选择每个 <p> 元素的首字母。 1 
+:first-line p:first-line 选择每个 <p> 元素的首行。 1 
+:first-child p:first-child 选择属于父元素的第一个子元素的每个 <p> 元素。 2 
+:before p:before 在每个 <p> 元素的内容之前插入内容。 2 
+:after p:after 在每个 <p> 元素的内容之后插入内容。 2 
+:lang(language) p:lang(it) 选择带有以 "it" 开头的 lang 属性值的每个 <p> 元素。 2 
+element1~element2 p~ul 选择前面有 <p> 元素的每个 <ul> 元素。 3 
+[attribute^=value] a[src^="https"] 选择其 src 属性值以 "https" 开头的每个 <a> 元素。 3 
+[attribute$=value] a[src$=".pdf"] 选择其 src 属性以 ".pdf" 结尾的所有 <a> 元素。 3 
+[attribute*=value] a[src*="abc"] 选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。 3 
+:first-of-type p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。 3 
+:last-of-type p:last-of-type 选择属于其父元素的最后 <p> 元素的每个 <p> 元素。 3 
+:only-of-type p:only-of-type 选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。 3 
+:only-child p:only-child 选择属于其父元素的唯一子元素的每个 <p> 元素。 3 
+:nth-child(n) p:nth-child(2) 选择属于其父元素的第二个子元素的每个 <p> 元素。 3 
+:nth-last-child(n) p:nth-last-child(2) 同上，从最后一个子元素开始计数。 3 
+:nth-of-type(n) p:nth-of-type(2) 选择属于其父元素第二个 <p> 元素的每个 <p> 元素。 3 
+:nth-last-of-type(n) p:nth-last-of-type(2) 同上，但是从最后一个子元素开始计数。 3 
+:last-child p:last-child 选择属于其父元素最后一个子元素每个 <p> 元素。 3 
+:root :root 选择文档的根元素。 3 
+:empty p:empty 选择没有子元素的每个 <p> 元素（包括文本节点）。 3 
+:target #news:target 选择当前活动的 #news 元素。 3 
+:enabled input:enabled 选择每个启用的 <input> 元素。 3 
+:disabled input:disabled 选择每个禁用的 <input> 元素 3 
+:checked input:checked 选择每个被选中的 <input> 元素。 3 
+:not(selector) :not(p) 选择非 <p> 元素的每个元素。 3   不是他们之间的选择
+::selection ::selection 选择被用户选取的元素部分。 3
+-----------------------------------------------------------------------------------------------------
+【获取class名】
+obj.className = ""
+obj.setArrtibute("class""")
+-----------------------------------------------------------------------------------------------------
+【事件】
+on    执行多次  高版本  低版本不支持
+one   只执行一次
+-----------------------------------------------------------------------------------------------------
+【获取元素值】
+text()   获取和设置元素的纯文本
+html()   获取和设置innerHTML属性
+val()    获取匹配元素的当前值
+attr()   获取匹配的元素集合中的第一个元素的属性的值    改变属性使用attr
+区别：html带标记，text不带标记
+-----------------------------------------------------------------------------------------------------
+【与div内容相关】
+appendTo   给指定元素后面加指定元素元素后添加内容
+after      在匹配的元素之后插入内容   
+append     在内容后面添加元素，添加到尾部
+insertbefore   在元素前面添加
+prepend()   添加到头部，append()和appendTo()方法执行的任务相同
+-----------------------------------------------------------------------------------------------------
+trigger   //自定义事件 开关   切换  用来触发默认事件和自定义属性
+$("#div1").click(function(){
+					var width = $(this).width();  //数字  number
+					var height = $(this).css("height"); //带px
+					alert("宽"+width+"高"+height)
+})
+appendTo   给指定元素后面加指定元素元素后添加内容
+after      在匹配的元素之后插入内容   
+append     在内容后面添加元素
+insertbefore   在元素前面添加
+prepend  向前面添加
+prependTo 向前面指定内容里面添加
+JScript 是网景与sun是有关系的
+脚本是不需要运行环境   寄生到浏览器  切入到浏览器
+五大浏览器：谷歌   火狐  IE Safari苹果  opera 
+
+世界五大主流浏览器：
+
+Internet Explorer 简称ie，微软公司旗下浏览器
+
+google chrome浏览器，google旗下浏览器，追求简洁、快速、安全，个人认为是最好用、速度最快的浏览器。
+
+firefox浏览器，简称FF浏览器，mozilla公司旗下浏览器，个人认为第二好用浏览器。
+
+safari浏览器，苹果公司旗下浏览器，在苹果系统下是很优秀的浏览器，已停止对windows系统的支持。
+
+opera浏览器，挪威厂商opera旗下浏览器，该公司还在研发另一款浏览器opera next。
+
+
+-----------------------------------------------------------------------------------------------
+【8-8】
+1.replaceWith()   //替换主标签在前    替换在后
+2.replaceAll()    //替换 主标签在后   替换在前
+3.size()          //size方法能够返回jQuery对象中元素的个数，而length属性与size（）方法功能相同
+4.length()        //size方法能够返回jQuery对象中元素的个数，而length属性与size（）方法功能相同
+5.slideToggle ()    //对被选中的元素进行滑动隐藏和滑动显示的切换
+6.wrap()            //查看审查元素    包裹     $("a").wrap($("li"))   用li把a标签包裹起来
+7.$("span").after($("p"));       //把p放在span的后面       在每个匹配元素之后插入内容
+			//$("div").append("<p>dddd</p>")   //把标签放在div的后面     每个匹配内容之后插入内容
+			//$("div").before("<p>safsdf</p>")  //把标签放在div的前面
+			//$("div").insertAfter($("p"))    //换位     前面固定   插入标签后面   把div放在p的后面
+			//$("div").insertBefore($("span"))    //把div放在p的前面
+			
+8.//$("p").clone().appendTo("div")   //复制一份div 到p标签里面     克隆
+			$("p").clone(true).appendTo("div")  //没有意义没啥区别
+9.$(function(){
+				$('div').mouseover(function(){
+				this.title = $(this).index()+1;
+				//$(this).attr('title',$(this).index()+1)
+				})
+			})
+10. empty()    删除子元素
+	
+//$("ul").remove(".box")  //把ul全部删除
+	$("ul").empty()   //只删除子元素   li
+11.prepend  //在前面添加   切换位置
+12.prependTo()     //添加到指定位置
+$("p").prependTo($("div")[0])   //  添加到哪里指定位置    把p添加到div里面   往上
+--------------------------------------------------------------------------------------------------------
+【8-9】
+1.toggleClass()     //点击切换class   在原有样式和指定样式之间来回切换
+2.scrollTop()       //滚动距离
+		window.scrollTo(0,800)   //200的位置
+			alert($(window).scrollTop())
+3.body  加入 overflow：hidden  无滚轮
+4.each  //jQuery循环    
+也叫遍历
+	什么是遍历？
+	jQuery 遍历，意为“移动”，用于根据其相对于其他元素的关系来“查找”（或选取）HTML 元素。以某项选择开始，并沿着这个选择移动，直到抵达您期望的元素为止。
+		下图展示了一个家族树。通过 jQuery 遍历，您能够从被选（当前的）元素开始，轻松地在家族树中向上移动（祖先），向下移动（子孙），水平移动（同胞）。这种移动被称为对 DOM 进行遍历。
+遍历 DOM 树
+				div   
+				ul	        
+		li              li      
+	<span></span>      <b></b>
+<div> 元素是 <ul> 的父元素，同时是其中所有内容的祖先。
+<ul> 元素是 <li> 元素的父元素，同时是 <div> 的子元素
+左边的 <li> 元素是 <span> 的父元素，<ul> 的子元素，同时是 <div> 的后代。
+<span> 元素是 <li> 的子元素，同时是 <ul> 和 <div> 的后代。
+两个 <li> 元素是同胞（拥有相同的父元素）。
+右边的 <li> 元素是 <b> 的父元素，<ul> 的子元素，同时是 <div> 的后代。
+<b> 元素是右边的 <li> 的子元素，同时是 <ul> 和 <div> 的后代。
+提示：祖先是父、祖父、曾祖父等等。后代是子、孙、曾孙等等。同胞拥有相同的父。
+5.offsetParent()    返回最近的祖先定位元素    父级需要定位   配合定位找到最近的定位 找不到定位直接找body
+	$("#div2").offsetParent().css("background","lime")
+6.位移   offset()   获取匹配元素的第一个元素在当前窗口的坐标
+	alert($("#div2").offset().left)    //获取到屏幕的左距离  
+7.hide()  瞬间隐藏
+  hide(1000)  延时1000毫秒
+  hide("slow")  延时600毫秒
+  hide("normal") 延时400毫秒
+  hide("fast")   延时200毫秒
+8.show()  瞬间显示
+  show(1000)  延时1000毫秒
+  show("slow")  延时600毫秒
+  show("normal") 延时400毫秒
+  show("fast")   延时200毫秒
+-----------------------------------------------------------------------------------------------------
+【8-10】
+1.hide(1000,function(){})   回调函数
+2.fadeIn()  通过不透明度的变化来实现所有匹配元素的淡入效果,并在动画完成后可选地触发一个回调函数
+3.fadeOut()  通过不透明度的变化来实现所有匹配元素的淡出效果，并在动画完成后可选地触发一个回调函数
+4.fadeToggle()  通过不透明度的变化来开关说要匹配元素的淡入和淡出效果，并在动画完成后可选地触发一个回调函数。只触发不透明度。匹配元素宽高不会发生改变
+5.fadeTo()   把所有匹配元素的不透明度以渐进方式调整到指定的不透明度，并在动画 完成后可选地触发一个回调函数。只触发不透明度。匹配元素宽高不会发生改变
+$(function(){
+				$(document).toggle(function(){
+					$("div").fadeOut(4000,function(){
+						alert("层隐藏")
+					})
+				},
+				function(){
+					$("div").fadeIn(4000,function(){
+						alert("层显示")
+					})
+				}
+				)
+			})
+6.slideUp()   向上滑动隐藏			通过高度变化来动态第隐藏所有匹配元素，在隐藏完成后可选地触发一个回调函数，只调整元素的高度，以滑动的方式隐藏起来
+7.slideDown() 向下滑动显示
+8.slideToggle() 通过高度变化来切换所有匹配元素的可见性，并在切换完成后可选地触发一个回调函数。这个动画效果值调整元素高度。
+9.animate(params,speed,callback)   
+	1>params   一个包含样式属性和值的集合
+	2>speed    速度参数，可选
+	3>callback  在动画完成时执行的函数，可选
+10.1em = 12px      相对单位
+   1px = 0.75pt;点 绝对单位
+   1vh = 全屏
+   vw  = 100%；
+11.stop();  鼠标离开停止
+	$("div").hover(function(){
+				$(this).animate({left:"+=100px"},1000)
+			},function(){
+				$(this).stop();
+			})
+12.element function(index,element)  div里面文档的内容
+13.$(this).stop().animate({width:"300px"},500).siblings().stop().animate({width:"100px"},500)   在动画前面加stop 阻止动画没走完来回动
+14.判断某个元素是否处于动画状态
+	避免动画累积
+	if(!$(element).is(":animated")){
+		//如果没有动画，则添加新动画
+	}
+15.mouseenter   显示
+   mouseleave   隐藏
+---------------------------------------------------------
+【8-11】
+1.white-space:nowrap   css属性横向排列
+2.闭包实现模块化
+3.attachEvent   监听事件  支持高版本
+  detachEvent   取消绑定
+4.addEventListener()  不兼容底版本浏览器  只兼容高版本浏览器   事件绑定 
+  removeEventListener()  //解除绑定 高版本兼容
+5.browser    浏览器      version   版本
+---------------------------------------------------------
+【8-12】
+1.window.close();  关闭当前页面
+2.window.open();   方法用于打开一个新的浏览器窗口或查找一个已命名的窗口
+---------------------------------------------------------
+【ajax】
+
+1.搭建服务器不是脚本语言     服务器是寄生的  
+2.数据库就是一个存储信息的仓库 
+	数据库查找速度快   检索快  数据快  增删改查
+
+3.建立数据库
+	命名 关键词不行  没有中文
+UTF-8 国际的
+GB2312-80 国内的 美国IBM公司发明的计算机
+---------------------------------------------------------
+试题一
+1.length  2.eq() 3.错  4.toggle()  5.hide()  6.hover()  7.单击li的索引值   8.对     9.（‘p’）.mouseleave(function(){})        10.text()  11.appendTo()   12.after()   13.append   14.错
+15.错    16.里有title属性的会有下划线    32.click  17.对   18.错     19.after     20.h2后面的    21.对奇数行的进行操作  22.错   23.错
+24.对    25.对   26.错   27.对    28.对  29.bind(); 30.html(); 31.错
+~~~~~~~~~~~~~~~~~~~~~~~~  【jQuery笔记结束】   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~  【自学swiper开始】   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		<div class="swiper-button-prev swiper-button-black Am-zxxxx"></div> <!-- 白色 -->
+            <div class="swiper-button-next swiper-button-black Am-zxxxx"></div> <!-- 黑色 -->
+                <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide AM-Banner1"><img src="img/CN_HP_1207.jpg" alt="javascript:;"></div>
+                    <div class="swiper-slide AM-Banner2">
+                        <p>就是会玩儿</p> 
+                           <a href="" class="cta-button ttuc aiaiaia" style="position: absolute;left:0;top:0;z-index:10">HTC Desire 10 pro 全网通双卡双待</a>
+                           <br /> 
+                           <!-- <a id="buy-D10-d" class="text-link ttuc" href="" style="position: absolute;z-index:10">立即购买 &gt;&gt;</a> 
+                           <a id="buy-D10-m" class="text-link ttuc" href="" style="position: absolute;z-index:10">立即购买 &gt;&gt;</a>  -->
+                    <img src="imgc-desire-10-pro-hp-tile-wide-bg2.jpg" alt="javascript:;" style="position: absolute;top:0;left:0;">
+                     
+                    </div>
+                    <div class="swiper-slide AM-Banner3"><img src="imgc-10-homepage-2.jpg" alt="javascript:;"></div>
+                    <div class="swiper-slide AM-Banner1"><img src="img/Desire830_CN_Banner_b.jpg" alt="javascript:;"></div>
+                    <div class="swiper-slide AM-Banner2"><img src="img/VivePort.jpg" alt="javascript:;"></div>
+                    <div class="swiper-slide AM-Banner3"><img src="img/CN-vive-banner-BG.jpg" alt="javascript:;"></div>
+                    <div class="swiper-slide AM-Banner1"><img src="img/home-prom2-150531-kv.jpg" alt="javascript:;"></div>
+                </div>
+                 <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <!-- <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div> -->
+            </div>
+            <script language="javascript"> 
+            var mySwiper = new Swiper('.swiper-container',{
+              pagination : '.swiper-pagination',  //加上点
+              // paginationType: 'progress',
+              paginationClickable :true,
+              autoplay: 1000,//可选选项，自动滑动
+              loop : true,
+              autoplayDisableOnInteraction : false,    //拖完之后自动
+              prevButton:'.swiper-button-prev',
+              nextButton:'.swiper-button-next',
+              keyboardControl : true,
+              grabCursor : true,//设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。（根据浏览器形状有所不同）
+          //       nextButton: '.swiper-button-next',
+        		// prevButton: '.swiper-button-prev',
+        		// pagination: '.swiper-pagination',
+        		
+              // autoplayDisableOnInteraction: false   //注意此参数，默认为true
+            })
+            </script>
+~~~~~~~~~~~~~~~~~~~~~~~~    【自学swiper结束】 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+课程阶段：实训二
+	
+课程内容：项目、能力（自学能力、表达沟通能力）
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+上线：
+	
+搜索：远程桌面连接
+
+	IP：47.92.37.168
+	用户名：administrator
+	密码：BeiCai2016
+
+
+
+服务器：
+
+	主动模式：
+	被动模式：用软件上传
+
+
+
+FIleZilla:
+
+	主机：47.92.37.168
+	用户名：beicai2016
+	密码：2016beicai
+
+
+在 远程站点   右键创建目录并进入       成功以后  在本地站点 找到文件 直接拖入进去(也可以本地直接找到然后拖入)
+
+
+
+与域名怎么挂钩：
+
+	第一个： A  隐形ＵＲＬ　　
+	第二个： www 
+	第三个默认的：
+	第四个：http://www.beicaiinfo.com:8000
+
+i-m5eajyjlht1r95sii01p
+网页登录密码 954143
+
+公网IP： 118.190.90.166
+内网IP： 10.30.190.223
+
+用户名：administrator
+登录密码：142303xc@
+
+显性 URL 转发：
+
+例如： http://b.com/ 指向 http://a.com/example/ （任意目录）；当在浏览器地址栏中敲入 http://b.com/ 后回车，IE 浏览器的地址栏里显示的地址会由原来您敲入的 http://b.com/ 自动变为显示真正的目标地址 http://a.com/example/ ；
+
+隐性URL 转发：
+
+例如：http://b.com/ 指向 http://a.com/example/ （任意目录）；当在浏览器地址栏中敲入 http://b.com/ 后回车，IE 浏览器的地址栏里显示的地址保持不变，仍是 http://b.com/ ，但实际访问到的是 http://a.com/xxx/ 的内容。
+
+
+
+
+mstsc   远程桌面   
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+ 
+	
+	1、项目完成、质量、完成时间    
+
+		超出了要求，非常好 
+
+	2、个人能力、个人技术
+
+	3、团队配合
+
+	4、个人主动性、软实力(表达能力)
+
+
+
+
+
+
+
+
+
+
+
+
+简历的书写
+
+	简历写给谁： 人力资源部。单位领导。老板。自己。
+	
+		招聘者。
+
+
+	简历注意：
+	
+	·岗位是明确的，所有表达必须围绕这一中心主题而定
+	·企业的要求是非常明确的，简历不能自说自话
+	·强调有效性，在有限的篇幅中值表达与岗位，与能力有关的要点，凡事与此无关的内容尽量忽略
+	·在简历中尽量出现提醒专业特色的关键词，突出能力和个性，避免相似。
+
+	
+	·少些空话、大话
+	·借鉴有益，抄袭是可耻的
+	·安排好排版，是专业素质的体现
+	·体现认真负责精神，彻底消灭错别字
+	·出现一个错别字，简历贬低50%
+	·出现两个错别字，这份简历是废报纸
+	·如果用了照片，请用正规的免冠照
+
+
+	目前简历形式：
+	
+		·表格式简历，简洁明了
+		·文字式的简历，详细陈述
+		·求职信，表达个性
+		·视频简历，直观表现
+
+	简历包含：
+		
+		·个人信息  姓名，性别，年龄，学历，联系方式 （什么样子的邮箱合适）
+		·求职意向：期望从事的行业、岗位、薪资等
+		·专业技能：所掌握的技术，如果有学的特别好的可以重点标注
+		·自我评价：客观的评价自己的优势、缺点等
+		·项目经验：所做过的项目的名称，网址，具体情况介绍
+		·工作经历：所从事工作的具体公司名称，行业以及岗位职责
+
+	北京瑞驰汽车租赁股份有限公司 
+		
+		负责汽车租赁服务   我们技术主要是内部的项目  内部的管理平台  做各个门店的租赁情况 也会做同行的APP
+
+	北京世纪博联网络有限公司
+		
+		互联网公司 有自己的项目，也会承接外包的一些项目
+
+	北京网乐广告有限公司
+
+		广告公司，实现一些广告界面。主要是负责和UI设计师进行一些沟通来实现一些项目
+
+	北京创意盒子广告有限公司   //存在的
+
+		
+
+	北京财经科技有限公司  //存在的
+
+	北京兴千翔教育科技有限公司  //教育  存在的
+
+		我们之前主要的一些教育行业，主要研发一些学习方面网络课程的项目
+
+	北京先驰网络有限公司  技术部  //存在的
+
+为什么离职：
+	
+	公司融资失败了
+	
+	公司搬迁了
+
+公司从事什么行业：
+	
+
+求职面试前准备
+
+	了解招聘单位的基本情况
+	
+	了解单位的情况
+
+	了解职位的情况
+
+	了解单位的用人标准
+
+	准备4-5个提问公司的有深度的问题   准备的
+
+		个人开发还是团队开发？？
+
+		公司主要用什么技术来开发项目？
+
+		公司要招什么样的技术人员
+
+		大概多久会有复试通知？		
+		
+		技术团队是怎么组成的？
+
+		前端有几个人？？
+
+		公司通常做什么样子的项目？
+
+		上班时间
+		
+	查找交通路线
+
+
+做好面试前的准备
+
+	一、准备态度
+		1、放低姿态。但不必谨小慎微
+		2、保持乐观和自信。但不可满目乐观
+	二、整理文件包，带上必备用品
+		1、面试材料
+			
+			简历，U盘项目，个人简历的电子版。
+		
+		2、笔。小本子
+		3、梳理用具
+		4、湿纸巾
+	三、准备面试时的着装和个人修饰
+
+
+求职面试过程礼仪：
+
+	1、敲门、关门 --轻
+	2、握手、第资料
+		
+		1、握手---有“感染力”
+		2、第资料 -- “45度”
+	3、坐姿、站姿
+	 	1、坐 --  坐椅子的三分之一
+		2、站 --  双手交叉于前
+	4、说话清晰、音量适中
+	5、神情专注
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+node 的插件   
+
+	fs   //  写头像更新的插件        
+	
+	formidable
+
+	'express-session':'latest'  //后台登录加密
+session
+
+只需要在APP.js里面引入一次
+
+在app.use 路径上面输入设置
+
+	// 使用靠就这个组件
+app.use(session({
+  secret:'12345',
+  name:'test',   //这里的name值为cookie的name
+  resave:false,
+  saveUninitialized:true
+}))
+
+
+就可以在router里面的js使用了   用法和localSroage差不多
+
+
+// 重定向
+res.redirect('/reg10.html');  //重定向
+
+// 清除session
+
+req.session.destroy();   销毁   使用的时候还的在发一遍ajax
+
+
+mysqladmin flush-hosts -h 127.0.0.1 -uroot -p  //数据库访问不到就执行这句话
+
+
+
+
+
+
+
+
+数据库：
+	1.连接  
+
+	跨越  访问浏览器的时候跨越：端口号不同 域名不同 协议不同 
+
+	查询数据库：
+		
+	全部查询：select * from user(标明) 
+		
+	where 后面都是条件
+数据库
+常见数据库：mysql,db2,oracle,mongdb
+注意：库名不要相同
+创建数据库：鼠标右键localhost_3306，创建数据库→名字，编码utf-8，最后一个选第一个
+创建表：类型   varchar字符串     int数字
+init 最大位数11位
+******查询******
+准确查询：①select * from user where uid = 3 or username = 'coco'  //and都满足  or满足一条就好
+	  ②select * from user where uid > 1 and uid <3
+	  ③select * uid from user between 1 and 3（在什么范围内）
+*：所有
+模糊查询：①select username,password from user
+	  ②select username from user where username like '%co%'
+	  ③select * from user where username like '%co%'
+	  ④select * from user where uname like '%d%' or pwd like '%a%'   多条数据查询
+
+排序查询：①select * from user order by uid    //要把他放在最后写  因为他是全部循环完才出结果的
+	  ②select * from user order by uid desc（desc降序）
+	  ③select * from user order by uid desc,username
+限制显示条数：①select * from user limit 0,1（从第几条开始，查几条(个数)  两个参数 m,n 从0开始）
+	      ②select * from user order by uid desc limit 2,2（排序查询，排序可以反转顺序）
+条数查询：select count(*) from user where id and uanme   //查的是数据条数  不是数据
+
+空的怎么查：select * from user where uid is null
+
+
+******插入数据******
+insert into user (username,pwd,tel,address) values ('lily','123123','12345123451','Ameracan')
+多条创建：insert into user(uname,pwd) values('dd','dsd');
+	  insert into user(uname,pwd) values('ee','dererd');
+	  insert into user(uname,pwd) values('dgg','derd');
+	  insert into user(uname,pwd) values('we','der');
+
+******修改数据******
+修改单个：update user set username = 'momo' where uid = 2（切记一定要有where 否则所以数据都将被修改）
+修改多个：[SQL] update user set username = 'momo2' , pwd = '666666' where uid = 2（用，号隔开）
+
+******删除******
+删除单个：delete from user where uid = 1
+删除多个：delete from user where uid = 5 or uid = 3（and为同时满足条件，or为只要满足就删除）
+
+
+
+
+
+base SET  加密
+
+var b = new Base64();  
+var str = b.encode("admin:admin");   //加密 
+   alert("base64 encode:" + str);  
+//解密
+ str = b.decode(str);  
+alert("base64 decode:" + str); 
+
+
+员工管理系统：
+
+	图标、年龄、月份离职率、人员异动&员工请休假，申请/审批困难
+
+
+	个人信息：姓名、年龄、性别、电话、身份证号、住址、家庭联系人、入职时间、离职时间、个人图片、职位 工号、部门
+
+
+
+多条数据复制  	1、右键创建mysql文件  打开复制   2、去另一个库里面查询运行  3、刷新就有啦
+
+
+
+
+    npm install mysql   //安装mysql依赖包
+
+
+    直连
+    io  输入输出数据库 比较耗时间的
+	
+
+
+    选择：select * from table1 where 范围
+　　插入：insert into table1(field1,field2) values(value1,value2)
+　　删除：delete from table1 where 范围
+　　更新：update table1 set field1=value1 where 范围
+　　查找：select * from table1 where field1 like ’%value1%’ ---like的语法很精妙，查资料!
+　　排序：select * from table1 order by field1,field2 [desc]
+　　总数：select count * as totalcount from table1
+　　求和：select sum(field1) as sumvalue from table1
+　　平均：select avg(field1) as avgvalue from table1
+　　最大：select max(field1) as maxvalue from table1
+　　最小：select min(field1) as minvalue from table1
+
+
+
+
+
+
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var denglu = require('./routes/denglu');
+var routes = require('./routes/index');
+var users = require('./routes/users');
+var page = require('./routes/page');
+var login = require('./routes/jsdemo215');
+var item =require('./routes/demo1602');
+var regis =require('./routes/regist1603');
+var list = require('./routes/liusm');
+var page=require('./routes/wangaimin/zhen');
+var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/shopping',denglu);
+app.use('/', routes);
+app.use('/text', users);
+app.use('/login',login);
+app.use('/user',users);
+app.use('/item',item);
+app.use('/regist',regis);
+app.use('/list',list);
+app.use('/page',page);
+
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}  
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
+});
+app.all('*', function(req, res, next) {
+  //当你使用XMLHttpRequest发送请求时，浏览器发现该请求不符合同源策略，会给该请求加一个请求头：Origin，后台进行一系列处理，如果确定接受请求则在返回结果中加入一个响应头：Access-Control-Allow-Origin;浏览器判断该相应头中是否包含Origin的值，如果有则浏览器会处理响应，我们就可以拿到响应数据，如果不包含浏览器直接驳回，这时我们无法拿到响应数据。
+  //如果我们把Access-Control-Allow-Origin去掉，浏览器会驳回响应，我们也就拿不到数据。
+  res.header("Access-Control-Allow-Origin", "*");
+
+  //自定义请求头
+  //OPTIONS请求头部中会包含以下头部：Origin、Access-Control-Request-Method、Access-Control-Request-Headers，发送这个请求后，服务器可以设置如下头部与浏览器沟通来判断是否允许这个请求。 即：Access-Control-Allow-Origin、Access-Control-Allow-Method、Access-Control-Allow-Headers
+  //把Content-Type去掉，你会发现OPTIONS请求失败。
+  res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, thorization, Accept,X-Requested-With");
+  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+
+
+  res.header("X-Powered-By",' 3.2.1')
+  if(req.method=="OPTIONS"){/*让options请求快速返回*/
+    res.send(200)
+  }else{
+    next()
+  };
+});
+res.header("Access-Control-Allow-Origin", "*");
+app.listen('8005',function(){
+  console.log('server start....');  
+})
+module.exports = app;
+
+
+
+
+
+
+
+少逻辑  多展现  
+
+表：登录 注册  抄作
+
+ 员工表
+
+
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~  移动端  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}  去除A标签的默认蓝色框
+
+rem    用图片的总宽除以16     量出来px除以 40      

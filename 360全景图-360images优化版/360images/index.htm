@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>室内</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./index/3dview.css" media="all">
+        <script type="text/javascript" charset="utf-8" async="" src="./index/lxb.js"></script>
+		<script type="text/javascript" src="./index/skin.js"></script>
+	</head>
+		
+    <body onselectstart="return true;" ondragstart="return false;">
+        <div id="container" style="width:100%;height:100%;">
+		<div style="top: 0px; left: 0px; position: relative;">
+		</div>
+		</div>
+	<script type="text/javascript">
+		if (ggHasHtml5Css3D() || ggHasWebGL()) {
+			pano=new pano2vrPlayer("container");
+			skin=new pano2vrSkin(pano);
+			//全景图xml地址
+			pano.readConfigUrl('xml.php');
+		} else{
+			alert("not support 360view");
+		}
+	</script>
+
+<div class="view_change"><a href="javascript:history.go(-1);">切换房间</a></div>
+<a href="javascript:history.go(-1);" class="back360" style="">&nbsp;</a>
+</body></html>

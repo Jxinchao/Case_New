@@ -1,0 +1,88 @@
+1、https://github.com/yujiangshui/gruntxx
+   克隆后
+   .git
+   scss
+   src
+   index.html
+   README.md
+
+2、 进入自己的文件夹  （shift  + 右键  在此处打开命令窗口）
+   
+    npm init  一路回车   生成 package.json
+
+    内容是：
+    {
+  "name": "s",
+  "version": "1.0.0",
+  "description": "gruntxx\r =======",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yujiangshui/gruntxx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yujiangshui/gruntxx/issues"
+  },
+  "homepage": "https://github.com/yujiangshui/gruntxx#readme"
+}
+
+3、npm install grunt --save-dev
+
+   package.json  内容变为  多了
+   {
+  "name": "s",
+  "version": "1.0.0",
+  "description": "gruntxx\r =======",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yujiangshui/gruntxx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yujiangshui/gruntxx/issues"
+  },
+  "homepage": "https://github.com/yujiangshui/gruntxx#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
+
+
+4、npm install --save-dev grunt-contrib-uglify   安装压缩
+
+5、新建 Gruntfile.js
+   //包装函数
+module.exports = function(grunt){
+	//任务配置，所有插件的配置信息
+	grunt.initConfig({
+		//获取 package.json 的信息
+		pkg:grunt.file.readJSON('package.json'),
+		uglify:{
+			options:{
+				stripBanners:true,
+				banner:'/*! <%-pkg.name%>-<%-pkg.version%>.js <%- grunt.template.today("yyyy-mm-dd") %> */\n'
+			},
+			build:{
+				src:'src/plugin.js',  
+				//src:'src/*.js', 
+				dest:'build/<%=pkg.name%>-<%=pkg.version%>.min.js'   ////这么写完后     build 文件夹下出现的是   grunt_test-1.2.0.js.min.js
+				// dest:'build/test.min.js'   //这么写完后     build 文件夹下出现的是   test.min.js
+			}
+		}
+	})
+	//告诉grunt当我们在终端中输入grunt时需要做些什么 (注意先后顺序)
+	grunt.loadNpmTasks('grunt-contrib-uglify')  //告诉grunt我们将使用uglify压缩插件
+	grunt.registerTask('default',['uglify']);  ////告诉grunt当我们在终端输入grunt。。。。
+}
+
+    6、黑窗口  grunt

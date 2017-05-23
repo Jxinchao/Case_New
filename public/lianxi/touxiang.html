@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.box{
+				
+				display:flex;
+			}
+			.box-1{
+				margin:auto;
+				width:200px;
+				height:200px;
+				color:#fff;
+				background: red;
+			}
+			#tx{
+				/*display: none;*/
+				opacity: 0;
+			}
+		</style>
+
+</head>
+<body>
+	用户名：<input type="text" name="" id="uname">
+	密码：<input type="text" id="pwd"> 
+	<!-- <input type="file" name="" id="tx" style="display:none;"> -->
+	
+	<input type="button" value="注册" id="btn" >
+	<div class="box">
+		<div class="box-1">
+			<input type="file" id="tx" /> 上传
+		</div>
+	</div>
+	
+	<div id="img">
+		
+	</div>
+
+	<script type="text/javascript">
+		var obj = document.querySelector(".box-1");     //querySelector 返回文档中匹配指定的CSS选择器的第一元素
+		var file1 = document.querySelector("#tx")	
+		obj.onclick = function(){
+			file1.click();     //file1触发事件
+		}
+		var files;
+		file1.onchange = function(){     //当事件改变的时候触发
+			files = file1.files[0];
+			var red = new FileReader();
+			//red.readAsText(f);
+			//red.readAsBinaryString(f)
+			red.readAsDataURL(files)
+			red.onload = function(e) {
+					obj.innerHTML = "<img src = '" + this.result + "'/>"
+			}
+		}
+
+		
+		// var setFiles = function(element){
+		// 	var obj = $('#box')
+		// 	console.log(element.files)  //获取到选取的图片
+		// 	files = element.files[0]
+		// 	var red = new FileReader();
+		// 	red.readAsDataURL(files)
+		// 	red.onload = function() {
+		// 		obj.innerHTML = "<img src = '" + element.result + "'/>"
+		// 	}
+		// }
+
+	
+
+		/*$('#btn').click(function(){
+			var fd = new FormData();
+			fd.append('uploadedFile',files);
+			$.ajax({
+				url:'http://localhost:8888/up/up',
+				type:'post',
+				data:fd,
+				contentType:false,
+				processData:false,
+				success:function(data){
+					console.log(data)
+					$.ajax({
+						type:'post',
+						url:'http://localhost:8888/up/login',
+						data:{
+							uname:$('#uname').val(),
+							pwd:$('#pwd').val(),
+							tx:data
+						},
+						success:function(e){
+							console.log(e)
+						},error:function(){
+							alert('login .. error')
+						}
+					})
+				},error:function(){
+					alert(1)
+				}
+			})
+		})
+
+
+		$.ajax({
+			type:'get',
+			url:'http://localhost:8888/up/li',
+			success:function(e){
+				console.log(e)
+				$('#img').append('<img src="../upload/'+e[21].img+'"/>')
+			},error:function(){
+				alert('login ..  list')
+			}
+		})*/
+	</script>
+</body>
+</html>

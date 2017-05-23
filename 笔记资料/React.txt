@@ -1,0 +1,144 @@
+单向数据绑定：
+
+
+bower install react   安装react     
+
+
+bower install babel    
+
+
+react   有何不同？
+
+可复用，可聚合，Web组件的js库
+
+只提供 前端MVC 框架中的V  平不是一个完整的MVC框架  
+
+为啥用react?而不用angular.js
+
+1.他是组件化的而不是写一大堆ＨＴＭＬ模板　　ＪＳ逻辑与HTML标签紧密连接   并且轻易理解
+2.单向数据流
+
+React.createClass  
+
+创建一个
+
+
+
+引入js的时候有先后顺序
+
+<script src="bower_components/react/react.js"></script>
+<script src="bower_components/react/react-dom.js"></script>
+<script src="bower_components/babel/browser.min.js"></script>
+
+
+
+<scipt type="text/babel"></script>   //编译ES6 转为 ES5   不写的话有可能会不识别标签
+
+
+
+
+安装react环境
+命令：npm install -g generator-react-webpack
+npm install -g yo grunt-cli bower (安装yeoman)  //没有的话安装yeoman
+
+yo 创建yo 项目
+
+
+React webpack ;
+
+css
+
+y
+
+npm start(启动项目)
+
+
+
+cnpm install -g create-react-app   //使用 create-react-app 快速构建 React 开发环境
+
+create-react-app my-app
+
+cd my-app
+
+npm start
+
+-----------------------------------------------------------------------------------------------------------
+import  ES6模块化
+
+class    extends 是构造函数
+
+import reactDOm from 'react-dom'  不写路径就是node-module里面的  写的话就是本地路径下面的
+
+render 管浏览器dom渲染  向外输出
+
+// super()  把属性集合了   class相当于 function   constructor固定写法 里面写属性
+// extends  继承方法
+
+jxs extends  
+
+style={}  最外面的是里面是react语法 {{}} 最里面的是对象
+
+require()  引入图片 CSS
+
+angual 模块化      react组建化
+
+this.state={}    //固定写法  状态   状态机   
+
+虚拟dom key={e}   先在内存里面有一个dom 修改的时候 先去内存找  然后在展示出来
+
+减少 class操作  就是减少dom操作 
+
+{this.state.value.map(function(e){  //map()只能循环数组
+   return <li key={e}>{e}</li>
+})}
+
+
+componentDidMount(){}    //虚拟dom都渲染进去后 才启动这个方法
+
+$.ajax({
+ 
+ success：function(){
+   console.log(this)  //指向$  函数里面的this指向的是作用域
+ }
+
+})
+
+this.setState({value:e})
+
+success:(e)=>{
+   this.setState(e)
+}
+
+()=>{}   箭头函数里面的this指向的就是最外面的函数而不是ajax
+
+ref=""  获取DOM结构    
+
+this.refs.s2.onclick=function(){}     s复数
+
+
+{this.state.value.map(function(e){
+	return <li key={e.id} ref="cc">{e.name}</li>
+})}
+
+this.props   不可改变的
+
+onclick  原生的   onClick原生不认识的  但是React是人事的
+
+// {
+					// 	this.state.value.map(e=>
+					// 	 <li key={e.id} ref="cc">{e.name}</li>
+					// )}
+
+
+npm run dist  打包命令
+
+
+/ 找根目录的
+------------------------------------------------------------------------------------------------------------
+去公司安装项目
+
+如果有项目结构的话不需要在安装yeoman 创建项目
+
+看见packjson  安装node --->  npm i ----> npm install -g gulp   ---->  gulp --save --->  webpackconfig.js  --->安装webpack   
+
+

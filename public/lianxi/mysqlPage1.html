@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/paging.js"></script>
+	<style type="text/css" media="screen">
+		.page{
+  width:95%;
+  height:50px;
+  background:#fff;
+  margin:50px auto;
+}
+#page{
+  width:66%;
+  margin:0 auto;
+}
+#page a{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dce0e0;
+  text-align: center;
+  margin: 5px 4px 0px;
+  cursor: pointer;
+  line-height:40px;
+  display: inline-block;
+}
+.current{
+  background-color: #2F323A;
+  color:#fff;
+}
+#page input{
+  width:28px;
+  text-indent:10px;
+}
+	</style>
+</head>
+<body>
+	
+	<div id="header">
+		
+	</div>
+
+	<div id="main">
+		<h2>信息列表</h2>
+		<div id="oul">
+			<ul></ul>
+			<div id="pagecount"></div>
+		</div>
+	</div>
+<div class="page">
+			<div id="page"></div>
+		</div>
+	<script type="text/javascript">
+		var curPage = 1; //当前页面
+	var total,pageSize,totalPage;
+	function ajaxPage(page){
+		$.ajax({
+			type:'get',
+			url:'http://localhost:8888/up/page',
+			data:{
+				pageNum:page
+			},
+			success:function(e){
+				// console.log(e)
+				var html = '';
+				total = e.total; //总计数
+				pageSize = e.pageSize; //每页显示条数
+				curPage = page; //当前页
+				totalPage = e.totalPage;//总页数;
+				 $('#oul').empty();   //清空
+				for(var i = 0;i<e.list.length;i++){
+					html += '<li><a href="javascript:;" del="" style="color:#b6b6b6;">&nbsp;删除'+e.list[i].uname+'</a></span></li>';
+					// console.log(e[i].id)
+				};
+				$('#oul').append(html)
+			},
+			complete:function(){
+				$('#page').paging({pageNo:curPage,totalPage:totalPage,callback:function(page){
+		            	console.log(page);
+		            	 $('#oul').empty();   //清空
+		            	fn(page)
+		        }
+		    	});
+			}
+			,
+			error:function(){
+				alert('error....')
+			}
+		})
+
+		
+	}
+	ajaxPage(1)
+	
+	function fn(page){
+        if(page){
+            ajaxPage(page);
+        }
+    }
+
+   
+	</script>
+</body>
+</html>

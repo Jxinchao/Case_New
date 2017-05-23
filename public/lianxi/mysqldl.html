@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<input type="text" name="" value="用户名" id="uname">
+	<input type="text" name="" value="密码" id="pwd">
+	<button type="">登录</button>
+
+	<script type="text/javascript">
+		$('button').click(function(){
+			$.ajax({
+				type:'post',
+				url:'http://localhost:8888/mysql/log',
+				data:{
+					uname:$('#uname').val(),
+					pwd:$('#pwd').val()
+				},
+				success:function(e){
+					if(e.flag == 1){
+						alert('登录成功')
+						location.href="mysqllist.html"
+					}else{
+						alert('登录失败')
+					}
+
+				},error:function(){
+					alert('error')
+				}
+			})
+		})
+	</script>
+</body>
+</html>

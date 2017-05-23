@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	
+	<div id="header">
+		
+	</div>
+
+	<div id="main">
+		<h2>信息列表</h2>
+		<div id="list">
+			<ul></ul>
+			<div id="pagecount"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var curPage = 1; //当前页面
+		var total,pageSize,totalPage;
+
+		function getData(page){
+			$.ajax({
+				type:'get',
+				url:'http://localhost:8888/up/page',
+				data:{
+					pageNum:page
+				},
+				success:function(json){
+					console.log(page)
+					$('#list ul').empty();
+					total = json.total; //总计数
+					pageSize = json.pageSize; //每页显示条数
+					curPage = page; //当前页
+					totalPage = json.totalPage;//总页数;
+					var li = "";
+					$.each(json.list,function(index,array){
+						li += '<li>'+array['uname']+'</li>';
+					})
+					$('#list ul').append(li);
+				},
+				complete:function(){
+					getPageBar();
+				},error:function(){
+					alert('error。。。')
+				}
+			})
+		}
+
+
+		//获取分页条 
+		function getPageBar(){
+			//页码大于最大页数
+			if(curPage>totalPage) curPage = totalPage;
+			//页码小于1
+			if(curPage < 1) curPage = 1;
+			pageStr = '<span>共'+total+'条</span><span>'+curPage+'/'+totalPage+'</span>';
+			 //如果是第一页
+            if(curPage==1){
+                pageStr += "<span>首页</span><span>上一页</span>";
+            }else{
+                pageStr += "<span><a href='javascript:void(0)' onclick='fn(1)'>首页</a></span><span><a href='javascript:void(0)' onclick='fn("+(curPage-1)+")'>上一页</a></span>";
+            }
+
+            //如果是最后页
+            if(curPage>=totalPage){
+                pageStr += "<span>下一页</span><span>尾页</span>";
+            }else{
+                pageStr += "<span><a href='javascript:void(0)' onclick='fn("+(parseInt(curPage)+1)+")'>下一页</a></span><span><a href='javascript:void(0)' onclick='fn("+totalPage+")'>尾页</a></span>";
+            }
+
+            $("#pagecount").html(pageStr);
+		}
+
+		$(function(){
+            getData(1);
+        });
+
+        function fn(page){
+            if(page){
+                getData(page);
+            }
+        }
+	</script>
+</body>
+</html>

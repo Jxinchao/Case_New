@@ -1,0 +1,684 @@
+1.node.js的特点：
+部署简单方便
+
+环境配置简单，只需要按照node.js即可
+
+注重约定
+
+项目所需要扩展插件资源相对独立，不易冲突
+事件驱动
+
+根据实际情况进行
+异步编程
+
+回调函数
+
+事件监听
+
+订阅/发布
+高效和性能
+
+通过优化资源调配和I/O操作来时间高效
+单线程与多线程
+
+可以利用子进程和多进程
+
+子进程：Node.js的child_process
+node.js的缺点
+
+大量采用匿名函数，似的抛出异常不易阅读
+
+try/catch限于同步代码，使得异常捕获较为复杂
+
+单线程：可靠性低
+
+不适合cpu密集型的场景
+
+回调代码的习惯影响阅读
+2.请描述一下cookies，sessionStorage和localStorage的区别？
+sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
+web storage和cookie的区别？
+Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。
+除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。
+3. HTTP 和 WebSocket的区别？
+1. http协议是用在应用层的协议，他是基于tcp协议的，http协议建立链接也必须要有三次握手才能发送信息。
+
+　　http链接分为短链接，长链接，短链接是每次请求都要三次握手才能发送自己的信息。即每一个request对应一个response。长链接是在一定的期限内保持链接。保持TCP连接不断开。客户端与服务器通信，必须要有客户端发起然后服务器返回结果。客户端是主动的，服务器是被动的。
+
+2. WebSocket 
+
+　　WebSocket他是为了解决客户端发起多个http请求到服务器资源浏览器必须要经过长时间的轮训问题而生的，他实现了多路复用，他是全双工通信。在webSocket协议下客服端和浏览器可以同时发送信息。
+
+建立了WenSocket之后服务器不必在浏览器发送request请求之后才能发送信息到浏览器。这时的服务器已有主动权想什么时候发就可以发送信息到服务器。而且信息当中不必在带有head的部分信息了与http的长链接通信来说，这种方式，不仅能降低服务器的压力。而且信息当中也减少了部分多余的信息
+4.reflow:当render树中的一部分或者全部因为大小边距等问题发生改变而需要重建的过程叫做回流
+
+repaint:当元素的一部分属性发生变化，如外观背景色不会引起布局变化而需要重新渲染的过程叫做重绘
+5.200：服务器已经成功处理了请求并提供了请求的网页；
+204：服务器成功处理了请求，但没有返回任何内容；
+301：请求的网站已经永久移动到新的位置（URL发上了变化）
+302：请求的网页临时移动到新位置。
+304：如果网页自请求者上次请求后没有更新，则用304代码告诉搜索引擎机器人，可节省宽带和开销。
+400：服务器不理解请求的语法。
+403：服务器拒绝请求。
+404：服务器找不到请求的网页。
+410：请求的资源永久删除后，服务器返回次响应。
+500：服务器遇到错误，无法完成请求。
+503：服务器目前无法使用。
+5.第一：面向内容的优化
+1. 减少 HTTP 请求 
+2. 减少 DNS 查找
+3. 避免重定向
+4. 使用 Ajax 缓存
+5. 延迟载入组件
+
+6. 预先载入组件 
+7. 减少 DOM 元素数量
+8. 切分组件到多个域
+
+9. 最小化 iframe 的数量
+10.  不要出现http 404 错误
+第二：面向 Server
+1. 缩小 Cookie 
+2. 针对 Web 组件使用域名无关性的
+
+6.css中哪些属性可以继承？
+所有元素可继承：visibility和cursor。
+内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、font-family、font-size、font-style、font-variant、font-weight、text-decoration、text-transform、direction。
+终端块状元素可继承：text-indent和text-align。
+列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。
+7.javascript中 visibility和display的区别？
+visibility属性用来确定元素是显示还是隐藏的，这用visibility="visible|hidden"来表示（visible表示显示，hidden表示隐藏）。
+当visibility被设置为"hidden"的时候，元素虽然被隐藏了，但它仍然占据它原来所在的位置。
+例：
+<script language="JavaScript"> function toggleVisibility(me){ if (me.style.visibility=="hidden"){ me.style.visibility="visible"; } else { me.style.visibility="hidden"; } } </script> <div onclick="toggleVisibility(this)" style="position:relative">第一行文本将会触发"hidden"和"visible"属性，注意第二行的变化。</div> <div>因为visibility会保留元素的位置，所以虽然第一行看不见了但位置还在，第二行内容不会上下移动。</div> 
+注意到，当元素被隐藏之后，就不能再接收到其它事件了，所以在第一段代码中，当其被设为"hidden"的时候，就不能再接收响应到事件了，因此也就无法通过鼠标点击第一段文本令其显示出来。
+另一方面，display属性就有一点不同了。visibility属性是隐藏元素但保持元素的浮动位置，而display实际上是设置元素的浮动特征。
+当display被设置为block(块)时，容器中所有的元素将会被当作一个单独的块，就像<div>元素一样，它会在那个点被放入到页面中。(实际上你可以设置<span>的display:block，使其可以像<div>一样工作。
+将display设置为inline，将使其行为和元素inline一样---即使它是普通的块元素如<div>，它也将会被组合成像<span>那样的输出流。
+8.，http 状态码有那些？分别代表是什么意思？
+44
+简单版
+[
+100 Continue 继续，一般在发送 post 请求时，已发送了 http header 之后服务端将
+返回此信息，表示确认，之后发送具体参数信息
+200 OK 正常返回信息
+201 Created 请求成功并且服务器创建了新的资源
+202 Accepted 服务器已接受请求，但尚未处理
+301 Moved Permanently 请求的网页已永久移动到新位置。
+302 Found 临时性重定向。
+303 See Other 临时性重定向，且总是使用 GET 请求新的 URI。
+304 Not Modified 自从上次请求后，请求的网页未修改过。
+400 Bad Request 服务器无法理解请求的格式，客户端不应当尝试再次使用相同的内容
+发起请求。
+401 Unauthorized 请求未授权。
+403 Forbidden 禁止访问。
+404 Not Found 找不到如何与 URI 相匹配的资源。
+500 Internal Server Error 最常见的服务器端错误。
+503 Service Unavailable 服务器端暂时无法处理请求（可能是过载或维护）
+9.如何居中 div？如何居中一个浮动元素？如何让绝对定位的 div 居中？
+给 div 设置一个宽度，然后添加 margin:0 auto 属性
+div{
+width:200px;
+margin:0 auto;
+}
+居中一个浮动元素
+确定容器的宽高 宽 500 高 300 的层
+设置层的外边距
+.div {
+width:500px ; height:300px;//高度可以不设
+margin: -150px 0 0 -250px;
+position:relative; //相对定位
+background-color:pink; //方便看效果
+left:50%;
+top:50%;
+}
+10.同步和异步的区别?
+同步的概念应该是来自于 OS 中关于同步的概念:不同进程为协同完成某项工作而在先后次序上调整(通过
+阻塞,唤醒等方式).同步强调的是顺序性.谁先谁后.异步则不存在这种顺序性. 同步：浏览器访问服务器请求，用户看得到页面刷新，重新发请求,等请求完，页面刷新，新内容出现，用
+户看到新内容,进行下一步操作。
+异步：浏览器访问服务器请求，用户正常操作，浏览器后端进行请求。等请求完，页面不刷新，新内容也
+会出现，用户看到新内容。
+11.谈谈CSS Sprite是什么？及这个技术的优缺点。？
+通俗点讲CSS Sprite就是将多个背景图片拼合到一个图片上。然后在CSS里通过position定义到该图片上，实现多个位置的背景，一张图片搞定
+
+如：
+
+.div,.current{background:url(a.gif) no-repeat}
+
+.current{background-position:10px 10px}
+
+好处就是浏览器只需要请求一次图片就行，如果多个图片，就要讲求多次。
+
+缺点就是拼合的时候，比较麻烦，要有耐心，当然也是可以利用某些工具来完全。
+12.什么是闭包（closure），为什么要用它？
+闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一
+个函数，通过另一个函数访问这个函数的局部变量,利用闭包可以突破作用链域，将函数内部的变量和方法传递到外
+部。
+闭包的特性：
+1.函数内再嵌套函数
+2.内部函数可以引用外层的参数和变量
+3.参数和变量不会被垃圾回收机制回收
+13.介绍 js 的基本数据类型。？
+Undefined、Null、Boolean、Number、Strin
+14.谈谈 This 对象的理解。？
+this 总是指向函数的直接调用者（而非间接调用者）；
+如果有 new 关键字，this 指向 new 出来的那个对象；
+在事件中，this 指向触发这个事件的对象，特殊的是，IE 中的 attachEvent 中的 this 总是指向全局对象
+Window；
+this 就是指的是当前对象
+15. CSS3新增属性选择器？
+E[foo^="bar"] 	属性选择器 	选择匹配E的元素，且该元素定义了foo属性，foo属性值以“bar”开始。E选择符可以省略，表示可匹配任意类型的元素。
+E[foo$="bar"] 	属性选择器 	选择匹配E的元素，且该元素定义了foo属性，foo属性值以“bar”结束。E选择符可以省略，表示可匹配任意类型的元素。
+E[foo*="bar"] 	属性选择器 	选择匹配E的元素，且该元素定义了foo属性，foo属性值包含“bar”。E选择符可以省略，表示可匹配任意类型的元素。
+16.GET 和 POST 的区别，何时使用 POST？
+GET：一般用于信息获取，使用 URL 传递参数，对所发送信息的数量也有限制，一般在 2000 个字符
+POST：一般用于修改服务器上的资源，对所发送的信息没有限制。
+17.请解释一下为什么会出现浮动和什么时候需要清除浮动？清除浮动的方式？
+浮动元素脱离文档流，不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。
+1.使用空标签清除浮动。
+这种方法是在所有浮动标签后面添加一个空标签 定义 css clear:both. 弊端就是增加了无意义标签。
+2.使用 overflow。
+给包含浮动元素的父标签添加 css 属性 overflow:auto; zoom:1; zoom:1 用于兼容 IE6。
+3.使用 after 伪对象清除浮动。
+该方法只适用于非 IE 浏览器。具体写法可参照以下示例。使用中需注意以下几点。一、该方法中必须为需
+要清除浮动元素的伪对象中设置 height:0，否则该元素会比实际高出若干像素；
+18.CSS3 新增伪类有那些？
+p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
+p:last-of-type 选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
+p:only-of-type 选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
+p:only-child 选择属于其父元素的唯一子元素的每个 <p> 元素。
+p:nth-child(2) 选择属于其父元素的第二个子元素的每个 <p> 元素。
+:after 在元素之前添加内容,也可以用来做清除浮动。
+:before 在元素之后添加内容
+:enabled
+:disabled 控制表单控件的禁用状态。
+:checked 单选框或复选框被选中。
+19.CSS 优先级算法如何计算？
+* 优先级就近原则，同权重情况下样式定义最近者为准;
+* 载入样式以最后载入的定位为准;
+优先级为:
+!important > id > class > tag
+important 比 内联优先级高
+20.CSS 选择符有哪些？哪些属性可以继承？
+* 1.id 选择器（ # myid）
+2.类选择器（.myclassname）
+3.标签选择器（div, h1, p）
+4.相邻选择器（h1 + p）
+5.子选择器（ul > li）
+6.后代选择器（li a）
+7.通配符选择器（ * ）
+8.属性选择器（a[rel = "external"]）
+9.伪类选择器（a:hover, li:nth-child）
+* 可继承的样式： font-size font-family color, UL LI DL DD DT;
+* 不可继承的样式：border padding margin width height ;
+21.DOM 操作——怎样添加、移除、移动、复制、创建和查找节点?
+（1）创建新节点
+createDocumentFragment() //创建一个 DOM 片段
+createElement() //创建一个具体的元素
+createTextNode() //创建一个文本节点
+（2）添加、移除、替换、插入
+appendChild()
+removeChild()
+replaceChild()
+insertBefore() //在已有的子节点前插入一个新的子节点
+（3）查找
+getElementsByTagName() //通过标签名称
+getElementsByName() //通过元素的 Name 属性的值(IE 容错能力较强，会得到一个数组，其
+中包括 id 等于 name 值的)
+getElementById() //通过元素 Id，唯一性
+36，.call() 和 .apply() 的区别？
+例子中用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4);
+注意：js 中的函数其实是对象，函数名是对 Function 对象的引用。
+function add(a,b) { alert(a+b); }
+function sub(a,b) { alert(a-b); }
+add.call(sub,3,1);
+add.apply(sub,[3,1]);
+功能一样，但是传递参赛的方式不一样
+22.CSS3有哪些新特性？ 
+CSS3实现圆角（border-radius:8px），阴影（box-shadow:10px），  对文字
+
+加特效（text-shadow、），线性渐变（gradient），旋转（transform）  
+
+transform:rotate(9deg) scale(0.85,0.90)  translate(0px,-30px) skew
+
+(-9deg,0deg);//旋转,缩放,定位,倾斜  增加了更多的CSS选择器  多背景rgba 
+23.数组方法pop() push() unshift() shift()    
+   Push()尾部添加 pop()尾部删除    Unshift()头部添加 shift()头部删除
+24.如何解决跨域问题?
+理解跨域的概念：协议、域名、端口都相同才同域，否则都是跨域
+出于安全考虑，服务器不允许ajax跨域获取数据，但是可以跨域获取文件内容，所以基于这一点，可以动态创建script标签，使用标签的src属性访问js文件的形式获取js脚本，并且这个js脚本中的内容是函数调用，该函数调用的参数是服务器返回的数据，为了获取这里的参数数据，需要事先在页面中定义回调函数，在回调函数中处理服务器返回的数据，这就是解决跨域问题的主流解决方案
+25.写一个function，清除字符串前后的空格。（兼容所有浏览器）
+function trim(str) {
+if (str && typeof str === "string") {
+return str.replace(/(^\s*)|(\s*)$/g,""); //去除前后空白符
+}
+}
+26.css预处理器  sass  less  stylus   dtcss
+27.用css实现垂直水平居中？
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            text-align: center;
+            height: 400px;
+            background: #4dc71f;
+        }
+        #container:before{
+            content: "";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: -0.25em;
+        }
+        #center-div{
+            display: inline-block;
+            vertical-align: middle;
+            background: #2aabd2;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="center-div">
+            xxx
+        </div>
+    </div>
+</body>
+28.同步和异步  ？
+在计算机领域，同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去；异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。
+29.统计字符串”aaaabbbccccddfgh”中字母个数或统计最多字母数。
+var str = "aaaabbbccccddfgh";
+var obj  = {};
+for(var i=0;i<str.length;i++){
+var v = str.charAt(i);
+if(obj[v] && obj[v].value == v){
+obj[v].count = ++ obj[v].count;
+}else{
+obj[v] = {};
+obj[v].count = 1;
+obj[v].value = v;
+}
+}
+for(key in obj){
+document.write(obj[key].value +'='+obj[key].count+' '); // a=4  b=3  c=4  d=2  f=1  g=1  h=1 
+}
+30.如何消除一个数组里面重复的元素？
+// 方法一：
+var arr1 =[1,2,2,2,3,3,3,4,5,6],
+arr2 = [];
+for(var i = 0,len = arr1.length; i< len; i++){
+if(arr2.indexOf(arr1[i]) < 0){
+arr2.push(arr1[i]);
+}
+}
+document.write(arr2); // 1,2,3,4,5,6
+31.给字符串扩展一个兼容所有浏览器的清除前后的空格的方法？
+if (!String.prototype.trim) {
+String.prototype.trim = function() {
+return this.replace(/^\s+/, "").replace(/\s+$/,"");
+}
+}
+32.cookies，sessionStorage 和 localStorage 的区别？
+cookie 是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
+cookie 数据始终在同源的 http 请求中携带（即使不需要），记会在浏览器和服务器间来回传递。
+sessionStorage 和 localStorage 不会自动把数据发给服务器，仅在本地保存。
+存储大小：
+cookie 数据大小不能超过 4k。
+sessionStorage 和 localStorage 虽然也有存储大小的限制，但比 cookie 大得多，可以达到 5M
+或更大。
+有期时间：
+localStorage 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；
+sessionStorage 数据在当前浏览器窗口关闭后自动删除。
+cookie 设置的 cookie 过期时间之前一直有效，即使窗口或浏览器关闭
+33.简述同步和异步的区别？
+同步是阻塞模式，异步是非阻塞模式。
+
+同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去；
+
+异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。
+34.px和em的区别？
+px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。
+35.简述一下src与href的区别？
+href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。
+
+src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。
+36.什么是盒子模型？
+在网页中，一个元素占有空间的大小由几个部分构成，其中包括元素的内容（content），元素的内边距（padding），元素的边框（border），元素的外边距（margin）四个部分。这四个部分占有的空间中，有的部分可以显示相应的内容，而有的部分只用来分隔相邻的区域或区域。4个部分一起构成了css中元素的盒模型。
+37.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+行内元素：a、b、span、img、input、strong、select、label、em、button、textarea
+块级元素：div、ul、li、dl、dt、dd、p、h1-h6、blockquote
+空元素：即系没有内容的HTML元素，例如：br、meta、hr、link、input、img
+38.如何通过 CSS 实现一个左边固定宽度、右边自适应的两列布局
+通过绝对定位实现
+<div id="absolute-column">
+    <div id="div-a-1">div-a</div>
+    <div id="div-b-1">div-b</div>
+    <div id="div-c-1">div-c</div>
+</div>
+/*绝对定位*/
+#absolute-column {
+    position: relative;
+}
+
+#div-b-1 {
+    background-color: blue;
+    height: 30px;
+    margin-left: 50px;
+}
+
+#div-a-1 {
+    background-color: red;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#div-c-1 {
+    background-color: yellow;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 30px;
+}
+
+
+2. 通过浮动实现
+<div id="float-column">
+
+    <div id="div-a-2">div-a</div>
+    <div id="div-b-2">div-b</div>
+
+    <div id="div-c-2">div-c</div>
+</div>
+/*浮动定位*/
+#div-a-2 {
+    background-color: red;
+    width: 50px;
+    height: 30px;
+    float: left;
+}
+
+#div-b-2 {
+    background-color: blue;
+    height: 30px;
+    margin-left: 50px;
+}
+
+#div-c-2 {
+    background-color: yellow;
+    width: 100%;
+    height: 30px;
+    clear: both;
+}
+39.DOM 操作——怎样添加、移除、移动、复制、创建和查找节点? 
+（1）创建新节点 
+createDocumentFragment() //创建一个 DOM 片段 
+createElement() //创建一个具体的元素 
+createTextNode() //创建一个文本节点 
+（2）添加、移除、替换、插入 
+appendChild() 
+removeChild() 
+replaceChild() 
+insertBefore() //在已有的子节点前插入一个新的子节点 
+（3）查找 
+getElementsByTagName() //通过标签名称 
+getElementsByName() //通过元素的 Name 属性的值(IE 容错能力较强，会得到一个数组，其 
+中包括 id 等于 name 值的) 
+getElementById() //通过元素 Id，唯一性 
+40，.call() 和 .apply() 的区别？ 
+例子中用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4); 
+注意：js 中的函数其实是对象，函数名是对 Function 对象的引用。 
+function add(a,b) { alert(a+b); } 
+function sub(a,b) { alert(a-b); } 
+add.call(sub,3,1); 
+add.apply(sub,[3,1]); 
+41.css加载方式link和@import的区别？
+   本质上，这两种方式都是为了加载CSS文件，但还是存在着细微的差别。
+
+　　1. 老祖宗的差别。link属于XHTML标签，而@import完全是CSS提供的一种方式。 link标签除了可以加载CSS外，还可以做很多其它的事情，比如定义RSS，定义rel连接属性等，@import就只能加载CSS了。
+
+　　2. 加载顺序的差别。当一个页面被加载的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS会等到页面全部被下载完再被加载。所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。
+
+　　3. 兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。
+
+　　4. 使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。
+
+　　@import可以在css中再次引入其他样式表，比如可以创建一个主样式表，在主样式表中再引入其他的样式表，如：
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1、 对WEB标准以及W3C的理解与认识
+
+     标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性
+
+2、xhtml和html有什么区别
+？
+HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言
+最主要的不同：
+XHTML 元素必须被正确地嵌套。
+XHTML 元素必须被关闭。
+标签名必须用小写字母。
+XHTML 文档必须拥有根元素
+
+3、 行内元素有哪些?块 级元素有哪些?CSS的盒模型?
+
+行内元素: a b br i span input select strong
+
+块 级元素：div p h1 h2 h3 h4 form ul ol li  dl dd dt
+
+css盒模型:内容，border ,margin，padding
+
+行内元素与块 级元素的区别：
+
+1）块 级元素会独占一行，其宽度自动填满其父元素宽度;  行内元素不会独占一行，相邻的行内元素会排列在同一行里，知道一行排不下，才会换行，其宽度随元素的内容而变化
+  
+ 2） 块 级元素可以设置 width, height属性，行内元素设置width,  height无效【注意：块级元素即使设置了宽度，仍然是独占一行的】
+   
+3) 块 级元素可以设置margin 和 padding.  行内元素的水平方向的padding-left,padding-right,margin-left,margin-right 都产生边距效果，但是竖直方向的padding-top,padding-bottom,margin-top,margin-bottom都不会产生边距效果。（水平方向有效，竖直方向无效）
+
+4、在HTML中引入CSS的方法主要有四种，
+它们分别是行内式、内嵌式、链接式和导入式。
+行内式
+         
+ 行内式是在标记的style属性中设定CSS样式。这种方式没有体现出CSS的优势，不推荐使用。
+
+嵌入式
+          嵌入式是将CSS样式集中写在网页的<head></head>标签对的<style></style>标签对中。格式如下：
+         <head>
+        
+          <style type="text/css">
+             
+                  ...此处写CSS样式
+       </style>
+
+      </head>
+     
+     缺点是对于一个包含很多网页的网站，在每个网页中使用嵌入式，进行修改样式时非常麻烦。单一网页可以考虑使用嵌入式。
+
+导入式
+          将一个独立的.css文件引入HTML文件中，导入式使用CSS规则引入外部CSS文件，<style>标记也是写在<head>标记中，使用的语法如下：
+
+          <style type="text/css">
+   
+                 @import"mystyle.css"; 此处要注意.css文件的路径
+        
+          </style>
+         导入式会在整个网页装载完后再装载CSS文件，因此这就导致了一个问题，如果网页比较大则会儿出现先显示无样式的页面，闪烁一下之后，再出现网页的样式。这是导入式固有的一个缺陷。
+
+链接式
+          也是将一个.css文件引入到HTML文件中，但它与导入式不同的是链接式使用HTML规则引入外部CSS文件，它在网页的<head></head>标签对中使用<link>标记来引入外部样式表文件，使用语法如下：
+        
+  <link href="mystyle.css" rel="stylesheet" type="text/css"/>
+      
+    使用链接式时与导入式不同的是它会以网页文件主体装载前装载CSS文件，因此显示出来的网页从一开始就是带样式的效果的，它不会象导入式那样先显示无样式的网页，然后再显示有样式的网页，这是链接式的优点。
+
+总结：一般来说，做网站时把样式多写在多个样式表文件中，因此我们先用链接式引入一个总的CSS文件，然后在这个CSS文件中在使用导入式来引入其他的CSS文件。但如果通过JavaScrip来动态引入CSS文件则只能使用链接式。
+
+5、CSS选择符有哪些？哪些属性可以继承？优先级算法如何计算？css3新增伪类有哪些？
+
+选择符：标签选择器（div，h1，p）、id选择器（#myid）、类选择器（.myclassname）、相邻选择器（h1+p）、
+子选择器（ul > li）、后代选择器（li  a）、通配符选择器（*）、属性选择器（a[ rel = "external"]）、伪类选择器（a:hover,  li:nth-child）
+可继承的样式：font-size    font-family  color,   text-indent;
+不可继承的样式：border     padding     margin     width     height     
+优先级就近原则，同权重情况下样式定义最近者为准；载入样式以最后载入的定位为准；
+
+优先级为：
+！important   >   id    >    class    >tag
+important   比内联优先级高，但内联比  id  要高
+css3新增伪类举例：
+p：first-of-type     选择属于其父元素
+
+6、前端页面又哪三层构成，分别是什么？作用是什么？
+
+结构层HTML    表示层CSS     行为层js
+
+7、你做的页面在哪些浏览器测试过？这些浏览器的内核分别是什么？
+
+IE（IE内核）、     火狐（Gecko）、     谷歌（webkit）、     opear（Presto）
+
+8、写出几种IE6 BUG的解决办法
+
+双边距BUG：float引起的，使用display:inline（在IE7,Firefox等浏览器下能正确解释左边距10px。但是在IE6下会理解为左边距20px。也就是说，在与浮动同方向的空白边会加倍，解决方法是为这个div的css中添加：display:inline; 这样就可避免双倍边距bug。）
+
+3像素问题：float引起的，使用display：inline -3px;（当使用float浮动容器后，在IE6下会产生3px的空隙，因为是确切的3px，所以，用“暴力破解”吧，比如.left   _margin-right:-3px;，还有一种方法是也设置float            HTML：
+          <div class="left">在ie6下的显示状态</div> 　
+          <div class="right">在ie6下的显示状态</div>
+          <p> </p ><p>在ie6浏览状态下，我们看到。绿色div与蓝色div中间出现了一条空隙。这就是ie6下3像素bug问题。</p >　　结果：               ）
+超链接hover：点击后失效，使用正确的书写顺序  link  visited  hover  active
+IE   z-index问题：给父级添加position:relative
+Png透明：使用js代码改
+Min-height：最小高度！important解决
+select在IE6下遮盖：使用iframe嵌套
+为什么没有办法定义1px左右的高度容器：IE默认的行高造成的，使用overflow:hidden;  zoom:0.08;  line-height:1px;
+当子元素浮动且未知高度时，怎么使父容器适应子元素的高度？
+在父窗口加上overflow：auto； _zoom：1 ；这两个样式属性，
+overflow：auto是让父容器来自适应内部容器的高度，
+_zoom：1；是为了兼容IE6而使用的CSS HACK
+IE6中奇数宽高的bug
+          IE6还有奇数宽高的bug，解决方案就是将外部相对定位的div宽度改为偶数          
+IE6下为什么图片下方有空隙产生
+          解决这个bug的方法也有很多，可以是改变HTML的排版，或者定义img为display：block；或者定义vertical-align属性值为vertical-align：top | bottom |  middle | text-bottom还可以设置父容器的字体大小为零，font-size:0          
+IE6下空标签高度问题
+一个空div如果高度设置为0到19px，IE6下高度默认始终19px。例如：
+.c{background-color:#f00; height:2px;  /*给定任何小于20px的高度*/}
+<div class="c"></div>
+如果不让它默认为19px。而是0px的话
+解决方法有3种
+1）、css里面加上overflow：hidden
+2）、div里面加上注释<div class="c"><!--></div>
+3）、css里面加上line-height：0；然后div里面加上#nbsp；<div class="c">&nbsp;</div>(#换成&)
+如何用css分别单独定义IE6、7、8的width属性
+所有浏览器通用：height：100px
+IE6专用：_height:100px;
+IE6专用：*height：100px;
+IE7专用：*+height：100px
+IE7、FF共用：height：100px ！important；
+css中哪些属性可以同父元素继承
+          继承：文本类的均可继承，列表元素可继承
+9、标签上title与alt属性的区别是什么?
+title:为该属性提供信息
+alt：当图片不显示时，用文字代表
+10、:visited 选择器用于选取已被访问的链接。:link选择器对指向未被访问页面的链接设置样式, :hover选择器用于设置鼠标指针浮动到链接上时的样式，:active选择器用于设置点击链接时的样式。
+11、描述css reset的作用和用途。
+Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一
+如，最简化的CSS Reset（避免浏览器兼容问题，）
+*{
+padding：0；
+margin：0；
+}
+12、解释css sprites，如何使用。
+Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量
+13、浏览器标准模式和怪异模式之间的区别是什么?
+14、你如何对网站的文件和资源进行优化？期待的解决方案包括：
+文件合并、文件最小化/文件压缩、使用CDN托管、缓存的使用（多个域名来提供缓存）
+15、请说出三种减少页面加载时间的方法（加载时间指感知的时间或者实际加载时间)
+a、优化图片
+b、图像格式的选择（gif：提供的颜色较少，可用在一些对颜色要求不高的地方）
+c、优化CSS（压缩合并CSS，如margin-top，margin-left……）
+d、网址后加斜杠（如www.campr.com/目录，会判断这个目录是什么文件类型 或者是目录）
+e、标明高度和宽度（如果浏览器没有找到这两个参数，它需要一边下载图片，一边计算大小，如果图片很多，浏览器需要不断地调整页面。这不但影响速度，也影响浏览体验。当浏览器知道了高度和宽度参数后，即使图片暂时无法显示，页面上也会腾出图片的空位，然后继续加载后面的内容，从而加载时间快了，浏览体验也更好了。）
+f、减少HTTP请求（合并文件、合并图片（CSS精灵，CSS sprites技术））
+16、data-属性的作用是什么？
+data-为前端开发者提供自定义的属性，这些属性集可以通过对象的dataset属性获取，不支持改属性的浏览器可以通过getAttribute方法获取
+<div data-author="david" data-time="2015-06-23" data-comment-num="10">……</div>
+div.dataset.commentNum;   //     10
+需要注意的是：data-之后的以连字符分割的多个单词组成的属性，获取的时候使用驼峰风格。
+并不是所有的浏览器都支持.dataset属性，测试的浏览器中只有Chrome和Opera支持。
+17、如何视觉隐藏网页内容，只让它们在屏幕阅读器中可用？
+a、display:none     的缺陷
+搜索引擎可能认为被隐藏的文字属于垃圾信息而被忽略
+屏幕阅读器（是为了视觉上有障碍的人设计的读取屏幕内容的程序）会忽略被隐藏的文字。
+b、visibility：hidden     的缺陷
+隐藏的内容会占据他所应该占据物理空间
+c、overflow：hidden     一个比较合理的方法
+.texthidden{display:block;/*统一转化为块级元素*/    overflow：hidden； width：0；height：0}
+就像上面的一段CSS所展示的方法，将宽度和高度设定为0，然后超多部分隐藏，就会弥补上述一、二方法中的缺陷，也达到了隐藏内容的目的。
+18、填空题
+a、目前常用的WEB标准静态页面语言是：    HTML    
+b、改变元素的外边距用   margin     ，改变元素的内填充用     padding    
+c、在Table中，tr是     行     ，td是    列    
+d、如果给一行两列的表格（table）定义高度样式，在     table     标签中定义最合理，最能减少代码的臃肿
+e、对ul  li的样式设成无，应该是用什么样式？    list-style-type:none;    
+f、在新窗口打开链接的方法是   target=“_blank”   
+g、color:#666666可缩写为：    color：#666    
+h、合理的页面布局中常听过结构与表现分离，那么结构是    html     ， 表现是      css    
+19、选择题
+    （1）、在下面的XHTML中，哪些可以正确地标记折行？    A    
+          A：<br />     B:   <break />     C:   <br>
+          （<br /> 标签插入简单的换行符。<br /> 标签是一个空标签，意味着它没有结束标签。所以这样是错误的：<br></br>）
+20、请写出超链接的顺序或者你在初始样式中的链接方法（要求默认无下划线，鼠标经过有下划线）
+L-V-H-A        （:link 选择器用于选取未被访问的链接。:visited 选择器对指向已访问页面的链接设置样式，:hover 选择器用于设置鼠标指针浮动到链接上时的样式，:active选择器用于设置点击链接时的样式。）
+a：link { text-decoration:none; }
+a：hover  { text-decoration:underline;  } 
+21、当float和margin同时使用时，IE6的双倍边距BUG如何解决？
+display:inline     或者     margin-right:-3px;
+22、Firework中标签的居中问题的解决方法？   
+*{margin：0px auto;}
+23、请写出XHTML和CSS如何注释？
+XHTML：<!--注释内容-->
+css：/*注释内容*/
+24、请以缩写方法写出1px直线（实线）灰色（任意灰色代码值），上面无边框的矩形边框样式
+.class{border:1px solid #ccc; border-top:0px;}     或者     border:1px solid #ccc; border-top:none;

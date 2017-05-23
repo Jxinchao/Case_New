@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8"><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>自制分页插件</title>
+</head>
+<body>
+    <h1 style="text-align:center;color:#0026ff;">自制实用分页插件</h1>
+    <div style="margin:80px auto;width:1000px;margin-top:50px;">
+        <p style="font-size:18px;font-family:'微软雅黑';">默认皮肤,无跳转框,滚动模式：</p>
+        <div class="page_div"></div>
+    </div>
+    <div style="margin:80px auto;width:1000px;">
+        <p style="font-size:18px;font-family:'微软雅黑';">默认皮肤,带跳转框,精简模式：</p>
+        <div class="page_div1"></div>
+    </div>
+    <div style="margin:80px auto;width:1000px;">
+        <p style="font-size:18px;font-family:'微软雅黑';">样式参考,自定义小清新皮肤,无跳转框,滚动模式：</p>
+        <div class="page_div2"></div>
+    </div>
+    <div style="margin:80px auto;width:1000px;">
+        <p style="font-size:18px;font-family:'微软雅黑';">样式参考,自定义小清新皮肤,带跳转框,精简模式：</p>
+        <div class="page_div3"></div>
+    </div>
+    <div style="margin:100px auto;width:1000px;">
+        <p style="font-size:18px;font-family:'微软雅黑';color:red;line-height:30px;">
+            该插件兼容至IE8及其以上版本，通过参数可以选择post方式请求还是get方式请求，支持异步获得数据通过回调函数操作html内容，皮肤可根据需求自己根据参数修改，更多定制请参看所有参数，给所有需要使用和学习的人，如遇问题可与我本人联系，鄙人QQ：997345399
+        </p>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.paging.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //默认皮肤，无跳转框，总长度300，总长度等参数实际使用由后台传入
+            $(".page_div").paging({
+                total: 300
+            });
+            //默认皮肤，有跳转框，总长度300，总长度等参数实际使用由后台传入
+            $(".page_div1").paging({
+                total: 300,
+                showJump: true,
+                animation: false
+            });
+            //自定义皮肤，无跳转框，总长度100，总长度等参数实际使用由后台传入
+            $(".page_div2").paging({
+                total: 100,
+                centerBgColor: "#fff",
+                centerFontColor: "#000",
+                centerBorder: "1px solid #ddd",
+                transition: "all .2s",
+                centerHoverBgColor: "#25dd3d",
+                centerHoverBorder: "1px solid #25dd3d",
+                centerFontHoverColor: "#fff",
+                otherFontHoverColor: "#fff",
+                otherBorder: "1px solid #ddd",
+                otherHoverBorder: "1px solid #25dd3d",
+                otherBgColor: "#fff",
+                otherHoverBgColor: "#25dd3d",
+                currentFontColor: "#fff",
+                currentBgColor: "#f79898",
+                currentBorder: "1px solid #f79898",
+                fontSize: 13,
+                currentFontSize: 13,
+                cormer: 2,
+                gapWidth: 3,
+                jumpBgColor: "#fff",
+                jumpFontHoverColor: "#fff",
+                jumpHoverBgColor: "#25dd3d",
+                jumpBorder: "1px solid #ddd",
+                jumpHoverBorder: "1px solid #25dd3d",
+                beforeBtnString: "<<",
+                nextBtnString: ">>"
+            });
+
+            //自定义皮肤，有跳转框，总长度100，总长度等参数实际使用由后台传入
+            $(".page_div3").paging({
+                total: 100,
+                animation: false,
+                centerBgColor: "#fff",
+                centerFontColor: "#000",
+                centerBorder: "1px solid #ddd",
+                transition: "all .2s",
+                centerHoverBgColor: "#25dd3d",
+                centerHoverBorder: "1px solid #25dd3d",
+                centerFontHoverColor: "#fff",
+                otherFontHoverColor: "#fff",
+                otherBorder: "1px solid #ddd",
+                otherHoverBorder: "1px solid #25dd3d",
+                otherBgColor: "#fff",
+                otherHoverBgColor: "#25dd3d",
+                currentFontColor: "#fff",
+                currentBgColor: "#f79898",
+                currentBorder: "1px solid #f79898",
+                fontSize: 13,
+                currentFontSize: 13,
+                cormer: 2,
+                gapWidth: 3,
+                showJump: true,
+                jumpBgColor: "#fff",
+                jumpFontHoverColor: "#fff",
+                jumpHoverBgColor: "#25dd3d",
+                jumpBorder: "1px solid #ddd",
+                jumpHoverBorder: "1px solid #25dd3d"
+            });
+
+
+            //全部参数
+            //total: 20,   //全部页数
+            //showPage: 9,  //显示的页数
+            //height: 30,    //高
+            //width: 8,      //宽
+            //jumpInputWidth: 60,   //跳转输入框的宽
+            //fontFamily: "微软雅黑",  //字体
+            //fontSize: 12,    //字体大小
+            //currentFontSize: 12,    //当前选中页的字体大小
+            //fontWeight: 400,   //字体宽度
+            //currentFontWeight: 400,   //当前选中页的字体粗细
+            //centerFontColor: "#000",  //中间字体颜色
+            //otherFontColor: "#000",   //两边字体颜色
+            //centerFontHoverColor: "red",  //中间鼠标悬浮的字体颜色
+            //otherFontHoverColor: "red",  //两边鼠标悬浮的字体颜色
+            //currentFontColor: "red",    //当前选中页的字体颜色
+            //jumpFontColor: "#000",          //跳转内部标签的字体颜色
+            //jumpFontHoverColor: "red",      // 跳转内部标签的悬浮字体颜色
+            //currentPage: 1,             //当前页
+            //centerBgColor: "#b6ff00",   //中间页数按钮的底色
+            //centerHoverBgColor: "",    //中间鼠标悬浮的的底色
+            //otherBgColor: "#b6ff00",    //两边按钮的底色
+            //otherHoverBgColor: "",     //两边鼠标悬浮的背景颜色
+            //jumpBgColor: "#b6ff00",           //跳转a标签按钮的背景色
+            //jumpHoverBgColor: "",       //跳转a标签背景的悬浮背景色
+            //currentBgColor: "#73ccfd",      //当前选中页的底色
+            //centerBorder: "1px solid green",           //中间按钮的边框
+            //otherBorder: "1px solid green",          //两边按钮的边框
+            //centerHoverBorder: "",               //中间按钮悬浮边框
+            //otherHoverBorder: "",                 //两边按钮悬浮边框
+            //jumpBorder: "1px solid green",            //跳转内标签的边框
+            //jumpHoverBorder: "",                   //跳转内标签的悬浮边框
+            //currentBorder: "",          //当前选中页的边框
+            //showJump: false,               //是否显示跳转功能
+            //transition: "initial",       //效果延迟
+            //gapWidth: 2,      //间隙宽度
+            //cormer: 0,   //按钮的边角曲度
+            //beforeBtnString: "上一页",  //上一页按钮内显示的文字
+            //nextBtnString: "下一页",   //下一页按钮内显示的文字
+            //firstBtnString: "首页",   //首页按钮内显示的内容
+            //lastBtnString: "尾页",   //尾页按钮内显示的内容
+            //jumpBtnString: "跳转",    //跳转按钮的显示内容
+            //submitStyle: "ajax",   //点击按钮后的提交方式，有a标签的href提交和ajax异步提交两种选择
+            //submitType: "post",      //注明是通过get方式访问还是post方式访问
+            //idParameter: "pageId",               //传到后台的当前页的id的参数名，这个传值会自动添加在href或ajax的url末尾
+            //url: "/Home/List/",               //需要提交的目标控制器，如"/Home/List/"或"/Home/List?name='张三'&password='123456'"
+            //limit: 5000,                       //设置滚动显示方式的极限值，大于则自动切换无滚动模式
+            //animation: true,             //是否是滚动动画方式呈现  false为精简方式呈现   页数大于limit时无论怎么设置自动默认为false
+            //ajaxData: {},                     //ajax方式传值时的附加传值,要传的参数放在这里面,页面参数只要指定idParamemeter就好，会自动添加
+            //dataOperate: function oprate(data) { }         //用于ajax返回的数据的操作,回调函数,data为服务器返回数据
+
+        });
+    </script>
+</body>
+</html>

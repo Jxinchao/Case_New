@@ -1,0 +1,9 @@
+<script type="text/javascript">
+        if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+
+            window.location.href ="mobile.html"; // 如果是苹果机，就打开苹果的页面
+        } else if (/(Android)/i.test(navigator.userAgent)) {
+            //如果是安卓机，就打开安卓页面
+            window.location.href ="mobile.html";
+        }
+</script>

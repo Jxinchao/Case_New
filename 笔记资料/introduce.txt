@@ -1,0 +1,167 @@
+课堂示例：https://github.com/beicai1602/angular.git
+
+安装gitHub ， nodejs
+npm的意思是 node packaged manager，node包管理器 
+bower： 富文本文件，专门下载前端框架的命令工具库
+安装bower： npm install -g bower
+在自己的开发文件夹中
+shift+右键 选择 在此处打开命令窗口 
+在里面就可以使用bower 命令
+
+使用bower安装bootstrap软件：bower install bootstrap 
+出现 bower_components 表示安装成功
+在这个文件夹下有两个文件夹：
+bootstrap 和 jquery 
+其中的 src 是开发者文件夹
+       dist是压缩后的文件夹
+使用bootstrap必须有下面四个文件：
+1、css/bootstrap.min.css
+2、css/bootstrap-theme.min.css
+3、jQuery文件。务必在bootstrap.min.js 之前引入
+   jquery/1.11.1/jquery.min.js
+4、最新的 Bootstrap 核心 JavaScript 文件
+   bootstrap/3.3.0/js/bootstrap.min.js
+
+使用bower 下载angular-ui-router 
+使用命令：bower install 
+
+安装grunt：   // grunt 必须依赖于node环境，所以必须安装node
+在bower_components 里面按shift 点击右键 
+选择在此处打开命令窗口 
+使用命令：npm install -g grunt-cli 
+出现 grunt-cli@1.2.0 即安装成功！
+在 文件夹里面 创建package.json文件
+ 再使用命令：npm install grunt --save-dev
+安装成功 回到 文件夹
+
+安装js压缩工具：
+使用命令：npm install grunt-contrib-uglify --save-dev
+回到 bower_components 则安装成功！
+在package.json文件同级　创建Gruntfile.js 文件
+并添加以下内容：
+module.exports = function(grunt) {
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+      },
+      build: {
+        src: 'src/<%= pkg.name %>.js',
+        dest: 'build/<%= pkg.name %>.min.js'
+      }
+    }
+  });
+
+  // 加载包含 "uglify" 任务的插件。
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // 默认被执行的任务列表。
+  grunt.registerTask('default', ['uglify']);
+
+};
+
+创建文件夹 src 和自己存放文件的文件夹名 ，
+在此处命令行中使用 grunt命令 即可压缩src中的文件并把
+其放到build中 （注意：src中的文件名字必须使用package中name的值）
+
+
+安装css压缩工具：
+在bower-componets使用命令:
+npm install grunt-contrib-cssmin --save-dev
+回到文件夹 安装成功
+在Gruntfile.js 文件中的grunt.initConfig中加入
+cssmin: {
+       options: {
+           shorthandCompacting: false,
+            roundingPrecision: -1
+       },
+       target: {
+            files: {
+                 'css/myfirst.min.css':"src/myfirst.css"
+             }
+        }
+    }
+再在大函数中加入
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+并修改  grunt.registerTask('default', ['uglify','cssmin']);
+
+安装gulp： 与grunt作用相同，可全局安装可当前目录安装
+全局安装：npm install -g gulp
+当前目录下安装：npm install gulp --save-dev 
+压缩CSS： 安装cssmin的命令是：npm install gulp-cssmin
+创建 gulpfile.js  里面内容：
+ var gulp=require("gulp")
+ var cssmin=require("gulp-cssmin")
+
+
+
+
+
+
+安装yeoman：
+使用命令： npm install -g yo
+
+在任意地方新建一个文件夹，进去之后
+打开此文件夹的命令行工具
+输入  yo                    // 注意：安装过一次之后就可以直接创建文件夹 运行yo
+输入  n
+选择 install a generator
+输入 angular
+选择 angular 回车
+出现 run a generator 下面有 angular 即安装完毕
+问是否替换 grunt N
+Sass 输入No
+Bootstrap 输入 Yes
+
+使用yoeman加载编译less的功能：npm install grunt-contrib-less --save-dev
+安装监听： npm install grunt-contrib-watch --save-dev
+
+
+
+
+
+打开 yeoman 文件夹 里面装了很多东西
+输入 npm install 成功执行的话会创建node_module 文件夹
+再输入 bower install 成功的话会创建 bower_comment 文件夹
+再输入 grunt server   会打开yeoman网页
+ctrl Z 停止当前监视
+再输入 grunt build 进行打包压缩
+会出现dist 文件夹 ， 所有内容全部压缩在内
+
+
+自动编译less
+1.安装node: npm i grunt --save-dev
+
+在initconfig函数里面添加任务
+
+less: {
+        compile: {
+             files: {
+                  'app/styles/style.css':'app/styles/style.less'
+              }
+         }
+    },
+
+2.安装less
+npm install grunt-contrib-less --save-dev
+
+3.安装watch 进行监听
+npm install grunt-contrib-watch --save-dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

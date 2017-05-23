@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div class="header" id="home">
+        <nav class="navbar navbar-default" style="padding:0.5em 0em 2em;">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"><h1>Login</h1><br><span>Traveling</span></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+                        <li><a href="login.html"><span data-hover="Home">Home</span></a></li>
+                        <li><a href="chart.html"><span data-hover="chart">chart</span></a></li>
+                        <!-- <li><a href="detail.html"><span data-hover="detail">detail</span></a></li> -->
+                        <li><a href="list.html"><span data-hover="list">list</span></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.navbar-collapse -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- /container-fluid -->
+        </nav>
+        <div class="header-banner">
+            <!-- Top Navigation -->
+            <div class="container page-seperator">
+                <section class="color bgi">
+                    <div class="container">
+                        <div class="banneer-text">
+                            <h3>Natural redirects here.</h3>
+                            <h4>See Nature disambiguation !</h4>
+
+                            <button type="button" class="btn btn-warning but1">Exceptional</button>
+                            <p>Lorem ipsum simply a dummy text to format fonts and paragraphs,consectetuer adipiscing elit, sed diam </p>
+                        </div>
+                        <div class="banner-forms">
+                            <br>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">Username</label>
+                                <input type="text" placeholder="用户名..." class="form-username form-control" id="form-username">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">Password</label>
+                                <input type="password" placeholder="密码..." class="form-password form-control" id="form-password">
+                            </div>
+                            <br>
+                            <a href="register.html">未注册？请点击</a>
+                            <button type="submit" class="btn btn-info mrgn-can" style="bottom:20.5em" id="btn2">登录</button>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <h2 style="color:#fff;font-size:40px;text-align:left;text-indent:60px;line-height:150px;">后台管理系统</h2>
+		<div class="col-sm-6 col-sm-offset-3 form-box" style="margin-top:20px;">
+    	<div class="form-top">
+    		<div class="form-top-left">
+        		<h1>登录</h1>
+    		</div>
+        </div>
+        <div class="form-bottom">
+           
+            	<div class="form-group">
+            		<label class="sr-only" for="form-username">Username</label>
+                	<input type="text" placeholder="用户名..." class="form-username form-control" id="form-username">
+                </div>
+                <div class="form-group">
+                	<label class="sr-only" for="form-password">Password</label>
+                	<input type="password" placeholder="密码..." class="form-password form-control" id="form-password">
+                </div>
+                <button style="width:285px;" type="submit" class="btn" id="btn2">登录</button>
+                <button style="width:285px;" type="submit" class="btn" id="btn1">注册</button>
+        </div>
+    	</div> -->
+
+    <script type="text/javascript">
+        $('#btn1').click(function () {
+            location.href = 'register.html'
+        })
+        if (sessionStorage.name) {
+            $('#form-username').val(sessionStorage.name)
+        }
+
+
+        $('#btn2').click(function () {
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost:8888/login/dl',
+                data: {
+                    username: $('#form-username').val(),
+                    password: $('#form-password').val()
+                },
+                success: function (e) {
+                    if (e.flag == 1) {
+                        alert('success');
+                        sessionStorage.sor = $("#uname").val();
+                        location.href='list.html';
+                    } else if (e.flag == 2) {
+                        alert('uname error')
+                    } else if (e.flag == 3) {
+                        alert('pwd error')
+                    }
+                },
+                error: function () {
+                    alert('error....');
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

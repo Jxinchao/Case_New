@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default" style="padding:0.5em 0em 2em;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><h1>Detail</h1><br><span>Traveling</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+                    <li><a href="login.html"><span data-hover="Home">Home</span></a></li>
+                    <li><a href="chart.html"><span data-hover="chart">chart</span></a></li>
+                    <!-- <li><a href="detail.html"><span data-hover="detail">detail</span></a></li> -->
+                    <li><a href="list.html" ><span data-hover="list">list</span></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- /container-fluid -->
+    </nav>
+<section class="bgi banner5"><h2>Detail</h2> </section>
+	<div class="advn-one">
+						
+					</div>
+	<div id="span"></div>
+	
+	<script type="text/javascript">
+
+		if(sessionStorage.sor){
+			var str = window.location.search.substring(4);
+			$.ajax({
+				type:'get',
+				url:'http://localhost:8888/item/detail',
+				data:{
+					id:localStorage.bb
+				},
+				success:function(e){
+					$('#span').append('<div class="ad-mian"><div class="ad-left"><p id="p1">ID:'+e.id+'</p></div><div class="ad-right"><h4>'+e.name+'</h4></p><p>职业：'+e.tel+'</p><p>职业：'+e.information+'</p></div></div><div class="clearfix"> </div></div>')
+					///console.log(e)
+				},error:function(){
+					alert('error')
+				}
+			})
+		}else{
+			alert('请先登录')
+			window.location.href ='login.html'
+		}
+		
+
+	</script>
+</body>
+</html>

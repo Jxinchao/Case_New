@@ -1,0 +1,107 @@
+新建文件夹  →  svn检出  →  地址，目录  →  用户名，密码  → 
+新建： 新建一个txt  →  主文件夹，右键svn提交，选择新建的文件，确定
+删除：直接删除  →  右键svn提交
+退出账户：右键TortoiseSVN  →  设置  →  以保存数据  →  清除全部
+
+
+http://www.cnblogs.com/armyfai/p/3985660.html    //SVN教材
+
+版本控制工具
+
+如何与银联卡对应？
+	1.个人的代码   -- 口袋里的钱
+	2.版本控制工具中的代码  -- 银联卡里的钱
+	3.版本控制工具的客户端  -- 银联卡   存钱卡
+	4.版本控制工具的服务端  -- 银联系统  
+
+版本控制工具 --SVN
+	
+	·SVN -- 客户端：TortoiseSVN
+	·SVN -- 服务端：VisualSVN
+
+下载地址：
+
+	·TortoiseSVN：http://tortoisesvn.net/downloads.html
+	·VisualSVN：http://www.visualsvn.com/server/download
+
+	
+先安装服务端：
+	
+	visualSVN：
+		
+		1.next
+		2.I can
+		3.选择第一个VisualSVN   要不要装客户端工具，如果选择了第二个Administration就没有可视化界面了  Add对勾也不要去掉。去掉以后服务端的一些命令指令也就不好用了。
+		4.选择标准版(Standard Edition)。如果选择企业版(Enterprise Edition)就要钱了
+		5.第一个路径是安装的位置，第二个是仓库位置。勾选的安全连接 （勤备份） 下面是端口(服务端的话就是服务端的端口号)
+
+
+
+	https://USER-20160130AX/svn/mywork
+https://USER-20160130AX/svn/1603/
+
+   Repositories  项目
+   User  添加成员
+   Groups  分组
+   Properties  设置权限  第一个是没有权限 第二个是读 第三个读写   
+
+   copy URL to ...  //复制地址   
+
+
+   1.右键选择 SVN checkout  
+   1.checkout项目文件。
+
+    新建或者进入目录下(比如qianduan1)，右键 --> Svn Checkout -->
+
+   2.其中URL我可以在SVN服务器获取到，我在D/软件位置/svn/svnk下右键新建文件
+
+   .svn这个隐藏目录记录着两项关键信息：工作文件的基准版本和一个本地副本最后更新的时间戳，千万不要手动修改或者删除这个.svn隐藏目录和里面的文件!!,否则将会导致你本地的工作拷贝(静态试图)被破坏，无法再进行操作。
+
+
+
+提交之前的先更新
+
+
+
+1)   TortoiseSVN图标介绍
+
+--->>   一个新检出的工作复本使用绿色的对勾重载，表示Subversion状态正常。
+--->>   在你开始编辑一个文件之后，状态就变成了已修改，而图标重载已变成了红色感叹号。通过这种方式，你可以很容易地看出那些文件从你上次更新工作复本被修改过，且需要提交。
+
+--->>   如果在提交的过程中出现了冲突，图标就会变成了黄色感叹号。
+
+--->>   加号告诉你有一个文件或者目录已经被计划加入到版本控制中。
+
+
+问题：
+	
+	在.svn的上级目录，右键tortoiseSVN -->settings  不让A的权限进入   clear All --> ok
+
+	在tortoiseSVN --> show log  查看历史记录
+
+	恢复以前代码： 选中要恢复的那一条选项--->右键 ---> Revert to this revision  --> Revert 
+
+	commit 上面的空白处做注释
+
+	叹号冲突  恢复谁的代码的时候  右键tortoiseSVN  --->  revert
+	
+
+
+操作：
+	
+	 1、创建仓库   在repositories 右键 creat 
+	
+	 2、选择默认的 点击下一步，输入要填写的仓库名字 点击下一步
+
+	 3、Empty Repository（创建空的仓库）
+	    Sigle-project repository (默认的会创建三个空的文件夹)
+	    这里我创建一个空的仓库  点击 下一步
+
+	 4、设置权限选择All Subversion users have Read (所有的用户进来以后可以对所有代码进行读写改变等功能)
+
+
+	5、新增用户： users 右键  创建两个用户名 
+
+	6、在页面右键 SVN checkout 
+
+	7、第一个为服务器端的地址 (如果不是在本地的话  是在不同的局域网或者是公网的话需要输入IP地址和端口号   IP地址是服务端所在的那一台机子上的地址  如果服务器端和客户端都是在同一台机子上的时候可以写127.0.0.1:440/svn/test  也可以是本台机子的名字)

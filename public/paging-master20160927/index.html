@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>分页</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="src/paging.css">
+	</head>
+	<body>
+		<div id="pageTool">
+		</div>
+		<script type="text/javascript" src="src/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="src/query.js"></script>
+		<script type="text/javascript" src="src/paging.js"></script>
+		<script>
+		
+		// $('#pageToolbar').Paging({pagesize:10,count:85,toolbar:true});
+
+	var curPage = 1; //当前页面
+	var total,pageSize,totalPage;
+	function ajaxPage(page){
+		$.ajax({
+			type:'get',
+			url:'http://localhost:8888/up/page',
+			data:{
+				pageNum:page
+			},
+			success:function(e){
+				// console.log(e)
+				var html = '';
+				total = e.total; //总计数
+				pageSize = e.pageSize; //每页显示条数
+				curPage = page; //当前页
+				totalPage = e.totalPage;//总页数;
+				 $('#pageTool').empty();   //清空
+				for(var i = 0;i<e.list.length;i++){
+					html += '<b>哈哈'+e.list[i].uname+'</b><br>';
+					// console.log(e[i].id)
+				};
+				$('#pageTool').append(html);
+
+			},
+			complete:function(){
+				$('#pageTool').Paging({pagesize:pageSize,count:total,callback:function(page,a,b){
+					console.log(page,a,b)
+					ajaxPage(page)
+					// fn(page)
+					// return false;
+				}});
+			},
+			error:function(){
+				alert('error....')
+			}
+		})
+
+		
+	}
+	ajaxPage(1)
+	
+	function fn(page){
+        if(page){
+            ajaxPage(page);
+        }
+    }
+		</script>
+	</body>
+</html>

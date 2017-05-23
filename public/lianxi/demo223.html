@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	
+	<div id="div" style="width:500px;height:300px;margin:0 auto;"></div>
+
+	<script type="text/javascript">
+	var onee=twoo=threee=fourr=0;
+		 $.ajax({
+          type : "get",
+          // async : false, //同步执行
+          url : "http://localhost:8888/item/list",
+          data : {},
+          // dataType : "json", //返回数据形式为json
+          success : function(result) {
+            
+            for(var i=0;i<result.length;i++){
+              if(result[i].tel<=20){
+                 onee++;
+              }
+              else if(result[i].tel>20&&result[i].tel<=40){
+                 twoo++;
+              }
+              else if(result[i].tel>=40&&result[i].tel<=50){
+                 threee++;
+              }
+              else if(result[i].tel>50){
+                 fourr++;
+              }
+            }
+            var chart = echarts.init(document.getElementById("div"));
+        var option = {
+          roseType:'angle',   //数据越大圆饼越大  南丁格尔图
+           title : {
+               text: '数据来源',
+               x:'center'
+           },
+           tooltip : {   //数据提醒
+               trigger: 'item',
+               formatter: "{a} <br/>{b} : {c} ({d}%)"
+           },
+           legend: {
+               orient: 'horizontal',  //vertical  提示方向
+               left: 'left',
+               data:['20岁','21-40岁','41-50岁','51-60岁']
+           },
+           series : [
+               {
+                   name: '年龄',
+                   selectedMode:'single',  //圆饼甩出去
+                   type: 'pie',
+                   radius : '50%',  //圆的大小
+                   center: ['50%', '50%'],  //圆的位置
+                   data:[
+                       {value:onee,name:"20岁"},
+                       {value:twoo,name:"21-40岁"},
+                       {value:threee,name:"41-50岁"},
+                       {value:fourr,name:"51-60岁"}
+                   ],
+                    itemStyle: {
+                        // normal:{
+                        //     label:{
+                        //          show:true,
+                        //          formatter: '{b} : {c} \n ({d}%)'
+                        //     },
+                        //     labelLine:{
+                        //         show:true
+                        //     }
+                        // },
+                        emphasis: {
+                           shadowBlur: 50,  //阴影的大小
+                           shadowOffsetX: 10,
+                           shadowColor: 'rgba(0, 249, 788, 0.5)'
+                        }
+                    }
+               }
+           ],
+           color: ['lime','green','blue','red']
+        };
+         chart.setOption(option)
+      },
+      error : function(errorMsg) {
+          alert("sorry，请求数据失败");
+          // chart.hideLoading();
+      }
+     })
+
+
+
+
+
+
+        
+ 
+    
+	</script>
+</body>
+</html>

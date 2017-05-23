@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	用户名：<input type="text" class="uname" />
+	<br><br>
+	密码：<input type="password" class="pwd" />
+	<br><br>
+	性别：女:<input type="radio" name="sex" value="1"/>
+		  男:<input type="radio" name="sex" value="0"/>
+	<br><br>
+	手机：  <input type="text" class="tel">
+	<br><br>
+	爱好：	篮球<input type="checkbox" value="h" name="b">
+		  	拳击<input type="checkbox" value="b" name="b">
+			跆拳道<input type="checkbox" value="c" name="b">
+			跑步<input type="checkbox" value="a" name="b">
+			乒乓球<input type="checkbox" value="d" name="b">
+			足球<input type="checkbox" value="e" name="b">
+			Web前端<input type="checkbox" value="f" name="b">
+			音乐<input type="checkbox" value="g" name="b">
+	<br><br>
+
+	技能：<select name="city" class="city">
+			<option value="bj">搏击</option>
+			<option value="qj">拳击</option>
+			<option value="lq">篮球</option>
+			<option value="cg">唱歌</option>
+			<option value="tw">跳舞</option>
+		</select>
+	<button class="btn">注册</button>
+
+	<script  type="text/javascript" charset="utf-8">
+		$('.btn').click(function(){
+			var hobby = "";
+			$("input[name='b']:checked").each(function(){
+				hobby+=($(this).val())
+			})	
+
+			console.log($(".city").val())
+
+			console.log($("input[name='sex']:checked").val())
+			console.log(hobby)
+			$.ajax({
+				type:'post',
+				url:'http://localhost:8888/regist/regist',
+				data:{
+					username:$('.uname').val(),
+					password:$('.pwd').val(),
+					sex:$("input[name='sex']:checked").val(),
+					tel:$(".tel").val(),
+					hobby:hobby
+				},
+				success:function(e){
+					if(e.flag == 1){
+						alert('success')
+					}else if(e.flag == 2){
+						alert('用户名已存在')
+					}else{
+						alert('error')
+					}
+				},
+				error:function(){
+					alert('error.........')
+				}
+			})
+		})
+
+	</script>
+</body>
+</html>

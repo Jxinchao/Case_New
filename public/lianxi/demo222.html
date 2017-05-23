@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<div id="main" style="width:800px;height:500px;margin:80px auto;"></div>
+    <div id="main1" style="width:800px;height:500px;margin:60px auto;""></div>
+	<script> 
+    show();
+    // hide();
+
+    function hide(one,two,three,four){
+        var chart = echarts.init(document.getElementById("main1"));
+        var option = {
+          roseType:'angle',   //数据越大圆饼越大  南丁格尔图
+           title : {
+               text: '数据来源',
+               x:'center'
+           },
+           tooltip : {   //数据提醒
+               trigger: 'item',
+               formatter: "{a} <br/>{b} : {c} ({d}%)"
+           },
+           legend: {
+               orient: 'horizontal',  //vertical  提示方向
+               left: 'left',
+               data:['20岁','21-40岁','41-50岁','51-60岁']
+           },
+           series : [
+               {
+                   name: '年龄',
+                   selectedMode:'single',  //圆饼甩出去
+                   type: 'pie',
+                   radius : '50%',  //圆的大小
+                   center: ['50%', '50%'],  //圆的位置
+                   data:[
+                       {value:one.length,name:"20岁"},
+                       {value:two.length,name:"21-40岁"},
+                       {value:three.length,name:"41-50岁"},
+                       {value:four.length,name:"51-60岁"}
+                   ],
+                    itemStyle: {
+                        // normal:{
+                        //     label:{
+                        //          show:true,
+                        //          formatter: '{b} : {c} \n ({d}%)'
+                        //     },
+                        //     labelLine:{
+                        //         show:true
+                        //     }
+                        // },
+                        emphasis: {
+                           shadowBlur: 50,  //阴影的大小
+                           shadowOffsetX: 10,
+                           shadowColor: 'rgba(0, 249, 788, 0.5)'
+                        }
+                    }
+               }
+           ],
+           color: ['lime','green','blue','red']
+        };
+         chart.setOption(option)
+    }
+     $.ajax({
+          type : "get",
+          // async : false, //同步执行
+          url : "http://localhost:8888/item/list",
+          data : {},
+          // dataType : "json", //返回数据形式为json
+          success : function(result) {
+            var onee=[];
+            var twoo=[];
+            var threee=[];
+            var fourr=[];
+            for(var i=0;i<result.length;i++){
+              if(result[i].tel<=20){
+                 onee.push(result[i].tel)
+              }
+              else if(result[i].tel>20&&result[i].tel<=40){
+                 twoo.push(result[i].tel)
+              }
+              else if(result[i].tel>=40&&result[i].tel<=50){
+                 threee.push(result[i].tel)
+              }
+              else if(result[i].tel>50){
+                 fourr.push(result[i].tel)
+              }
+            }
+            hide(onee,twoo,threee,fourr)
+      },
+      error : function(errorMsg) {
+          alert("sorry，请求数据失败");
+          chart.hideLoading();
+      }
+     })
+
+
+
+    function show(){
+        var arr = [];
+        var arr1 = []
+        $.ajax({
+            type:'get',
+            url:'http://localhost:8888/item/list',
+            success:function(e){
+                for(var i = 0;i<e.length;i++){
+                   arr.push(e[i].name);
+                   arr1.push(e[i].tel)
+                }
+                chart.setOption(option);
+            },
+            error:function(){
+                alert('error....')
+            }
+        })      
+        var chart = echarts.init(document.getElementById('main'));//初始化数据	
+        var option = {
+                    title: {
+                        text: '姓名 年龄提示'
+                    },
+                    tooltip: {
+                        trigger:'axis',  //悬停有线
+                        //formatter:'he:{b}:{c}岁'  //移入加入提示
+                    },   //鼠标提示信息 悬停信息
+                    legend: {
+                        data: []
+                    },
+                    xAxis: {                        //X轴坐标轴
+                        name: 'X轴 姓名',                 //坐标轴的名称
+                        nameLocation: 'middle',     //坐标轴名称的位置 / end  /start
+                        nameTextStyle: {            //--样式
+                            color: 'pink',    //底部字体的颜色
+                            fontSize: 24    //底部字体的大小
+                        },
+                        position: 'bottom',         //可以改变他在上在下
+                        data: arr
+
+                    },
+                    yAxis: {},                      //Y轴坐标轴 同上
+                    series: [{                      //这就是那个柱子         这个就是重点  别的都是装饰
+                        name: '年龄',                 //上面那个标识  标识红色的柱子代表什么数据
+                        type: 'bar',
+                        data: arr1 //这就是柱子那个数据
+                    }],
+                    color: ["lime"]
+            };
+
+                // 使用刚指定的配置项和数据显示图表。
+        }
+	</script>
+</body>
+</html>

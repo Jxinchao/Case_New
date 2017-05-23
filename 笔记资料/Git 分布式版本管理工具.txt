@@ -1,0 +1,129 @@
+				git 笔记
+		----------------------------------
+cd d:
+cd 互联网世界
+cd 前端大纲
+mdkir 版本库
+cd 版本库
+pwd
+git init
+
+
+mkdir 版本库  	//新建文件夹
+cd 版本库    	//进入文件夹
+pwd     	//显示当前目录
+git init  	//把目录生成git版本管理仓库（初始化版本库）
+git  		//隐藏文件夹不能动
+
+
+git add Am.txt  //添加文件到暂时存放区
+git add .  	//添加整个到暂时存放区
+git commit -m '第一次提交'  git commit 确定提交
+
+cat Am.txt 	查看文件内容
+git status   	查看当前版本库状态
+git diff   	第二次修改添加
+git log 	查看版本记录
+
+版本回退
+git reset --hard HEAD^    版本退一次
+git reset --hard HEAD~100 退100
+
+git config  --global  user.name   '王爱民'     		global 全局     起个名字
+git config  --global  user.email   '2010365228qq.com'   邮箱
+
+
+
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 ~/Desktop
+$ cd d:
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d
+$ cd 互联网世界
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界
+$ cd 前端大纲
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲
+$ cd 版本库
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ pwd
+/d/互联网世界/前端大纲/版本库
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ git init
+Reinitialized existing Git repository in D:/互联网世界/前端大纲/版本库/.git/
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ cat Am.txt
+王爱民
+
+第二个王爱民
+
+第三个王爱民
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ ^C
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ cat Am.txt
+王爱民
+
+第二个王爱民
+
+第三个王爱民
+
+第4个王爱民
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Am.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ git log
+commit 77986343ea96eda8094585fcbeb9571ec5068227
+Author: 王爱民 <2010365228@qq.com>
+Date:   Tue Jan 10 09:51:19 2017 +0800
+
+    第一次提交
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ git diff
+diff --git a/Am.txt b/Am.txt
+index 04cc8d6..4bf409e 100644
+--- a/Am.txt
++++ b/Am.txt
+@@ -2,4 +2,8 @@
+
+ 第二个王爱民
+
+-第三个王爱民
+\ No newline at end of file
++第三个王爱民
++
++第4个王爱民
++
++第5个王爱民
+\ No newline at end of file
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ git add Am.txt
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ git commit  -m  '第一次提交
+>
+> ^C
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$ git commit -m '第5次提交'
+[master 1cac745] 第5次提交
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+王爱民@LAPTOP-N8FBQCL4 MINGW64 /d/互联网世界/前端大纲/版本库 (master)
+$

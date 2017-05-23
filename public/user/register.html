@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <style type="text/css">
+        span {
+            font-size: 12px;
+            color: #999;
+        }
+    </style> 
+</head>
+
+<body>
+    <div class="header" id="home">
+        <nav class="navbar navbar-default" style="padding:0.5em 0em 2em;">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"><h1>register</h1><br><span>Traveling</span></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+                        <li><a href="login.html"><span data-hover="Home">Home</span></a></li>
+                        <li><a href="chart.html"><span data-hover="chart">chart</span></a></li>
+                        <!-- <li><a href="detail.html"><span data-hover="detail">detail</span></a></li> -->
+                        <li><a href="list.html"><span data-hover="list">list</span></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- /.navbar-collapse -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- /container-fluid -->
+        </nav>
+        <div class="header-banner">
+            <!-- Top Navigation -->
+            <div class="container page-seperator">
+                <section class="color bgi">
+                    <div class="container">
+                        <div class="banneer-text">
+                            <h3>Natural redirects here.</h3>
+                            <h4>See Nature disambiguation !</h4>
+
+                            <button type="button" class="btn btn-warning but1">Exceptional</button>
+                            <p>Lorem ipsum simply a dummy text to format fonts and paragraphs,consectetuer adipiscing elit, sed diam </p>
+                        </div>
+                        <div class="banner-forms">
+
+                            <div class="form-bottom">
+                                <input type="text" id="uname" placeholder="用户名..." class="form-username form-control" oninput="unameCheck()">
+                                <span id="unam" style="text-align:left;">4-18为字符，以字母开头</span>
+                                <input type="password" id="pwd" placeholder="密码..." class="form-username form-control" oninput="pwdCheck()"> <span id="pw">8-10位数字</span>
+                                <input type="text" id="eml" placeholder="邮箱..." class="form-username form-control" oninput="emlCheck()"> <span id="em">888@qq.com</span>
+                                <input type="text" id="tel" placeholder="手机号..." class="form-username form-control" oninput="telCheck()"> <span id="te">手机号11位，且为纯数字</span>
+
+                                <br>
+                                <span style="display: block;margin-right: 80px;">性 别 ：女：<input type="radio" name="sex" value="1"/>
+								 					  男：<input type="radio" name="sex" value="0"/></span>
+                                <br> 爱 好： 篮球
+                                <input type="checkbox" value="h" name="b"> 拳击
+                                <input type="checkbox" value="b" name="b"> 跆拳道
+                                <input type="checkbox" value="c" name="b">
+                                <br>
+                                <br> 技 能：
+                                <select name="city" class="city">
+                                    <option>请选择</option>}
+                                    <option value="bj">搏击</option>
+                                    <option value="qj">拳击</option>
+                                    <option value="lq">篮球</option>
+                                    <option value="cg">唱歌</option>
+                                    <option value="tw">跳舞</option>
+                                </select>
+                                <a href="login.html" style="">点击登录</a>
+                                <br>
+
+                                <button type="submit" class="btn btn-info mrgn-can" style="bottom:9.5em">注册</button>
+                                <!-- <button style="color:#999;" type="submit" class="btn"></button> -->
+                            </div>
+
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-6 col-sm-offset-3 form-box" style="margin-top:50px;">
+		<div class="form-top">
+    		<div class="form-top-left">
+        		<h1>注册</h1>
+    		</div>
+        </div>
+        <div class="form-bottom">
+		<input type="text" id="uname"  placeholder="用户名..." class="form-username form-control" oninput="unameCheck()"> <span id="unam">4-18为字符，以字母开头</span>
+		<input type="password" id="pwd"  placeholder="密码..." class="form-username form-control" oninput="pwdCheck()"> <span id="pw">8-10位数字</span>
+		<input type="text" id="eml"  placeholder="邮箱..." class="form-username form-control"> <span id="em" oninput="emlCheck()">888@qq.com</span>
+		<input type="text" id="tel"  placeholder="手机号..." class="form-username form-control" oninput="telCheck()"> <span id="te">手机号11位，且为纯数字</span>
+		<br>
+		<b>性 &nbsp; 别 ：</b>女：<input type="radio" name="sex" value="1"/>
+		 					  男：<input type="radio" name="sex" value="0"/><br>
+		<b>爱 &nbsp; 好：</b>	篮球&nbsp;<input type="checkbox" value="h" name="b">
+							  	拳击&nbsp;<input type="checkbox" value="b" name="b">&nbsp;
+								跆拳道&nbsp;<input type="checkbox" value="c" name="b">&nbsp;
+								Web前端&nbsp;<input type="checkbox" value="f" name="b">&nbsp;
+								<br>
+		<b>技 &nbsp; 能：</b><select name="city" class="city">
+								<option>请选择</option>}
+								<option value="bj">搏击</option>
+								<option value="qj">拳击</option>
+								<option value="lq">篮球</option>
+								<option value="cg">唱歌</option>
+								<option value="tw">跳舞</option>
+							</select>
+				<a href="login.html" style="position:relative;right:-260px;">已有账号？请点击这里登录</a>
+		<br>
+		 <button style="width:600px;color:#999;" type="submit" class="btn">注册</button>
+		</div>
+	</div>
+ -->
+    <script type="text/javascript">
+        $('.btn').click(function () {
+            unameCheck(), pwdCheck(), emlCheck(), telCheck()
+            var hobby = "";
+            $("input[name='b']:checked").each(function () {
+                    hobby += ($(this).val())
+                })
+                // console.log($(".city").val())
+                // console.log($("input[name='sex']:checked").val())
+                // console.log(hobby)
+            if (unameCheck() && pwdCheck() && emlCheck() && telCheck()) {
+                $.ajax({
+                    type: 'post',
+                    url: 'http://localhost:8888/login/regist',
+                    data: {
+                        username: $('#uname').val(),
+                        password: $('#pwd').val(),
+                        sex: $("input[name='sex']:checked").val(),
+                        tel: $("#tel").val(),
+                        hobby: hobby, //多选
+                        eml: $('#eml').val(),
+                        skill: $(".city").val()
+                    },
+                    success: function (e) {
+                        if (e.flag == 1) {
+                            alert('success');
+                            sessionStorage.name = $('#uname').val();
+                            location.href = 'login.html'
+                        } else if (e.flag == 2) {
+                            alert('用户名已存在')
+                        } else {
+                            alert('error')
+                        }
+                    },
+                    error: function () {
+                        alert('error.........')
+                    }
+                })
+            }
+        })
+
+        function unameCheck() {
+            var UseN = document.getElementById("uname").value; //获取输入框的值
+            var PromU = document.getElementById("unam"); //获取提示栏
+            var regUseN = /^[A-z][A-z0-9]{3,17}$/;
+            /**解释：
+             * ^[A-z]  以字母开头
+             * [A-z0-9] 后面最少4位字母或数字，最多17个，且以此为结尾
+             **/
+            var isUseN = regUseN.test(UseN);
+            if (UseN == "") { //判断用户名不为空
+                PromU.innerHTML = "用户名不能为空";
+                PromU.style.color = 'red';
+                return false;
+            }
+            if (isUseN) {
+                PromU.innerHTML = "输入正确";
+                PromU.style.color = 'green';
+                return true;
+            }
+
+            if (!isUseN) {
+                PromU.innerHTML = "请输入正确的用户名";
+                PromU.style.color = 'red';
+                return false;
+            }
+        }
+        //邮箱判断
+        function emlCheck() {
+            var Em = document.getElementById("eml").value; //获取E-mail输入框值
+            var PromEm = document.getElementById("em"); //获取提示栏
+            var regEm = /^[a-zA-Z0-9_-]{1,}@[a-zA-Z0-9_-]{1,}(\.[a-zA-Z]{2,}){1,2}$/;
+            /**解释
+             * ^[a-zA-Z0-9_-]{1,}   开头可以是字母、数字或“_-”，且1次以上
+             * @[a-zA-Z0-9_-]{1,}   接着是“@”，“@”后是可以是字母、数字或“_-”，且字母、数字或“_-”要1次以上
+             * (\.[a-zA-Z]{2,})     接着后面应该是“.”，“.”后应为字母，且字母需2次以上
+             * {1,2}                像上面这种“.”后面是字母的，最少1次 ，最多只能2次
+             **/
+            var isEm = regEm.test(Em);
+            if (isEm == false) {
+                PromEm.innerHTML = "您输入的E-mail地址不合法";
+                PromEm.style.color = 'red';
+                return false;
+            }
+            if (isEm) {
+                PromEm.innerHTML = "输入正确";
+                PromEm.style.color = 'green';
+                return true;
+            }
+        }
+        //手机号
+        function telCheck() {
+            var Mobile = document.getElementById("tel").value; //获取输入框的值
+            var PromM = document.getElementById("te"); //获取提示栏
+            if (Mobile == "") { //判断确认密码不为空
+                PromM.innerHTML = "手机号码不能为空"
+                PromM.style.color = 'red';
+                return false;
+            }
+            if (Mobile.length != 11) { //首先判断其必须为11位
+                PromM.innerHTML = "请输入11位手机号";
+                PromM.style.color = 'red';
+                return false
+            }
+            /**分析：
+              * 手机号码:
+              * 13[0-9], 14[5,7], 15[0, 1, 2, 3, 5, 6, 7, 8, 9], 17[0, 1, 6, 7, 8], 18[0-9]
+              * 移动号段: 134,135,136,137,138,139,147,150,151,152,157,158,159,170,178,182,183,184,187,188
+              * 联通号段: 130,131,132,145,152,155,156,170,171,176,185,186
+              * 电信号段: 133,134,153,170,177,180,181,189
+              分析是在度娘里搜的，随便一搜就出来了很多了，这是2016年最新的
+             **/
+
+            var regMobile = /^1(3[0-9]|4[57]|5[0-35-9]|7[01678]|8[0-9])\d{8}$/;
+            /**解释：
+             * ^1         开头为1
+             * 3[0-9]     第二位为3，第三位为0-9中的任意数字
+             * |4[57]     或第二位为4，第三位为5或7
+             * |5[0-35-9] 或第二位为5，第三位为0-3 5-9中的任意数字
+             * |7[01678]  或第二位为7，第三位为[...]中的任意数字
+             * |8[0-9]    或第二位为8，第三位为0-9中的任意数字
+             * \d{8}$     后8为纯数字
+             **/
+            var isMobile = regMobile.test(Mobile);
+            if (isMobile == false) {
+                PromM.innerHTML = "请输入正确的手机号";
+                PromM.style.color = 'red';
+                return false;
+            }
+            if (isMobile) {
+                PromM.innerHTML = "输入正确";
+                PromM.style.color = 'green';
+                return true;
+            }
+        }
+        //密码判断
+        function pwdCheck() {
+            var PW = document.getElementById("pwd").value; //获取密码输入框的值
+            var PrompPW = document.getElementById("pw"); //获取提示栏
+            if (PW == "") { //判断密码不为空
+                PrompPW.innerHTML = "密码不能为空";
+                PrompPW.style.color = 'red';
+                return false;
+            }
+            if (PW.length < 6) { //判断密码长度最少6位
+                PrompPW.innerHTML = "密码最少为6位字符"
+                PrompPW.style.color = 'red';
+                return false;
+            }
+            if (PW.length > 20) { //判断密码长度最多20位
+                PrompPW.innerHTML = "密码最多只可以20位字符";
+                PrompPW.style.color = 'red';
+                return false;
+            }
+            var zm = /[A-z]/g //全局查找字母
+            if (zm.test(PW) == false) {
+                PrompPW.innerHTML = "密码必须包含至少一位字母";
+                PrompPW.style.color = 'red';
+                return false;
+            }
+            var NaN = /\d/g //全局查找数字
+            if (NaN.test(PW) == false) {
+                PrompPW.innerHTML = "密码必须包含至少一位数字";
+                PrompPW.style.color = 'red';
+                return false;
+            }
+            var fh = /[^A-z]\D/g //全局查找非数字与除了字母之外的字符
+            if (fh.test(PW) == false) {
+                PrompPW.innerHTML = "密码必须包含至少一位字符";
+                PrompPW.style.color = 'red';
+                return false;
+            }
+            PrompPW.innerHTML = "输入正确"
+            PrompPW.style.color = 'green';
+            return true;
+        }
+    </script>
+</body>
+
+</html>

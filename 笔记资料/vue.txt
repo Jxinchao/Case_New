@@ -1,0 +1,837 @@
+当前最火的MVVM框架
+	
+	vue.js    轻量，简洁，高效
+	
+	数据驱动
+
+	组件化
+
+	核心模块  高仿
+
+	需求分析  脚手架工具 数据mock 架构设计  代码编写 自测 编译打包
+
+代码开发及测试环节
+	
+	1.UI标注
+	2.真实数据演示
+
+代码规范：
+	
+	1.架构设计
+	2.组件抽象
+	3.模块拆分
+	4.代码风格统一
+	5.JS变量命名规范
+	6.css代码规范
+
+功能技术分析：
+	
+	vue-resource 后台数据交互
+	vue-router   路由模块
+	第三方js库better-scroll
+	最大程度组件化
+	html5的localstorage
+	图标字体的使用
+	移动端1像素边框
+	css sticky footer布局
+	flex弹性布局
+
+前置知识：
+	
+	javascript  HTML css vue ES6
+
+学习目标：
+	
+	·掌握VUe.js 在实战中的运用
+	·学会使用vue.js完整地开发移动端App
+	·学会组件化、模块化的开发方式
+	
+学习内容：
+
+	·vue.js	框架介绍
+	·vue-cli脚手架 搭建基本代码框架
+	·vue-router  	官方插件管理路由
+	·vue-resource  Ajax通信
+	·es6 + eslint  eslint:es6代码风格检查工具
+	·Webpack      构建工具
+	·工程化 模块化 组件化
+	·移动端常用开发技巧 --flex弹性布局 --css stickyfooter --炫酷的交互设计
+
+近年来前端开发趋势：
+	
+	旧浏览器逐渐淘汰。移动端需求增加
+	前端交互越来越多。功能越来越复杂
+	架构从传统后台MVC向Rest API + 前端 MV*迁移
+	
+		MVC
+	MV*     MVP
+		MVVM  -->Vue.js  --> angular.js  --> react.js
+
+	MVVM   view->视图 DOM    ViewModel ->通讯 观察者      Model->数据 javascript对象
+
+	MVVM框架 ：
+		
+		·针对具有复杂交互逻辑的前端应用
+		·提供基础的架构抽象
+		·通过Ajax数据持久化。保证前端用户体验
+
+	   好处：局部刷新
+
+什么是Vue.js?
+
+	2014年初步开源   中国开发的
+
+	他是一个轻量级MVVM框架
+	数据驱动 + 组件化的前端开发
+	GitHub超过2万++
+
+选型参考  看社区 对比开源方面的介绍
+
+	对比 Angular Reactor
+	
+	Vue.js更轻量，Gzip后大小只有20K+
+	
+	Vue.js更易上手，学习曲线平稳
+	
+	吸取两家之长，借鉴了 angular 的指令和 react 的组件化
+
+	
+Vue.js 核心思想
+
+	1.数据驱动：DOM是数据的一种自然映射
+	
+	数据响应原理：数据（model）改变驱动视图（view）自动更新
+
+	2.组件化：扩展HTML元素。封装可重用的代码
+	
+	组件设计原则： 
+			
+		·页面上每个独立的可视/可交互区域视为一个组件
+		·每个组件对应一个工程目录。组件所需要的各种资源在这个目录下就近维护
+		·页面不过是组件容器。组件可以嵌套自由组合形成完整的页面
+			
+
+Vue-cli 是Vue的脚手架工具
+	
+	他能够帮助我们完成：目录结构  本地调试  代码部署  热加载  单元测试
+
+安装：
+	node -v   //低版本要升级 4.4.5以上
+	npm install -g vue-cli  //安装vue-cli
+	vue   //看看有没有vue这个命令
+	cd  //到目录下
+	vue init webpack sell  //创建项目
+		name:sell 
+		descri:sell app
+		lint-your code？YES
+		pick on eslint preset:standord
+		setup unit tests with Karma + Mocha? No 
+		setup e2e tests with Nightwatch? NO 
+	
+	cd sell  //进入目录
+	npm install   //安装依赖包
+	cd ..    //回到上一步
+	npm run dev  //跑起来
+	
+
+项目目录介绍：
+	
+	·build       //webpack 配置相关
+	·config      //webpack 配置相关
+	·node_modules   //npm install 安装的依赖代码库
+	·src		//存放项目源码
+	·static	//第三方静态资源 有一个空目录的意思的是文件为空也可提交，提交仓库的时候会忽略空文件夹
+	·.babelrc      //把ES6编译ES5   转换预先安装的一些配置
+	·.edlitorconfig    //编辑器的配置  代码风格
+	·.eslintignore	    //忽略语法检查的目录文件
+	·.eslintrc.js	   //eslint的配置文件
+	·.gitignore	   //仓库忽略掉的文件
+	·index.html	   //入口文件
+	·package.json	   //描述一个项目
+		
+		scripts:是我们可以执行的一个命令
+		dependencies:生产环境依赖
+		devEdpendencies: 编译过程的依赖
+		
+		
+	·README.md	   // 项目描述文件
+	·External Libraries
+
+
+代码运行：
+	index.html    <app></app>
+	main.js   依赖APP.vue    components:{app}
+	APP.vue   
+		<template></template>
+		<script>
+			必须用components:注册 才可以使用hello标签
+			ES6注释必须加空格 规范
+			
+			自动格式化：Command + option + L  Ctrl+Alt+L 代码格式有问题
+			
+			保存代码会自动刷新
+		</script>
+		<style></style>
+
+	components   hello.vue   修改没有改变的时候 重新启动npm run dev 刷新
+
+创建一个组件需要部分
+	
+	app.vue  <template></template> <script></script>  <style></style>
+	
+	在通过js 里面的 export default{  //导出对象
+		data () {
+			return {
+			}
+		}
+	}
+
+	
+	然后在APP.js   先引用  然后用注册
+
+
+
+需求分析
+	
+	头部    内容区     底部     
+
+
+图标字体制作  SVN
+
+	官网 https://icomoon.io/     点击APP  进入页面 点击import Icons   把SVG文件放入
+
+	生成自己的小图标    然后选中  点击右下角 Generate Font
+
+	点击preferences   选择自己要的名字 里面也可以更改一些自己所需要的配置 这里我们选择默认的
+
+	然后点击 Download   解压  我们一般使用里面的 fonts下的文件 和 style.css
+
+
+项目布局开始：
+
+	mock数据连接 （模拟后台数据） 看build里面的 dev-server 里面有写  
+
+	
+1.ES6是没有分号的  如果我们在项目中要写分号且不让他报错的话去 .eslintrc.js 里面配置
+	
+    //注释不报错配置
+    'emi': ['error' , 'always']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+ ~~~~~~~~~~~~   指令开始 与介绍  ~~~~~~~~~~~~~~~~~~
+
+vue 使用 
+	
+1.引入js
+	
+2.vue里面有一个类，我们需要创建一个对象 new Vue({里面的对象为一个{}，键值对的格式 
+			
+里面有两个属性：
+1 el:, 
+2 data:
+
+			el:'',  //声明vue.js管理的边界
+			data:{}
+
+			})
+	
+3.在用户界面view中，通过{{}}形式将data中的数据显示在页面中，在用户界面中，{{}}代码中绑定的data的key,而在页面中显示的是该key的value。
+			vue.js对获取的data与页面上显示的{{}}会产生一种映射关系
+
+			app这个变量会代理vue中data的数据，所以我们访问data中数据的时候，直接用app.name就可以了
+
+			这样，如果我们要实现前后台交互，只要将从后台的得到的数据，放在data中，页面就会自动绑定，这样就实现了双向数据绑定。
+	继承了react 和 angular 的优点
+	和angular类似
+		好处
+			--->  比较容易上手，小巧
+			--->  灵活 ： 简单小巧的核心，渐进式技术栈，足以应付任何规模的应用。
+
+	中文官网 http://cn.vuejs.org/
+	手册地址 http://cn.vuejs.org/api/
+
+	MVC		
+		MVVM
+		MVP
+		MV*
+		MVX
+
+
+  vue 
+	读音 v-u-e
+	view 跟视图的读音一样
+
+	vue 是一套侯建用户界面（view）的MVVM框架。vue.js的核心库值关注视图层，并且非常同意学习，非常容易与其他库或已有的项目整合
+	vue是轻量级一个mvvm(框架/库)
+
+	Vue.js 不支持 IE8 及其以下版本，因为 Vue.js 使用了 IE8 不能模拟的 ECMAScript 5 特性。 Vue.js 支持所有兼容 ECMAScript 5 的浏览器。
+
+	vue.js  的目的
+
+		vue.js 的 产生核心是为了解决如下三个问题
+
+			1.解决数据绑定问题
+			2.vue.js生成的主要目的是为了开发大型单页面应用（SPA：Sing Page Application）
+				angular.js中对PC端支持的比较良好，但是对移动端支持就一般，而vue.js主要支持移动端。也支持ＰＣ端
+			３.他还支持组件化。也就是可以将页面封装成若干个组件，采用积木式编程，这样是页面的复用度达到最高（支持组件化）
+
+	vue.js 特效
+	
+		1.MVVM 模式
+			M:model   业务模型，用处：处理数据，提供数据
+			V:view    用户界面、用户视图
+			VM    视图模型
+
+			业务模型model中的数据发生改变的时候。用户视图view也随之变化。用户视图view改变的时候。业务模型model中的数据也可以发送改变
+
+		2.组件化
+			复用率达到最高
+
+		3.指令系统
+
+			指令，其实就是指vue的 v- 开头的自定义属性，每个不同的属性都有各自不同的意义和功能。
+
+			指令的语法：
+
+				v- 指令名称=“表达式判断或者是业务模型中属性名或者是事件名”
+
+			~~~ v-text
+
+					<div id="demo" v-text="'今年是'+year+'年'+month+'月'+date+'日'+hours+'时'"></div>
+
+					<!-- 双引号代表{{}}是vuejs的限定符号，并非字符串引号，所以里面是字符串的时候，需另加引号  里面的键值对用单引号拼接 -->
+
+					<script type="text/javascript">
+					var app = new Vue({
+						el:'#demo',
+						data:{
+							year:new Date().getFullYear(),
+							month:new Date().getMonth()+1,
+							date:new Date().getDate(),
+							hours:new Date().getHours()
+						}
+					})
+					</script>
+
+			~~~ v-html
+
+				处理元素内部的HTML
+
+					<div id="demo" v-html="a.img"></div>
+
+					<script type="text/javascript">
+					var app = new Vue({
+						el:'#demo',
+						data:{
+							a:{
+								img:'<img src="air.png"/>'
+							}
+						}
+					})
+
+
+			~~~ v-bind 
+
+				作用：v-bind 绑定页面中的元素属性，列如：a的href img的src alt 和title属性
+
+				语法：v-bind:元素的属性名=“data中的属性名”
+
+
+				用v-bind绑定标签属性，后面是参数（标签属性名）
+				<div id="demo">
+					<a v-bind:href="hrefvalue" >
+						<img v-bind:src="source" alt="">
+					</a>
+				</div>
+
+				<script>
+					var app = new Vue({
+						el:'#demo',
+						data:{
+							hrefvalue:'http://www.baidu.com',
+							source:'air.png'
+						}
+					})
+				</script>
+
+				在view模板中，可以简单的使用JS表达式（只能写简单的表达式，复杂的算不出来会报错）
+
+				列如：<div id="demo">
+						<img v-bind:src="'img/'+num+'.png'" alt="">
+						<h1>{{num==1?'绿色箭头':'黑色箭头'}}</h1>
+					</div>
+
+					<script>
+						var app = new Vue({
+							el:'#demo',
+							data:{
+								num:1
+							}
+						})
+					</script>
+
+			~~~ v-show
+
+				作用：通过判断，是否显示该内容，如果值为true，则显示否则就隐藏。
+				语法： v-show="判断表达式"
+				特点：元素会始终渲染在DOM中。只是被设置了display:none;
+
+
+			~~~ v-if
+
+				作用：判断是否加载固定内容，如果为真，则加载，为假时，则不加载。
+				用处：用在权限管理，页面条件加载
+				语法：v-if="判断表达式"
+				特点：控制元素插进来或则删除，而不是隐藏
+
+				v-if与v-show的区别
+					
+					一般来说，v-if有更高的切换消耗，-if安全性更高，而v-show有更多的初始化渲。因此如果需要频繁切换而对安全性五要求，使用v-show。如果在运行时，条件不可能改变，则使用v-if较好。
+
+			~~~ v-else
+
+				v-else 必须紧跟在v-if后面，否则不能被识别，当v-if条件不成立的时候来使用。
+
+			~~~ v-for
+
+				作用：控制HTML元素中的循环，实现语句列表的生成
+				用法：
+					view:
+						v-for="item in 集合"
+
+						item：集合的子项
+						集合：被遍历的集合，通常为数组。
+
+					用途：写在谁上，谁循环。
+
+				<h1>最受欢迎的人</h1>
+				<ul id="demo">
+					<li v-for="(singer,index) in singers">  index为集合的索引可以为任意字母
+						{{singer.num+'---------'+singer.name}}(索引值为{{index}})
+					</li>
+				</ul>
+
+				<script>
+					var app = new Vue({
+						el:'#demo',
+						data:{
+							singers:[
+								{num:1, name:'超超'},
+								{num:2, name:'靳心超'},
+								{num:3, name:'Jane'}
+							]
+						}
+					})
+				</script>
+
+
+			~~~	v-on
+
+				作用：对页面中的时间进行绑定
+				语法：v-on:事件类型=’事件处理函数名‘
+
+
+				用法：
+					在view中，用v-on事件类型=“methods”中的方法名字
+					在vue实例中，在methods中去监听：也就书写methods的该方法。
+
+						缩写：@事件名
+
+					<ul id="demo">
+						<li v-on:click="clickme">单机事件</li>   
+						
+							<!-- click 事件处理类型   clickme 事件处理函数名
+				 -->
+						<li @dblclick="dblclickme">双击事件</li>
+						<li v-on:mouseenter="enterme()">鼠标移入事件</li>  <!-- 小夸号可加不可加  在有传参的时候必须加 -->
+						<li @mouseleave="outme('parameter')">鼠标移出事件</li>
+					</ul>
+
+					<script type="text/javascript">
+						var app = new Vue({
+							el:'#demo',
+							data:{
+
+							},
+							methods:{ 	//methods  中方法的名字
+								clickme:function(){
+									alert(1)
+								},
+								dblclickme:function(){
+									alert('双击事件发生l')
+								},
+								enterme:function(){
+									alert('移上事件')
+								},
+								outme:function(p){
+									console.log('离开事件',p)
+								}
+							}
+						})
+					</script>
+
+		~~~ v-model
+
+			作用：接收用户输入的一些数据，直接就可以将这些数据连在到data属性上，这样就产生了双向数据绑定（当业务模型中的数据发送变化是，用户界面的数据会发生变化；当用户界面的数据变化时，业务模型中的数据也会发送变化）。
+
+			语法：v-model =“data中健名"
+			在data中，最好也要定义这个属性，不然会报错；
+
+
+	4.vue.js  2.0 开始支持虚拟DOM（vue.js 1.0是操作真实的DOM，而不是虚拟DOM）
+
+	虚拟DOM可以提升页面的刷新速度
+
+ ···················································
+
+ ~~~~~~~~~~~~   vue 开发环境搭建 ·························
+
+使用脚手架工具 vue-cli 可以快速地构建项目
+	-----------------------------
+
+	脚手架工具的
+
+	
+1.先安装最新nodejs,和git
+	
+2.命令行工具
+	
+3.安装cnpm   
+	npm install -g cnpm --registry=https://registry.npm.taobao.org  //安装cnpm
+		http://npm.taobao.org/    官网
+		安装淘宝镜像文件
+
+	
+
+4.cnpm install -g vue-cli
+		
+	安装vue       完成以后输入vue指令有提示的话表示安装成功
+
+	
+
+5.进入你要去的磁盘磁盘d:
+
+		
+vue init webpack my-project   //创建一个基于webpack的新项目
+		
+		
+回车问项目的名称然后回车
+
+	问项目的描述，this is my very first vue project
+		
+Ｙes　剩下的都是ＮＯ
+
+	
+6.安装依赖 cnpm install  或者 //苹果sudo cnpm install
+
+
+	
+7.npm run dev  //跑一下
+	-----------------------------
+
+	
+
+
+
+安装失败的原因：
+
+	
+1.node版本过于太低。  解决：升级node 升级使用  npm -g update npm@3.10.10
+
+	
+2.  查看自己8080端口是否被占用
+
+	
+3.  cmd是否已管理员权限运行
+
+	
+4.  当前操作目录是否在项目根目录
+
+	
+PS：如果实在跑不起来，就全部卸载重新来一遍。还不能的话就的靠毅力来自己研究了。
+	----------------------------------
+
+	vue.js 组件
+
+		
+
+从.vue 到页面
+						---->   .html
+
+		.vue    
+	---->   webpack     
+	---->   .js   new Vue({....})
+
+---->   .css
+
+
+		
+
+.vue主要用下面三个方面：
+
+			
+1.  <template></template>    为HTML
+			
+2.  <script></script>        为JS
+			
+3.  <style></style>          为css
+
+	
+
+Vue对象里的设置通过HTML指令进行关联
+
+	new一个vue对象的时候你可以设置它的属性。
+
+其中最重要的包括三个
+
+	
+
+vue 组件的重要选项   
+
+	-data      vue对象的数据  所有数据都在data中，页面也可以取到data里面的数据
+
+	      
+	-methods   vue对象的方法方法
+
+	-watch     设置了对象监听的方法   对数据监听  (哇吃)
+
+	模板指令    -HTML和Vue对象的粘合剂
+
+		数据渲染：     v-text  v-html  {{}}
+
+		控制模板隐藏： v-if 没有dom元素  v-show 有dom元素
+
+		渲染循环列表： v-for  循环体变量
+
+		事件绑定：     v-on
+
+		属性绑定：     v-bind   v-bind 绑定页面中的元素属性，列如：a的href img的src alt 和title属性
+ 						       <div :class="{red:isa}"></div>  red为字符串  isa为布尔值
+
+ 						<img v-bind:src="source" alt="">
+
+				v-text  和 v-html 都可以绑定数据 区别是一个可以读标签一个不可以
+					
+		APP  是一个组件  组件被注册就可以在HTML里面直接使用	
+				
+		import  ES6语法 声明一个APP==		初始化一下	
+
+
+	划分组件：
+
+		功能模块  -select，pagenation....
+		页面区域  -header,footer,sidebar....
+
+		Vuejs组件之间的调用  -另外一个重要选项 -components
+
+		import Header from './header'   以Header变量引用进来
+
+		new Vue({
+			data:{},
+			components:[
+				Header,   //Vue要求必须注册才可以使用
+			]
+		})
+						
+	Vuejs组件之间的通信  -props   是一个数组    props:['']
+
+		new Vue({
+			props:['msg'],//接受参数
+			methods:{   //写入事件
+			c:function(){
+				console.log(this.msg)
+			}
+			},
+ 			mounted(){ //挂载成功
+			}
+			created(){  //创建成功
+			},
+			fliters:{ // 自定义过滤器
+			}
+		})
+
+	componentA  相当于 APP的子级    子组件
+
+	@contextmenu.prevent  取消默认事件
+
+	e.preventDefault()   取消默认事件
+
+	e.cancelBubble=true 取消冒泡
+	
+	@click.stop='fn()'    取消冒泡事件	
+
+	@keydown.13  回车事件
+
+	@keydown.up  上键
+  
+        @key.down.enter  回车事件
+
+	keycode 键盘的数字可以知道
+
+	自定义事件
+
+	 Vue实例实现了一个自定义事件接口，用于在组件树中通信。这个事件系统独立原生DOm事件，用法也不同。
+
+	 每个Vue实例都是一个事件触发器
+
+	 	1.使用 $on()  监听事件
+	 	2.使用 $emit() 在他上面触发事件
+
+	 	3.使用 $dispatch()  派发事件，事件沿着父链冒泡
+	 	4.使用 $broadcast()   广播事件，事件向下传导给所有的后代
+
+
+	 	PS：$dispatch 和 $broadcast 已经被弃用  
+
+	 	PS：不同DOM事件，Vue事件在冒泡过程中第一次触发回调之后自动停止冒泡，除非回调明确返回 true。
+
+
+
+
+
+
+
+
+ ··························································
+  npm介绍
+
+	说明：npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等）
+	使用npm安装插件：命令提示符执行npm install <name> [-g] [--save-dev] 
+	<name>：node插件名称。 
+	例：npm install gulp-less --save-dev
+	-g：全局安装。 
+	将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量； 非全局安装：将会安装在当前定位目录； 全局安装可以通过命令行在任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，通过require()调用；
+
+    --save：将保存配置信息至package.json（package.json是nodejs项目配置文件）；
+
+    -dev：保存至package.json的devDependencies节点，不指定-dev将保存至dependencies节点； 
+
+	为什么要保存至package.json？因为node插件包相对来说非常庞大，所以不加入版本管理，将配置信息写入package.json并将其加入版本管理，其他开发者对应下载即可（命令提示符执行npm install，则会根据package.json下载所有需要的包）。
+	3.使用npm卸载插件：npm uninstall <name> [-g] [--save-dev] 
+	PS：不要直接删除本地插件包 
+	4.使用npm更新插件：npm update <name> [-g] [--save-dev] 
+	5.更新全部插件：npm update [--save-dev] 
+	6.查看npm帮助：npm help 
+	7.查看当前目录已安装插件：npm list
+
+	PS：npm安装插件过程：从http://registry.npmjs.org下载对应的插件包（该网站服务器位于国外，所以经常下载缓慢或出现异常），解决办法往下看↓↓↓↓↓↓。
+
+	    选装cnpm
+
+
+	说明：因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，如果npm的服务器在中国就好了，所以我们乐于分享的淘宝团队干了这事。来自官网：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。”
+	官方网址：http://npm.taobao.org
+	安装：命令提示符执行npm install cnpm -g --registry=https://registry.npm.taobao.org
+	注意：安装完后最好查看其版本号cnpm -v或关闭命令提示符重新打开，安装完直接使用有可能会出现错误 
+	注：cnpm跟npm用法完全一致，只是在执行命令时将npm改为cnpm。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+---------------------- vue   -----------
+
+npm i vue-cli -g        //安装vue
+
+vue init webpack-vue   //创建目录
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,431 @@
+﻿1.什么是前端集成解决方案？
+草根派：解决前端工程根本问题
+学院派：一套包含框架和工具，便于开发者快速构建美丽实用的web应用程序的工作流，同时这套工作流必须是稳健强壮的。
+
+2.解决那些前端问题？
+ ·开发团队代码风格不统一，如何强制开发规范
+ ·前期开发的组件库如何维护和使用
+ ·如何模块化前端项目
+ ·服务器部署前必须的压缩，检查流程如何简化。流程如何完善 
+
+ Yeoman        codekit  http://incident57.com/codekit
+ Bower         FIS      http://fis.baidu.com/
+ Grunt|Gulp    Spirit   http://alloyteam.github.io/Spirit
+
+
+
+ node 是服务端语言
+
+ 	node遇到空格会发生错误   创建用户名的时候尽量不使用空格
+
+ 	npm  很快找到特定服务要使用的包  可以进行 下载 安装 管理
+
+ 	NPM  = Node Package Manager
+
+ 	mkdir  创建文件夹
+
+ 	cd     进入创建目录
+
+ 	node 提供 pack.json  执行的时候会在目录下找pack.js,如果不是全局安装会报错
+
+
+ Yeoman   现代Web App的脚手架工具
+
+ 		  作用：在Web项目的立项阶段，使用yeoman来生成项目的文件，代码结构。
+ 		  Yeoman自动将最佳实践和工具整合进来，大大加速和方便了我们后续的开发。
+
+ 	Yeoman 安装  代码校验  测试  压缩   其余部分交给生成器自由发挥
+
+ 	安装指令：        npm install -g yo
+ 	查看版本号		  yo --version
+
+ 	generators     模具
+ 	安装指令：npm install -g generator-angular
+ 	安装完以后 进入 项目目录  创建文件夹 mkdir 文件名 
+ 	cd 进入目录
+ 	yo angular 自己命名
+
+ 	·sass、看成是css  Y
+ 	·bootstrap  Y 
+ 	·Sass  Y
+ 	·上下键与空格配合全选上
+
+ 	pwd  查看当前工作目录
+
+ 	ls -al  列出详细文件
+
+ 	package.json    name: 创建目录的名字
+ 					version:当前版本号
+ 					dependencies:项目在生产环境中需要的依赖  都是声明依赖包
+ 					devDependencied:开发过程所需依赖包
+ 						KEY:安装的包名  value：版本号   ^尖括号是一个比较宽松的对版本的限制，他只限制主版本号
+ 						engines:当前所需node的版本信>=0.10.0
+ 						scripts:可以直接使用npm脚本命令  最常用的命令 install
+ 	Gruntfile  grunt配置文件
+ 	bower      bower配置文件  指定我们去拉前端框架和组件
+ 	.travis.yml  为开源打造实训集成环境
+ 	.jshintrc    jshin配置文件
+ 	.gitignore   忽略当前不上传到GIt仓库
+ 	.gitattributes  git配置项目
+ 	.editoconfig	第三方的插件
+ 	.bowerrc		本身配置项  线上的文件应该存放在那个文件下  
+ 	test            项目的自动化测试
+ 	App             整个项目的文件
+ 	node_modules    放npm下载下来的包的
+ 	bower_components  .bowerrc
+
+ 		rm  删除目录命令  -rf 递归删除且不需要二次确认
+
+
+
+Bower	   Web包管理器 就是更新软件下载框架
+
+	Web 站点组成：框架，库，公共部分等        Bower则用来跟踪管理这些   
+
+	Bower 安装指令：npm install -g bower
+		  查看版本：Bower -v 
+
+	mkdir bower-in-action
+
+	cd bower-in-action
+
+	mkdir jquery-bootstrap-in-action
+	cd jquery-bootstrap-in-action
+
+	bower install jquery
+	bower install bootstrap
+	ls -al
+	cd bower-components
+	ls  查看目录
+
+	缩写方式安装库
+	cd .. 回到上一步
+	bower uninstall jquery  删除  //在这个项目目录下  
+	
+	如果要在指定版本先删除原先的在安装
+	指令：bower install jquery#1.9.1
+
+	bower install jquery/jquery
+
+	项目地址：
+	bower install https://github.com/jquery/jquery.git
+
+
+	bower 提供了多种安装方式
+	1.通过github的短写安装
+	2.项目完整的github地址
+
+	使用框架或组件，没有在github上
+	bower 提供了直接通过URL安装
+
+	bower配置文件有两个
+	1.bower.json 2.bowerrc
+
+	bower.json 好处 版本仓库只需要有一个bower.json
+	bower init 
+	name:默认
+	version:
+	description:test bower by using jquery & bootstrap
+	main file: 留空  项目主要依赖的入口文件
+	what types of modules ..:留空
+	keywords:jquery,bootstrap
+	authors:materliu <enter>
+	license:MIT  enter
+	homepage:留空
+	set currently installed...:Y
+	odd comonly ..:Y
+	would you like to mark:Y
+	looks good:Yes
+
+	bower install angular --save-dev
+	bower insrall angular --save
+
+	vim bower.json  查看文件
+
+	ls -al
+
+ bowerrc
+	vim .bowerrc  生成这个文件
+	 
+	{
+		"directory":'bower_components',
+		"proxy":'http://proxy.tencent.com:8080',
+		"https-proxy":"https://proxy.tencent.com:8080",
+		"timeout":60000  //ms 默认单位
+	} 保存一下
+
+	ll
+		出现 .
+			 ..
+			 .bowerrc
+			 bower.json
+			 bower_components
+		就说明全部配置完成
+
+	mkdir app 
+	cd app/
+
+	vim index.html
+
+
+
+
+
+	proxy:代理
+
+
+
+	bower操作    
+	
+	 	bower init  先初始化一下
+
+		bower install jquery     安装jquery
+	
+		bower uninstall jquery   卸载
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1、新建项目
+2、src文件夹  放入压缩的文件
+3、npm init 
+4、npm i
+5、npm install grunt --save-dev    //文件夹不能起这个grunt  
+5、新建Gruntfile.js   去官网复制需要的插件
+6、执行npm install grunt-contrib-uglify --save-dev   
+7、执行grunt 进行压缩 
+
+
+
+
+
+Grunt    build tool  自动化   减少像压缩，编译，单元测试，代码效验这种重复且无业务关联的工作
+
+	grunt安装方式 ： npm install -g grunt-cli
+	查看版本号：     grunt  看到错误就说明安装成功了   查看版本号 -V
+
+	使用方式：
+		mkdir grunt-in-action
+		cd grunt-in-action
+		mkdir grunt-by-yo
+		cd grunt-by-yo
+		yo webapp grunt-by-yo
+
+		what more would you like?
+		bootstrap Y
+		sass Y
+		modernizy Y  //用来检测用户浏览器是否支持某些HTML5和css3新特性的一个JS库
+
+		would you like to use libsass?read up more at>? N
+	
+	grunt sass	
+	
+
+	测试目录
+
+	mkdir grunt-in-action
+	cd grunt-in-action/
+	mkdir grunt-empty
+	cd grunt-empty/
+	vim index.html
+	mkdir js
+	cd js/
+	vim index.js
+	cd ..
+	npm init
+	enter 
+	enter
+	learn grunt by thr empty project
+	entry point:enter
+	test command:
+	git repository:
+	keywords:grunt.emtpy,merge
+	author:materliu
+	license:(ISC) //协议
+	Is this ok？yes
+
+	npm install grunt --save-dev
+	vim package.json
+
+	npm install grunt --save
+
+	npm install lood-grunt-tasks --save-dev
+
+	npm install time-grunt --save-dev
+
+	vim package.json
+	vim Gruntfile.js
+
+	npm install grunt-contrib-copy --save-dev   //拷贝文件
+
+	npm install grunt-contrib-clean --sav-dev   //删除文件
+
+
+	新建一个APP文件夹 放html
+
+	js内容：
+
+		'use strict' //严格模式
+
+		module.exports = function(grunt){
+			require('lood-grunt-tasks')(grunt);
+
+			require('time-grunt')(grunt);
+
+			var config = {
+				app:'app',
+				dist:'dist'
+			}
+
+			grunt:initConfig({
+				config:config
+
+				copy:{
+					dist:{
+						src:'<%= config.app %>/index.html',
+						dest:'<%= config.dist %>/index.html'
+					}
+				}
+			})
+		}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	http://developer.51cto.com/art/201506/479127.htm  //网址
+	grunt使用方式:
+	
+		1、创建文件夹grunt_test   //文件夹不可以起grunt
+		2、写三个空文件夹 build 、 src 、test
+		3、创建一个json文件
+			{
+  				"name": "grunt_test",  //文件夹名字
+ 				"version": "1.2.0",	//grunt 版本号
+  				"devDependencies": {	//grunt开发依赖项
+   				    "grunt": "^1.0.1"
+  				 }
+			}
+		4、执行 npm install grunt --save-dev  //安装开发依赖项  
+			
+		—save-dev”的意思是，在当前目录安装grunt的同时，顺便把grunt保存为这个目录的开发依赖项
+		
+		5.在gruntfile.js里面输入
+			
+			// 包装函数
+
+			module.exports = function(grunt){
+				// 任务配置，所有插件的配置信息
+
+				grunt.initConfig({
+					// 获取 package.js的信息
+					pkg:grunt.file.readJSON('package.json')
+				});
+
+				// 告诉grunt当我们在终端中输入grunt时需要做什么(注意先后顺序)
+
+				grunt.registerTask('default',[]);
+			}
+
+		6、使用uglify插件（压缩javascript代码）
+
+			在目录下执行 npm install grunt-contrib-uglify --save-dev
+		7、在src里面创建项目，.js .html .css    src里面放需要压缩的代码  build里面是压缩过后的代码
+		8、在gruntfile里面输入
+			uglify:{  // 压缩插件
+			options:{  //规定允许生成的压缩文件带banner,即在生成的压缩文件第一行加一句话说明
+				stripBanners:true, //条横幅
+				// 在压缩后的文件里加上一句开头注释
+				banner:'/*! <%-pkg.name%>-<%-pkg.version%>.js <%- grunt.template.today("yyyy-mm-dd") %> */\n'
+			},
+			build:{ //配置项:配置了源文件和目标文件
+				src:'src/test.js',
+				dest:'build/<%=pkg.name%>-<%=pkg.version%>.js.min.js'
+				// dest:'build/home_bar_getDate.min.js'
+			}
+		}
+		
+		9、执行命令压缩   指令：grunt
+
+
+
+
+	
+
+	
+
+Contrib-jshint——javascript语法错误检查；
+Contrib-watch——实时监控文件变化、调用相应的任务重新执行；
+Contrib-clean——清空文件、文件夹；
+Contrib-uglify——压缩javascript代码
+Contrib-copy——复制文件、文件夹
+Contrib-concat——合并多个文件的代码到一个文件中   //打包
+karma——前端自动化测试工具
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	开源许可证：ISC  
+
+	宽松程度来区分：MIT BSD ISC Apache GPL
+
+
+	yeoman grunt bower使用项目：
+		
+		yo  //创建项目
+		
+		npm init // 初始化项目
+	
+		npm i  //安装依赖包
+		
+		bower i   //bower install   安装bower依赖
+
+		grunt serve   //启动项目
+
+
+		grunt build  //压缩项目    dist   grunt压缩文件
+		
+		压缩不成功的话就用 原因可能是因为我选择sass    这个时候执行这个命令 grunt build --force
+
+		bower i angular-ui-router --save   //  安装插件
+
+
+	npm uninstall bower  卸载
+
+
+	git      
+
+
+
+	npm install grunt-contrib-imagemin --save-dev    //配置压缩图片内容
+
+	grunt imagemin  //压缩图片
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+yo  先执行yo   出来一个angular  是因为以前可能安装过angular
+
+要安装其他的 在 install a genertor 里面输入其他的  比如 vue
+
+这里是angular版本的  直接回车
+
+npm i 执行依赖环境
+
+bower i 执行bower依赖
+
+grunt serve 启动项目   
+
+
+安装angular 路由   bower install angulat-ui-router --save    没有dev   安装好路由  在启动项目  会自动引入路径
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

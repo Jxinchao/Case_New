@@ -1,0 +1,159 @@
+一: 参数传值的方法
+1: data-id
+
+我们可以给HTML元素添加data-*属性来传递我们需要的值,使用方法说明:(1)设置data-id
+
+<view class="block" bindtap="playTap" data-id="{{modle.id}}">
+(2): 取值 + 传值
+
+playTap:function(e) {
+       const dataset = e.currentTarget.dataset;
+       wx.navigateTo({
+         url: '../play/index?id='+ dataset.id
+       })
+       console.log(dataset.id);
+   }
+(3):取值
+
+onLoad:function (param) {
+    //页面初始化
+        this.setData({
+            currentId:param.id
+        })
+}
+data-注意事项：data-名称不能有大写字母,曾经我就因为大写了一个字母,找了半天的才发现这个错误..data-*属性中不可以存放对象
+2: 设置id 的方法标识来传值
+
+使用方法说明:
+(1)设置id
+<view bindtap=“playTap" id="{{modle.id}}">
+(2)取值
+通过e.currentTarget.id获取设置的id的值,然后通过设置全局对象的方式来传递数值
+
+3: 在navigator中添加参数传值
+使用方法说明
+(1)传值:在navigator的属性url后拼接?id(参数名字)=要传递的值 (如果多个参数用&分开 &name=value&.......)
+
+<navigator url="../my/my?id={{item.id}}" wx:for="{{modles}}">
+(2)取值:
+
+onLoad (params){
+        app.fetch(API.detail + params.id,(err,data) => {
+        })
+    }
+二:数据请求封装
+1.将所有的接口放在统一的js文件中并导出
+
+const api = {
+    interface1: 'https://........',
+     interface2: 'https://.......',
+     interface3: 'https://....',
+     .....
+}
+module.exports = api;
+2:在app.js中创建封装请求数据的方法
+
+fetch(url,data, callback) {
+      wx.request({
+          url,
+          data: data,
+          header: {
+              'Content-Type': 'application/json'
+          },
+          success(res) {
+              callback(null, res.data);
+          },
+          fail(e) {
+              callback(e);
+          }
+      })
+  },
+3: 在子页面中调用封装的方法请求数据
+
+import API from "../../api/api.js";
+const app = getApp();
+const conf = {
+    data:{
+        title:'正在拼命加载中...',
+        loadding:true
+    },
+    onLoad (){
+        app.fetch(API.hot,{},(err,data) => {
+        })
+    },
+三:使用模板(发现模板真是个好东西哦!)
+1:定义模板:name设置模板的名字
+
+定义模板 
+<template name="homecell">
+     <view class="item">
+    </view>
+ </template>
+(2)使用模板首先引入模板
+
+<import src="../../commonXml/homecell.wxml" />
+然后使用模板is后写模板的name..通过data来传递需要是数据
+
+<template is="homecell" data="{{item}}"></template>
+四:Array比较好用的属性和方法
+Array.isArray() 方法用来判断某个值是否为Array。如果是，则返回 true，否则返回 false。
+concat() 方法将传入的数组或非数组值与原数组合并,组成一个新的数组并返回.
+forEach() 方法对数组的每个元素执行一次提供的函数(回调函数)。
+join() 方法将数组中的所有元素连接成一个字符串。
+keys() 方法返回一个数组索引的迭代器。
+map() 方法返回一个由原数组中的每个元素调用一个指定方法后的返回值组成的新数组
+pop() 方法删除一个数组中的最后的一个元素，并且返回这个元素。
+push() 方法添加一个或多个元素到数组的末尾，并返回数组新的长度（length 属性值）。
+toString() 返回一个字符串，表示指定的数组及其元素。
+
+五:对象Object常用方法
+1 初始化方法
+
+var  obj = [];
+var obj = new obj();
+var obj = Object.create(null);
+2 添加元素的方法
+
+dic[“key”] = “value”;
+3 删除key的方法
+
+delete dic[“key”];
+4 清空词所有条目
+
+dic.clear();
+5 删除
+
+delete dic;
+6 查看所有属性的方法
+
+**Object.keys(obj);**
+对象的所有键名都是字符串，所以加不加引号都可以,如果键名是数值,会被自动转为字符串但是，如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），也不是数字，则必须加上引号，否则会报错
+
+6 读取属性
+
+obj.name || obj[’name']
+注意: 数值键名不能使用点运算符（因为会被当成小数点），只能使用方括号运算符。
+
+7 检查变量是否声明
+
+if(obj.name) || if(obj[’name'])
+8 in 运算符用于检查对象是否包含某个属性,如果包含返回true,否则返回false
+
+if ( ‘x’ in obj) {return 1}
+9 for … in 循环
+用来遍历一个对象的全部属性
+
+for (var i in obj) {
+    console.log(obj);
+}
+10 with 语句
+作用: 操作同一个对象的多个属性时,提供一些书写的方便
+
+with(obj) {
+    name1 = 1;
+    name2 = 2;
+}
+等同于
+
+obj.name1 = 1;
+obj.name2 = 2;

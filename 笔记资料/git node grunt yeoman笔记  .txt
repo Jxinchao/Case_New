@@ -1,0 +1,81 @@
+yarm   谷歌开发。类似于npm，安装一次，无需联网
+react native
+
+git版本管理工具  和 团队协作工具   分布式版本控制工具
+	用命令提示符（shift+右键）：
+	cd目录
+	d：去哪个盘
+	mkdir 1227新建一个文件夹
+	cd 1227 进入1227
+	git clone   克隆
+	cd surveytime
+	git add .(window 有可能不加add，更新已修改的文件)
+	git commit -m new
+	git push（上传）
+	git pull(本地更新)
+	分布式相对于集中式的最大区别在于开发者可以提交到本地，每个开发者通过克隆（git clone），在本地机器上拷贝一个完整的Git仓库。//就是开发者有完整的项目，没有网络环境也可以使用。
+	团队协作开发，实现代码同时编写、管理代码版本
+git→node.js→bower→任意组件
+npm 安装软件
+	npm install -g bower//安装bower   -g全局         install可以简写为‘i’
+
+	
+bower 安装组件
+在需要安装的文件夹使用shift+鼠标右键 打开文件夹的cmd
+	bower install bootstrap
+dataType：‘xml’
+GRUNT	构建工具
+	作用：压缩，编译，单元测试，linting（语法检测）
+	npm install -g grunt-cli  在电脑中安装grunt
+	npm install grunt --save-dev  // 安装Grunt最新版本到项目目录中，并将其添加到devDependencies内
+	②
+	npm install grunt-contrib-jshint --save-dev  //安装grunt中的插件
+		 // 加载包含 "uglify" 任务的插件。
+  		grunt.loadNpmTasks('grunt-contrib-uglify');
+	npm install grunt-contrib-cssmin --save-dev//安装css
+		//加载包htmlmin务的插件
+		grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	npm install grunt-contrib-htmlmin --save-dev//压缩html
+		//加载包含‘cssmin’任务的插件
+  		grunt.loadNpmTasks('grunt-contrib-cssmin');
+	npm install --save-dev grunt-wiredep//安装wiredep
+		①一定在html文件中写<!-- bower:js -->
+		    		    <!-- endbower -->
+		②//加载wiredep
+		  grunt.loadNpmTasks('grunt-wiredep')
+		③命令提示符：grunt wiredep
+	npm install grunt-contrib-imagemin --save-dev//安装imagemin
+		①grunt.loadNpmTasks('grunt-contrib-imagemin');
+	③// 默认被执行的任务列表。
+	  grunt.registerTask('default', ['uglify','cssmin','htmlmin','grunt-wiredep']);
+	创建src文件夹，创建一个js，在当前文件夹使用shift+鼠标右键 打开文件夹的cmd，输入grunt进行压缩
+yeoman    
+	安装npm install -g yo	→     cmd    yo→  install a generator → angular/webapp→回车→ npm install     /  bower install → grunt serve --force （在服务器端运行网页） → ctrl+c （停止网页同步）→ grunt build（压缩）
+	.gitignore   忽略管理文件
+	安装ui-router
+	bower install angular-ui-router --save-dev//也可不写-dev，意为在测试和上线都使用   加上只能在测试阶段使用	
+angular知识点：
+	scope为true作用域独立，继承父级controller；false是没有独立作用域，可以继承父级controller；为{}时，不能继承父级controller，作用域独立；
+	@是字符串   =是变量
+	<img ng-src=''/>避免异步
+	ng-class 
+*修改bootstrap轮播图时间
+	link:function(s,e,a){
+        	e.find(".carousel").carousel({
+          	interval: 1000
+			})
+        
+  	}
+watch      监测文件变化
+
+ftp：往服务器传数据，我的电脑支持ftp://47.90.20.200     ftp协议
+
+
+http://www.bugcenter.com.cn   服务器域名
+
+grunt serve:dist
+
+
+
+
+

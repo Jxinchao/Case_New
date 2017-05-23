@@ -1,0 +1,1114 @@
+一.列举浏览器对象模型BOM里常用的至少4个对象，并列举window对象的常用方法至少5个 ---1510B  王珩
+对象：window document location screen history navigator
+方法：alert() confirm() prompt() open() close()
+
+【二】.BOM对象有哪些，列举window对象？---1510B  王珩
+1）、window对象 ，是JS的最顶层对象，其他的BOM对象都是window对象的属性；
+2）、document对象，文档对象；
+3）、location对象，浏览器当前URL信息；
+4）、navigator对象，浏览器本身信息；
+5）、screen对象，客户端屏幕信息；
+6）、history对象，浏览器访问历史信息；
+
+【三】.window函数索引---1510B  王珩
+ 1） 窗体控制函数
+    JavaScript moveBy() 函数
+    JavaScript moveTo() 函数
+    JavaScript resizeBy() 函数
+    JavaScript resizeTo() 函数
+2）窗体滚动轴控制函数
+    JavaScript scrollTo() 函数
+    JavaScript scrollBy() 函数
+    JavaScript focus() 函数
+    JavaScript blur() 函数
+3）新建窗体函数
+    JavaScript open() 函数
+    JavaScript close() 函数
+    JavaScript opener 属性
+4）对话框函数
+   JavaScript alert() 函数
+    JavaScript confirm() 函数
+    JavaScript prompt() 函数
+5）状态栏属性
+    JavaScript window.defaultStatus 属性
+    JavaScript window.status 属性
+6）时间等待与间隔函数
+    JavaScript setTimeout() 函数
+    JavaScript clearTimeout() 函数
+    JavaScript setInterval() 函数
+    JavaScript clearInterval() 函数
+
+ 【四】.浏览器兼容性举例---1510B  王珩
+1）在FireFox中可以使用与HTML节点对象ID属性值相同的JS变量名称，但是IE中不行。
+解决办法：在命名上区分HTML节点对象ID属性值和JS变量
+2）IE不支持JS的const,无法定义JS常量
+解决办法：全部用var定义为变量
+3）在JS中书写URL地址字符串时&字符就直接写为“&”(去掉双引号),不要写“&”，否则容易出现URL识别不正常的错误
+4）在IE中可以通过showModalDialog和showModelessDialog打开模式和非模式窗口，FireFox下则不能
+解决办法：使用Window.Open方法。 如果需要将子窗口中的参数传递回父窗口，可以在子窗口中使用Window.Opener属性来访问父窗口；如果需要父窗口控制子窗口的话，使用Var subWindow = Window.Open(pageURL,Name,Parameters); 来获得新开的窗口对象
+5）在IE中向表格里添加一行的方法insertRow()如果不指定参数，默认参数为-1,将自动向Table中追加1行；在FireFox中一定要指定参数如-1,参数为空会报错
+6）在IE中可以使用new ActiveXObject()的方法实例化对象，如var xmlDom = new ActiveXObject("Microsoft.XMLHTTP");但是FireFox不支持ActiveXObject,只能通过这种方法如var xmlDom = new XMLHttpRequest();实例化对象
+
+【五】.document对象和window对象有什么区别么？---1510B  王珩
+document是window的一个对象属性。
+Window 对象表示浏览器中打开的窗口。
+如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。
+所有的全局函数和对象都属于Window 对象的属性和方法。
+document   对 Document 对象的只读引用。
+ 
+【六】  在javaScript中使用window对象的什么方法可以取得有关当前url的信息?     ---1510B  王珩
+Location 对象
+Location 对象包含有关当前 URL 的信息。
+Location 对象是 Window 对象的一个部分，可通过 window.location 属性来访问。
+<input type="button" value="click" onclick="click_()" />
+<script>
+function click_(){
+	var re=window.location;
+	alert(re);
+}
+</script>
+
+七.window对象有以下方法：---1510B  陈雪冰
+open　close　alert　confirm　prompt　setTimeout　clearTimeout　setInterval　clearInterval　moveBy　moveTo　resizeBy　resizeTo　scrollBy　scrollTo　find　back　forward　home　stop　print　blur　focus　captureEvent　enableExternalCapture　disableExternalCapture　handleEvent　 releaseEvent　routeEvent　scroll
+【1. open方法】
+语法格式：window.open(URL,窗口名称,窗口风格)
+功能：打开一个新的窗口，并在窗口中装载指定URL地址的网页。
+说明：
+open方法用于打开一个新的浏览器窗口，并在新窗口中装入一个指定的URL地址；
+open方法在打开一个新的浏览器窗口时，还可以指定窗口的名称(第二个参数)；
+open方法在打开一个新的浏览器窗口时，还可以指定窗口的风格(第三个参数)，窗口风格有以下选项，这些选项可以多选，如果多选，各选项之间用逗号分隔：
+toolbar：指定窗口是否有标准工具栏。当该选项的值为1或yes时，表示有标准工具栏，当该选项的值为0或no时，表示没有标准工具栏；
+location：指定窗口是否有地址工具栏，选项的值及含义与toolbar相同；
+directories：指定窗口是否有链接工具栏，选项的值及含义与toolbar相同；
+status：指定窗口是否有状态栏，选项的值及含义与toolbar相同；
+menubar：指定窗口是否有菜单，选项的值及含义与toolbar相同；
+scrollbar：指定当前窗口文档大于窗口时是否有滚动条，选项的值及含义与toolbar相同；
+resizable：指定窗口是否可改变大小，选项的值及含义与toolbar相同；
+width：以像素为单位指定窗口的宽度，已被innerWidth取代；
+height：以像素为单位指定窗口的高度，已被innerHeight取代；
+outerWidth：以像素为单位指定窗口的外部宽度；
+outerHeight：以像素为单位指定窗口的外部高度；
+left：以像素为单位指定窗口距屏幕左边的位置；
+top：以像素为单位指定窗口距屏幕顶端的位置；
+alwaysLowered：指定窗口隐藏在所有窗口之后，选项的值及含义与toolbar相同；
+alwaysRaised：指定窗口浮在所有窗口之上，选项的值及含义与toolbar相同；
+dependent：指定打开的窗口为当前窗口的一个子窗口，并随着父窗口的关闭而关闭，选项的值及含义与toolbar相同；
+hotkeys：在没有菜单栏的新窗口中设置安全退出的热键，选项的值及含义与toolbar相同；
+innerHeight：设定窗口中文档的像素高度；
+innerWidth：设定窗口中文档的像素宽度；
+screenX：设定窗口距离屏幕左边界的像素长度；
+screenY：设定窗口距离屏幕上边界的像素长度；
+titleBar：指明标题栏是否在新窗口中可见，选项的值及含义与toolbar相同；
+z-look：指明当窗口被激活时，不能浮在其它窗口之上，选项的值及含义与toolbar相同。
+open方法返回的是该窗口的引用。
+
+小技巧：该方法经常用于在打开一个网页时自动打开另一个窗口。
+2. close方法
+语法格式：window.close()
+功能：close方法用于自动关闭浏览器窗口。
+3. alert方法
+语法格式： window.alert(提示字符串)
+功能：弹出一个警告框，在警告框内显示提示字符串文本。
+4. confirm方法
+语法格式：window.confirm(提示字符串)
+功能：显示一个确认框，在确认框内显示提示字符串，当用户单击“确定”按钮时该方法返回true，单击“取消”时返回false
+5. prompt方法
+语法格式：window.prompt(提示字符串，缺省文本)
+功能：显示一个输入框，在输入框内显示提示字符串，在输入文本框显示缺省文本，并等待用户输入，当用户单击“确定”按钮时，返回用户输入的字符串，当单击“取消”按钮时，返回null值。
+6. setTimeout方法
+语法格式：window.setTimeout(代码字符表达式,毫秒数)
+功能：定时设置，当到了指定的毫秒数后，自动执行代码字符表达式。
+7. clearTimeout方法
+语法格式：window.clearTimeout(定时器)
+功能：取消以前的定时设置，其中的参数是用setTimeout设置时的返回值。
+8. setInterval方法
+语法格式：window.setInterval(代码字符表达式,毫秒数)
+功能：设定一个时间间隔后(第二个参数)，反复执行“代码字符表达式”的内容
+9. clearInterval方法
+语法格式：window.clearInterval(时间间隔器)
+功能：取消setInterval设置的定时。其中的参数是setInterval方法的返回值。
+10. moveBy方法
+语法格式：window.moveBy(水平位移量,垂直位移量)
+功能：按照给定像素参数移动指定窗口。第一个参数是窗口水平移动的像素，第二个参数是窗口垂直移动的像素。
+11.moveTo方法
+语法格式：window.moveTo(x,y)
+功能：将窗口移动到指定的指定坐标(x,y)处。
+12. resizeBy方法
+语法格式：window.resizeBy(水平,垂直)
+功能：将当前窗口改变指定的大小(x,y)，当x、y的值大于0时为扩大，小于0时为缩小。
+13. resizeTo方法
+语法格式：window.resizeTo(水平宽度,垂直宽度)
+功能：将当前窗口改变成(x,y)大小，x、y分别为宽度和高度。
+14. scrollBy方法
+语法格式：window.scrollBy(水平位移量，垂直位移量)
+功能：将窗口中的内容按给定的位移量滚动。参数为正数时，正向滚动，否则反向滚动。
+15. scrollTo方法
+语法格式：window.scrollTo(x,y)
+功能：将窗口中的内容滚动到指定位置。
+16.find方法
+语法格式：window.find()
+功能：当触发该方法时，将弹出一个“find”(查找)对话窗口，并允许用户在触发find方法的页面中查找一个字符串。
+注：该属性在IE5.5及Netscape6.0中都不支持。
+17. back方法
+语法格式：window.back()
+功能：模拟用户点击浏览器上的“后退”按钮，将页面转到浏览器的上一页。
+说明：仅当当前页面存在上一页时才能进行该操作。
+注：IE5.5不支持该方法，Netscape6.0支持。
+18. forward方法
+语法格式：window.forward()
+功能：模拟用户点击浏览器上的“前进”按钮，将页面转到浏览器的下一页。
+说明：仅当当前页面存在下一页时才能进行该操作。
+注：IE5.5不支持该方法，Netscape6.0支持。
+19. home方法
+语法格式：window.home()
+功能：模拟用户点击浏览器上的“主页”按钮，将页面转到指定的页面上。
+注：IE5.5不支持该方法，Netscape6.0支持。
+20. stop方法
+语法格式：window.stop()
+功能：模拟用户点击浏览器上的“停止”按钮，终止浏览器的下载操作。
+注：IE5.5不支持该方法，Netscape6.0支持。
+21. print方法
+语法格式：window.print()
+功能：模拟用户点击浏览器上的“打印”按钮，通知浏览器打开打印对话框打印当前页。
+22. blur方法
+语法格式：window.blur()
+功能：从窗口中移出焦点。当与focus方法合用时必须小心，因为可能导致焦点不断移进移出。
+23. focus方法
+语法格式：window.focus()
+功能：使窗口中得到焦点。当与blur方法合用时必须小心，因为可能导致焦点不断移进移出
+24. captureevent方法
+语法格式：window.captureevent(event)
+window.captureevent(事件1|事件2|…|事件n)
+功能：捕捉指定参数的所有事件。由于能够捕获哪些由本地程序自己处理的事件，所以程序员可以随意定义函数来处理事件。如果有多个事件需要捕捉，各事件之间用管道符“|”隔开。可捕捉的事件类型如下：
+event.abort　event.blur　event.change　event.click　event.dblclick　event.dragdrop　event.error　event.focus　event.keydown　event.keypress　event.keyup　event.load　event.mousedown　event.mousuemove　event.mouseout　event.mouseover　event.mouseup　event.move　event.reset　event.resize　 event.select　event.submit　event.unload
+25. enableexternalcapture事件
+语法格式：window.enableexternalcapture(event)
+功能：enableexternalcapture方法用于捕捉通过参数传入的外部事件。
+26. disableexternalcapture事件
+语法格式：window.disableexternalcapture()
+功能：取消enableexternalcapture方法的设置，终止对外部事件的捕捉。
+27. handleevent事件
+语法格式：window.handleevent(event)
+功能：触发指定事件的事件处理器。
+28. releaseevent事件
+语法格式：window.releaseevent(event)
+window.releaseevent(事件1|事件2|…|事件n)
+功能：释放通过参数传入的已被捕捉的事件，这些事件是由window.captureevent方法设置的，可释放的事件与captureevent相同。
+29. routeevent事件
+语法格式：window.releaseevent(event)
+功能：把被捕捉类型的所有事件转交给标准事件处理方法进行处理，可转交的事件与captureevent相同。
+30. scroll事件
+语法格式：window.scroll(x坐标,y坐标)
+功能：将窗口移动到指定的坐标位置。
+
+八.【window对象的属性】---1510B 陈雪冰
+window对象具有如下属性：
+status　statusbar　statusbar.visible　defaultstatus　location　locationbar　locationbar.visible　self　name　closed　frames　frames.length　length　document　history　innerheight　innerwidth　menubar　menubar.visible　opener　outerheight　outerwidth　pagexoffset　pageyoffset　parent　 personalbar　 personalbar.visible　scrollbar　scrollbar.visible　toolbar　toolbar.visible　top　
+1. status属性
+语法格式：window.status=字符串
+功能：设置或给出浏览器窗口中状态栏的当前显示信息。
+小技巧：可以使用该属性设置浏览器窗口状态栏信息。
+2. statusbar属性
+语法格式：window.statusbar.属性
+功能：statusbar属性本身也是一个对象，用于访问它自已的visible属性从而确定状态栏是否可见。
+注：ie5.5浏览器不支持该属性。
+3. statusbar.visible属性
+语法格式： window.statusbar.visible
+功能：检查状态栏是否可见，如果可见则返回true，反之返回false。
+注：ie5.5浏览器不支持该属性。
+4. defaultstatus属性
+语法格式：window.defaultstatus[=字符串]
+功能：defaultstatus属性值是浏览器窗中状态栏的默认显示信息
+5.location属性
+语法格式：window.location=url
+功能：给出当前窗口的url信息或指定打开窗口的url。
+6. locationbar属性
+语法格式：window.locationbar.属性
+功能：locationbar属性也可以看成是一个子对象，这个属性用来获取它自已的visible属性来确定位置栏是否可见。 到目前为止，该属性只有一个子属性：visible。
+注：ie5.5不支持该属性。
+7. locationbar.visible属性
+语法格式：window.locationbar.visible
+功能：返回位置栏是否可见，如果可见返回true，反之返回false。
+注：ie5.5不支持该属性。
+8. self属性
+语法格式：window.self.方法
+window.self.属性
+功能：该属性包含当前窗口的标志，利用这个属性，可以保证在多个窗口被打开的情况下，正确调用当前窗口内的函数或属性而不会发生混乱。
+9. name属性
+语法格式： window.name=名称
+功能：返回窗口名称，这个名称是由window.open()方法创建新窗口时给定的。在javascript1.0版本中，这个属性只能用于读取窗口名称，而到了javascript1.1版本时，可以用这个属性给一个不是用window.open()方法创建的窗口指定一个名称。
+10. closed属性
+语法格式：window.closed
+功能：closed属性用于返回指定窗口的实例是否已经关闭，如果关闭，返回true ，反之返回flase。
+11. frames属性
+语法格式：window.frames[“框架名称”]
+window.frames[数值]
+功能：frames属性是一个数组，用来存储文档中每一个由元素创建的子窗口(框架)实例，其中的下标即可以是次序号也可以是用frame元素的name属性指定的名称来得到并使用。
+12. frames.length属性
+语法格式： window.frames.length
+功能：frames.length属性用于给出文档中子窗口(框架)实例的个数。
+13. length属性
+语法格式：window.length
+功能：length属性返回一个窗口内的子窗口数目，该属性与window.frame.length属性的值相同。
+14. document属性
+语法格式：window.document.事件　window.document.方法　window.document.属性
+功能：window对象的子对象document是javascript的核心对象，在脚本中遇到body元素时创建一个实例。
+15. history属性
+语法格式：　window.history[数值] 　window.history.方法() 　window.history.属性
+window对象的子对象history是javascript的核心对象之一，该属性包含了一个已访问过页面的名称和url的数组。
+16. innerheight属性
+语法格式：window.innerheight=数值
+功能：返回或指定浏览器窗口中文档的像素高度，这个高度不包括任何工具栏和组成窗口的页面修饰高度。
+注：ie5.5不支持该属性。
+17. innerwidth属性
+语法格式：window.innerheight=数值
+功能：返回或指定浏览器窗口中文档的像素宽度，这个宽度不包括任何工具栏和组成窗口的页面修饰宽度。
+注：ie5.5不支持该属性。
+18. menubar属性
+语法格式：window.menubar.属性
+功能：menubar属性也可以看成是一个子对象，这个属性用来获取它自已的visible属性来确定菜单栏是否可见。到目前为止，该属性只有一个子属性：visible。
+注：ie5.5不支持该属性。
+19. menubar.visible属性
+语法格式：window.menubar.visible
+功能：menubar.visible属性用于返回菜单栏是否可见，如果可见返回true，反之返回false。
+注：ie5.5不支持该属性。
+20. opener属性
+语法格式：window.opener　window.opener.方法　window.opener.属性
+功能：opener属性与打开该窗口的父窗口相联系，当访问子窗口中operer属性时，返回的是父窗口。通过该属性，可以使用父窗口对象中的方法和属性。
+21. outerheight属性
+语法格式：window.outerheight
+功能：outerheight属性用于访问浏览器窗口的像素高度，该高度包括工具栏和装饰边的高度。
+注：ie5.5不支持该属性。
+22. outerwidth属性
+语法格式：window.outerwidth
+功能：outerwidth属性用于访问浏览器窗口的像素宽度，该宽度包括工具栏和装饰边的宽度。
+注：ie5.5不支持该属性。
+23. pagexoffset属性
+语法格式：window.pagexoffset=数值
+功能：指定浏览器窗口中文档左上角在窗口中的当前水平像素位置。在利用moveto移动之前，可以通过该属性来决定是否需要移动窗口。因为该属性返回了可见文档相对整个页面的当前位置。
+注：ie5.5不支持该属性。
+24. pageyoffset属性
+语法格式：window.pageyoffset=数值
+功能：指定浏览器窗口中文档左上角在窗口中的当前垂直像素位置。在利用moveto移动之前，可以通过该属性来决定是否需要移动窗口。因为该属性返回了可见文档相对整个页面的当前位置。
+注：ie5.5不支持该属性。
+25. parent属性
+语法格式：window.parent.frames[数值]　window.parent.framesname
+功能：访问各个子窗口(多框架)所在的父窗口。
+26. personalbar属性
+语法格式：window.personalbar.属性
+功能：personalbar属性本身也是一个对象，用于访问其自身的visible属性来确定个人栏是否可见。
+注：ie5.5不支持该属性。
+27. personalbar.visible属性
+语法格式：window.personalbar.visible
+功能：确定个人栏是否可见，如果可见则返回true，反之返回false。
+注：ie5.5不支持该属性。
+28. scrollbars属性
+语法格式：window.scrollbars.属性
+功能：scrollbars属性本身也是一个对象，用于访问其自身的visible属性来确定滚动栏是否可见
+注：ie5.5不支持该属性。
+29. scrollbars.visible属性
+语法格式：window.scrollbars.visible
+功能：scrollbars.visible用于确定滚动栏是否可见，如果可见则返回true，反之返回false。
+注：ie5.5不支持该属性。
+30. toolbar属性
+语法格式：window.toolbar.属性
+功能：toolbar属性本身也是一个对象，用于访问它自已的visible属性从而确定工具栏是否可见。
+注：ie5.5不支持该属性。
+31. toolbar.visible属性
+语法格式：window.toolbar.visible
+功能：toolbar.visible属性用于检查工具栏是否可见，如果可见则返回true，反之返回false。
+注：ie5.5不支持该属性。
+32. top属性
+语法格式：window.top.frames[数值] 　window.top.framename 　window.top.方法()
+
+九.window.top.属性---1510B  陈雪冰
+功能：window对象的top属性用于包含所有装入浏览器的子窗口(多框架)的最顶层窗口的信息。
+.location对象的属性
+属性 描述的URL内容
+hash 如果该部分存在,表示锚点部分;
+host 主机名:端口号;
+hostname 主机名;
+href 整个URL;
+pathname 路径名;
+port 端口号;
+protocol 协议部分;
+search 返回URL的查询字符串('?gws_rd=ssl#safe=strict&q=ab'),这个字符串以问号开头;
+
+【十.location对象的方法---1510B】  陈雪冰
+assign() 跳转到指定页面,与href等效;
+reload() 重载当前URL;
+replace() 用新的URL替换当前页面;
+location.hash = '#1'; // 设置#后的字符串,并跳转;
+location.hostname = 'Jack'; // 设置主机名;
+location.search = '?id=5'; // 设置?后的字符串;	
+// 在Web开发中,我们经常需要获取诸如?id=5&search=ok这种类型的URL的键值对;
+// 通过location,我们可以写一个函数,来一一获取;
+function getArgs(){
+// 创建一个存放键值对的数组;
+var args = [];
+// 去除?号;
+var qs = location.search.length>0?location.search.substring(1):'';
+// 按&字符串拆分数组;
+var items = qs.split('&');
+var item = null, name = null, value = null;
+//遍历
+for(var i = 0; i<items.length; i++){
+item = items[i].split('=');
+name = decodeURIComponent(item[0]); // 因为查询字符串被浏览器编码过;
+value = decodeURIComponent(item[1]);// 每个查询字符串参数都变成了args对象的属性;
+// 把键值对存放到数组中;
+args[name] = value;
+}
+return args;
+}
+var args = getArgs();
+alert(args['id']); // 获取URL中id对应的值;
+location.assign('http://www.baidu.com'); // 跳转到指定的URL;2
+location.reload(); // 最有效的重新加载,有可能从缓存加载;
+location.reload(true); // 强制加载,从服务器源头重新加载;5
+locatioin.replace('http://www.baidu.com'); // 在本页跳转到百度页面,并且可以避免产生跳转的历史记录;
+
+
+【十一.history对象】---1510B  刘思敏
+history对象是window对象的属性,它保存着用户上网的记录,从窗口被打开的那一刻算起;
+(1).history对象的属性
+length history对象中的记录数;
+(2).history对象的方法
+back() 前往浏览器历史条目前一个URL,类似后退;
+forward() 前往浏览器历史条目下一个URL,类似前进;
+go(num) 浏览器在history对象中向前或向后;
+ 复制代码 代码如下:
+function back(){
+history.back();
+}
+function forward(){
+history.forward();
+}
+function go(num){
+history.go(num);
+}
+十二. 系统对话框---1510B  刘思敏
+浏览器通过alert()/confirm()和prompt()方法调用系统对话框向用户显示信息;
+系统对话框与浏览器中显示的网页没有关系,也不包含HTML;
+它们的外观由操作系统及(或)浏览器设置决定,而不是由CSS决定;
+这几个方法打开的对话框都是同步和模态的;也就是说,显示这些对话框的时候代码会停止运行,而关掉这些对话框后代码又会恢复执行;	
+// 弹出警告
+  alert('警告');
+// 确认和取消
+  if(confirm('请确定或取消'){          // confirm()本身有返回值;
+    alert('您选择了确定');           // 按确定,返回true值;
+  })else{
+    alert('您选择了取消');           // 按取消,返回false值;
+  }
+// 输入提示框
+  var num = prompt('请输入一个数字',0);     // 第一个参数是文字提示;第二个参数是输入框模式填充值;并返回输入框中的值;
+  alert(num);                 // 将prompt()方法返回的值赋给变量num;并弹出;
+// 调用打印及查找对话框
+  print();                   // 打印; 弹出浏览器打印窗口;
+  find();                   // =>boolean;页面有匹配的查找内容返回true;相对于Ctrl+F; 
+// 状态栏
+  defaultStatus = '状态栏默认文本';       // 浏览器底部状态栏初始默认值;
+  status = '状态栏文本';            // 浏览器底部状态栏设置值;
+
+【十三.新建窗口(open())---1510B】  刘思敏
+// 使用window.open()方法可以导航到一个特定的URL,也可以打开一个新的浏览器窗口;
+// 它接收四个参数:
+// (1).要加载的URL;
+// (2).窗口的名称或窗口目标;
+// (3).一个特定字符串;
+// (4).一个表示新页面是否取代浏览器记录中当前加载页面的布尔值;
+open('www.baidu.com'); // chrome-search://local-ntp/www.baidu.com;打开失败;需要添加http://;
+open('http://www.baidu.com'); // 新建页面并跳转到百度;
+open('http://www.baidu.com','搜索引擎'); // 新建页面 打开百度页面 并命名窗口;并不会自动跳转;并且再次调用时只是刷新那个页面;
+open('http://www.baidu.com','_parent'); // 在本页面打开百度;'_blank'是指定新页面打开;
+// 第三个字符串参数
+设置 值 说明
+width 数值 新窗口的宽度,不小于100px;
+height 数值 新窗口的高度,不小于100px;
+top 数值 新窗口的Y坐标,不能是负值;
+left 数值 新窗口的X坐标,不能是负值;
+location boolean 是否在浏览器窗口中显示地址栏;不同浏览器默认值不同;
+menubar boolean 是否在浏览器窗口显示菜单栏,默认为no;
+resizable boolean 是否通过拖动浏览器窗口边框来改变大小;默认no;
+scrollbars boolean 如果页面内容显示不下,是否显示滚动条;默认no;
+status boolean 是否在浏览器窗口中显示状态栏,默认no;
+toolbar boolean 是否在浏览器中显示工具栏;默认no;
+fullscreen boolean 浏览器窗口是否最大化;仅IE支持;
+open('http://www.baidu.com','baidu','width=400,height=400,top=200,left=200,toolbar=yes');
+
+// open()本身返回window对象
+var box = open(); // 返回了一个window对象,打开了一个新空白页面;
+box.alert(''); // 然后指定在open()返回的对象打开的新页面弹窗;
+
+// 字窗口操作父窗口
+document.onclick = function(){　　　　　　　　 // 在新的窗口中点击docuement对象;
+opener.document.write('子窗口让我输出的!');// 此时在产生它的父窗口会生成文字内容;
+}
+
+【十四.窗口的位置和大小---1510B】  刘思敏	
+(1).窗口的位置
+// 用来确定和修改window对象(浏览器窗口)相对于屏幕的位置:
+// IE+Safari+Opera+Chrome都提供了screenLeft和screenTop属性,
+// Firefox提供了screenX和screeY属性;
+// 他们分别表示窗口看相对于屏幕左边和上边的位置;
+// 确定窗口的位置=>IE
+  alert(screenLeft);              // 浏览器左侧离屏幕的距离;
+// 确定窗口的位置=>Firefox
+  alert(screenX);                // 浏览器左侧离屏幕的距离;
+// 跨浏览器的方法
+  var leftX = (typeof screenLeft == 'number') ? screenLeft : screenX;
+  // 判断检测的screenLeft是否是数值,若是则使用screenLeft的值,否则使用screenX的值;	
+(2).窗口的大小
+// 检测浏览器窗口本身及边框的尺寸:outerWidth和outerHeight;
+  alert(outerWidth);
+  alert(outerHeight);
+// 检测页面大小属性:innerWidth和innerHeight;
+  alert(innerWidth);
+  alert(innerHeight);
+// PS:IE没有提供当前浏览器窗口尺寸的属性; 在DOM中有提供相关的方法;
+// 在IE及其他浏览器中,提供了:document.documentElement.clientWidth和document.documentElement.clientHeight;来保存页面窗口的信息;
+// PS:在IE6中,上述属性在标准模式下才有效;如果是怪异模式,就必须通过document.body.clientWidth和document.body.clientHeight;
+// 如果是Firefox等浏览器,直接使用innerWidth和innerHeight;
+  var width = window.innerWidth;        // 这里要加window,因为IE会无效;
+  var height = window.innerHeight;
+  if(typeof width != 'number'){         // IE6浏览器
+    if(document.compatMode == 'CSS1Compat'){ // 判断是IE6标准模式;使用documentElement;
+      width = document.documentElement.clientWidth;
+      height = document.documentElement.clientHeight;
+    }else{                  // 否则是IE6非标准模式;使用body;
+      width = document.body.clientWidth;
+      height = document.body.clientHeight;
+    }
+  }
+  // PS:以上方法可以通过不同浏览器取得各自的浏览器窗口可视部分的大小;
+  // document.compatMode可以确定页面是否处于标准模式;
+
+	
+// 调整浏览器位置;
+  moveTo(0,0);                 // 移动到(0,0)坐标;IE有效;
+  moveBy(10,10);                // 向下和向右分别移动10px;IE有效;
+// 调整浏览器大小
+  resizeTo(200,200);              // 调整大小;
+  resizeBy(200,200);              // 扩展收缩大小;
+
+十五.间歇调用和超时调用---1510B  刘思敏
+1 // JavaScript是单线程语言,但它允许通过设置超时值和间歇时间值来调度代码在特定的时刻执行;
+2 // 超时值:在指定的时间过后执行代码;
+3 // 间隔值:每隔指定的时间就执行一次代码;	
+// 超时调用使用window对象的setTimeout()方法;
+// 它接受两个参数:要执行的代码和毫秒数;
+  setTimeout(function(){            // 直接使用函数传入的方法,扩展性好,性能更加;
+    alert('警告!');
+  },1000);
+// 调用setTimeout()之后,该方法会返回一个数值ID,表示超时调用;
+// 这个超时调用的ID是计划执行代码的唯一标识符,可以通过它来取消超时调用;
+// 要取消尚未执行的超时调用计划,可以调用clearTimeout()方法并将相应的超时调用ID作为参数传递给它;
+  var box = setTimeout(function(){       // 将超时调用的ID赋值给变量box;
+    alert('超时调用');
+  },1000);
+  clearTimeout(box);              // 将ID传入取消调用方法;
+	
+// 间歇调用使用window对象的setInterval()方法;
+// 它会按照指定的时间间隔重复执行代码,直至间歇调用被取消或页面被卸载;
+// 它接收的参数与setTimeout()相同;
+  var pox = setInterval(function(){
+    alert('间隔调用');
+  },1000);
+  clearInterval(pox);              // 取消间歇调用;
+ 
+// 利用setInterval()设置一个5秒的定时器;
+  var num = 0;                 // 设置起始秒;
+  var max = 5;                 // 设置终止秒;
+  setInterval(function(){
+    num++;                  // 递增num;
+    if(num == max){              
+      clearInterval(this);         // 取消间隔调用,this表示方法本身;一直跟踪间隔调用的ID;
+      alert('5秒后弹窗');
+    }
+  },1000);
+
+	
+// 一般使用超时调用来模拟间隔调用是一种最佳模式;
+// 因为使用间隔调用需要根据情况来取消ID,并且可能造成同步的一些问题;后一个间歇调用可能会在前一个间歇调用结束之前启动;
+  var num = 0;
+  var max = 5;
+  function box(){
+    num++;
+    if(num == max){
+      alert('5秒后弹窗');
+    }else{
+      setTimeout(box,1000);          // 隔1秒之后再次执行一个超时调用;
+    }
+  };
+  setTimeout(box,1000);              // 执行定时器; 
+  // PS:在使用超时调用时,没必要跟踪超时调用ID,因为每次执行之后,如果不再设置另一个超时调用,调用就会自动停止;
+
+十六.bom由一系列相关的对象构成，有哪些？   ---1510B  宋阳阳
+1、window对象，它是JavaScript的最顶层对象，其它的BOM对象都是windows对象的属性；
+2、document对象表示浏览器中加载页面的文档对象；
+3、location对象包含了浏览器当前的URL信息；
+4、navigator对象包含了浏览器本身的信息；
+5、screen对象包含了客户端屏幕及渲染能力的信息；
+6、history对象包含了浏览器访问网页的历史信息。
+
+
+十七.bom的核心对象？    ---1510B  宋阳阳
+
+window对象
+
+十八.核心对象与其他对象的关系？   ---1510B  宋阳阳
+所有对象都是通过window对象延伸出来的，也可以称为window的子对象
+
+十九.bom与dom的区别？   ---1510B  宋阳阳
+ BOM是浏览器对象模型，用来获取或设置浏览器的属性、行为，例如：新建窗口、获取屏幕分辨率、浏览器版本号等。
+ DOM是文档对象模型，用来获取或设置文档中标签的属性，例如获取或者设置input表单的value值。 BOM的内容不多，主要还是DOM。 由于DOM的操作对象是文档（Document），所以dom和浏览器没有直接关系。
+
+二十.什么是bom？   ---宋阳阳
+BOM是browser object model的缩写，简称浏览器对象模型
+BOM即浏览器对象模型，它包括如下一些对象！
+screen对象，Screen 对象中存放着有关显示浏览器屏幕的信息。
+常见的属性有：
+availHeight:返回显示屏幕的高度
+availWidth:返回显示屏幕的宽度
+colorDepth:返回目标设备或缓冲器上的调色板的比特深度。
+height:返回屏幕区域的实际高度
+width:返回屏幕区域的实际宽度
+
+二十一.浏览器历史记录。---1510B  宋阳阳
+　window.history对象记录了用户曾经浏览过的页面(URL)，并可以实现浏览器前进与后退导航的功能。从窗口被打开的那一刻开始记录，每个浏览器窗口、每个标签页乃至每个框架，都有自己的history对象与特定的window对象关联。在使用时可以不加window前缀。
+　　语法：window.history.[属性|方法]
+　　(1)、History 对象属性
+　　历史记录不唯一，所以该对象具有length属性，可返回浏览器历史列表中的URL数量。
+　　(2)、History 对象方法
+　　①、history.back()　　加载 history 列表中的前一个URL，就是返回前一个页面，与浏览器点击后退按钮功能相同。
+　　　　该方法等同于：history.go(-1);
+　　②、history.forward()　　加载 history 列表中的下一个 URL。就是返回下一个页面，与浏览器的前进按钮功能相同。
+　　　　该方法等同于：history.go(1);
+　　③、history.go(num)　　根据当前所处的页面，加载 history 列表中的某个具体的页面。
+　　　　参数说明：1为前一个，go(1)等价forward()。0为当前页面。-1下一个页面，后一个，go(-1)等价back()。
+　　　　也可为其他数值，指定要访问的URL在History的URL列表中的相对位置。
+　　　　比如：history.go(-2);　　返回当前页面之前浏览过的第二个历史页面，相当于点击2次后退按钮。
+　　　　history.go(3);　　返回当前页面之后浏览过的第三个历史页面
+二十二、navigator对象---1510B  席蓉蓉
+navigator对象包含了浏览器本身的信息， 可以获取客户机的信息（获取浏览器的信息）。比如浏览器的类型。
+document.write(navigator.appName)
+
+二十三、screen对象---1510B  席蓉蓉
+screen对象包括了客户端屏幕及渲染能力的信息；获取屏幕的一些信息，例如分辨率。
+document.write(screen.width)
+document.write(screen.height)
+二十四、history对象---1510B  席蓉蓉
+history对象包含了浏览器访问页面的历史信息  请求URL的历史记录
+<input type="button" value="back" onclick="back1()">
+<input type="button" value="next" onclick="next1()">
+<script>
+//到上一个页面
+   function back1(){
+   history.back();
+}
+//到下一个页面
+  function next1(){
+    history.forward();
+}
+</script>
+
+二十五、---1510B  席蓉蓉
+可视区尺寸： //**无兼容问题document.documentElement.clientWidthdocument.documentElement.clientHeight8、
+滚动距离：document.body.scrollTop/scrollLeft //**chrome认为滚动距离是针对body的，所以使用这个document.documentElement.scrollTop/scrollLeft //**chrome存在问题如果使用可以这样：var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;9、内容高度：元素.scrollHeight //**获取元素内部内容的实际高度10、文档高度：document.documentElement.offsetHeight //存在兼容问题document.body.offsetHeight //当body去除padding和margin后，浏览器表现一致，推荐使用这个ie如果内容没有可视区高，那么文档高就是可视区高onscroll：当滚动条滚动的时候触发onresize：当窗口大小发生变化的时候触发
+
+/****************************************************************/1510A
+           ABOUT  BOM        ——张津硕
+1. 什么是BOM？		——张津硕					
+
+BOM是browser object model的缩写，简称浏览器对象模型
+	BOM提供了独立于内容而与浏览器窗口进行交互的对象
+	由于BOM主要用于管理窗口与窗口之间的通讯，因此其核心对象是window
+	BOM由一系列相关的对象构成，并且每个对象都提供了很多方法与属性
+	BOM缺乏标准，JavaScript语法的标准化组织是ECMA，DOM的标准化组织是W3C
+	BOM最初是Netscape浏览器标准的一部分
+
+2  BOM由那些对象构成？ ——张津硕
+答：
+1、window对象，前面也说过，它是JavaScript的最顶层对象，其它的BOM对象都是windows对象的属性；
+2、document对象表示浏览器中加载页面的文档对象；
+3、location对象包含了浏览器当前的URL信息；
+4、navigator对象包含了浏览器本身的信息；
+5、screen对象包含了客户端屏幕及渲染能力的信息；
+6、history对象包含了浏览器访问网页的历史信息。
+7、全局对象
+
+3  【全局对象包括那些？】    ——张津硕
+答：1.cookie （web存储分为 cookie和 localstorage / sessionstorag） 
+ 2.localstorage / sessionstorag  3.ajax 4.flie对象  
+
+ 
+4 .    cookie  和 .localstorage / sessionstorag  有什么区别？都是怎么运用？      ——张津硕
+ 答： 区别：1.		cookie储存空间小，不适合大量存储；
+            2.		Localstorage   数据将一直存放在手机缓存中，直到用户清理缓存    优点就是在本网站跳转，数据不会销毁
+           3.		 sessionStorage 	本页面关闭时，销毁存储的数据   
+
+cookie 的运用{
+document.cookie = "user = sdfsd,password = 1235;expires=date ";
+var a = document.cookie;
+console.log(a);
+设置cookie,cookie的值分为三个部分，
+			//		第一部分为要设置的字符串;
+			//		第二部分为cookie到期时间,过期时间仅支持格林威治时间格式，所以使用前必须通过toGMTString()方法转换时间格式
+			//		第三部分为cookie的路径
+			//		之间用";"分隔
+			// 		格式 document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/";
+			//		当超过过期时间，cookie将被删除
+}
+.localstorage / sessionstorag {
+//定义一个对象
+var a = {
+a1: 123,
+a2: 345,
+a3: 456
+}
+	a = JSON.stringify(a); //JSON对象提供的parse和stringify将其他数据类型转化成字符串 
+	localStorage.a = "dddd"; //存储一个字符串
+	localStorage.b = 55; //存储一个数字
+localStorage.c = arr; //存储一个数组
+	localStorage.d = a; //存储一个对象	
+	localStorage.f = false; //存储一个布尔值
+	//所有数据都只能被当作字符串存储，不论之前存储的是什么格式，都会被转换为字符串
+	var tex1 = localStorage.a;
+var tex2 = localStorage.b;
+	var tex3 = localStorage.c;
+var tex4 = JSON.parse(localStorage.d); //将字符串重新转换为对象 				
+	var tex5 = localStorage.f;
+
+	console.log(tex1); //显示字符串
+	console.log(tex2); //显示一个数字字符串
+console.log(tex3); //显示一个数组字符串
+	console.log(tex4.a2); //显示一个对象,因为在上面一步中，对字符串进行了格式转换
+	console.log(tex5); //显示一个布尔值字符串
+}
+5.	BOM下面的window有什么功能？
+——张津硕
+window.close(); //关闭窗口 
+ 
+window.alert("message"); //弹出一个具有OK按钮的系统消息框，显示指定的文本 
+ 
+window.confirm("Are you sure?"); //弹出一个具有OK和Cancel按钮的询问对话框，返回一个布尔值 
+ 
+window.prompt("What's your name?", "Default"); //提示用户输入信息，接受两个参数，即要显示给用户的文本和文本框中的默认值，将文本框中的值作为函数值返回 
+ 
+window.status //可以使状态栏的文本暂时改变 
+ 
+window.defaultStatus //默认的状态栏信息，可在用户离开当前页面前一直改变文本 
+ 
+window.setTimeout("alert('xxx')", 1000); //设置在指定的毫秒数后执行指定的代码，接受2个参数，要执行的代码和等待的毫秒数 
+ 
+window.clearTimeout("ID"); //取消还未执行的暂停，将暂停ID传递给它 
+ 
+window.setInterval(function, 1000); //无限次地每隔指定的时间段重复一次指定的代码，参数同setTimeout()一样 
+ 
+window.clearInterval("ID"); //取消时间间隔，将间隔ID传递给它 
+ 
+window.history.go(-1); //访问浏览器窗口的历史，负数为后退，正数为前进 
+ 
+window.history.back(); //同上 
+ 
+window.history.forward(); //同上 
+ 
+window.history.length //可以查看历史中的页面数  
+
+
+
+
+          张瑶瑶
+
+1.screen对象，Screen 对象中存放着有关显示浏览器屏幕的信息。  ——张瑶瑶
+常见的属性有：
+○1availHeight:返回显示屏幕的高度  document.write("Available Height: " + screen.availHeight);
+○2availWidth:返回显示屏幕的宽度  document.write("Available Width: " + screen.availWidth);
+○3colorDepth:返回目标设备或缓冲器上的调色板的比特深度。document.write(screen.colorDepth);
+○4height:返回屏幕区域的实际高度  document.write(screen.height);
+○5width:返回屏幕区域的实际宽度  document.write(screen.width);
+
+
+2.Navigator对象，包含的属性描述了正在使用的浏览器   ——张瑶瑶
+○1appName:返回浏览器的名称。 txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+○2appVersion:返回浏览器的平台和版本信息。  txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+○3platform:返回运行浏览器的操作系统平台。  txt+= "<p>Platform: " + navigator.platform + "</p>";
+○4appCodeName:返回浏览器的代码名。  txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+
+
+3.History对象，———张瑶瑶
+其实就是来保存浏览器历史记录信息。
+其属性有：length，返回浏览器历史列表中的 URL 数量。
+其方法有：
+○1back()加载 history 列表中的前一个 URL。 
+function goBack(){
+window.history.back()
+}
+○2forward()加载 history 列表中的下一个 URL。
+function goForward(){
+window.history.forward()
+}
+○3go()加载 history 列表中的某个具体页面。
+function goForward(){
+window.history.go()
+}
+
+
+
+4.Location对象，  ———张瑶瑶
+Location 对象是 Window 对象的一个部分，可通过 window.location 属性来访问。
+其属性：
+○1hash:设置或返回从井号 (#) 开始的 URL（锚）。  document.write(location. hash);
+○2host:设置或返回主机名和当前 URL 的端口号  document.write(location. host);
+○3hostname:设置或返回当前 URL 的主机名。  document.write(location. hostname);
+○4href:设置或返回完整的 URL。  document.write(location.href);
+○5pathname:设置或返回当前 URL 的路径部分  document.write(location.pathname);
+○6port:设置或返回当前 URL 的端口号  document.write(location. port);
+○7protocol:设置或返回当前 URL 的协议。  document.write(location. protocol);
+○8search:设置或返回从问号 (?) 开始的 URL（查询部分）。  document.write(location. Search();
+
+其方法：
+○1assign()加载新的文档。
+function newDoc(){
+window.location.assign("http://www.w3cschool.cc")
+}
+○2reload()重新加载当前文档。 
+			location.reload(forceGet) 
+○3replace()用新的文档替换当前文档。
+function replaceDoc(){ 
+    window.location.replace("http://www.runoob.com") 
+}
+
+
+5.window.setTimeout("javascript 函数",毫秒数); ——张瑶瑶
+setTimeout() 方法会返回某个值。在上面的语句中，值被储存在名为 t 的变量中。假如你希望取消这个 setTimeout()，你可以使用这个变量名来指定它。
+
+setTimeout() 的第一个参数是含有 JavaScript 语句的字符串。这个语句可能诸如 "alert('5 seconds!')"，或者对函数的调用，诸如 alertMsg()"。
+
+第二个参数指示从当前起多少毫秒后执行第一个参数。
+setTimeout(function(){alert("Hello")},3000);
+
+6.window函数，窗体控制函数(to是绝对的意思(从整体而言)，by是相对的意思(从原先的位置而言)    ——张瑶瑶
+  	○1moveBy()函数    移动
+moveBy(5，6)  窗体向右移动5像素，向下移动6像素
+x(水平的移动像素数)     y(垂直的移动像素数)
+○2moveTo()函数    移动到
+	moveTo(5，6)   移动窗体左上角到相对于屏幕左上角的(5,6)点
+    x(从屏幕左上角水平向左移动x个像素数)    y(从屏幕左上角垂直向下移动y个像素数)
+○3resizeBy()函数   调整大小(x,y不能为负)
+	resizeBy(5,6)   窗体宽度扩大5像素，高度扩大6像素
+	x( 窗体宽度调整的像素数)     y(窗体高度调整的像素数)   
+○4resizeTo()函数  调整大小到(x,y不能为负)
+resizeBy(50,60)  窗体宽度调整为50像素，高度调整为60像素
+x( 窗体宽度的像素数)     y(窗体高度的像素数)   
+7.状态栏属性   ___张瑶瑶
+	○1window.defaultStatus   属性可设置或返回窗口状态栏中的默认文本
+		window.defaultStatus="这是默认状态栏文本!!";
+○2window.status   属性可设置或返回窗口状态栏中的文本。
+		window.status="一些文本在状态栏!"; 
+1 。 如何检测用户屏蔽了弹窗 ？ 如果是浏览器本省屏蔽的弹窗那么window.open()通常会返回null,而如果是浏览器拓展屏蔽了弹窗通常window.open()将会抛出错误.所以应该使用try-catch包围.
+——沈文豪
+var blocked = false;
+try { var wroxWin = window.open(' http://www.youku.com')
+if (wroxWin === null) {
+blocked = true 
+} 
+} catch (ex) {
+blocked = true
+} if (blocked) {
+ console.log('this popup was blocked')
+}
+
+2.window函数，窗体控制函数(to是绝对的意思(从整体而言)，by是相对的意思(从原先的位置而言) ———沈文豪
+  	○1moveBy()函数    移动
+moveBy(5，6)  窗体向右移动5像素，向下移动6像素
+x(水平的移动像素数)     y(垂直的移动像素数)
+○2moveTo()函数    移动到
+	moveTo(5，6)   移动窗体左上角到相对于屏幕左上角的(5,6)点
+    x(从屏幕左上角水平向左移动x个像素数)    y(从屏幕左上角垂直向下移动y个像素数)
+○3resizeBy()函数   调整大小(x,y不能为负)
+	resizeBy(5,6)   窗体宽度扩大5像素，高度扩大6像素
+	x( 窗体宽度调整的像素数)     y(窗体高度调整的像素数)   
+○4resizeTo()函数  调整大小到(x,y不能为负)
+resizeBy(50,60)  窗体宽度调整为50像素，高度调整为60像素
+x( 窗体宽度的像素数)     y(窗体高度的像素数)   
+3.状态栏属性   ————沈文豪
+	○1window.defaultStatus   属性可设置或返回窗口状态栏中的默认文本
+		window.defaultStatus="这是默认状态栏文本!!";
+○2window.status   属性可设置或返回窗口状态栏中的文本。
+		window.status="一些文本在状态栏!"; 
+ 
+
+程国金
+1.bom的对象构成
+	1、window对象，前面也说过，它是JavaScript的最顶层对象，其它的BOM对象都是windows对象的属性；
+	2、document对象表示浏览器中加载页面的文档对象；
+	3、location对象包含了浏览器当前的URL信息；
+	4、navigator对象包含了浏览器本身的信息；
+	5、screen对象包含了客户端屏幕及渲染能力的信息；
+	6、history对象包含了浏览器访问网页的历史信息。
+
+2. bom和dom的区别   ————程国金
+
+	BOM是浏览器对象模型，用来获取或设置浏览器的属性、行为，例如：新建窗口、获取屏幕分辨率、浏览器版本号等。
+	DOM是文档对象模型，用来获取或设置文档中标签的属性，例如获取或者设置input表单的value值。
+
+
+3. window对象中常用的方法（）  ————程国金
+
+
+	alert(text) 创建一个警告对话框，显示一条信息
+	blur() 将焦点从窗口移除    ————程国金
+
+		当元素失去焦点是发生blur事件
+例：$("input").blur(function(){
+$(this).css("background-color","#ffffff");
+});
+	clearInterval(interval) 清除之前设置的定时器间隔    ————程国金
+
+例：<script>
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer()
+{
+    var d=new Date();
+    var t=d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML=t;
+}
+function myStopFunction()
+{
+    clearInterval (myVar);
+}
+</script>
+	clearTimeOut(timer) 清除之前设置的超时    ————程国金
+
+var myVar;
+function myFunction()
+{
+    myVar=setTimeout(function(){alert("Hello")},3000);
+}
+
+function myStopFunction()
+{
+clearTimeOut (myVar);
+}
+	confirm() 创建一个需要用户确认的对话框    ————程国金
+
+var r= confirm ("Press a button");
+if (r==true)
+ {
+     x="You pressed OK!";
+ }
+else
+ {
+     x="You pressed Cancel!";
+ }
+	focus() 将焦点移至窗口   ————程国金
+
+当元素失去焦点是发生focus事件
+例：$("input").focus(function(){
+$(this).css("background-color","#cccccc");
+});
+	prompt(text,defaultInput) 创建一个对话框要求用户输入信息     ————程国金
+
+		当提示框出现后，用户需要输入某个值，然后点击确认或取消按钮才能继续操纵。
+如果用户点击确认，那么返回值为输入的值。如果用户点击取消，那么返回值为 null。
+例：
+		var person=prompt("Please enter your name","Harry Potter");
+		if(person!=null && person!=""){
+			x="Hello " + person + "! How are you today?";
+		}
+	
+4. 什么是BOM 浏览器对象模型？  ————程国金
+
+提供了独立于内容而与浏览器窗口进行交互的对象。描述了与浏览器进行交互的方法和接口，可以对浏览器窗口进行访问和操作，譬如可以弹出新的窗口，改变状态栏中的文本，对Cookie的支持，IE还扩展了BOM，加入了ActiveXObject类，可以通过js脚本实例化ActiveX对象等等）
+5.BOM部分主要是针对浏览器的内容，最常用的是什么对象？     ————程国金
+
+window对象和location对象
+  屠甜甜
+1.   BOM中window的尺寸?
+	有三种办法能够确定浏览器窗口的尺寸（浏览器的视口，不包括工具栏和滚动条）
+对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：
+window.innerHeight - 浏览器窗口的内部高度 
+window.innerWidth - 浏览器窗口的内部宽度 
+对于 Internet Explorer 8、7、6、5：
+		document.documentElement.clientHeight
+		document.documentElement.clientwidth
+	或者
+		document.body.clientHeight
+document.body.clientwidth
+	实例：
+var w=window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+alert(w);
+var h=window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+alert(H);
+
+2、列举浏览器对象模型BOM里常用的至少4个对象，并列举window对象的常用方法至少5个?   ——屠甜甜
+
+对象：window   document   location   screen  history  navigator
+方法：alert()  confirm()  prompt()  open()  close()
+什么是 Cookies？				1510A   屠甜甜
+Cookies 是存储在客户端计算机上的文本文件，并保留了各种跟踪信息
+例子：
+设置cookie,cookie的值分为三个部分，
+					第一部分为要设置的字符串;
+					第二部分为cookie到期时间,过期时间仅支持格林威治时间格式，所以使用前必须通过toGMTString()方法转换时间格式
+					第三部分为cookie的路径之间用";"分隔
+				格式 document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/";
+				当超过过期时间，cookie将被删除
+			var d = new Date();
+d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000)); 
+设置过期时间 = 当前时间的毫秒数 + 30天以后的毫秒数
+			var expires = "expires=" + d.toGMTString();		
+			document.cookie = "user = angel;" + expires;
+设置cookie存储的值，并设置过期时间		
+			var coo = document.cookie;		获取cookie	
+			console.log(d); 			未被转换的时间
+			console.log(d.toGMTString()); 	转换后的时间
+			console.log(coo);				显示cookie
+4  .javascript BOM是什么及BOM和DOM的区别？  ——屠甜甜
+BOM是浏览器对象模型，DOM是文档对象模型，前者是对浏览器本身进行操作，而后者是对浏览器（可看成容器）内的内容进行操作。
+5   Window 对象表示一个浏览器窗口或一个框架。常见方法有什么 ?    ——屠甜甜
+(1)窗口的打开与关闭：
+window.open(URL,name,features,replace),四个都为可选参数
+URL：新窗口中显示的文档的 URL
+name：声明了新窗口的名称
+	例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function checKmin(){
+					document.write(myWindow.name)
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="What’s the name of 'myWindow'" onclick="checkWin()" />
+</body>
+</html>
+
+features：声明了新窗口要显示的标准浏览器的特征
+
+replace：布尔值，true - URL 替换浏览历史中的当前条目。 false - URL 在浏览历史中创建新的条目。
+ （2） window.close()关闭当前窗口
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function closeWin(){
+					myWindow.close();
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="Close 'myWindow'" onclick="closeWin()" />
+</body>
+</html>
+沈文豪
+（1）改变窗口的位置和大小：
+moveTo(x,y) 方法可把窗口的左上角移动到一个指定的坐标。
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function Movewin(){
+					myWindow.moveTo(50,50)
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="Move 'myWindow'" onclick=" Movewin ()" />
+</body>
+</html>
+
+moveBy(x,y) 方法可相对窗口的当前坐标把它移动指定的像素。
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function Movewin(){
+					myWindow.moveBy(50,50)
+}
+myWindow = window.open(‘’,’’,width=300,,heigh=200)
+				myWindow.document.write(“This is ‘myWindow’ “)
+
+</script>
+</head>
+<body>
+<input type="button" value="Move 'myWindow'" onclick=" Movewin ()" />
+</body>
+</html>
+
+	
+resizeTo(width,height) 方法用于把窗口大小调整为指定的宽度和高度。
+例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function  resizeWindow(){
+					window.resizeTo(600,200)
+}
+
+</script>
+</head>
+<body>
+<input type="button" value="Resize 'myWindow'" onclick=" resizeWindow ()" />
+</body>
+</html>
+
+resizeBy(x,y) 方法用于根据指定的像素来调整窗口的大小。
+ 例子：
+	<html>
+	<head>
+			<title></title>
+			<script>
+				function  resizeWindow(){
+					window.resizeBy(-100,-100)
+}
+
+</script>
+</head>
+<body>
+<input type="button" value="Resize 'myWindow'" onclick=" resizeWindow ()" />
+</body>
+</html>
+
+(3)状态栏，通过设置window对象的status属性和defaultStatus属性来改变状态栏显示的基本信息。
+如： window.defaultStatus = "php点点通";
+ 
+(4)定时设定,定时器可以在特定的时间内执行特定的函数
+setTimeout(epress,time) 方法用于在指定的毫秒数后调用函数或计算表达式。
+clearTimeout(timeID)停止已经启动的定时器
+
+setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+clearInterval()停止使用setInterval() 方法
+
+(5)Navigator对象，包含的属性描述了正在使用的浏览器
+ 
+(6)History对象，其实就是来保存浏览器历史记录信息。
+ 
+(7)Location对象，Location 对象是 Window 对象的一个部分，可通过 window.location 属性来访问。
+
+
+
+
+
+
+

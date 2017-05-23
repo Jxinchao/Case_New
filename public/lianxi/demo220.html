@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	 
+	<ul>
+		
+	</ul>
+
+	<script type="text/javascript">
+		var str = window.location.search.substring(4);
+		$.ajax({
+			type:'get',
+			url:'http://localhost:8888/mysql/list',    //请求参数  也可以使用data来传递
+			success:function(e){
+				var html = '';
+				$('ul').empty();   //清空
+				for(var i = 0;i<e.length;i++){
+					e[i].index = i;
+					html += '<li>'+e[i].id+'....'+e[i].name+'.....'+e[i].tel+'...'+e[i].company+'...'+e[i].jibie+'<a href="javascript:;" class="detail" detail="'+e[i].id+'">&nbsp;详情</a>'+'<span class="span" del="'+e[i].id+'">&nbsp;删除</span></li>';
+
+				}
+				$('ul').append(html)
+
+				$('.detail').bind('click',function(){
+					var detail = $(this).attr('detail');
+					localStorage.bb=detail;
+					window.location.href="detail.html"
+				})
+
+				$('.span').bind('click',function(){
+					var cc = $(this).attr('del');
+					// $(this).parent().remove();
+					$('ul').get(0).removeChild(this.parentNode)
+					$.ajax({
+						type:'get',
+						url:'http://localhost:8888/item/del',
+						data:{
+							id:cc
+						},
+						success:function(e){
+							if(e.flag == 1){
+								alert('del success')
+								//console.log($('span').parent())
+								
+								//
+							}else{
+								alert('del error')
+							}
+						},
+						error:function(){
+							alert('error......')
+						}
+					})
+				})
+			},
+			error:function(){
+				alert('error.....')
+			}
+		})
+	</script>
+</body>
+</html>
